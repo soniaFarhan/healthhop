@@ -1,0 +1,14 @@
+.test{
+  border: 2px solid red !important;
+}
+
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout main {
+  flex-grow: 1;
+}

@@ -1,12 +1,15 @@
 import './App.css';
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
 
 function App() {
   return (<div>
     <Routes>
-      <Route path='layout' element={<Layout/>}/>
-
+      <Route element={<Layout/>}>
+        <Route path='/home' element={<Home/>}/>
+        
+        </Route>
     </Routes>
 
 

@@ -2,7 +2,6 @@
   border: 2px solid red !important;
 }
 
-
 .layout {
   min-height: 100vh;
   display: flex;
@@ -11,4 +10,19 @@
 
 .layout main {
   flex-grow: 1;
+}
+
+.home_background_img {
+  background-image: url('./assets/home\ top.jpg');
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-position: center;
+   height: auto;
+    z-index: 999;
+    position: relative;
+    opacity: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }

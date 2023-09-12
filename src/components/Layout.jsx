@@ -123,8 +123,8 @@ export const Layout = () => {
         </div>
       </nav>
 
-         <main className='py-3'>
-                <div className='container'>
+         <main className='py-4 mt-5'>
+                <div className=''>
                     <Outlet />
                 </div>
             </main>

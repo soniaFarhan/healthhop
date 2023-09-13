@@ -43,7 +43,7 @@ export const Layout = () => {
             aria-label="Toggle navigation"
           >
             <span className="">
-              <i class="bi bi-list"></i>
+           <i className="bi bi-list"></i>
             </span>
           </button>
 
@@ -123,7 +123,7 @@ export const Layout = () => {
         </div>
       </nav>
 
-         <main className='py-4 mt-5'>
+         <main className='pt-4 mt-5'>
                 <div className=''>
                     <Outlet />
                 </div>
@@ -131,150 +131,86 @@ export const Layout = () => {
 
 
       <footer
-        class=" text-white p-md-4 p-2"
-        style={{ backgroundColor: "#000000" }}
+        class=" text-dark p-md-4 p-2"
+        style={{ backgroundColor: "#E3E2E2" }}
       >
-        <div class=" container">
-          <div className="row">
-            <div className="col d-flex justify-content-between">
-              <div>
-                {/* <img
-                  src={require("../assets/isent.png")}
-                  className="img-fluid logo_img_size"
-                /> */}
+        <div class=" container py-3">
+          <div class="row d-flex justify-content-around py-3">
+        
+            <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-between gap-3">
+              <div style={{width:"10rem"}}>
+                <img
+                  src={require("../assets/HighRes_Icon-And-Name.jpg")}
+                  className="img-fluid"
+                />
               </div>
-            </div>
-          </div>
-          <hr className="text-white"></hr>
-          {/* <div class=""><img src={require('../assets/logo.png')}  className="img-fluid" style={{ borderRadius: '8px', width: '13rem' }} alt="Nav"/></div> */}
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 ps-lg-5">
-              <p class="text-upper_case mt-2 text-white">
+              <div>
+              <h5 class="mb-2 text-dark" title="Services">
+                Medical tourisum
+              </h5>
+              <p class="text-upper_case mt-2 text-dark fs_14px">
                 We make job finding very easy. We are best job provider company
                 where any user can apply for different jobs created by our
                 admin.
               </p>
-              <div>
-                <div className="text-white text-upper_case mt-3">
+              </div>
+              {/* <div>
+                <div className="text-dark text-upper_case mt-3 fs_14px">
                   © 2022 all rights reserved developed and maintain by{" "}
                   <a href="https://www.fabtechsol.com/" target="_blank">
                     Fabtechsol
-                  </a>{" "}
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-8  mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0">
-              <div className="row justify-sm-content-center">
-                <div className="col-6 col-sm-3 style-none">
-                  <h5 class="mb-2 text-white" title="Company">
-                    Company
-                  </h5>
-                  <Link to={"/about-us"} className="decoration-none text-white">
-                    <p className="mb-1" title="About us">
-                      About Us
-                    </p>
-                  </Link>
-                  <Link to={"/blogs"} className="decoration-none text-white">
-                    <p className="mb-1" title="Blog">
-                      Blog
-                    </p>
-                  </Link>
-                  <a href="#">
-                    <p className="mb-1" title="Careers">
-                      Corporate Careers
-                    </p>
                   </a>
                 </div>
+              </div> */}
+            </div>
+            
+            <div class=" col-12 col-lg-8  mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0">
+              <div className="row d-flex justify-content-end">
+                
                 <div className="col-6 col-sm-3 style-none">
-                  <h5 class="mb-2 text-white" title="Services">
-                    Services
+                  <h5 class="mb-2 text-dark" title="Services">
+                    Helpful Links
                   </h5>
                   <Link to={"/jobs"} className="decoration-none">
-                    <p className="mb-1 text-white" title="Job Search">
-                      Job Search
+                    <p className="mb-1 text-dark fs_14px" title="Job Search">
+                    Reviews
                     </p>
                   </Link>
-                  <a href="#">
-                    <p className="mb-1 text-white" title="Travel">
-                      Travel
+                  <Link className="decoration-none">
+                    <p className="mb-1 text-dark fs_14px" title="Travel">
+                      Bookmarks
                     </p>
-                  </a>
-                  <a href="#">
-                    <p className="mb-1 text-white" title="Per Diem">
-                      Per Diem
+                  </Link>
+                  <Link className="decoration-none">
+                    <p className="mb-1 text-dark fs_14px" title="Per Diem">
+                      Bookings
                     </p>
-                  </a>
-                  <a href="#">
-                    <p className="mb-1 text-white" title="Placement">
-                      Permanent Placement
+                  </Link>
+                  <Link className="decoration-none">
+                    <p className="mb-1 text-dark fs_14px" title="Placement">
+                     Contact
                     </p>
-                  </a>
-                  <a href="#">
-                    <p className="mb-1 text-white" title="Allied">
-                      Allied
-                    </p>
-                  </a>
+                  </Link>
                 </div>
+
                 <div className="col-6 col-sm-3 style-none">
-                  <h5 class="mb-2 text-white" title="Resources">
-                    Resources
+                  <h5 class="mb-2 text-dark" title="Resources">
+                    Contact Us
                   </h5>
-                  <Link to={"/jobs"} className="decoration-none text-white">
-                    <p className="mb-1  text-white" title="Job Search">
-                      Job Search
+                  <Link to={"/jobs"} className="decoration-none text-dark">
+                    <p className="mb-1  text-dark fs_14px" title="Job Search">
+                    Street: 123 Main Street Springfield
                     </p>
                   </Link>
-                  <a href="#">
-                    <p className="mb-1 text-white" title="Clients">
-                      Our clients
+                  <Link  className="decoration-none text-dark" >
+                    <p className="mb-1 text-dark fs_14px" title="Clients">
+                     Phone: (123) 123-456
                     </p>
-                  </a>
-                  {/* <a href="#"><p>Heading</p></a> */}
-                </div>
-                <div className=" col-6 col-sm-3 style-none">
-                  <h5 class="mb-2 text-white">Social</h5>
-                  <div className="">
-                    <a
-                      // href={`${socialLogin?.twitter || "www.twitter.com"}`}
-                      target="_blank"
-                      className="decoration-none"
-                    >
-                      {/* <img src={require("../assets/twetter.png")}  className="img-fluid img_size" title='Twitter'/> */}
-                      <TwitterIcon style={{ color: "white" }} />
-                    </a>
-                    <a
-                      // href={`${socialLogin?.facebook || "www.facebook.com"}`}
-                      target="_blank"
-                      className="decoration-none"
-                    >
-                      {/* <img src={require("../assets/facebook.png")}  className="img-fluid mx-3 img_size" title='Facebook'/> */}
-                      <FacebookIcon style={{ color: "white" }} />
-                    </a>
-                    {/* <a href={`${socialLogin?.linkedin||"www.linkedin.com"}`} target='_blank' className='decoration-none'>
-            <img src={require("../assets/linkedin.png")}  className="img-fluid  img_size" title='Linkedin'/>
-            </a> */}
-                    {/* <a href={`${socialLogin?.instagram||"www.instagram.com"}`} target='_blank' className='decoration-none'>
-            <img src={require("../assets/instagram.png")}  className="img-fluid ms-2 img_size" title='Instagram'/>
-          </a> */}
-                  </div>
-                </div>
-                <div class="col-sm-6  my-auto gx-0 style-none">
-                  {/* <form>
-              <div class="d-flex">
-                <input class="form-control email_color email_width" type="email" name="" placeholder="Email" required/>
-                <button class="btn email_color" type="submit" value="Submit"><img src={require("../assets/send.png")} className="img-fluid"/></button>
-              </div>
-            </form> */}
-                  {/* <div class="d-flex mt-4">
-              <img src={require("../assets/phone_icon.png")} style={{ height:'40px', width:'40px'}} className="img-fluid"/>
-              <div style={{ fontSize: '12px'}} class="ms-2 text-dark">
-                <label for="">+1 3218 232 232 3</label>
-                <p>Call to Expert</p>
-              </div>
-            </div> */}
+                  </Link>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </footer>

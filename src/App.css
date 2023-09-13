@@ -26,3 +26,10 @@
     display: flex;
     align-items: center;
 }
+
+.decoration-none{
+  text-decoration: none!important;
+}
+.fs_14px{
+  font-size: 14px;
+}

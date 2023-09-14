@@ -20,16 +20,29 @@ export const Home = () => {
 
   const cardData = [
     {
-      title: "Product 1",
-      description: "Description for Product 1",
+      title: "Select the Procedure",
+      description: "You Need",
       image: require("../assets/card-1.jpg"),
+      step: "1",
     },
     {
-      title: "Product 2",
-      description: "Description for Product 2",
+      title: "Consult with medical providers",
+      description: "until you find the right one for you",
       image: require("../assets/card-2.jpg"),
+      step: "2",
     },
-    // Add more card data as needed
+    {
+      title: "Receive a package offer",
+      description: "Procedure, transportation, hotel, visa, and more. Aceept. Travel, Become a better you.",
+      image: require("../assets/card-3.jpg"),
+      step: "3",
+    },
+    {
+      title: "Extra time?",
+      description: "Sightsee !",
+      image: require("../assets/card-4.jpg"),
+      step: "4",
+    },
   ];
 
   const cardchatData = [
@@ -46,6 +59,7 @@ export const Home = () => {
       title: "cancer Treatment",
     },
   ];
+
   const cardketData = [
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
@@ -72,6 +86,8 @@ export const Home = () => {
       title: "cancer Treatment",
     },
   ];
+
+ 
 
   return (
     <div>
@@ -168,38 +184,53 @@ export const Home = () => {
           </h3>
         </div>
 
-        <Box className="test">
-          <Container>
-            <Grid container spacing={3}>
-              {cardData.map((card, index) => (
-                <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-                  <Card sx={{ maxWidth: 300 }}>
-                    <CardMedia
-                      component="img"
-                      alt={card.title}
-                      height="140"
-                      image={card.image}
-                    />
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h6"
-                        component="div"
-                        sx={{ color: "#07A6A9" }}
-                      >
-                        {card.title}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {card.description}
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                  <div></div>
-                </Grid>
-              ))}
-            </Grid>
-          </Container>
+        <Box className="">
+
+     <Container>
+        <Box className=" d-flex justify-content-center">
+          <Grid container className=' d-flex justify-content-center' md={8} xs={12} >
+           
+          <Grid className=' d-flex justify-content-center' container spacing={3} >
+            {cardData.map((card, index) => (
+              <Grid item key={index} xs={12} md={6} lg={5} sx={{ position:"relative"}}>
+                <Card className='' sx={{ maxWidth: 300, minHeight:300 }}>
+                  <CardMedia
+                    component="img"
+                    alt={card.title}
+                    height="140"
+                    image={card.image}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h6" component="div" sx={{color:"#07A6A9"}}>
+                      {card.title}
+                    </Typography>
+                    <Typography variant="body" color="text.secondary">
+                      {card.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+                  <div className='d-flex justify-content-center align-items-center text-white px-2 py-2 white_space' 
+                  style={{
+                    width:"45px", 
+                    height:"45px", 
+                    borderRadius:"50%", 
+                    backgroundColor:"#07A6A9", 
+                    position:"absolute", 
+                    top:"3px",
+                    zIndex:"2000", 
+                    left:"150px", 
+                    fontSize:"11px"
+                  }}>
+          Step {card.step}
+        </div>
+              </Grid>
+            ))}
+          </Grid>
+           
+          </Grid>
         </Box>
+    </Container>
+            </Box>
       </section>
 
       <section className="py-5">

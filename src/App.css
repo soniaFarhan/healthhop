@@ -11,6 +11,14 @@
 .layout main {
   flex-grow: 1;
 }
+.btn_light{
+  background-color: #FFFFFF !important;
+  color: black !important;
+}
+.btn_green{
+  background-color: #07A6A9 !important;
+  color: white !important;
+}
 
 .home_background_img {
   background-image: url('./assets/home\ top.jpg');

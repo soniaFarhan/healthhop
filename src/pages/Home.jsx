@@ -32,8 +32,10 @@ export const Home = () => {
 
   return (
     <div>
-         <div className='home_background_img row gx-0 '>  
-                    <div className='col-md-4 d-flex justify-content-center'>
+      <div className='home_background_img'>
+        <div className="h-100">
+         <div className='row gx-0 '>  
+                    <div className='col-md-4 d-flex justify-content-center mt-5' style={{height:"70vh"}}>
                         <div className='col-md-7 bg-light rounded px-4 py-4'>
                         <h6 className='text-dark text-center fw-bold'>
                         Book Your Medical Procedure
@@ -90,7 +92,7 @@ export const Home = () => {
                         </div>
                     </div>
                  
-                    <div className='col-md-8  h-100'>
+                    <div className='col-md-8  h-100 mt-5'>
                         <div className='col-md-9'>
                             <h1 style={{color:'white'}}>
                                 Discover Medical Tourism <br />
@@ -105,6 +107,8 @@ export const Home = () => {
                     </div>
 
         </div>
+        </div>
+      </div>
 
 
 {/* simple section  */}

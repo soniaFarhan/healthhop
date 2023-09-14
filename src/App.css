@@ -44,9 +44,32 @@
 
 }
 
+
 .decoration-none{
   text-decoration: none!important;
+}
+
+.ket :hover{
+background-color: #07A6A9;
+color: #FFFFFF;
+ border-radius: 10px;
+}
+.chat :hover{
+background-color: #07A6A9;
+color: #FFFFFF;
+ border-radius: 10px;
+ transform: translateY(-20px);
+ transition: 0.7s;
+
+}
+
+
+.card:hover .card-content {
+  /* Styles for the card content when the card is hovered */
+  pointer-events: none; /* Disable mouse events on the content */
 }
 .fs_14px{
   font-size: 14px;
 }
+
+

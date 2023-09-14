@@ -98,7 +98,7 @@ export const Layout = () => {
   </div>
 </nav>
 
-         <main className=''>
+         <main className='pt-3'>
                 <div className=''>
                     <Outlet />
                 </div>

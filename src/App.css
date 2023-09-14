@@ -64,7 +64,7 @@ color: #FFFFFF;
 }
 
 
-.card:hover .card-content {
+.chat:hover .card-content {
   /* Styles for the card content when the card is hovered */
   pointer-events: none; /* Disable mouse events on the content */
 }

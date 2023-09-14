@@ -277,7 +277,7 @@ export const Home = () => {
              
             >
               {cardchatData.map((e, index) => (
-                <Grid  className="mx-auto" item key={index}>
+                <Grid  className="mx-auto chat chatcard" item key={index}>
                   <div
                     className="chat chatcard my-4"
                     style={{

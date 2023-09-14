@@ -46,24 +46,26 @@ export const Home = () => {
   ];
 
   const cardchatData = [
+   
+
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
-      title: "cancer Treatment",
+      title: "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
-      title: "cancer Treatment",
+      title: "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
-      title: "cancer Treatment",
+      title: "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
   ];
 
   const cardketData = [
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
-      title: "cancer Treatment",
+      title:"cancer Treatment" ,
     },
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
@@ -233,6 +235,56 @@ export const Home = () => {
             </Box>
       </section>
 
+   <section className="">
+
+   <div className="d-flex justify-content-center  py-5">
+          <h3
+            style={{
+              borderBottom: "2px solid green",
+              display: "inline-block",
+              paddingBottom: "7px",
+            }}
+          >
+            Access to World Class medical providers
+          </h3>
+        </div>
+<div className="container">
+
+        <div className="mx-md-5">
+
+        <div className="p-3 bg">
+<div className=" px-md-5 d-md-flex" style={{paddingBottom:"140px",paddingTop:"50px" }}>
+<div className="me-5" style={{width:"30%"}}>
+<h3 style={{color:'white'}}>Loremaccus consequatur recusandae. Quis corporis .</h3>
+ 
+</div>
+<div className="" style={{width:"70%"}}>
+<p style={{color:'white'}}>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam quam sequi, consequuntur amet sapiente doloremque dolor, nam, ea doloribus harum ipsum maiores suscipit distinctio fugit possimus obcaecati quas laborum.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+        </div>
+</div>
+
+
+
+   </section>
+
+
+
+
+
+
+
+
+
       <section className="py-5">
         <div className="d-flex justify-content-center  py-3">
           <h2
@@ -248,16 +300,16 @@ export const Home = () => {
 
         <Box>
           <Container>
-            <Grid
+            <Grid className="mx-auto"
               container
               spacing={2}
               alignItems={"center"}
-              justifyContent={"center"}
+            justifyContent={"center"}
             >
               {cardketData.map((e, index) => (
-                <Grid item key={index}>
+                <Grid className="" item key={index}>
                   <div
-                    className="ket"
+                    className="ket mx-auto"
                     style={{
                       backgroundColor: "#F9F9F9",
                       height: "150px",
@@ -298,6 +350,10 @@ export const Home = () => {
             What Our Users Say
           </h2>
         </div>
+        <div className="text-center" style={{ color: "#939393",fontSize:"11px"}}>
+          <p >We collect reviews from our usersso you can get an honest opinion of what </p>
+          <p></p>
+        </div>
 
         <Box>
           <Container>
@@ -308,26 +364,22 @@ export const Home = () => {
              
             >
               {cardchatData.map((e, index) => (
-                <Grid  className="mx-auto chat chatcard" item key={index}>
+                <Grid  className="mx-auto p-0" item key={index}>
                   <div
-                    className="chat chatcard my-4"
+                    className="chat my-4"
                     style={{
                       backgroundColor: "#F9F9F9",
-                      height: "220px",
+                     
                       width: "300px",
                       borderRadius: "10px",
                       color: "#939393",
                     }}
                   >
-                    <div className=" card-content d-flex   p-4">
-                      <div className="p-3">dede</div>
+                    <div className="  d-flex   p-4">
+                      <div className="px-2 py-5 card-content">{e.icon}</div>
 
-                      <p className="mb-0 p-3" style={{ fontSize: "12px" }}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corrupti repellendus eveniet alias sunt delectus vitae
-                        eligendi natus possimus iste deserunt laudantium itaque,
-                        laboriosam officia quod, cumque quos ratione distinctio
-                        dolorem.
+                      <p className="mb-0 p-3 card-content p-3 py-3 " style={{ fontSize: "12px" }}>
+                       {e.title}
                       </p>
                     </div>
                   </div>
@@ -344,6 +396,68 @@ export const Home = () => {
           </Container>
         </Box>
       </section>
+
+
+      <section className="mx-5">
+        <div className="mx-5">
+
+<div className="bg1 ">
+<div className="d-flex justify-content-center  py-3">
+          <h2
+            style={{
+              borderBottom: "2px solid green",
+              display: "inline-block",
+              paddingBottom: "7px",
+            }}
+          >
+           How HealthHop Works
+          </h2>
+        </div>
+        <div className="text-center" style={{ color: "#939393",fontSize:"11px"}}>
+          <p >We collect reviews from our usersso you can get an honest opinion of what </p>
+          <p></p>
+        </div>
+
+
+   <div className="container">
+<div className="row">
+<div className="col-md-7">
+  <div className="" style={{backgroundColor:"#07A6A9",width:'50px',borderRadius:"13px"}}>
+<h4 className="p-2 text-center" style={{color:"white",}}>
+  01
+</h4>
+
+  </div>
+  <h2>
+    Book Your Procedure
+  </h2>
+<p className="" style={{ fontSize: "12px" }}>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates molestias magnam inventore quas nobis deserunt necessitatibus dolor quae quisquam. Minus exercitationem doloribus nam omnis labore dolores amet consequatur consectetur!
+
+</p>
+</div>
+
+<div className="col-md-5">
+
+</div>
+  
+</div>
+
+   </div>
+      
+
+
+
+
+
+</div>
+        </div>
+
+      
+      </section>
+
+
+
     </div>
   );
 };

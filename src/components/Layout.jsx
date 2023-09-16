@@ -24,20 +24,22 @@ import Popup2 from "./Popup2";
 
 export const Layout = () => {
 
-  // const [isHovered, setIsHovered] = useState(false);
-  // const [showLinks, setShowLinks] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
 
-  // const handleLinkHover = () => {
-  //   setIsHovered(true);
-  //   setShowLinks(true);
-  // };
-  // const handleLinkLeave = () => {
-  //   setIsHovered(false);
-  //   // You may want to add a delay here to give the user a chance to move their cursor to the list
-  //   setTimeout(() => {
-  //     setShowLinks(false);
-  //   }, 20000); // Adjust the delay as needed
-  // };
+  const handleLinkHover = () => {
+    setIsHovered(true);
+    setShowLinks(true);
+  };
+
+  // Add an event handler for when the cursor leaves the link
+  const handleLinkLeave = () => {
+    setIsHovered(false);
+    // You may want to add a delay here to give the user a chance to move their cursor to the list
+    setTimeout(() => {
+      setShowLinks(false);
+    }, 8000); // Adjust the delay as needed
+  };
 
   return (
     <div className="layout">
@@ -98,12 +100,12 @@ export const Layout = () => {
             to="/profession"
             title="Healthcare"
             style={{ fontSize: '16px' }}
-            // onMouseEnter={handleLinkHover}
-            // onMouseLeave={handleLinkLeave}
+            onMouseEnter={handleLinkHover}
+            onMouseLeave={handleLinkLeave}
           >
             Blogs
           </NavLink>
-          {/* {isHovered && showLinks && (
+          {isHovered && showLinks && (
         <div>
           <ul>
             <li><a href="#">Link 1</a></li>
@@ -112,7 +114,7 @@ export const Layout = () => {
            
           </ul>
         </div>
-      )} */}
+      )}
         </li>
         
       </ul>

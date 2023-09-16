@@ -7,8 +7,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
-import { Avatar, Container, Grid, Paper } from "@mui/material";
-import { MedicalServicesOutlined } from "@mui/icons-material";
+import { Avatar, ButtonBase, ButtonGroup, Container, Grid, Paper, TextField } from "@mui/material";
+import { MedicalServicesOutlined, TextFields } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -443,10 +443,10 @@ export const Home = () => {
         </Box>
       </section>
 
-      <section className="mx-md-5" style={{height:"2200px"}}>
-        <div className="mx-md-5 "  style={{height:"2000px"}}>
+      <section className="mx-lg-5" >
+        <div className="mx-lg-5 "  >
           <div className="bg1 ">
-            <div className="d-flex justify-content-center mt-md-5  pt-5 ">
+            <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
               <h2
                 style={{
                   borderBottom: "2px solid green",
@@ -468,8 +468,11 @@ export const Home = () => {
               <p></p>
             </div>
 
-            <div className=" m-md-5">
-              <div className=" d-flex p-5 mx-md-5">
+
+
+
+            <div className=" m-5">
+              <div className=" d-md-flex p-lg-5 mx-lg-5">
                 <div className="col-md-7 p-0">
                   <div
                     className=""
@@ -492,9 +495,133 @@ export const Home = () => {
                     consequatur consectetur!
                   </p>
                 </div>
+              
+                <div className="col-lg-5">
+            <div className="mx-auto d-flex justify-content-center" >
 
-                <div className="col-md-5"></div>
+                    <img
+                        className="mx-auto"
+                        src={require("../../src/assets/Image 4.png")}
+                        alt="Card image"
+                        style={{ width: "180px",  }}
+                      />
+            </div>
+                </div>
               </div>
+              <div className=" d-md-flex p-lg-5 mx-lg-5">
+
+              
+                <div className="col-md-5">
+            
+
+                    <img
+                        className="mx-auto"
+                        src={require("../../src/assets/Image 5.png")}
+                        alt="Card image"
+                        width={"100vw"}
+                      />
+           
+                </div>
+
+
+                <div className="col-md-7 p-0">
+                  <div
+                    className=""
+                    style={{
+                      backgroundColor: "#07A6A9",
+                      width: "50px",
+                      borderRadius: "13px",
+                    }}
+                  >
+                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                      02
+                    </h4>
+                  </div>
+                  <h2>Book Your Procedure</h2>
+                  <p className="" style={{ fontSize: "12px" }}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt voluptates molestias magnam inventore quas nobis
+                    deserunt necessitatibus dolor quae quisquam. Minus
+                    exercitationem doloribus nam omnis labore dolores amet
+                    consequatur consectetur!
+                  </p>
+                </div>
+              </div>
+              <div className=" d-md-flex p-5 mx-md-5">
+                <div className="col-md-7 p-0">
+                  <div
+                    className=""
+                    style={{
+                      backgroundColor: "#07A6A9",
+                      width: "50px",
+                      borderRadius: "13px",
+                    }}
+                  >
+                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                      03
+                    </h4>
+                  </div>
+                  <h2>Book Your Procedure</h2>
+                  <p className="" style={{ fontSize: "12px" }}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt voluptates molestias magnam inventore quas nobis
+                    deserunt necessitatibus dolor quae quisquam. Minus
+                    exercitationem doloribus nam omnis labore dolores amet
+                    consequatur consectetur!
+                  </p>
+                </div>
+              
+                <div className="col-md-5">
+            <div className="mx-auto d-flex justify-content-center">
+
+                    <img
+                        className="mx-auto"
+                        src={require("../../src/assets/Image 4.png")}
+                        alt="Card image"
+                        style={{ width: "200px",  }}
+                      />
+            </div>
+                </div>
+              </div>
+              <div className=" d-md-flex p-5 mx-md-5">
+
+              
+<div className="col-md-5">
+<div className="mx-auto d-flex justify-content-center">
+
+    <img
+        className="mx-auto"
+        src={require("../../src/assets/Image 5.png")}
+        alt="Card image"
+        style={{ width: "370px",  }}
+      />
+</div>
+</div>
+
+
+<div className="col-md-7 p-0">
+  <div
+    className=""
+    style={{
+      backgroundColor: "#07A6A9",
+      width: "50px",
+      borderRadius: "13px",
+    }}
+  >
+    <h4 className="p-2 text-center" style={{ color: "white" }}>
+      04
+    </h4>
+  </div>
+  <h2>Book Your Procedure</h2>
+  <p className="" style={{ fontSize: "12px" }}>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Incidunt voluptates molestias magnam inventore quas nobis
+    deserunt necessitatibus dolor quae quisquam. Minus
+    exercitationem doloribus nam omnis labore dolores amet
+    consequatur consectetur!
+  </p>
+</div>
+</div>
             </div>
           </div>
         </div>
@@ -518,21 +645,26 @@ export const Home = () => {
         <Box>
           <Container>
             <Grid
-              className=" mx-auto"
+              className=" mx-auto px-md-5"
               container
               spacing={3}
               alignItems={"center"}
             >
               {card.map((e, index) => (
+
+                
                 <Grid  component={Paper} className="mx-auto my-5 p-0" item key={index}>
                   <div
                     className=" my-4"
                     style={{
                      
 
-                      width: "300px",
+                 
+                    
                       borderRadius: "10px",
                       color: "#939393",
+                     width:"300px",
+                     height:"210px"
                     }}
                   >
                     <div className="    ">
@@ -595,6 +727,62 @@ export const Home = () => {
                   </h3>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="">
+     
+        <div className="container">
+          <div className="mx-md-5 "  >
+            <div className="p-3 ">
+            <div className="d-flex justify-content-center  py-5">
+          <h3
+            style={{
+              borderBottom: "2px solid green",
+              display: "inline-block",
+              paddingBottom: "7px",
+              
+            }}
+          >
+           About HealthHop
+          </h3>
+        </div>
+
+              <Box  component={Paper}
+                className=" px-md-5 mb-5 "
+                style={{ paddingBottom: "20px", paddingTop: "50px" }}
+              >
+
+                <div className=" mx-3">
+                <div className=" d-md-flex">
+
+<div className="my-2 me-md-1" style={{width:"100%"}}>
+<TextField id="outlined-basic" label="Frist Name" variant="outlined"  style={{width:"100%"}}/>
+</div>
+<div className="my-2 ms-md-1" style={{width:"100%"}}>
+<TextField id="outlined-basic" label="Last Name" variant="outlined"  style={{width:"100%"}}/>
+</div>
+
+
+</div>
+<div className="my-2" style={{width:"100%"}}><TextField id="outlined-basic" label="Email" variant="outlined"  style={{width:"100%"}}/></div>
+
+
+<div className="my-2" style={{width:"100%"}}>
+<div class="form-group">
+
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
+</div>
+</div>
+
+<div className="pt-5">
+
+<Button style={{backgroundColor:"#07A6A9",color:"white",padding:"16px 80px",fontSize:"10px"}}>Submmit</Button>
+</div>
+                </div>
+             
+              </Box>
             </div>
           </div>
         </div>

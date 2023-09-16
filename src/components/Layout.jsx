@@ -15,9 +15,30 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useEffect } from "react";
 import LoginIcon from '@mui/icons-material/Login';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+
 import { Navbar } from "./Navbar";
+import Popup from "./Popup";
+import Popup2 from "./Popup2";
+
+
 
 export const Layout = () => {
+
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [showLinks, setShowLinks] = useState(false);
+
+  // const handleLinkHover = () => {
+  //   setIsHovered(true);
+  //   setShowLinks(true);
+  // };
+  // const handleLinkLeave = () => {
+  //   setIsHovered(false);
+  //   // You may want to add a delay here to give the user a chance to move their cursor to the list
+  //   setTimeout(() => {
+  //     setShowLinks(false);
+  //   }, 20000); // Adjust the delay as needed
+  // };
+
   return (
     <div className="layout">
      
@@ -77,21 +98,29 @@ export const Layout = () => {
             to="/profession"
             title="Healthcare"
             style={{ fontSize: '16px' }}
+            // onMouseEnter={handleLinkHover}
+            // onMouseLeave={handleLinkLeave}
           >
             Blogs
           </NavLink>
+          {/* {isHovered && showLinks && (
+        <div>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+           
+          </ul>
+        </div>
+      )} */}
         </li>
+        
       </ul>
       <div className="row justify-content-end mx-1">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
-          <button className="btn btn_light rounded-pill">
-            <MedicalServicesIcon />
-            Medical Provider
-          </button>
-          <button className="btn btn_light rounded-pill">
-            <LoginIcon />
-            Patient login
-          </button>
+          
+        <Popup/>
+       <Popup2/>
         </div>
       </div>
     </div>

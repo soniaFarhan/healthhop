@@ -6,86 +6,117 @@ import {
 } from "react-router-dom";
 import LoginIcon from '@mui/icons-material/Login';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+
+import { Navbar } from "./Navbar";
+import Popup from "./Popup";
+import Popup2 from "./Popup2";
+
+
+
 export const Layout = () => {
+
+  // const [isHovered, setIsHovered] = useState(false);
+  // const [showLinks, setShowLinks] = useState(false);
+
+  // const handleLinkHover = () => {
+  //   setIsHovered(true);
+  //   setShowLinks(true);
+  // };
+  // const handleLinkLeave = () => {
+  //   setIsHovered(false);
+  //   // You may want to add a delay here to give the user a chance to move their cursor to the list
+  //   setTimeout(() => {
+  //     setShowLinks(false);
+  //   }, 20000); // Adjust the delay as needed
+  // };
+
   return (
     <div className="layout">
      
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <div style={{ width: "6rem" }}>
-            <img
-              src={require("../assets/HighRes_Icon-And-Name.jpg")}
-              className="img-fluid logo_img_size"
-            />
-          </div>
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <NavLink
-                style={{ paddingY: 2, fontSize: '16px' }}
-                className="nav-link"
-                exact
-                activeClassName="active"
-                end="/"
-                to="/"
-                title="Home"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                style={{ fontSize: '16px' }}
-                exact
-                activeClassName="active"
-                to="/facilities"
-                title="Facilities"
-              >
-                Contact Us
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link white_space"
-                exact
-                activeClassName="active"
-                to="/profession"
-                title="Healthcare"
-                style={{ fontSize: '16px' }}
-              >
-                Blogs
-              </NavLink>
-            </li>
+  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <Link className="navbar-brand" to="/">
+      <div style={{ width: "6rem" }}>
+        <img
+          src={require("../assets/HighRes_Icon-And-Name.jpg")}
+          className="img-fluid logo_img_size"
+        />
+      </div>
+    </Link>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <NavLink
+            style={{ paddingY: 2, fontSize: '16px' }}
+            className="nav-link"
+            exact
+            activeClassName="active"
+            end="/"
+            to="/"
+            title="Home"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            className="nav-link"
+            style={{ fontSize: '16px' }}
+            exact
+            activeClassName="active"
+            to="/facilities"
+            title="Facilities"
+          >
+            Contact Us
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            className="nav-link white_space"
+            exact
+            activeClassName="active"
+            to="/profession"
+            title="Healthcare"
+            style={{ fontSize: '16px' }}
+            // onMouseEnter={handleLinkHover}
+            // onMouseLeave={handleLinkLeave}
+          >
+            Blogs
+          </NavLink>
+          {/* {isHovered && showLinks && (
+        <div>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+           
           </ul>
-          <div className="row justify-content-end mx-1">
-            <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
-              <button className="btn btn_light rounded-pill">
-                <MedicalServicesIcon />
-                Medical Provider
-              </button>
-              <button className="btn btn_light rounded-pill">
-                <LoginIcon />
-                Patient login
-              </button>
-            </div>
-          </div>
+        </div>
+      )} */}
+        </li>
+        
+      </ul>
+      <div className="row justify-content-end mx-1">
+        <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
+          
+        <Popup/>
+       <Popup2/>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
          <main className=''>
                 <div className=''>

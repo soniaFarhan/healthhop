@@ -15,6 +15,7 @@ function App() {
         <Route path='/contact-us' element={<ContactUs/>} />  
         <Route path='/blogs' element={<OurBlogs/>} />      
       </Route>
+
     </Routes>
 
 

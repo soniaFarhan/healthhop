@@ -1,102 +1,91 @@
-import React, { useContext, useLayoutEffect, useRef, useState } from "react";
-import { isMobile } from "react-device-detect";
+import React from "react";
 import {
   Outlet,
   Link,
   NavLink,
-  useNavigate,
-  useLocation,
 } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import { useDispatch, useSelector } from "react-redux";
-import { Button, Grid } from "@mui/material";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { useEffect } from "react";
 import LoginIcon from '@mui/icons-material/Login';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
-import { Navbar } from "./Navbar";
-
 export const Layout = () => {
   return (
     <div className="layout">
      
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <Link className="navbar-brand" to="/">
-      <div style={{ width: "6rem" }}>
-        <img
-          src={require("../assets/HighRes_Icon-And-Name.jpg")}
-          className="img-fluid logo_img_size"
-        />
-      </div>
-    </Link>
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <NavLink
-            style={{ paddingY: 2, fontSize: '16px' }}
-            className="nav-link"
-            exact
-            activeClassName="active"
-            end="/"
-            to="/"
-            title="Home"
-          >
-            Home
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            className="nav-link"
-            style={{ fontSize: '16px' }}
-            exact
-            activeClassName="active"
-            to="/facilities"
-            title="Facilities"
-          >
-            Contact Us
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            className="nav-link white_space"
-            exact
-            activeClassName="active"
-            to="/profession"
-            title="Healthcare"
-            style={{ fontSize: '16px' }}
-          >
-            Blogs
-          </NavLink>
-        </li>
-      </ul>
-      <div className="row justify-content-end mx-1">
-        <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
-          <button className="btn btn_light rounded-pill">
-            <MedicalServicesIcon />
-            Medical Provider
-          </button>
-          <button className="btn btn_light rounded-pill">
-            <LoginIcon />
-            Patient login
-          </button>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          <div style={{ width: "6rem" }}>
+            <img
+              src={require("../assets/HighRes_Icon-And-Name.jpg")}
+              className="img-fluid logo_img_size"
+            />
+          </div>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <NavLink
+                style={{ paddingY: 2, fontSize: '16px' }}
+                className="nav-link"
+                exact
+                activeClassName="active"
+                end="/"
+                to="/"
+                title="Home"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                style={{ fontSize: '16px' }}
+                exact
+                activeClassName="active"
+                to="/facilities"
+                title="Facilities"
+              >
+                Contact Us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link white_space"
+                exact
+                activeClassName="active"
+                to="/profession"
+                title="Healthcare"
+                style={{ fontSize: '16px' }}
+              >
+                Blogs
+              </NavLink>
+            </li>
+          </ul>
+          <div className="row justify-content-end mx-1">
+            <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
+              <button className="btn btn_light rounded-pill">
+                <MedicalServicesIcon />
+                Medical Provider
+              </button>
+              <button className="btn btn_light rounded-pill">
+                <LoginIcon />
+                Patient login
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
          <main className=''>
                 <div className=''>

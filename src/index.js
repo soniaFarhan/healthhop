@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
   
 // Bootstrap Bundle icon
 import "bootstrap-icons/font/bootstrap-icons.css";

@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
-import { Avatar, ButtonBase, ButtonGroup, Container, Grid, Paper, TextField } from "@mui/material";
-import { MedicalServicesOutlined, TextFields } from "@mui/icons-material";
+import { Avatar,Container, Grid, Paper, TextField } from "@mui/material";
+import { MedicalServicesOutlined,} from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -142,6 +141,18 @@ export const Home = () => {
                   </select>
                 </div>
 
+                <div className="mb-3">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Chose Sub Category</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
                 <div>
                   <select
                     class="form-select"
@@ -168,9 +179,11 @@ export const Home = () => {
                 </Box>
 
                 <div className="pt-5">
+                  <Link to={'/heath-journey'}>
                   <button className="btn btn_green w-100 rounded-pill">
-                    Start your Health Journey
+                    Start Your Health Journey
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

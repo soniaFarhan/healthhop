@@ -1,8 +1,54 @@
 /* usman css  */
 
+/* utility classes  */
+
+.fs_14px{
+  font-size: 14px !important;
+}
+
+.fs_10px{
+  font-size: 10px !important;
+}
+.white_space{
+  white-space: nowrap;
+}
+
 .test{
   border: 2px solid red !important;
 }
+
+
+.bg{
+  background:linear-gradient(to right, #07A6A9,#045355) ; 
+   width: 100%; 
+}
+
+.bg1{
+  background-color: #F9F9F9;
+
+  height: 100%;
+  width: 100%; 
+}
+
+.btn_light{
+  background-color: #FFFFFF !important;
+  color: black !important;
+}
+.btn_green{
+  background-color: #07A6A9 !important;
+  color: white !important;
+}
+
+.btn_blue{
+  background-color: #7193FF !important;
+  color: white !important;
+}
+
+.btn_yellow{
+  background-color: #F3AE24 !important;
+  color: white !important;
+}
+
 
 .layout {
   min-height: 100vh;
@@ -13,14 +59,12 @@
 .layout main {
   flex-grow: 1;
 }
-.btn_light{
-  background-color: #FFFFFF !important;
-  color: black !important;
+.custom_padding {
+  padding-top: 6rem; 
+  padding-bottom: 6rem; 
 }
-.btn_green{
-  background-color: #07A6A9 !important;
-  color: white !important;
-}
+
+/* utility classes end  */
 
 .home_background_img {
     height: 100vh;
@@ -48,26 +92,11 @@
     border-radius: 50px !important;
 }
 
-.custom_padding {
-  padding-top: 6rem; 
-  padding-bottom: 6rem; 
-}
-
 .card-img-overlay {
   background-color: rgba(#000, 0.4);
 }
 
-.bg{
-  background:linear-gradient(to right, #07A6A9,#045355) ; 
-   width: 100%; 
-}
 
-.bg1{
-  background-color: #F9F9F9;
-
-  height: 100%;
-  width: 100%; 
-}
 .decoration-none{
   text-decoration: none!important;
 }
@@ -88,14 +117,9 @@ color: #FFFFFF;
 
 }
 
-
 .card-content {
   /* Styles for the card content when the card is hovered */
   pointer-events: none; /* Disable mouse events on the content */
 }
-.fs_14px{
-  font-size: 14px;
-}
-.white_space{
-  white-space: nowrap;
-}
+
+

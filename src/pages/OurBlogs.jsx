@@ -84,8 +84,6 @@ export const OurBlogs = () => {
             </div>
      </div>
 
-
-
     </div>
     </div>
   )

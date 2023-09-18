@@ -13,6 +13,7 @@ export default function ProgressMobileStepper({ activeStep }) {
       variant="progress"
       steps={4}
       position="static"
+      color="black"
       activeStep={activeStep}
       sx={{ maxWidth: 2000, flexGrow: 2 }}
     />

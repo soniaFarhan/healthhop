@@ -24,29 +24,16 @@ import Popup2 from "./Popup2";
 
 export const Layout = () => {
 
-  const [isHovered, setIsHovered] = useState(false);
-  const [showLinks, setShowLinks] = useState(false);
 
-  const handleLinkHover = () => {
-    setIsHovered(true);
-    setShowLinks(true);
-  };
-
-  // Add an event handler for when the cursor leaves the link
-  const handleLinkLeave = () => {
-    setIsHovered(false);
-    // You may want to add a delay here to give the user a chance to move their cursor to the list
-    setTimeout(() => {
-      setShowLinks(false);
-    }, 8000); // Adjust the delay as needed
-  };
 
   return (
     <div className="layout">
      
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="/">
+   
+
+    <Link className="navbar-brand ms-5" to="/">
       <div style={{ width: "6rem" }}>
         <img
           src={require("../assets/HighRes_Icon-And-Name.jpg")}
@@ -54,6 +41,7 @@ export const Layout = () => {
         />
       </div>
     </Link>
+    
     <button
       className="navbar-toggler"
       type="button"
@@ -68,8 +56,8 @@ export const Layout = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <NavLink
-            style={{ paddingY: 2, fontSize: '16px' }}
+          <NavLink 
+            style={{ padding:"9px 30px", fontSize: '16px' }}
             className="nav-link"
             exact
             activeClassName="active"
@@ -83,7 +71,7 @@ export const Layout = () => {
         <li className="nav-item">
           <NavLink
             className="nav-link"
-            style={{ fontSize: '16px' }}
+            style={{ fontSize: '16px' , padding:"9px 30px",}}
             exact
             activeClassName="active"
             to="/facilities"
@@ -99,26 +87,105 @@ export const Layout = () => {
             activeClassName="active"
             to="/profession"
             title="Healthcare"
-            style={{ fontSize: '16px' }}
-            onMouseEnter={handleLinkHover}
-            onMouseLeave={handleLinkLeave}
+            style={{ fontSize: '16px' , padding:"9px 30px",}}
+           
           >
             Blogs
           </NavLink>
-          {isHovered && showLinks && (
-        <div>
-          <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
+         
+  
+        </li>
+        <li className="nav-item  dropdown">
+          <NavLink
+            className="nav-link white_space"
+            exact
+            activeClassName="active"
+            to="/profession"
+            title="Healthcare"
+            style={{ fontSize: '16px', padding:"9px 30px", }}
            
-          </ul>
-        </div>
-      )}
+          >
+            Procedures
+          </NavLink>
+          <div className="h">
+
+          <div class="dropdown-content  ">
+            <div className=" main d-flex p-5" style={{backgroundColor:"#07A6A9",borderRadius:"29px"}}>
+
+            <ul className="pb-5 p-2" style={{listStyleType: ""}} >
+              <li className="custom-list-style text-white">
+
+              Hair Transpland
+              </li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      </ul>
+
+                    <ul  className="pb-5 p-2"> 
+                    <li className="custom-list-style text-white">
+
+                            Canser
+              </li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      </ul>
+                    <ul className="pb-5 p-2">
+                    <li className="custom-list-style text-white">
+                    ETC
+</li>
+                    <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      </ul>
+                    <ul  className="pb-5 p-2">
+                    <li className="custom-list-style text-white">
+
+                         ETC
+</li>
+                    <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      </ul>
+                    <ul  className="pb-5 p-2">
+                    <li className="custom-list-style text-white">
+
+              ETC
+              </li>
+                    <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      <li><Link>-Hair Transpland</Link></li>
+                      </ul>
+            </div>
+                    
+                    </div>
+  
+          </div>
         </li>
         
       </ul>
-      <div className="row justify-content-end mx-1">
+      <div className="row justify-content-end mx-1 me-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
         <Popup/>

@@ -161,8 +161,10 @@ border-radius: 20px;
 
 }
 
-nav ul li a:hover {background-color: #07A6A9;
-color: white !important ;  }
+nav ul li .active {background-color: #07A6A9;
+color: white !important ; 
+
+}
 
 /* Style the dropdown container */
 .dropdown-content {
@@ -228,4 +230,7 @@ ul li {text-align: start;}
 /* Hide scrollbar in Firefox */
 .content {
   scrollbar-width: none;
+}
+.maps iframe{
+  pointer-events: none;
 }

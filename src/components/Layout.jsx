@@ -20,7 +20,7 @@ export const Layout = () => {
   return (
     <div className="layout">
      
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light navbg"  style={{backgroundColor:"#012837",color:"white"}}>
   <div className="container-fluid">
    
 

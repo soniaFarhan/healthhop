@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SellIcon from '@mui/icons-material/Sell';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Rating } from '@mui/material';
 import ReactSlider from '../components/ReactSLider';
 import HelpIcon from '@mui/icons-material/Help';
 
-export const Procedure = () => {
+export const LearnMore = () => {
+    const [activeTab, setActiveTab] = useState('Overview');
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+      };
+
     const commentData =[
         {
             name: 'John Doe',
@@ -172,29 +178,36 @@ export const Procedure = () => {
                     </button>
                     </div>
 
-                    <div className='d-flex justify-content-between mt-4' style={{borderBottom:"2px solid"}}>
-                        <p>
+                    <div className='d-flex justify-content-between mt-4' style={{ borderBottom: '2px solid', }}>
+                        <p onClick={() => handleTabClick('Overview')} className={activeTab === 'Overview' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
                             Overview
                         </p>
-                        <p>
-                            Price 
+                        <p onClick={() => handleTabClick('Price')} className={activeTab === 'Price' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
+                            Price
                         </p>
-                        <p>
-                            Location 
+                        <p onClick={() => handleTabClick('Location')} className={activeTab === 'Location' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
+                            Location
                         </p>
-                        <p>
-                            Reviews
+                        <p onClick={() => handleTabClick('Reviews')} className={activeTab === 'Reviews' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
+                        Reviews
                         </p>
+                        <p onClick={() => handleTabClick('Staff')} className={activeTab === 'Staff' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
+                        Medical Staff
+                        </p>
+                        <p onClick={() => handleTabClick('Videos')} className={activeTab === 'Videos' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
+                        Gallery
+                        </p>
+                     </div>
 
-                        <p>
-                            Medical Staff
-                        </p>
+                     {activeTab === 'Overview' && <OverviewComponent />}
+                     {activeTab === 'Price' && <PriceComponent />}
+                     {activeTab === 'Location' && <LocationComponent />}
+                     {activeTab === 'Reviews' && <ReviewsComponent />}
+                     {activeTab === 'Staff' && <MedicalComponent />}
+                     {activeTab === 'Videos' && <GalleryComponent />}
 
-                        <p>
-                            Photo & Videos
-                        </p>
 
-                    </div>
+
 
                     <div className='py-5'>
                         <h3>
@@ -308,7 +321,7 @@ export const Procedure = () => {
                     <div className='py-5'>
 
                     <h3>
-                        photos & Videos
+                    Gallery
                     </h3>
 
                     <div className='my-4 '>
@@ -447,7 +460,7 @@ export const Procedure = () => {
 
                 <div className='my-3'>
                     <h6 className='text-center'>
-                        Prefferred contact method
+                    Preferred contact method
                     </h6>
                     <div className='d-flex justify-content-center gap-3'>
                     <div class="form-check">
@@ -487,3 +500,52 @@ export const Procedure = () => {
     </div>
   )
 }
+
+
+const OverviewComponent = () => {
+  return (
+    <div>
+          <p className='fs_14px'>
+            <p className=''> 
+             Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
+            </p>
+    
+              To better serve the wide-ranging needs of the community, the modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
+             </p>
+    </div>
+  )
+};
+
+const PriceComponent = () => {
+  return (
+    <div>PriceComponent</div>
+  )
+};
+
+
+const LocationComponent = () => {
+  return (
+    <div>LocationComponent</div>
+  )
+};
+
+const ReviewsComponent = () => {
+  return (
+    <div>ReviewsComponent</div>
+  )
+};
+
+const MedicalComponent = () => {
+  return (
+    <div>MedicalComponent</div>
+  )
+};
+
+const GalleryComponent = () => {
+  return (
+    <div>GalleryComponent</div>
+  )
+};
+
+
+

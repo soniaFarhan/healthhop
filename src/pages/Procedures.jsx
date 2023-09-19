@@ -4,62 +4,69 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { Link } from 'react-router-dom';
 
-
-export const HealthJourney = () => {
+export const Procedures = () => {
     const [value, setValue] = useState([20, 37]);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
+  
+  
+      const data = [
+          {
+              name: "Anadulo Medical Center 1",
+              procedure: "Hair Transplant",
+              description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
+              price: "$12000 USD - $35000",
+              reviews: 5,
+              defaultValue: 4
+            },
+            {
+              name: "Anadulo Medical Center 2",
+              procedure: "Cosmetic Surgery",
+              description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
+              price: "$8000 USD - $25000",
+              reviews: 4,
+              defaultValue: 3
+            },
+            {
+              name: "Anadulo Medical Center 3",
+              procedure: "Dental Implants",
+              description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
+              price: "$5000 USD - $15000",
+              reviews: 3,
+              defaultValue: 5
+            },
+            {
+              name: "Anadulo Medical Center 4",
+              procedure: "LASIK Eye Surgery",
+              description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
+              price: "$3000 USD - $8000",
+              reviews: 5,
+              defaultValue: 4
+            }
+  ]
 
-
-    const data = [
-        {
-            name: "Anadulo Medical Center 1",
-            procedure: "Hair Transplant",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
-            price: "$12000 USD - $35000",
-            reviews: 5,
-            defaultValue: 4
-          },
-          {
-            name: "Anadulo Medical Center 2",
-            procedure: "Cosmetic Surgery",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
-            price: "$8000 USD - $25000",
-            reviews: 4,
-            defaultValue: 3
-          },
-          {
-            name: "Anadulo Medical Center 3",
-            procedure: "Dental Implants",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
-            price: "$5000 USD - $15000",
-            reviews: 3,
-            defaultValue: 5
-          },
-          {
-            name: "Anadulo Medical Center 4",
-            procedure: "LASIK Eye Surgery",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam nemo aperiam tenetur, corrupti quia non sit enim unde eos illum doloremque ex eveniet esse incidunt iste? Vero, perspiciatis nulla.",
-            price: "$3000 USD - $8000",
-            reviews: 5,
-            defaultValue: 4
-          }
-]
-    const defaultValue = 4;
+      const defaultValue = 4;
   return (
     <div>
-        <div  className='container py-5'>
-        <h3>
-            Medical Providers Picked for you
-        </h3>
-        <p className='fs_14px'>
-            We've picked the top medical providers for your procedure. We only work with <br />
-            the best of the best to ensure top-care and safety from the beginning of your <br />
-            journey until the end.
-        </p>
-        <div className='row'>
+        <div className='container pt-3'>
+        <div className='procedure_background_img d-flex justify-content-center align-items-center'>
+            <h2 className='text-white'>
+              Procedures
+            </h2>
+        </div>
+
+        <div className='py-5'>
+            <h3>
+                Medical Providers Picked for you
+            </h3>
+            <p className='fw-bold'>
+            We've picked the top medical providers for your procedure. We only work with the best of the best to ensure top-care and safety from <br />
+             the beginning of your journey until the end."
+            </p>
+
+            <div className='row'>
             <div className="col-md-6 " style={{height:"auto"}}>
             {data.map((data, index)=>(
                     <div className='d-flex align-items-center gap-1 justify-content-between flex-column flex-md-row shadow rounded-4 p-2 mb-3'>
@@ -76,7 +83,7 @@ export const HealthJourney = () => {
                         {data.name}
                         </h5>
 
-                        <Link to={'/procedure'}>
+                        <Link>
                         <button className='btn_yellow btn rounded-pill py-0 fs_10px'>
                            {data.procedure}
                         </button>
@@ -106,7 +113,7 @@ export const HealthJourney = () => {
     
                         <div>
                             <div className='mb-3'>
-                                <Link to={'/instatnt-booking'}>
+                                <Link>
                                     <button className='btn btn_light rounded-pill border fs_10px'>
                                         Instant Quote and booking
                                     </button>
@@ -114,7 +121,7 @@ export const HealthJourney = () => {
                             </div>
     
                             <div>
-                                <Link to={'/learn-more'}>
+                                <Link>
                                     <button className='btn btn_green rounded-pill fs_10px'>
                                         Learn More and Contact Us   
                                     </button>
@@ -201,15 +208,21 @@ export const HealthJourney = () => {
                             Select min and max price range
                         </p>
 
-                        <Box sx={{ width: 250 }}>
-                    <Slider
-                        getAriaLabel={() => "Temperature range"}
-                        value={value}
-                        onChange={handleChange}
-                        valueLabelDisplay="auto"
-                        // getAriaValueText={valuetext}
-                    />
-                 </Box>
+                        <Box className="" sx={{ width: 250 }}>
+                            <Slider
+                                getAriaLabel={() => "Temperature range"}
+                                value={value}
+                                onChange={handleChange}
+                                valueLabelDisplay="auto"
+                                // getAriaValueText={valuetext}
+                            />
+
+                    </Box>
+                    <div className='my-3'>
+                            <button className='btn btn_green rounded-pill px-4'>
+                                Search
+                            </button>
+                    </div>
 
 
                     </div>
@@ -220,6 +233,11 @@ export const HealthJourney = () => {
 
 
             </div>
+
+        </div>
+
+
+
 
         </div>
 

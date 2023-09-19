@@ -5,9 +5,10 @@ import { Home } from './pages/Home';
 import { ContactUs } from './pages/ContactUs';
 import { OurBlogs } from './pages/OurBlogs';
 import {HealthJourney} from './pages/HealthJourney.jsx'
-import { Procedure } from './pages/Procedure';
+import { LearnMore } from './pages/LearnMore';
 import InstantBooking from './pages/InstantBooking';
 import { PaymentMethod } from './pages/PaymentMethod';
+import { Procedures } from './pages/Procedures';
 
 
 
@@ -19,7 +20,8 @@ function App() {
         <Route path='/heath-journey'  element={<HealthJourney/>} />
         <Route path='/contact-us' element={<ContactUs/>} />  
         <Route path='/blogs' element={<OurBlogs/>} /> 
-        <Route path='/procedure' element={<Procedure/>} />  
+        <Route path='/learn-more' element={<LearnMore/>} />  
+        <Route path='/procedure' element={<Procedures/>} />
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
       </Route>

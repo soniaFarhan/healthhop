@@ -64,6 +64,10 @@
   padding-bottom: 6rem; 
 }
 
+.active-tab {
+  color: #07a6a9; 
+}
+
 /* utility classes end  */
 
 .home_background_img {
@@ -91,6 +95,18 @@
     background-position: center;
     border-radius: 50px !important;
 }
+
+.procedure_background_img {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(rgba(83, 171, 177, 0.6), rgba(83, 171, 177, 0.6)), url(./assets/procrdure.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px !important;
+}
+
+
+
 
 .card-img-overlay {
   background-color: rgba(#000, 0.4);
@@ -152,7 +168,7 @@ list-style: none;
 }
 
 nav ul li a {
-  color: white;
+  color: white  !important; 
   text-decoration: none;
 border-radius: 20px;
 

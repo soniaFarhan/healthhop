@@ -40,6 +40,7 @@ function Popup () {
    
       <button onClick={() => setModalShow(true)} className="btn btn_light rounded-pill">
             <MedicalServices />
+            
             Medical Provider
           </button>
 

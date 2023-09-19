@@ -65,8 +65,8 @@ export const Layout = () => {
             style={{ fontSize: '16px' , padding:"9px 30px",}}
             exact
             activeClassName="active"
-            to="/facilities"
-            title="Facilities"
+            to="/contact-us"
+            title="Contact-us"
           >
             Contact Us
           </NavLink>
@@ -76,12 +76,12 @@ export const Layout = () => {
             className="nav-link white_space"
             exact
             activeClassName="active"
-            to="/profession"
-            title="Healthcare"
+            to="/blogs"
+            title="Articles"
             style={{ fontSize: '16px' , padding:"9px 30px",}}
            
           >
-            Blogs
+            Articles
           </NavLink>
          
   
@@ -91,8 +91,8 @@ export const Layout = () => {
             className="nav-link white_space"
             exact
             activeClassName="active"
-            to="/profession"
-            title="Healthcare"
+            to="/procedure"
+            title="Procedure"
             style={{ fontSize: '16px', padding:"9px 30px", }}
            
           >
@@ -173,6 +173,21 @@ export const Layout = () => {
                     </div>
   
           </div>
+        </li>
+        <li className="nav-item">
+          <NavLink
+            className="nav-link white_space"
+            exact
+            activeClassName="active"
+            to="/blogs"
+            title="Articles"
+            style={{ fontSize: '16px' , padding:"9px 30px",}}
+           
+          >
+           About Us
+          </NavLink>
+         
+  
         </li>
         
       </ul>

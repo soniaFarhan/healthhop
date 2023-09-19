@@ -11,7 +11,7 @@ export default function ProgressMobileStepper({ activeStep }) {
   return (
     <MobileStepper
       variant="progress"
-      steps={4}
+      steps={7}
       position="static"
       color="black"
       activeStep={activeStep}

@@ -313,15 +313,20 @@ export const Home = () => {
               >
                 <div className="me-5" style={{ width: "30%" }}>
                   <h3 style={{ color: "white" }}>
-                    Loremaccus consequatur recusandae. Quis corporis .
+                  Get the <br />
+Best <br />
+Medical <br />
+Care for <br />
+Your Needs
                   </h3>
                 </div>
                 <div className="" style={{ width: "70%" }}>
                   <p style={{ color: "white" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere quisquam quam sequi, consequuntur amet sapiente
-                    doloremque dolor, nam, ea doloribus harum ipsum maiores
-                    suscipit distinctio fugit possimus obcaecati quas laborum.
+                  HealthHop is a centralized, all-in-one medical tourism application that allows you to
+book your medical procedures, transportation, and accommodation logistics in
+another city, country or overseas. Our app is easy to use and provides a personalized
+experience to make your medical journey as stress-free as possible. Download the
+app today and start exploring your options.
                   </p>
                 </div>
               </div>
@@ -475,8 +480,9 @@ export const Home = () => {
               style={{ color: "#939393", fontSize: "11px" }}
             >
               <p>
-                We collect reviews from our usersso you can get an honest
-                opinion of what{" "}
+               
+Health-Tourism.com is a medical tourism guide and a directory
+ <br /> of medical centers,
               </p>
               <p></p>
             </div>
@@ -501,11 +507,10 @@ export const Home = () => {
                   </div>
                   <h2>Book Your Procedure</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt voluptates molestias magnam inventore quas nobis
-                    deserunt necessitatibus dolor quae quisquam. Minus
-                    exercitationem doloribus nam omnis labore dolores amet
-                    consequatur consectetur!
+                  Simply browse our selection of medical providers and services and book a consultation
+with the one that best meets your needs. Our app provides detailed information on each
+procedure to help you make an informed decision.
+
                   </p>
                 </div>
               
@@ -521,19 +526,21 @@ export const Home = () => {
             </div>
                 </div>
               </div>
-              <div className=" d-md-flex p-lg-5 mx-lg-5">
+              <div className=" row p-xl-5 mx-xl-5">
 
               
                 <div className="col-md-5">
             
 
-                    <img
-                        className="mx-auto"
-                        src={require("../../src/assets/Image 5.png")}
-                        alt="Card image"
-                        width={"100vw"}
-                      />
-           
+                <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
+
+<img
+    className="mx-auto"
+    src={require("../../src/assets/Image 5.png")}
+    alt="Card image"
+    style={{ width: "100%",  }}
+  />
+</div>
                 </div>
 
 
@@ -550,13 +557,12 @@ export const Home = () => {
                       02
                     </h4>
                   </div>
-                  <h2>Book Your Procedure</h2>
+                  <h2>Transportation & Accommodation</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt voluptates molestias magnam inventore quas nobis
-                    deserunt necessitatibus dolor quae quisquam. Minus
-                    exercitationem doloribus nam omnis labore dolores amet
-                    consequatur consectetur!
+                  Once you have booked your procedure, our providers can even help you take care
+of your transportation and accommodation logistics. Need to be picked up from the
+airport? No problem. Transportation from your hotel and clinic can be arranged
+with ease.
                   </p>
                 </div>
               </div>
@@ -574,13 +580,14 @@ export const Home = () => {
                       03
                     </h4>
                   </div>
-                  <h2>Book Your Procedure</h2>
+                  <h2>
+Travel!
+</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt voluptates molestias magnam inventore quas nobis
-                    deserunt necessitatibus dolor quae quisquam. Minus
-                    exercitationem doloribus nam omnis labore dolores amet
-                    consequatur consectetur!
+                  Once you have selected your procedure and provider, a package will be offered to you.
+This could include procedure, accomodation, pickup logistics and more. Once you accept
+and pay through our secure online portal, you are ready to travell
+
                   </p>
                 </div>
               
@@ -596,17 +603,17 @@ export const Home = () => {
             </div>
                 </div>
               </div>
-              <div className=" d-md-flex p-5 mx-md-5">
+              <div className=" row p-xl-5 mx-xl-5">
 
               
 <div className="col-md-5">
-<div className="mx-auto d-flex justify-content-center">
+<div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
 
     <img
         className="mx-auto"
         src={require("../../src/assets/Image 5.png")}
         alt="Card image"
-        style={{ width: "370px",  }}
+        style={{ width: "100%",  }}
       />
 </div>
 </div>
@@ -614,7 +621,7 @@ export const Home = () => {
 
 <div className="col-md-7 p-0">
   <div
-    className=""
+    className="mx-auto d-flex justify-content-center"
     style={{
       backgroundColor: "#07A6A9",
       width: "50px",
@@ -625,13 +632,14 @@ export const Home = () => {
       04
     </h4>
   </div>
-  <h2>Book Your Procedure</h2>
+  <h2> Sightsee!</h2>
   <p className="" style={{ fontSize: "12px" }}>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Incidunt voluptates molestias magnam inventore quas nobis
-    deserunt necessitatibus dolor quae quisquam. Minus
-    exercitationem doloribus nam omnis labore dolores amet
-    consequatur consectetur!
+ 
+Have extra time before or after your medical procedure and want to sightsee? Our
+
+team can help you plan activities or give you recommendations on places to see,
+
+the local cuisine, and more!
   </p>
 </div>
 </div>
@@ -721,22 +729,28 @@ export const Home = () => {
         </div>
 
               <div
-                className=" px-md-5 d-md-flex justify-content-between"
+                className=" row px-md-5 "
                 style={{ paddingBottom: "140px", paddingTop: "50px" }}
               >
                
-                <div className="px-3" style={{ width: "60%" }}>
+                <div className="px-3  col-md-7 " >
                   <h4 className="px-3" style={{ color: "white" }}>Our Mission</h4>
                   <p className="px-3" style={{ color: "white" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere quisquam quam sequi, consequuntur amet sapiente
-                    doloremque dolor, nam, ea doloribus harum ipsum maiores
-                    suscipit distinctio fugit possimus obcaecati quas laborum.
+                  At HealthHop, we believe that everyone should have access to affordable and quality medical
+care. Our mission is to make safe and affordable medical care accessible to anyone by providing
+a centralized, all-in-one application that streamlines the booking process.
                   </p>
+                  <p className="px-3" style={{ color: "white" }}>
+                  At HealthHop, we believe that everyone should have access to affordable and quality medical
+care. Our mission is to make safe and affordable medical care accessible to anyone by providing
+a centralized, all-in-one application that streamlines the booking process.
+                  </p>
+
+
                 </div>
-                <div className="me-5" style={{ width: "40%" }}>
+                <div className=" col-md-5 my-auto " >
                   <h3 style={{ color: "white" }}>
-                    Loremaccus consequatur recusandae. Quis corporis .
+                  <img src={require("../assets/md-3.png")} width={"100%"} alt="" />
                   </h3>
                 </div>
               </div>
@@ -758,7 +772,7 @@ export const Home = () => {
               
             }}
           >
-           About HealthHop
+          Contact Us
           </h3>
         </div>
 

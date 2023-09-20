@@ -68,6 +68,9 @@
   color: #07a6a9; 
 }
 
+.text_color{
+  color: #39B7BA !important;
+}
 /* utility classes end  */
 
 .home_background_img {

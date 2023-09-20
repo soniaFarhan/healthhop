@@ -174,7 +174,7 @@ export const Layout = () => {
   
           </div>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink
             className="nav-link white_space"
             exact
@@ -188,7 +188,7 @@ export const Layout = () => {
           </NavLink>
          
   
-        </li>
+        </li> */}
         
       </ul>
       <div className="row justify-content-end mx-1 me-5">

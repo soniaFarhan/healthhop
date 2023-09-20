@@ -37,9 +37,10 @@ function Popup () {
 
   return (
     <>
-   
+   <div className=" d-flex justify-content-between aling-items-center">
+
       <button onClick={() => setModalShow(true)} className="btn btn_light rounded-pill">
-            <MedicalServices />
+            <MedicalServices  className='my-auto'/>
             
             Medical Provider
           </button>
@@ -47,7 +48,8 @@ function Popup () {
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
-      />
+        />
+        </div>
     </>
   );
 }

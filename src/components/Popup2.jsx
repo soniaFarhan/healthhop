@@ -113,7 +113,7 @@ function MyVerticallyCenteredModal(props) {
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
           />
         </div>
       ),
@@ -127,7 +127,7 @@ function MyVerticallyCenteredModal(props) {
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
           />
         </div>
       ),
@@ -168,7 +168,114 @@ function MyVerticallyCenteredModal(props) {
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
+          />
+        </div>
+      ),
+      heading: (
+        <h6>
+        Choose the Language, you want to provide <br />your services in 
+        </h6>
+      ),
+      checkbox: (
+        <div className="scroll-container">
+          <div className="content">
+            <div class="form-check my-4 ">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                English
+              </label>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+              Spanish
+              </label>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+               Turkey
+              </label>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Urdu
+              </label>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Hindi
+              </label>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Persian
+              </label>
+            </div>
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+              Arabic
+              </label>
+            </div>
+            <hr />
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 4,
+      logo: (
+        <div className="my-4">
+          <img
+            src={require("../assets/Flag_of_Turkey.png")}
+            alt=""
+            width={"60px"}
           />
         </div>
       ),
@@ -270,13 +377,14 @@ function MyVerticallyCenteredModal(props) {
       ),
     },
 
+
     {
       logo: (
         <div className="my-4">
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
           />
         </div>
       ),
@@ -289,27 +397,22 @@ function MyVerticallyCenteredModal(props) {
               Let's set up the Procedures your clinic provides! We will add
               these one at a time. so let's add the first <br /> procedure here{" "}
             </h6>{" "}
-            ,
+            
+          
             <TextField
               id="outlined-basic"
-              label=" Upload Image"
-              variant="outlined"
-              style={{ width: "100%" }}
-            />
-            <TextField
-              id="outlined-basic"
-              label="Mesical Staff Frist Name"
+              label="Choose category"
               variant="outlined"
               style={{ width: "100%" }}
             />
             <TextField  
               id="outlined-basic"
-              label=" Categroy name"
+              label=" Choose Sub-category"
               variant="outlined"
               style={{ width: "100%" }}
             />
             <textarea
-              style={{ fontSize: "9px" }}
+              style={{ fontSize: "12px",height:"150px" }}
               class="form-control"
               placeholder="Discription "
               id="exampleFormControlTextarea1"
@@ -347,24 +450,24 @@ function MyVerticallyCenteredModal(props) {
          </div>
             </div>
 
-       <div className="d-flex ">
+       <div className="d-flex gap-2 ">
            <div className="">
            <TextField
               id="outlined-basic"
-              label=" Upload Image"
+              label=" Min"
               variant="outlined"
               style={{ width: "100%" }}
             />
          
            </div>
-           <div className=""></div>
-
-           <TextField
+           <div className="">  <TextField
               id="outlined-basic"
-              label="Mesical Staff Frist Name"
+              label="Max"
               variant="outlined"
               style={{ width: "100%" }}
-            />
+            /></div>
+
+         
        </div>
           </div>
         </div>
@@ -377,7 +480,7 @@ function MyVerticallyCenteredModal(props) {
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
           />
         </div>
       ),
@@ -406,7 +509,7 @@ function MyVerticallyCenteredModal(props) {
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
           />
         </div>
       ),
@@ -429,7 +532,7 @@ function MyVerticallyCenteredModal(props) {
           <img
             src={require("../assets/Flag_of_Turkey.png")}
             alt=""
-            width={"40px"}
+            width={"60px"}
           />
         </div>
       ),
@@ -515,11 +618,14 @@ function MyVerticallyCenteredModal(props) {
           style={{ width: "100%" }}
           id="contained-modal-title-vcenter"
         >
-          <div style={{}} className="text-center d-flex ms-5  ps-5">
+          <div style={{marginLeft:"80px"}} className="text-center d-flex   ps-5 " >
             {data[activeStep] === data[0] ? (
               ""
             ) : (
-              <ProgressMobileStepper activeStep={activeStep} />
+       
+
+                <ProgressMobileStepper activeStep={activeStep} />
+            
             )}
 
             <div className="me-5">{data[activeStep].logo}</div>

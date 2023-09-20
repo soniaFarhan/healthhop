@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const OurBlogs = () => {
+  const [expandedPosts, setExpandedPosts] = useState([]);
+
+  const toggleExpand = (index) => {
+    setExpandedPosts((prevExpandedPosts) => {
+      const newExpandedPosts = [...prevExpandedPosts];
+      newExpandedPosts[index] = !newExpandedPosts[index];
+      return newExpandedPosts;
+    });
+  };
 
     const cardData = [
         {
@@ -27,38 +36,40 @@ export const OurBlogs = () => {
           date: "9/12/2024 11:21 PM",
           imageSrc: require("../assets/blog-card-5.png"),
         },
-
-        
-        {
-          title: "Blog Title 1",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-4.png"),
-        },
-        {
-          title: "Blog Title 1",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-1.png"),
-        },
-        {
-          title: "Blog Title 1",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-5.png"),
-        },
-        {
-          title: "Blog Title 1",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-3.png"),
-        },
       ];
+
+      const blogPosts = [
+        {
+          title: "Understanding Common Cold Symptoms",
+          description:
+            "Learn about the symptoms of the common cold, including sneezing, runny nose, and congestion. Discover tips for prevention and treatment.",
+        },
+        {
+          title: "Benefits of Regular Exercise for Heart Health",
+          description:
+            "Explore the positive impact of regular exercise on heart health. Find out how staying active can reduce the risk of cardiovascular diseases.",
+        },
+        {
+          title: "Nutrition Tips for a Balanced Diet",
+          description:
+            "Discover essential nutrition tips for maintaining a balanced diet. Learn about the importance of including fruits, vegetables, and lean proteins in your meals.",
+        },
+        {
+          title: "Managing Stress for Mental Well-being",
+          description:
+            "Learn effective strategies for managing stress and promoting mental well-being. Explore relaxation techniques and mindfulness practices.",
+        },
+      
+      ];
+      
+      
+      
+      
       
   return (
     <div>
 
-    <div className='container pt-3'>
+    <div className='container pt-5'>
         <div className='blog_background_img d-flex justify-content-center align-items-center'>
             <h2 className='text-white'>
                Our Blogs
@@ -66,13 +77,12 @@ export const OurBlogs = () => {
         </div>
 
         <div className="container">
-            <div className="row">
+            <div className="row my-5">
+              <div className='col-md-7 d-flex flex-wrap justify-content-center'>
                 {cardData.map((card, index) => (
-                <div key={index} className="col-12 col-sm-8 col-md-6 col-lg-3">
+                <div key={index} className="col-12 col-sm-8 col-md-6 col-lg-5">
                     <div className="card border-0">
-                   
                       <img width={"100%"} className="card-img img-fluid" src={card.imageSrc} alt={`card image ${index}`} />
-                    
                     <div className="card-img-overlay text-white d-flex flex-column justify-content-center px-5">
                         <h5 className="card-title">{card.title}</h5>
                         <p className="card-text fs_14px">{card.description}</p>
@@ -81,6 +91,42 @@ export const OurBlogs = () => {
                     </div>
                 </div>
                 ))}
+              </div>
+
+              <div className='col-md-5 '>
+                <h5 className='fw-bold'>
+                  Recent articles
+                </h5>
+                <div className='shadow p-4 rounded-5'>
+
+                <div>
+                  {blogPosts.map((post, index) => (
+                    <div className='p-3 border rounded-4 my-2' key={index} style={{backgroundColor:'#FAFAFA'}}>
+                      <h6 className='text_color'>{post.title}</h6>
+                      <div>
+                      <p className='fs_14px'>
+                        {expandedPosts[index]
+                          ? <p className='mb-0'>{post.description}</p>
+                          : <p className='mb-0'>{post.description.slice(0, 50)}...</p>
+                        }
+                        <span
+                          className='text_color'
+                          onClick={() => toggleExpand(index)}
+                          style={{ cursor: 'pointer', color: 'blue' }}
+                        >
+                          {expandedPosts[index] ? 'Read Less' : 'Read More'}
+                        </span>
+                      </p>
+                    </div>
+                    </div>
+                  ))}
+              </div>
+
+                </div>
+
+              </div>
+
+
             </div>
      </div>
 

@@ -9,6 +9,14 @@ import { LearnMore } from './pages/LearnMore';
 import InstantBooking from './pages/InstantBooking';
 import { PaymentMethod } from './pages/PaymentMethod';
 import { Procedures } from './pages/Procedures';
+import DashboardLayout from './sidenav/DashboardLayout';
+import { Inquiries } from './Dashboard/Inquiries';
+import { ConfirmedBooking } from './Dashboard/ConfirmedBooking';
+import { Packges } from './Dashboard/Packges';
+import { Calendar } from './Dashboard/Calendar';
+import { Message } from './Dashboard/Message';
+import { Inovice } from './Dashboard/Inovice';
+import { BusinessProfile } from './Dashboard/BusinessProfile';
 
 
 
@@ -25,6 +33,19 @@ function App() {
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
       </Route>
+
+      <Route element={<DashboardLayout/>}>
+        <Route path='/inquiries' element={<Inquiries/>}/>
+        <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
+        <Route path='/packages' element={<Packges/>}/>
+        <Route path='/calendar' element={<Calendar/>}/>
+        <Route path='/message' element={<Message/>}/>
+        <Route path='/inovice' element={<Inovice/>}/>
+        <Route path='/business-profile' element={<BusinessProfile/>}/>
+
+      </Route>
+
+
     </Routes>
 
 

@@ -3,7 +3,7 @@ import SendIcon from '@mui/icons-material/Send';
 export const ContactUs = () => {
   return (
     <div>
-        <div className='container pt-3'>
+        <div className='container pt-5'>
         <div className='contact_background_img d-flex justify-content-center align-items-center'>
             <h2 className='text-white'>
                 Contact Us

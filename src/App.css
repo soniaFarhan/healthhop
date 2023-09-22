@@ -90,6 +90,17 @@
     border-radius: 50px !important;
 }
 
+.bp-img{
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(rgba(9, 10, 10, 0.6), rgba(9, 10, 10, 0.6)), url(./assets/blogs.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px !important;
+
+}
+
+
 .blog_background_img {
     height: 350px;
     width: 100%;

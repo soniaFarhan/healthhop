@@ -6,8 +6,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
-import { Avatar,Container, Grid, Paper, TextField } from "@mui/material";
-import { MedicalServicesOutlined,} from "@mui/icons-material";
+import { Avatar, Container, Grid, Paper, Rating, TextField } from "@mui/material";
+import { Lock, MedicalServicesOutlined, Person } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -45,46 +45,92 @@ export const Home = () => {
     },
   ];
 
-
-
   const cardchatData = [
-  
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
+      name:"Abbas A",
+      reviews: 5,
+      defaultValue:" 5.00/5.00",
+      name2:"Adam johens",
       title:
         "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
+      name2:"Adam johens",
+      name:"Abbas A",
+      reviews: 5,
+      defaultValue: "5.00/5.00",
       title:
         "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
     {
       icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
+      name2:"Adam johens",
+      name:"Abbas A",
+      reviews: 5,
+      defaultValue:"5.00/5.00",
       title:
         "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
   ];
 
-
   const card = [
     {
-      icon: <MedicalServicesOutlined  style={{backgroundColor:"#07A6A9",width:"70px",height:"70px",color:"white",borderRadius:"10px",fontSize:"10px",padding:"14px"}} />,
-      title:
-        "cancer     Lorem, ipsum dolor sits quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
-    },
-    {
-      icon: <MedicalServicesOutlined  style={{backgroundColor:"#07A6A9",width:"70px",height:"70px",color:"white",borderRadius:"10px",fontSize:"10px",padding:"14px"}} />,
-      title:
-        "cancer     Lorem, ipsum dolor sit amet co eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
-    },
-    {
-      icon: <MedicalServicesOutlined  style={{backgroundColor:"#07A6A9",width:"70px",height:"70px",color:"white",borderRadius:"10px",fontSize:"10px",padding:"14px"}} />,
-      title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
-    },
-    
+      icon: (
+        <MedicalServicesOutlined
+          style={{
+            backgroundColor: "#07A6A9",
+            width: "70px",
+            height: "70px",
+            color: "white",
+            borderRadius: "10px",
+            fontSize: "10px",
+            padding: "14px",
+          }}
+        />
+      ),
+      name:"Fast and Secure Booking",
 
+      title:
+        "Our app provides an effiecent booking process and airtight security to ensure your medical journey is as smooth as possible.",
+    },
+    {
+      icon: (
+        <Person
+          style={{
+            backgroundColor: "#07A6A9",
+            width: "70px",
+            height: "70px",
+            color: "white",
+            borderRadius: "10px",
+            fontSize: "10px",
+            padding: "14px",
+          }}
+        />
+      ),
+      name:"24/7 Online Support",
+      title:
+        "Our team is available around the clock to provide you with customer support and answer any questions you may have.",
+    },
+    {
+      icon: (
+        <Lock
+          style={{
+            backgroundColor: "#07A6A9",
+            width: "70px",
+            height: "70px",
+            color: "white",
+            borderRadius: "10px",
+            fontSize: "10px",
+            padding: "14px",
+          }}
+        />
+      ),
+      name:"Customized Packages",
+      title:
+        "Our partnered medical providers offer personalized packages to meet your unique medical and  logistical needs. Our app allows us to create   customized packages tailored to your budget and preferences.",
+    },
   ];
 
   const cardketData = [
@@ -113,6 +159,8 @@ export const Home = () => {
       title: "cancer Treatment",
     },
   ];
+
+  const defaultValue =5
 
   return (
     <div>
@@ -179,10 +227,10 @@ export const Home = () => {
                 </Box>
 
                 <div className="pt-5">
-                  <Link to={'/heath-journey'}>
-                  <button className="btn btn_green w-100 rounded-pill">
-                    Start Your Health Journey
-                  </button>
+                  <Link to={"/heath-journey"}>
+                    <button className="btn btn_green w-100 rounded-pill">
+                      Start Your Health Journey
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -313,20 +361,22 @@ export const Home = () => {
               >
                 <div className="me-5" style={{ width: "30%" }}>
                   <h3 style={{ color: "white" }}>
-                  Get the <br />
-Best <br />
-Medical <br />
-Care for <br />
-Your Needs
+                    Get the <br />
+                    Best <br />
+                    Medical <br />
+                    Care for <br />
+                    Your Needs
                   </h3>
                 </div>
                 <div className="" style={{ width: "70%" }}>
                   <p style={{ color: "white" }}>
-                  HealthHop is a centralized, all-in-one medical tourism application that allows you to
-book your medical procedures, transportation, and accommodation logistics in
-another city, country or overseas. Our app is easy to use and provides a personalized
-experience to make your medical journey as stress-free as possible. Download the
-app today and start exploring your options.
+                    HealthHop is a centralized, all-in-one medical tourism
+                    application that allows you to book your medical procedures,
+                    transportation, and accommodation logistics in another city,
+                    country or overseas. Our app is easy to use and provides a
+                    personalized experience to make your medical journey as
+                    stress-free as possible. Download the app today and start
+                    exploring your options.
                   </p>
                 </div>
               </div>
@@ -432,27 +482,62 @@ app today and start exploring your options.
                       color: "#939393",
                     }}
                   >
-                    <div className="  d-flex   p-4">
-                      <div className="px-2 py-5 card-content">{e.icon}</div>
+                    <div>
+
+                  
+                    <div className="  d-flex   p-4 pb-0">
+                      <div className="px-2  card-content">
+
+                       
+                        {e.icon}
+                      
+                      
+                      </div>
+                       <div className="">
+                        <div className="d-flex aling-items-center  card-content justify-content-between mb-1">
+                       <h6 className="my-auto" style={{color:"black"}}>{e.name}</h6>
+                        <div className="" style={{width:"3rem"}}>
+                          <img src={require("../assets/Flag_of_Turkey.png")} width={"100%"} alt="" />
+                        </div>
+
+                        </div>
 
                       <p
-                        className="mb-0 p-3 card-content p-3 py-3 "
+                        className="mb-0  card-content p-3 py-3   ps-0 pt-0 pb-0"
                         style={{ fontSize: "12px" }}
                       >
+
+
                         {e.title}
                       </p>
+
+                            <div className='d-flex  align-items-center gap-2'>
+                            <Rating className='mb-0' name="size-medium" defaultValue = {defaultValue} /> 
+                            <span className='' style={{fontSize:"12px"}}>  
+                            {e.defaultValue}  </span>
+                            </div>
+                       </div>
+
                     </div>
+                       <div className="text-center fw-bold pt-3 pb-2" style={{fontSize:"12px"}}>
+                        <div>
+
+                        <p className="mb-0">This patiend was treated for 
+                        </p>
+                      <p className="color">  Hair Transplant  </p> 
+                        </div>
+                       
+
+                       </div>
+                       </div>
                   </div>
                   <div className="text-center">
-                    <Avatar 
+                    <Avatar style={{padding:"40px"}}
                       className="mx-auto mt-4"
                       alt="Travis Howard"
                       src="/static/images/avatar/2.jpg"
                     />
-                        <h5>
-
-                    Adam johens
-                        </h5>
+                    <h6>{e.name2}</h6>
                   </div>
                 </Grid>
               ))}
@@ -461,8 +546,8 @@ app today and start exploring your options.
         </Box>
       </section>
 
-      <section className="mx-lg-5" >
-        <div className="mx-lg-5 "  >
+      <section className="mx-lg-5">
+        <div className="mx-lg-5 ">
           <div className="bg1 ">
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
               <h2
@@ -480,15 +565,11 @@ app today and start exploring your options.
               style={{ color: "#939393", fontSize: "11px" }}
             >
               <p>
-               
-Health-Tourism.com is a medical tourism guide and a directory
- <br /> of medical centers,
+                Health-Tourism.com is a medical tourism guide and a directory
+                <br /> of medical centers,
               </p>
               <p></p>
             </div>
-
-
-
 
             <div className=" m-5">
               <div className=" d-md-flex p-lg-5 mx-lg-5">
@@ -507,42 +588,35 @@ Health-Tourism.com is a medical tourism guide and a directory
                   </div>
                   <h2>Book Your Procedure</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                  Simply browse our selection of medical providers and services and book a consultation
-with the one that best meets your needs. Our app provides detailed information on each
-procedure to help you make an informed decision.
-
+                    Simply browse our selection of medical providers and
+                    services and book a consultation with the one that best
+                    meets your needs. Our app provides detailed information on
+                    each procedure to help you make an informed decision.
                   </p>
                 </div>
-              
-                <div className="col-lg-5">
-            <div className="mx-auto d-flex justify-content-center" >
 
+                <div className="col-lg-5">
+                  <div className="mx-auto d-flex justify-content-center m-sm-5 p-sm-5">
                     <img
-                        className="mx-auto"
-                        src={require("../../src/assets/Image 4.png")}
-                        alt="Card image"
-                        style={{ width: "180px",  }}
-                      />
-            </div>
+                      className="mx-auto"
+                      src={require("../../src/assets/Image 4.png")}
+                      alt="Card image"
+                      style={{ width: "150px" }}
+                    />
+                  </div>
                 </div>
               </div>
               <div className=" row p-xl-5 mx-xl-5">
-
-              
                 <div className="col-md-5">
-            
-
-                <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
-
-<img
-    className="mx-auto"
-    src={require("../../src/assets/Image 5.png")}
-    alt="Card image"
-    style={{ width: "100%",  }}
-  />
-</div>
+                  <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
+                    <img
+                      className="mx-auto"
+                      src={require("../../src/assets/Image 5.png")}
+                      alt="Card image"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
                 </div>
-
 
                 <div className="col-md-7 p-0">
                   <div
@@ -559,14 +633,15 @@ procedure to help you make an informed decision.
                   </div>
                   <h2>Transportation & Accommodation</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                  Once you have booked your procedure, our providers can even help you take care
-of your transportation and accommodation logistics. Need to be picked up from the
-airport? No problem. Transportation from your hotel and clinic can be arranged
-with ease.
+                    Once you have booked your procedure, our providers can even
+                    help you take care of your transportation and accommodation
+                    logistics. Need to be picked up from the airport? No
+                    problem. Transportation from your hotel and clinic can be
+                    arranged with ease.
                   </p>
                 </div>
               </div>
-              <div className=" d-md-flex p-5 mx-md-5">
+              <div className=" d-md-flex p-md-5 mx-md-5">
                 <div className="col-md-7 p-0">
                   <div
                     className=""
@@ -580,74 +655,65 @@ with ease.
                       03
                     </h4>
                   </div>
-                  <h2>
-Travel!
-</h2>
+                  <h2>Travel!</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                  Once you have selected your procedure and provider, a package will be offered to you.
-This could include procedure, accomodation, pickup logistics and more. Once you accept
-and pay through our secure online portal, you are ready to travell
-
+                    Once you have selected your procedure and provider, a
+                    package will be offered to you. This could include
+                    procedure, accomodation, pickup logistics and more. Once you
+                    accept and pay through our secure online portal, you are
+                    ready to travell
                   </p>
                 </div>
-              
-                <div className="col-md-5">
-            <div className="mx-auto d-flex justify-content-center">
 
+                <div className="col-md-5">
+                  <div className="mx-auto d-flex justify-content-center">
                     <img
-                        className="mx-auto"
-                        src={require("../../src/assets/Image 4.png")}
-                        alt="Card image"
-                        style={{ width: "200px",  }}
-                      />
-            </div>
+                      className="mx-auto"
+                      src={require("../../src/assets/Image 4.png")}
+                      alt="Card image"
+                      style={{ width: "150px" }}
+                    />
+                  </div>
                 </div>
               </div>
               <div className=" row p-xl-5 mx-xl-5">
+                <div className="col-md-5">
+                  <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
+                    <img
+                      className="mx-auto"
+                      src={require("../../src/assets/Image 5.png")}
+                      alt="Card image"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
+                </div>
 
-              
-<div className="col-md-5">
-<div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
-
-    <img
-        className="mx-auto"
-        src={require("../../src/assets/Image 5.png")}
-        alt="Card image"
-        style={{ width: "100%",  }}
-      />
-</div>
-</div>
-
-
-<div className="col-md-7 p-0">
-  <div
-    className="mx-auto d-flex justify-content-center"
-    style={{
-      backgroundColor: "#07A6A9",
-      width: "50px",
-      borderRadius: "13px",
-    }}
-  >
-    <h4 className="p-2 text-center" style={{ color: "white" }}>
-      04
-    </h4>
-  </div>
-  <h2> Sightsee!</h2>
-  <p className="" style={{ fontSize: "12px" }}>
- 
-Have extra time before or after your medical procedure and want to sightsee? Our
-
-team can help you plan activities or give you recommendations on places to see,
-
-the local cuisine, and more!
-  </p>
-</div>
-</div>
+                <div className="col-md-7 p-0">
+                  <div
+                    className="mx-auto d-flex justify-content-center"
+                    style={{
+                      backgroundColor: "#07A6A9",
+                      width: "50px",
+                      borderRadius: "13px",
+                    }}
+                  >
+                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                      04
+                    </h4>
+                  </div>
+                  <h2> Sightsee!</h2>
+                  <p className="" style={{ fontSize: "12px" }}>
+                    Have extra time before or after your medical procedure and
+                    want to sightsee? Our team can help you plan activities or
+                    give you recommendations on places to see, the local
+                    cuisine, and more!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      
 
       <section className="py-5">
         <div className="d-flex justify-content-center  py-3">
@@ -658,10 +724,9 @@ the local cuisine, and more!
               paddingBottom: "7px",
             }}
           >
-           Features
+            Features
           </h2>
         </div>
-      
 
         <Box>
           <Container>
@@ -672,27 +737,29 @@ the local cuisine, and more!
               alignItems={"center"}
             >
               {card.map((e, index) => (
-
-                
-                <Grid  component={Paper} className="mx-auto my-5 p-0" item key={index}>
+                <Grid
+                  component={Paper}
+                  className="mx-auto my-5 p-0"
+                  item
+                  key={index}
+                >
                   <div
                     className=" my-4"
                     style={{
-                     
-
-                 
-                    
                       borderRadius: "10px",
                       color: "#939393",
-                     width:"300px",
-                     height:"210px"
+                      width: "300px",
+                      height: "210px",
                     }}
                   >
                     <div className="    ">
-                      <div className=" px-4 "  >{e.icon}</div>
-                       <h5 className="mb-0  px-4 pt-3 " style={{color:"black",}}>
-                        Fast And Secure
-                       </h5>
+                      <div className=" px-4 ">{e.icon}</div>
+                      <h5
+                        className="mb-0  px-4 pt-3 "
+                        style={{ color: "black" }}
+                      >
+                       {e.name}
+                      </h5>
                       <p
                         className="mb-0  card-content px-4 pb-5  "
                         style={{ fontSize: "12px" }}
@@ -701,7 +768,6 @@ the local cuisine, and more!
                       </p>
                     </div>
                   </div>
-                 
                 </Grid>
               ))}
             </Grid>
@@ -709,48 +775,53 @@ the local cuisine, and more!
         </Box>
       </section>
 
-
       <section className="">
-     
         <div className="container">
           <div className="mx-md-5">
             <div className="p-3 bg">
-            <div className="d-flex justify-content-center  py-5">
-          <h3
-            style={{
-              borderBottom: "2px solid green",
-              display: "inline-block",
-              paddingBottom: "7px",
-              color:"white"
-            }}
-          >
-           About HealthHop
-          </h3>
-        </div>
+              <div className="d-flex justify-content-center  py-5">
+                <h3
+                  style={{
+                    borderBottom: "2px solid green",
+                    display: "inline-block",
+                    paddingBottom: "7px",
+                    color: "white",
+                  }}
+                >
+                  About HealthHop
+                </h3>
+              </div>
 
               <div
                 className=" row px-md-5 "
                 style={{ paddingBottom: "140px", paddingTop: "50px" }}
               >
-               
-                <div className="px-3  col-md-7 " >
-                  <h4 className="px-3" style={{ color: "white" }}>Our Mission</h4>
+                <div className="px-3  col-md-7 ">
+                  <h4 className="px-3" style={{ color: "white" }}>
+                    Our Mission
+                  </h4>
                   <p className="px-3" style={{ color: "white" }}>
-                  At HealthHop, we believe that everyone should have access to affordable and quality medical
-care. Our mission is to make safe and affordable medical care accessible to anyone by providing
-a centralized, all-in-one application that streamlines the booking process.
+                    At HealthHop, we believe that everyone should have access to
+                    affordable and quality medical care. Our mission is to make
+                    safe and affordable medical care accessible to anyone by
+                    providing a centralized, all-in-one application that
+                    streamlines the booking process.
                   </p>
                   <p className="px-3" style={{ color: "white" }}>
-                  At HealthHop, we believe that everyone should have access to affordable and quality medical
-care. Our mission is to make safe and affordable medical care accessible to anyone by providing
-a centralized, all-in-one application that streamlines the booking process.
+                    At HealthHop, we believe that everyone should have access to
+                    affordable and quality medical care. Our mission is to make
+                    safe and affordable medical care accessible to anyone by
+                    providing a centralized, all-in-one application that
+                    streamlines the booking process.
                   </p>
-
-
                 </div>
-                <div className=" col-md-5 my-auto " >
+                <div className=" col-md-5 my-auto ">
                   <h3 style={{ color: "white" }}>
-                  <img src={require("../assets/md-3.png")} width={"100%"} alt="" />
+                    <img
+                      src={require("../assets/md-3.png")}
+                      width={"100%"}
+                      alt=""
+                    />
                   </h3>
                 </div>
               </div>
@@ -759,64 +830,83 @@ a centralized, all-in-one application that streamlines the booking process.
         </div>
       </section>
       <section className="">
-     
         <div className="container">
-          <div className="mx-md-5 "  >
+          <div className="mx-md-5 ">
             <div className="p-3 ">
-            <div className="d-flex justify-content-center  py-5">
-          <h3
-            style={{
-              borderBottom: "2px solid green",
-              display: "inline-block",
-              paddingBottom: "7px",
-              
-            }}
-          >
-          Contact Us
-          </h3>
-        </div>
+              <div className="d-flex justify-content-center  py-5">
+                <h3
+                  style={{
+                    borderBottom: "2px solid green",
+                    display: "inline-block",
+                    paddingBottom: "7px",
+                  }}
+                >
+                  Contact Us
+                </h3>
+              </div>
 
-              <Box  component={Paper}
+              <Box
+                component={Paper}
                 className=" px-md-5 mb-5 "
                 style={{ paddingBottom: "20px", paddingTop: "50px" }}
               >
-
                 <div className=" mx-3">
-                <div className=" d-md-flex">
+                  <div className=" d-md-flex">
+                    <div className="my-2 me-md-1" style={{ width: "100%" }}>
+                      <TextField
+                        id="outlined-basic"
+                        label="Frist Name"
+                        variant="outlined"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                    <div className="my-2 ms-md-1" style={{ width: "100%" }}>
+                      <TextField
+                        id="outlined-basic"
+                        label="Last Name"
+                        variant="outlined"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="my-2" style={{ width: "100%" }}>
+                    <TextField
+                      id="outlined-basic"
+                      label="Email"
+                      variant="outlined"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
 
-<div className="my-2 me-md-1" style={{width:"100%"}}>
-<TextField id="outlined-basic" label="Frist Name" variant="outlined"  style={{width:"100%"}}/>
-</div>
-<div className="my-2 ms-md-1" style={{width:"100%"}}>
-<TextField id="outlined-basic" label="Last Name" variant="outlined"  style={{width:"100%"}}/>
-</div>
+                  <div className="my-2" style={{ width: "100%" }}>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        placeholder="Message"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                  </div>
 
-
-</div>
-<div className="my-2" style={{width:"100%"}}><TextField id="outlined-basic" label="Email" variant="outlined"  style={{width:"100%"}}/></div>
-
-
-<div className="my-2" style={{width:"100%"}}>
-<div class="form-group">
-
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
-</div>
-</div>
-
-<div className="pt-5">
-
-<Button style={{backgroundColor:"#07A6A9",color:"white",padding:"16px 80px",fontSize:"10px"}}>Submmit</Button>
-</div>
+                  <div className="pt-5">
+                    <Button
+                      style={{
+                        backgroundColor: "#07A6A9",
+                        color: "white",
+                        padding: "16px 80px",
+                        fontSize: "10px",
+                      }}
+                    >
+                      Submmit
+                    </Button>
+                  </div>
                 </div>
-             
               </Box>
             </div>
           </div>
         </div>
       </section>
-
-
-
     </div>
   );
 };

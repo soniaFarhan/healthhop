@@ -124,10 +124,10 @@ console.log(event.title);
 
 const handleSubmit=async(e)=>{
   e.preventDefault()
-  console.log(appointment,"appointment");
-const result =await apiClient.post("/appointments/",appointment)
-if(!result.ok) toast.error("Error")
-toast.success("Successfully Submit")
+//   console.log(appointment,"appointment");
+// // const result =await apiClient.post("/appointments/",appointment)
+// if(!result.ok) toast.error("Error")
+// toast.success("Successfully Submit")
 onHide();
 // fetchDataAll();
   // setEvents([
@@ -149,7 +149,7 @@ const [page, setPage] = useState(1);
 const [userReponse,setUserResponse]=useState()
 
 // const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?page=${page}`))
-const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
+// const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
 
 
 
@@ -158,14 +158,14 @@ const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`
 },[page])
 
 async function fetchData(){
-  const result= await request()
+//   const result= await request()
  
-  if(!result.ok) return 
-  if(result.data.results.length>0)
-  console.log(result.data.results,"visit data");
-  setUsers(result.data.results)
-  setUsers([...users,...result.data.results])
-setUserResponse(result.data)
+//   if(!result.ok) return 
+//   if(result.data.results.length>0)
+//   console.log(result.data.results,"visit data");
+//   setUsers(result.data.results)
+//   setUsers([...users,...result.data.results])
+// setUserResponse(result.data)
 }
 
 

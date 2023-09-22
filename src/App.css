@@ -340,3 +340,21 @@ ul li {text-align: start;}
 .word{
   word-wrap:break-word;
 }
+
+
+
+.y{
+  height: 100% !important;
+}
+
+.links ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.num{
+
+  border: 1px solid #39B7BA;
+  border-radius: 50px;
+}

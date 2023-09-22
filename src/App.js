@@ -13,16 +13,17 @@ import DashboardLayout from './sidenav/DashboardLayout';
 import { Inquiries } from './Dashboard/Inquiries';
 import { ConfirmedBooking } from './Dashboard/ConfirmedBooking';
 import { Packges } from './Dashboard/Packges';
-import { Calendar } from './Dashboard/Calendar';
 import { Message } from './Dashboard/Message';
 import { Inovice } from './Dashboard/Inovice';
 import { BusinessProfile } from './Dashboard/BusinessProfile';
+import Calender from './Dashboard/Calender/Calender';
 
 
 
 function App() {
   return (<div>
     <Routes>
+
       <Route element={<Layout/>}>
         <Route path='/' element={<Home/>}/>
         <Route path='/heath-journey'  element={<HealthJourney/>} />
@@ -38,13 +39,11 @@ function App() {
         <Route path='/inquiries' element={<Inquiries/>}/>
         <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
         <Route path='/packages' element={<Packges/>}/>
-        <Route path='/calendar' element={<Calendar/>}/>
+        <Route path='/calendar' element={<Calender/>}/>
         <Route path='/message' element={<Message/>}/>
         <Route path='/inovice' element={<Inovice/>}/>
         <Route path='/business-profile' element={<BusinessProfile/>}/>
-
       </Route>
-
 
     </Routes>
 

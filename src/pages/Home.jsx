@@ -290,11 +290,12 @@ export const Home = () => {
                       item
                       key={index}
                       xs={12}
+                      sm={6}
                       md={6}
-                      lg={5}
-                      sx={{ position: "relative" }}
+                      lg={6}
+                      sx={{ position: "relative"}}
                     >
-                      <Card className="" sx={{ maxWidth: 300, minHeight: 300 }}>
+                      <Card className="" sx={{minHeight: 300 }}>
                         <CardMedia
                           component="img"
                           alt={card.title}

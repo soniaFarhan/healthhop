@@ -71,6 +71,10 @@
 .text_color{
   color: #39B7BA !important;
 }
+
+.navbar-togl-btn {
+  background-color: white !important;
+}
 /* utility classes end  */
 
 .home_background_img {

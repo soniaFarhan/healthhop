@@ -17,6 +17,7 @@ import { Message } from './Dashboard/Message';
 import { Inovice } from './Dashboard/Inovice';
 import { BusinessProfile } from './Dashboard/BusinessProfile';
 import Calender from './Dashboard/Calender/Calender';
+import Login from './components/Login';
 
 
 
@@ -24,6 +25,7 @@ function App() {
   return (<div>
     <Routes>
 
+        <Route path='/login' element={<Login/>} />
       <Route element={<Layout/>}>
         <Route path='/' element={<Home/>}/>
         <Route path='/heath-journey'  element={<HealthJourney/>} />

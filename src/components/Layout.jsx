@@ -34,7 +34,7 @@ export const Layout = () => {
     </Link>
     
     <button
-      className="navbar-toggler"
+      className="navbar-toggler navbar-togl-btn"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -42,8 +42,9 @@ export const Layout = () => {
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span className="navbar-toggler-icon"></span>
+      <span className=" navbar-toggler-icon text-white"></span>
     </button>
+
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">

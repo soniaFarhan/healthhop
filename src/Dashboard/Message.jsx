@@ -167,7 +167,7 @@ export const Message = () => {
 </div>
 <div className="col-md-8  " >
 
-<div className="shadows mx-2 py-5 px-3"style={{height:"67vh",borderRadius:"12px" }}>
+<div className="shadows mx-2 py-5 px-3"style={{height:"73vh",borderRadius:"12px" }}>
   <div className="scroll-container1">
     <div className="content1">
     <div className="d-flex justify-content-end ">
@@ -223,7 +223,7 @@ export const Message = () => {
     <div className="d-flex justify-content-end ">
 <div className="word" >
   <div>
-  <p className='mt-2 p-2 fw-light' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99",fontSize:"14px"}}>Hello Franky!</p>
+  <p className='mt-2 m-0 p-2 fw-light' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99",fontSize:"14px"}}>Hello Franky!</p>
   </div>
   
   <p className='mt-2 p-2 fw-light word' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99"}}>uioutiu54iotu5jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj4outo4</p>
@@ -323,7 +323,10 @@ export const Message = () => {
 
     </div>
   </div>
+  <div className="mt-2">
+
   <input type="text" class="form-control" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{borderRadius:"20px",backgroundColor:"transparent",fontSize:"12px",padding:"16px"}}  ewwe/>
+  </div>
   </div>
 
 

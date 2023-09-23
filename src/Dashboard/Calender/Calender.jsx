@@ -125,10 +125,10 @@ console.log(event.title);
 const handleSubmit=async(e)=>{
 
   e.preventDefault()
-//   console.log(appointment,"appointment");
-// const result =await apiClient.post("/appointments/",appointment)
-// if(!result.ok) toast.error("Error")
-// toast.success("Successfully Submit")
+// //   console.log(appointment,"appointment");
+// // // const result =await apiClient.post("/appointments/",appointment)
+// // if(!result.ok) toast.error("Error")
+// // toast.success("Successfully Submit")
 onHide();
 
 
@@ -153,7 +153,7 @@ const [userReponse,setUserResponse]=useState()
 
 // const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?page=${page}`))
 
-// const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
+// // const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
 
 
 

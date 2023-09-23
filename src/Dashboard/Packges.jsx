@@ -5,6 +5,10 @@ export const Packges = () => {
     <>
 
 <div className="container">
+  <div className="mx-lg-5">
+  <div className="mx-lg-5">
+    
+ 
 
   <div className="d-flex justify-content-between aling-items-center my-3 ">
 <div className="">
@@ -20,9 +24,9 @@ export const Packges = () => {
 
 
   </div>
-<div className="row justify-content-between">
-<div className="col-md-6 my-1 ">
-<div class="card ms-auto  me-0  ms-sm-auto  me-sm-auto"style={{ maxWidth: 300, minHeight: 400 }}>
+<div className=" d-md-flex justify-content-center">
+<div className="col-md-6 ps-md-5 my-2 d-flex justify-content-md-end ">
+<div class="card mx-auto "style={{ maxWidth: 350, minHeight: 450 }}>
   <div class="card-body d-flex flex-column justify-content-between">
     <div className="text-center p-3" style={{backgroundColor:"#07A6A9",color:"white",borderRadius:"12px"}}>
       <p>HAIR TRANSPLANT</p>
@@ -52,8 +56,8 @@ After care</p>
   </div>
 </div>
 </div>
-<div className="col-md-6 my-2">
-<div class="card me-md-auto  ms-md-0    me-sm-auto  ms-sm-auto  me-xs-auto  ms-xs-auto   "style={{ maxWidth: 300, minHeight: 400 }}>
+<div className="col-md-6 6 pe-md-5 my-2">
+<div class="card   mx-auto"style={{ maxWidth: 350, minHeight: 450 }}>
   <div class="card-body d-flex flex-column justify-content-between">
     <div className="text-center p-3" style={{backgroundColor:"#07A6A9",color:"white",borderRadius:"12px"}}>
       <p>HAIR TRANSPLANT 2</p>
@@ -87,7 +91,8 @@ After care</p>
 
 
 </div>
-
+</div>
+</div>
 </div>
 
 

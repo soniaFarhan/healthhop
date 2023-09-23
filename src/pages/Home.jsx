@@ -286,7 +286,7 @@ export const Home = () => {
                   spacing={3}
                 >
                   {cardData.map((card, index) => (
-                    <Grid
+                    <Grid className="mx-auto"
                       item
                       key={index}
                       xs={12}
@@ -342,7 +342,7 @@ export const Home = () => {
 
       <section className="">
         <div className="d-flex justify-content-center  py-5">
-          <h3
+          <h3 className="text-center"
             style={{
               borderBottom: "2px solid green",
               display: "inline-block",

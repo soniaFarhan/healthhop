@@ -7,24 +7,24 @@ export const BusinessProfile = () => {
 
   const data =[
     {
-    name:"Dr-Herry",
+    name:"Herry",
     chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
     img:
-    <img src={require("../assets/blog-card-4.png")} width={"100%"} alt="" />
+    <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />
     
     },
     {
-    name:"Dr-Herry",
+    name:"Herry",
     chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
     img:
-    <img src={require("../assets/blog-card-4.png")} width={"100%"} alt="" />
+    <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
     
     },
     {
-    name:"Dr-Herry",
+    name:"Herry",
     chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
     img:
-    <img src={require("../assets/blog-card-4.png")} width={"100%"} alt="" />
+    <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
     
     },
     
@@ -191,6 +191,88 @@ export const BusinessProfile = () => {
   <div className="me-2">
   <i class="bi bi-2-circle " style={{fontSize:"20px"}}></i>
   </div>
+  <div className="">
+  <p className='my-auto me-auto' >
+  All inclusion price range:
+
+  </p>
+
+  </div>
+  <p className='my-auto ms-auto' style={{color:"black"}}>500 to 1000 USA</p>
+  
+  
+  </div>
+<div className="d-flex" style={{color:"#07A6A9"}}>
+  <div className="me-2">
+  <i class="bi bi-3-circle " style={{fontSize:"20px"}}></i>
+  </div>
+  <p className='my-auto me-auto'>
+  Istant booking  fixed price for procedure only:
+
+  </p>
+  <p className='my-auto mx-3' style={{color:"black"}}>500  USA</p>
+  
+  
+  </div>
+<div className="d-flex" style={{color:"#07A6A9"}}>
+  <div className="me-2">
+  <i class="bi bi-1-circle " style={{fontSize:"20px"}}></i>
+  </div>
+  <p className='my-auto me-auto' >
+  Istant booking  fixed price for All-inclusive:
+
+  </p>
+  <p className='my-auto mx-3' style={{color:"black"}}>500 USA</p>
+  
+  </div>
+
+
+  
+
+</div>
+
+
+</div>
+    <div className="d-flex flex-wrap aling-items-center ">
+   <div className=""><img src={require("../assets/blog-card-1.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-2.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-3.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-4.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-5.png")} width={"100px"} height={"100px"} alt="" /></div>
+
+    </div>
+               </div>
+    <hr/>
+        <div className="d-flex justify-content-between aling-items-center">
+
+        <h5>Hair Transplant</h5>
+ 
+        <BorderColorOutlined sx={{color:"#07A6A9"}}/>
+         </div>
+         <h5 style={{color:"#07A6A9"}}> Sub-category name</h5>
+         <div className='pe-md-5 me-md-5' style={{fontSize:"12px"}}>  
+         <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quasi doloremque dolorum non magnam. Exercitationem, voluptatibus accusamus, itaque animi voluptatem consequatur esse illo illum molestias neque aspernatur, quas tempore autem.
+         </p>
+<div className="d-flex me-auto" >
+<div className="me-2">
+
+<div className="d-flex" style={{color:"#07A6A9"}}>
+  <div className="me-2">
+  <i class="bi bi-1-circle " style={{fontSize:"20px"}}></i>
+  </div>
+  <p className='my-auto me-auto'>
+  Average price range for the procedure:
+
+  </p>
+  <p className='my-auto mx-3' style={{color:"black"}}>500 to 1000 USA</p>
+  
+  
+  </div>
+<div className="d-flex" style={{color:"#07A6A9"}}>
+  <div className="me-2">
+  <i class="bi bi-2-circle " style={{fontSize:"20px"}}></i>
+  </div>
   <p className='my-auto me-auto'>
   All inclusion price range:
 
@@ -204,10 +286,10 @@ export const BusinessProfile = () => {
   <i class="bi bi-3-circle " style={{fontSize:"20px"}}></i>
   </div>
   <p className='my-auto me-auto'>
-  Istant booking  fixed price
+  Istant booking  fixed price for procedure only:
 
   </p>
-  <p className='my-auto mx-3' style={{color:"black"}}>500 to 1000 USA</p>
+  <p className='my-auto mx-3' style={{color:"black"}}>500  USA</p>
   
   
   </div>
@@ -216,10 +298,10 @@ export const BusinessProfile = () => {
   <i class="bi bi-1-circle " style={{fontSize:"20px"}}></i>
   </div>
   <p className='my-auto me-auto' >
-  All inclusion price range:
+  Istant booking  fixed price for All-inclusive:
 
   </p>
-  <p className='my-auto mx-3' style={{color:"black"}}>500 to 1000 USA</p>
+  <p className='my-auto mx-3' style={{color:"black"}}>500 USA</p>
   
   </div>
 
@@ -230,8 +312,16 @@ export const BusinessProfile = () => {
 
 
 </div>
+    <div className="d-flex">
+   <div className=""><img src={require("../assets/blog-card-1.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-2.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-3.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-4.png")} width={"100px"} height={"100px"} alt="" /></div>
+   <div className=""><img src={require("../assets/blog-card-5.png")} width={"100px"} height={"100px"} alt="" /></div>
 
+    </div>
                </div>
+    <hr/>
 
         </div>
 
@@ -244,7 +334,7 @@ export const BusinessProfile = () => {
 
 
 
-        <div className=" my-5  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
+    <div className=" my-5  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
 
 {
   data.map((e)=>{
@@ -260,21 +350,21 @@ export const BusinessProfile = () => {
 
 
 
-<div className="col-md-2">
-  <div className="m" >
+<div className="col-md-2 col-sm-4 col-6 px-0" style={{maxHeight:"130px"}}>
+
 
 {e.img}
-  </div>
+  
 
 
 </div>
-<div className="col-md-10 ">
+<div className="col-md-6 ">
 
 <div className="d-flex justify-content-between aling-items-center">
   <h6 style={{fontSize:"13px"}}>  {e.name} </h6>
   
   
-   <p style={{fontSize:"8px",color:"#07A6A9"}}>          <BorderColorOutlined sx={{color:"#07A6A9"}}/>          </p>
+   <p style={{fontSize:"8px",color:"#07A6A9"}}>Quote offered</p>
 </div>
 
 <div className="">

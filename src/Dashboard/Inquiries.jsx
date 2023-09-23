@@ -9,21 +9,21 @@ const data =[
 name:"Herry",
 chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
 img:
-<img src={require("../assets/blog-card-4.png")} width={"100%"} alt="" />
+<img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />
 
 },
 {
 name:"Herry",
 chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
 img:
-<img src={require("../assets/blog-card-4.png")} width={"100%"} alt="" />
+<img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
 
 },
 {
 name:"Herry",
 chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
 img:
-<img src={require("../assets/blog-card-4.png")} width={"100%"} alt="" />
+<img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
 
 },
 
@@ -51,11 +51,11 @@ img:
 
 
 
-<div className="col-md-2">
-  <div className="" style={{width:"8rem"}}>
+<div className="col-md-2 col-sm-4 col-6 px-0" style={{maxHeight:"130px"}}>
+
 
 {e.img}
-  </div>
+  
 
 
 </div>

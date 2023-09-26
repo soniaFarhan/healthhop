@@ -28,9 +28,9 @@ function App() {
   return (<div>
     <Routes>
 
-        <Route path='/login' element={<Login/>} />
+        <Route path='/' element={<Login/>} />
       <Route element={<Layout/>}>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/Home' element={<Home/>}/>
         <Route path='/heath-journey'  element={<HealthJourney/>} />
         <Route path='/contact-us' element={<ContactUs/>} />  
         <Route path='/blogs' element={<OurBlogs/>} /> 
@@ -38,6 +38,7 @@ function App() {
         <Route path='/procedure' element={<Procedures/>} />
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
+       
       </Route>
 
       <Route element={<DashboardLayout/>}>

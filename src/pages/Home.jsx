@@ -898,7 +898,8 @@ export const Home = () => {
                   </div>
 
                   <div className="pt-5">
-                    <Button
+{/* <Link to={"/learn-more"}> */}
+<Button
                       style={{
                         backgroundColor: "#07A6A9",
                         color: "white",
@@ -908,6 +909,9 @@ export const Home = () => {
                     >
                       Submmit
                     </Button>
+{/* </Link> */}
+
+                 
                   </div>
                 </div>
               </Box>

@@ -730,7 +730,7 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
-function Popup2() {
+function Popup3() {
   const [modalShow, setModalShow] = React.useState(false);
   const [activeStep, setActiveStep] = React.useState(0);
 
@@ -746,11 +746,14 @@ function Popup2() {
      
 
 
-      <button  className="btn btn_light rounded-pill fs_10px white_space"  onClick={() => setModalShow(true)}>
-            <MedicalServices fontSize="small"  className='my-auto'/>
-            
-            Medical Provider
-          </button>
+     
+          <button   onClick={() => setModalShow(true)}
+       
+       className="btn btn_light rounded-pill fs_10px white_space"
+     >
+       <Login fontSize="small" />
+       Patient
+     </button>
 
       <MyVerticallyCenteredModal
         show={modalShow}
@@ -760,4 +763,4 @@ function Popup2() {
   );
 }
 
-export default Popup2;
+export default Popup3;

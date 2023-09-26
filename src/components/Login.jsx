@@ -74,9 +74,13 @@ const Login = ({ role }) => {
           </Grid>
 
           <Grid item xs={12}>
+
+            <Link to={"/home"}>
+            
             <button className='btn btn_green w-100 py-3'>
                 Continue
             </button>
+            </Link>
           </Grid>
 
           {/* <Typography  variant="h5"  fontWeight="bold" my={2}>

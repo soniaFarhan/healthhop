@@ -521,6 +521,7 @@ export const Home = () => {
                             {e.defaultValue}  </span>
                             </div>
                        </div>
+                      
 
                     </div>
                        <div className="text-center fw-bold pt-3 pb-2" style={{fontSize:"12px"}}>
@@ -535,6 +536,7 @@ export const Home = () => {
                        </div>
                        </div>
                   </div>
+                       <div className="triangle-down"></div>
                   <div className="text-center">
                     <Avatar style={{padding:"40px"}}
                       className="mx-auto mt-4"
@@ -543,11 +545,13 @@ export const Home = () => {
                     />
                     <h6>{e.name2}</h6>
                   </div>
+                  
                 </Grid>
               ))}
             </Grid>
           </Container>
         </Box>
+        
       </section>
 
       <section className="mx-lg-5">

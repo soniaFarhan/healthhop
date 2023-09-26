@@ -443,3 +443,11 @@ ul li {text-align: start;}
   background-color: rgb(214,239,240);
   color: rgb(32,175,178);
 }
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}

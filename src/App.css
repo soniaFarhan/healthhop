@@ -149,6 +149,9 @@ color: #FFFFFF !important;
  height: 100%;
 
 }
+.chat :hover .color{
+  color: #FFFFFF;
+}
 .color{
   color: #07A6A9;
 }

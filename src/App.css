@@ -436,3 +436,10 @@ ul li {text-align: start;}
 .place-card-medium{
   display: none !important;
 }
+/* waleed css*/
+
+.w-fit{
+  max-width: fit-content;
+  background-color: rgb(214,239,240);
+  color: rgb(32,175,178);
+}

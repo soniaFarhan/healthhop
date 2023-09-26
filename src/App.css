@@ -1,5 +1,52 @@
+/* usman css  */
+
+/* utility classes  */
+
+.fs_14px{
+  font-size: 14px !important;
+}
+
+.fs_10px{
+  font-size: 10px !important;
+}
+.white_space{
+  white-space: nowrap;
+}
+
 .test{
   border: 2px solid red !important;
+}
+
+
+.bg{
+  background:linear-gradient(to right, #07A6A9,#045355) ; 
+   width: 100%; 
+}
+
+.bg1{
+  background-color: #F9F9F9;
+
+  height: 100%;
+  width: 100%; 
+}
+
+.btn_light{
+  background-color: #FFFFFF !important;
+  color: black !important;
+}
+.btn_green{
+  background-color: #07A6A9 !important;
+  color: white !important;
+}
+
+.btn_blue{
+  background-color: #7193FF !important;
+  color: white !important;
+}
+
+.btn_yellow{
+  background-color: #F3AE24 !important;
+  color: white !important;
 }
 
 
@@ -11,4 +58,399 @@
 
 .layout main {
   flex-grow: 1;
+}
+.custom_padding {
+  padding-top: 6rem; 
+  padding-bottom: 6rem; 
+}
+
+.active-tab {
+  color: #07a6a9; 
+}
+
+.text_color{
+  color: #39B7BA !important;
+}
+
+.navbar-togl-btn {
+  background-color: white !important;
+}
+/* utility classes end  */
+
+.home_background_img {
+    height: 100%;
+    width: 100%;
+   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./assets/home\ top.jpg) ;
+   background-size: cover;
+   background-position: center;
+}
+
+.contact_background_img {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(rgba(83, 171, 177, 0.6), rgba(83, 171, 177, 0.6)), url(./assets/contact-us2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px !important;
+}
+
+.bp-img{
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(rgba(9, 10, 10, 0.6), rgba(9, 10, 10, 0.6)), url(./assets/blogs.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px !important;
+
+}
+
+
+.blog_background_img {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(rgba(83, 171, 177, 0.6), rgba(83, 171, 177, 0.6)), url(./assets/blogs.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px !important;
+}
+
+.procedure_background_img {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(rgba(83, 171, 177, 0.6), rgba(83, 171, 177, 0.6)), url(./assets/procrdure.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px !important;
+}
+
+
+
+
+.card-img-overlay {
+  background-color: rgba(#000, 0.4);
+}
+
+
+.decoration-none{
+  text-decoration: none!important;
+}
+
+.ket :hover{
+background-color: #07A6A9;
+color: #FFFFFF;
+ border-radius: 10px;
+}
+.chat :hover{
+background-color: #07A6A9;
+color: #FFFFFF !important; 
+ border-radius: 10px;
+
+ width: 100%;
+ height: 100%;
+
+}
+.chat :hover .color{
+  color: #FFFFFF;
+}
+.color{
+  color: #07A6A9;
+}
+.card-content {
+  /* Styles for the card content when the card is hovered */
+  pointer-events: none; /* Disable mouse events on the content */
+}
+.fs_14px{
+  font-size: 14px;
+}
+.white_space{
+  white-space: nowrap;
+}
+
+
+/* ... (previous CSS rules) */
+
+/* Style the header and navigation menu */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+ 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+list-style: none;
+  margin-right: 20px;
+
+}
+
+nav ul li a {
+  color: white  !important; 
+  text-decoration: none;
+border-radius: 20px;
+
+  font-size: 10px;
+
+
+}
+
+nav ul li .active {background-color: #07A6A9;
+color: white !important ; 
+
+}
+
+/* Style the dropdown container */
+.dropdown-content {
+  padding-right: 300px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -450px;
+  background-color: #07A6A9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+
+  border-radius: 29px;
+}
+.main ul{
+  width: 160px;
+ 
+}
+
+.custom-list-style {
+  list-style-type: disc !important;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #3498db;
+  color: white;
+
+}
+/* Style the dropdown when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation-duration: 5s; /* Disable the fadeOut animation when hovering */
+ 
+}
+
+ul li {text-align: start;}
+   
+
+
+
+.scroll-container {
+  height: 300px; /* Set the desired height for the scrollable area */
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+}
+
+.content {
+  padding-right: 20px; /* Add some right padding to prevent content from being cut off */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100%; /* Make sure the content takes up the full height of the container */
+}
+
+/* Completely hide the scrollbar */
+.content::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+
+/* Hide scrollbar in Firefox */
+.content {
+  scrollbar-width: none;
+}
+
+
+
+
+
+
+.scroll-container1 {
+  height: 55vh; /* Set the desired height for the scrollable area */
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+
+}
+
+.content1 {
+  /* Add some right padding to prevent content from being cut off */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100%; /* Make sure the content takes up the full height of the container */
+}
+/* Completely hide the scrollbar */
+.content1::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+
+/* Hide scrollbar in Firefox */
+.content1 {
+  scrollbar-width: none;
+}
+
+.scroll-container2 {
+  height: 65vh; /* Set the desired height for the scrollable area */
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+
+}
+
+.content2 {
+  /* Add some right padding to prevent content from being cut off */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  height: 100%; /* Make sure the content takes up the full height of the container */
+}
+/* Completely hide the scrollbar */
+.content2::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+
+/* Hide scrollbar in Firefox */
+.content2 {
+  scrollbar-width: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shadows{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.shadows2{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.o{
+  border-radius: 98px !important;
+}
+.word{
+  word-wrap:break-word;
+}
+
+
+
+.equal-width > label, .equal-width > textarea {
+  flex-grow: 1;       
+  flex-shrink: 0;   
+  flex-basis: 50%;  
+}
+
+
+/* celeder css  */
+
+
+.fc-toolbar-chunk {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+  background-color: white;  
+  color: #2B4C58;
+}
+
+.fc-button-group{
+  padding: 4px;
+  background-color: #2B4C58;
+  
+}
+.fc .fc-button{
+  background-color: #2B4C58;
+  border: 1px solid #2B4C58;
+  border-radius: 50px;
+  /* height: 30px; */
+}
+
+.fc.fc-prev-button .fc-button .fc-button-primary{
+  background-color: white;
+  color: #2B4C58;
+}
+.fc .fc-daygrid-day-number {
+  padding: 4px;
+  position: relative;
+  z-index: 4;
+  color: black;
+}
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #2B4C58;
+}
+
+
+
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .fc .fc-toolbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
+
+
+.y{
+  height: 93% !important;
+}
+
+.links ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+ word-wrap: normal;
+
+}
+.links ul li{
+  color: #39B7BA;
+}
+
+.num{
+
+  border: 1px solid #39B7BA;
+  border-radius: 50px;
+}
+.place-card {
+  display: none !important;
+}
+.place-card-medium{
+  display: none !important;
+}
+/* waleed css*/
+
+.w-fit{
+  max-width: fit-content;
+  background-color: rgb(214,239,240);
+  color: rgb(32,175,178);
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
 }

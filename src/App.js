@@ -19,7 +19,8 @@ import { BusinessProfile } from './Dashboard/BusinessProfile';
 import Calender from './Dashboard/Calender/Calender';
 import Login from './components/Login';
 import Invoicedetails from './Dashboard/Calender/Invoicedetails';
-import Meet from './Dashboard/Calender/Meet';
+import Meet from './Dashboard/Meet';
+import Updateprofile from './Dashboard/Updateprofile';
 
 
 
@@ -47,7 +48,9 @@ function App() {
         <Route path='/message' element={<Message/>}/>
         <Route path='/inovice' element={<Inovice/>}/>
         <Route path='/Invoice-details' element={<Invoicedetails/>}/>
+        <Route path='/business-profile' element={<BusinessProfile/>}/>
         <Route path='/Meet' element={<Meet/>}/>
+        <Route path='/Updateprofile' element={<Updateprofile/>}/>
 
 
       </Route>

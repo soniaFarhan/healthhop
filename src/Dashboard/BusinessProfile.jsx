@@ -64,8 +64,10 @@ export const BusinessProfile = () => {
 
 
       <div className=" mx-5 " style={{marginTop:"15px"}}>
-
-      <Button className='text_color fw-bold' variant="outlined" sx={{color:"red",border:"1px solid #39B7BA",borderRadius:"25px" ,fontSize:"9px"}}> <MedicalServicesOutlined style={{ fontSize: "19px",marginRight:"6px" }} /> Upload profile</Button>
+          <Link to={"/Updateprofile"}>
+          <Button className='text_color fw-bold' variant="outlined" sx={{color:"red",border:"1px solid #39B7BA",borderRadius:"25px" ,fontSize:"9px"}}> <MedicalServicesOutlined style={{ fontSize: "19px",marginRight:"6px" }} /> Upload profile</Button>
+          </Link>
+      
       </div>
         </div>
       

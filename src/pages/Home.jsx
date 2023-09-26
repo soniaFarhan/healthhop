@@ -9,7 +9,7 @@ import Slider from "@mui/material/Slider";
 import { Avatar, Container, Grid, Paper, Rating, TextField } from "@mui/material";
 import { Lock, MedicalServicesOutlined, Person } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-
+import { FaQuoteLeft } from 'react-icons/fa';
 export const Home = () => {
   const [value, setValue] = useState([20, 37]);
 
@@ -47,7 +47,7 @@ export const Home = () => {
 
   const cardchatData = [
     {
-      icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
+      icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
       name:"Abbas A",
       reviews: 5,
       defaultValue:" 5.00/5.00",
@@ -56,7 +56,7 @@ export const Home = () => {
         "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
     {
-      icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
+      icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
       name2:"Adam johens",
       name:"Abbas A",
       reviews: 5,
@@ -65,7 +65,7 @@ export const Home = () => {
         "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
     },
     {
-      icon: <MedicalServicesOutlined style={{ fontSize: "35px" }} />,
+      icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
       name2:"Adam johens",
       name:"Abbas A",
       reviews: 5,
@@ -536,7 +536,7 @@ export const Home = () => {
                        </div>
                        </div>
                   </div>
-                       <div className="triangle-down"></div>
+                       
                   <div className="text-center">
                     <Avatar style={{padding:"40px"}}
                       className="mx-auto mt-4"

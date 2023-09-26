@@ -120,7 +120,7 @@ export const Message = () => {
 <div className="col-md-4 ">
 
 <div className="mb-4 mx-2" >
-<input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{borderRadius:"20px",backgroundColor:"transparent",border:"1px solid black"}}/>
+<input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{borderRadius:"20px",backgroundColor:"transparent"}}/>
 
 </div>
 <div className="scroll-container2">
@@ -171,16 +171,29 @@ export const Message = () => {
   <div className="scroll-container1">
     <div className="content1">
     <div className="d-flex justify-content-end ">
+      <div className="">
+
 <div className="word" >
-  <div>
-  <p className='mt-2 p-2 fw-light' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99",fontSize:"14px"}}>Hello Franky!</p>
+  <div className='ms-auto'>
+  <p className='mt-2 p-2 fw-light ms-auto' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99",fontSize:"14px"}}>Hello Franky!</p>
   </div>
   
-  <p className='mt-2 p-2 fw-light word' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99"}}>uioutiu54iotu5jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj4outo4</p>
+
   
 
 
 </div>
+<div className="word" >
+  <div>
+  <p className='mt-2 p-2 fw-light word' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99"}}>uioutiu54iotu5jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj4outo4</p>
+  </div>
+  
+
+  
+
+
+</div>
+      </div>
 <div className='mx-2 '>
 
 <Avatar  sx={{ width: 40, height: 40}}/>
@@ -189,17 +202,22 @@ export const Message = () => {
 
 </div>
 <div className="d-flex justify-content- ">
+  <div className="">
+
 <div className="word" >
   <p className='mt-2 p-2 fw-light' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99"}}>uioutiu54iotu54outo4</p>
-  <p className='mt-2 p-2 fw-light' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99"}}>uioutiu54iotu54outo4</p>
-  
+ 
 
 
 </div>
-<div className='mx-2 '>
+<div className="word" >
+  <p className='mt-2 p-2 fw-light' style={{backgroundColor:"#F7F7F7",borderRadius:"10px",color:"#999A99"}}>uioutiu54iotu54outo4</p>
+ 
 
-<Avatar  sx={{ width: 40, height: 40}}/>
+
+</div>
   </div>
+
 
 
 </div>
@@ -327,6 +345,9 @@ export const Message = () => {
 
   <input type="text" class="form-control" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{borderRadius:"20px",backgroundColor:"transparent",fontSize:"12px",padding:"16px"}}  ewwe/>
   </div>
+
+
+  
   </div>
 
 

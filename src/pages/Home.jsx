@@ -168,10 +168,10 @@ export const Home = () => {
         <div className="h-100">
           <div className="row gx-0 ">
             <div
-              className="col-md-4 d-flex justify-content-center mt-5"
-              style={{ height: "70vh" }}
+              className="col-lg-5 d-flex justify-content-center mt-5 mb-5"
+             
             >
-              <div className="col-md-7 bg-light rounded px-4 py-4">
+              <div className="col-md-7 bg-light rounded px-4 py-4"  style={{ maxWidth:" 400px", minHeight: "300px" }}>
                 <h6 className="text-dark text-center fw-bold">
                   Book Your Medical Procedure
                 </h6>
@@ -216,8 +216,8 @@ export const Home = () => {
                 <h6 className="py-4">Your Budget</h6>
                 <p>Select min and max price range</p>
 
-                <Box sx={{ width: 250 }}>
-                  <Slider
+                <Box  sx={{   }}>
+                  <Slider className="card-width"
                     getAriaLabel={() => "Temperature range"}
                     value={value}
                     onChange={handleChange}
@@ -236,8 +236,10 @@ export const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-8  h-100 mt-5">
-              <div className="col-md-9">
+            <div className="col-md-7  h-100 mt-5 ">
+              <div className="col-lg-9">
+                <div className="p-4">
+
                 <h1 style={{ color: "white" }}>
                   Discover Medical Tourism <br />
                   with HealthHop
@@ -250,6 +252,7 @@ export const Home = () => {
                   practitioners and hospitals in the area, so that you are in
                   good hands
                 </p>
+                </div>
               </div>
             </div>
           </div>
@@ -606,19 +609,9 @@ export const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className=" row p-xl-5 mx-xl-5">
-                <div className="col-md-5">
-                  <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
-                    <img
-                      className="mx-auto"
-                      src={require("../../src/assets/Image 5.png")}
-                      alt="Card image"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
+              <div className=" d-md-flex flex-row-reverse p-xl-5 mx-xl-5">
 
-                <div className="col-md-7 p-0">
+              <div className="col-md-7 p-0">
                   <div
                     className=""
                     style={{
@@ -640,6 +633,18 @@ export const Home = () => {
                     arranged with ease.
                   </p>
                 </div>
+                <div className="col-md-5">
+                  <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
+                    <img
+                      className="mx-auto"
+                      src={require("../../src/assets/Image 5.png")}
+                      alt="Card image"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
+                </div>
+
+
               </div>
               <div className=" d-md-flex p-md-5 mx-md-5">
                 <div className="col-md-7 p-0">
@@ -676,17 +681,8 @@ export const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className=" row p-xl-5 mx-xl-5">
-                <div className="col-md-5">
-                  <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
-                    <img
-                      className="mx-auto"
-                      src={require("../../src/assets/Image 5.png")}
-                      alt="Card image"
-                      style={{ width: "100%" }}
-                    />
-                  </div>
-                </div>
+              <div className=" d-md-flex flex-row-reverse p-xl-5 mx-xl-5">
+
 
                 <div className="col-md-7 p-0">
                   <div
@@ -708,6 +704,17 @@ export const Home = () => {
                     give you recommendations on places to see, the local
                     cuisine, and more!
                   </p>
+                </div>
+
+                <div className="col-md-5">
+                  <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
+                    <img
+                      className="mx-auto"
+                      src={require("../../src/assets/Image 5.png")}
+                      alt="Card image"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

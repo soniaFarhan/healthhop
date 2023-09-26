@@ -10,10 +10,10 @@ function MyVerticallyCenteredModal(props) {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
-    if (activeStep < 8) {
+    if (activeStep < 9) {
       setActiveStep(activeStep + 1);
     } else {
-      setActiveStep(8);
+      setActiveStep(9);
     }
   };
   const handleback = () => {
@@ -577,7 +577,7 @@ function MyVerticallyCenteredModal(props) {
       text: <p className="text-center">  where can Clients find you?  </p>  ,
      map: 
      <>
-     <div className=" ms-40px" style={{position:"absolute" , zIndex:"99",width:"70%"}}>
+     <div className=" ms-40px" style={{position:"absolute", top:"150px",left:"100px", zIndex:"99",width:"70%"}}>
      <TextField
             id="outlined-basic"
             label=" Categroy name"

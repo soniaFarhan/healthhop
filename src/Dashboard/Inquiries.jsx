@@ -1,6 +1,7 @@
 import { Chat } from '@mui/icons-material'
 import { Button } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Inquiries = () => {
 
@@ -77,13 +78,18 @@ img:
 <div className="d-flex aling-items-center justify-content-end">
 
   <div className="m-2">
+<Link to={"/message"}>
 
 <Button variant="text" style={{color:'#07A6A9'}} ><Chat/></Button>
+</Link>
   </div>
 
 <div className="m-2">
+<Link to={"/meet"}>
 
 <Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px"}}>Meet</Button>
+</Link>
+
 </div>
 
 </div>

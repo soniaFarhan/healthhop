@@ -1,4 +1,5 @@
 import { MedicalServices } from '@mui/icons-material';
+import { TextField } from '@mui/material';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
@@ -6,28 +7,63 @@ import Modal from 'react-bootstrap/Modal';
 
 function MyVerticallyCenteredModal(props) {
   return (
-    <Modal
+    <Modal style={{borderRadius:"50px"}}  
       {...props}
-      size="lg"
+      size="sm"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
+      <Modal.Header closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+         <h4>Add Packages</h4>
+        
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+         
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+      <div className="mb-2">
+        
+        <TextField className="my-2"
+          id="outlined-basic"
+          label=" name"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+  
+  <textarea
+              style={{ height:"120px" }}
+              class="form-control"
+              placeholder="Discription "
+              id="exampleFormControlTextarea1"
+              rows="4"
+            ></textarea>
+
+        <TextField className="my-2"
+          id="outlined-basic"
+          label=" Price"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+  
+
+
+      </div>
+      <div className="pt-2">
+          <Button
+           
+            style={{
+              backgroundColor: "#07A6A9",
+              color: "white",
+              padding: "16px 80px",
+              fontSize: "10px",
+              width: "100%",
+            }}
+          >
+           Done
+          </Button>
+        </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
+      
     </Modal>
   );
 }
@@ -39,11 +75,10 @@ function Popup () {
     <>
    <div className=" d-flex justify-content-between aling-items-center">
 
-      <button onClick={() => setModalShow(true)} className="btn btn_light rounded-pill fs_10px white_space">
-            <MedicalServices fontSize="small"  className='my-auto'/>
+   
+      <button className='btn my-auto ' style={{backgroundColor:"#07A6A9",color:"white"}}  onClick={() => setModalShow(true)} >Add Package</button>
             
-            Medical Provider
-          </button>
+        
 
       <MyVerticallyCenteredModal
         show={modalShow}

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Popup from '../components/Popup'
 
 export const Packges = () => {
   return (
@@ -18,7 +20,10 @@ export const Packges = () => {
 <div className="my-auto">
 <div className='my-auto'>
 
-<button className='btn my-auto ' style={{backgroundColor:"#07A6A9",color:"white"}}>add Package</button>
+
+
+<Popup/>
+
 </div>
 </div>
 

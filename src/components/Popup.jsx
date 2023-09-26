@@ -39,8 +39,8 @@ function Popup () {
     <>
    <div className=" d-flex justify-content-between aling-items-center">
 
-      <button onClick={() => setModalShow(true)} className="btn btn_light rounded-pill">
-            <MedicalServices  className='my-auto'/>
+      <button onClick={() => setModalShow(true)} className="btn btn_light rounded-pill fs_10px white_space">
+            <MedicalServices fontSize="small"  className='my-auto'/>
             
             Medical Provider
           </button>

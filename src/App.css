@@ -71,6 +71,10 @@
 .text_color{
   color: #39B7BA !important;
 }
+
+.navbar-togl-btn {
+  background-color: white !important;
+}
 /* utility classes end  */
 
 .home_background_img {
@@ -341,6 +345,69 @@ ul li {text-align: start;}
   word-wrap:break-word;
 }
 
+
+
+.equal-width > label, .equal-width > textarea {
+  flex-grow: 1;       
+  flex-shrink: 0;   
+  flex-basis: 50%;  
+}
+
+
+/* celeder css  */
+
+
+.fc-toolbar-chunk {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+  background-color: white;  
+  color: #2B4C58;
+}
+
+.fc-button-group{
+  padding: 4px;
+  background-color: #2B4C58;
+  
+}
+.fc .fc-button{
+  background-color: #2B4C58;
+  border: 1px solid #2B4C58;
+  border-radius: 50px;
+  /* height: 30px; */
+}
+
+.fc.fc-prev-button .fc-button .fc-button-primary{
+  background-color: white;
+  color: #2B4C58;
+}
+.fc .fc-daygrid-day-number {
+  padding: 4px;
+  position: relative;
+  z-index: 4;
+  color: black;
+}
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #2B4C58;
+}
+
+
+
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .fc .fc-toolbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
 
 
 .y{

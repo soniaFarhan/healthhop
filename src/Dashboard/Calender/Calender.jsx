@@ -123,12 +123,15 @@ function renderEventContent(eventInfo) {
 console.log(event.title);
 
 const handleSubmit=async(e)=>{
+
   e.preventDefault()
-//   console.log(appointment,"appointment");
-// // const result =await apiClient.post("/appointments/",appointment)
-// if(!result.ok) toast.error("Error")
-// toast.success("Successfully Submit")
+// //   console.log(appointment,"appointment");
+// // // const result =await apiClient.post("/appointments/",appointment)
+// // if(!result.ok) toast.error("Error")
+// // toast.success("Successfully Submit")
 onHide();
+
+
 // fetchDataAll();
   // setEvents([
   //       ...events,
@@ -149,7 +152,8 @@ const [page, setPage] = useState(1);
 const [userReponse,setUserResponse]=useState()
 
 // const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?page=${page}`))
-// const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
+
+// // const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
 
 
 
@@ -181,7 +185,7 @@ async function fetchData(){
       >
         <Modal.Header className="" closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-          Create New Appointment
+          Create New Booking
           </Modal.Title>
         </Modal.Header>
         <form onSubmit={handleSubmit}>
@@ -193,7 +197,7 @@ async function fetchData(){
             <input className="form-control" value={appointment.patient} onChange={(e)=>handleChange("patient",e.target.value)} type="text" name="" id="" />
           </div> */}
           <div class=" d-flex align-items-center gap-1 py-2 equal-width">
-            <label for="exampleInputEmail1" class="form-label white_space">Visit: </label>
+            <label for="exampleInputEmail1" class="form-label white_space"> Select: </label>
             <select class="form-select mb-0" 
             value={appointment.visit} onChange={(e)=>handleChange("visit",e.target.value)} aria-label="Default select example">
               
@@ -210,7 +214,7 @@ async function fetchData(){
           </div> */}
 
           <div class="d-flex align-items-center gap-1 equal-width py-2">
-            <label class="white_space mb-0" for="">Reason</label>
+            <label class="white_space mb-0" for="">Booking</label>
             <input className="form-control w-100" type="text" value={appointment.reason} onChange={(e)=>handleChange("reason",e.target.value)} name="" id="" />
           </div>
 
@@ -223,7 +227,7 @@ async function fetchData(){
        
         </Modal.Body>
         <Modal.Footer>
-          <button type="submit" class="btn btn_bg text-white">Save </button>
+          <button type="submit" class="btn btn_green text-white">Save </button>
         </Modal.Footer>
         </form>
       </Modal>

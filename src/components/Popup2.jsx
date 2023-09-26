@@ -701,9 +701,9 @@ function Popup2() {
     <>
       <button
         onClick={() => setModalShow(true)}
-        className="btn btn_light rounded-pill"
+        className="btn btn_light rounded-pill fs_10px white_space"
       >
-        <Login />
+        <Login fontSize="small" />
         Patient login
       </button>
 

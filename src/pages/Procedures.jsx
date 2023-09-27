@@ -170,7 +170,7 @@ export const Procedures = () => {
 
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="tansportation"/>
-                    <label class="form-check-label fs_14px" for="tansportation">
+                    <label class="form-check-label fs_14px text-break" for="tansportation">
                        Transportation Services(Airport/hotel/clinic)
                     </label>
                     </div>

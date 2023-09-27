@@ -91,7 +91,7 @@ export const LearnMore = () => {
     <div>
         <div className='container py-5'>
         <div className='row'>
-            <div className="col-md-6 ">
+            <div className="col-md-7 ">
                 <div className='d-flex gap-2'>
                 <button className='btn btn_green rounded-pill'>
                     Hair Transplant
@@ -106,7 +106,7 @@ export const LearnMore = () => {
                     <h4 >
                         Anadulo Medical Center
                     </h4>
-                    <p className=''>
+                    <p className='cu-color'>
                       <LocationOnIcon/>  Turkey- 31 Specialties
                     </p>
 
@@ -210,7 +210,7 @@ export const LearnMore = () => {
 
 
                     <div className='py-5'>
-                        <h3>
+                        <h3 className='fw-bold'>
                             Pricing
                         </h3>
 
@@ -246,7 +246,7 @@ export const LearnMore = () => {
 
                     <div className='py-5'>
 
-                        <h3>
+                        <h3 className='fw-bold'>
                             Location
                         </h3>
 
@@ -259,7 +259,7 @@ export const LearnMore = () => {
 
                     <div className='py-5'>
 
-                        <h3>
+                        <h3 className='fw-bold'>
                             Review  
                         </h3>
 
@@ -297,7 +297,7 @@ export const LearnMore = () => {
                     </div>
 
                     <div className='py-5'>                       
-                    <h3>
+                    <h3 className='fw-bold'>
                     Medical Staff
                      </h3>
 
@@ -320,7 +320,7 @@ export const LearnMore = () => {
 
                     <div className='py-5'>
 
-                    <h3>
+                    <h3 className='fw-bold'>
                     Gallery
                     </h3>
 
@@ -352,8 +352,8 @@ export const LearnMore = () => {
             </div>
 
 
-            <div className="col-md-6">
-                <div className="col-md-6 ">
+            <div className="col-md-5">
+                <div className=" ">
                 <div >
                     <img className='img-fluid' src={require("../assets/consulation.png")} alt="" />
                 </div>
@@ -506,7 +506,7 @@ const OverviewComponent = () => {
   return (
     <div>
           <p className='fs_14px'>
-            <p className=''> 
+            <p className='cu-color'> 
              Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
             </p>
     

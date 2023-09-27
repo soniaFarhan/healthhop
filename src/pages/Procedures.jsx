@@ -208,7 +208,7 @@ export const Procedures = () => {
                             Select min and max price range
                         </p>
 
-                        <Box className="" sx={{ width: 250 }}>
+                        <Box className="" >
                             <Slider
                                 getAriaLabel={() => "Temperature range"}
                                 value={value}

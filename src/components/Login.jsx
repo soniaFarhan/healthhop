@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Divider, Grid, Paper, TextField, Typography } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Popup3 from './Popup3';
 
 const Login = ({ role }) => {
   const navigate = useNavigate();
@@ -8,6 +9,11 @@ const Login = ({ role }) => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState({ text: "", color: "" });
   const [loading, setLoading] = useState(false);
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+
+  // Access specific query parameters
+  const method = searchParams.get('method');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -85,8 +91,8 @@ const Login = ({ role }) => {
 
           {/* <Typography  variant="h5"  fontWeight="bold" my={2}>
         </Typography> */}
-          <Link className='text-center text_color' to={'/'}>
-            Register
+          <Link className='text-center text_color' to={`/Home?method=${method}`}>
+        hjhjhj
           </Link>
 
         </Grid>

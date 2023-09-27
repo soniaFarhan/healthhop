@@ -3,6 +3,7 @@ import {
   Outlet,
   Link,
   NavLink,
+  useLocation,
 } from "react-router-dom";
 import LoginIcon from '@mui/icons-material/Login';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
@@ -17,7 +18,11 @@ import Popup3 from "./Popup3";
 
 export const Layout = () => {
 
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
 
+  // Access specific query parameters
+  const method = searchParams.get('method');
 
   return (
     <div className="layout">
@@ -198,7 +203,7 @@ export const Layout = () => {
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
           
-       <Popup2/>
+       <Popup2 show={method==="patient"}/>
        <Popup3/>
 
 

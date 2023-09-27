@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import ProgressMobileStepper from "./Steper";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 function MyVerticallyCenteredModal(props) {
@@ -64,7 +65,7 @@ function MyVerticallyCenteredModal(props) {
           commonly <br /> to demonstrate the visual form of
         </p>
       ),
-     login: <Link to="/">
+     login: <Link to="/?method=patient">
 
      <Button
                  
@@ -613,6 +614,9 @@ function MyVerticallyCenteredModal(props) {
      
 
     },
+
+
+   
   ]
 
   return (
@@ -632,6 +636,8 @@ function MyVerticallyCenteredModal(props) {
           {" "}
           <ArrowBack />
         </Button>
+
+
         {}
         <Modal.Title
           className="text-center"
@@ -730,10 +736,13 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
-function Popup2() {
+function Popup2({show}) {
   const [modalShow, setModalShow] = React.useState(false);
   const [activeStep, setActiveStep] = React.useState(0);
 
+  useEffect(()=>{
+setModalShow(show)
+  },[show])
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };

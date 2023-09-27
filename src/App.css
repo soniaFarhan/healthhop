@@ -443,14 +443,6 @@ ul li {text-align: start;}
 .place-card-medium{
   display: none !important;
 }
-/* waleed css*/
-
-.w-fit{
-  max-width: fit-content;
-  background-color: rgb(214,239,240);
-  color: rgb(32,175,178);
-}
-
 .triangle-down {
 	width: 0;
 	height: 0;
@@ -458,3 +450,20 @@ ul li {text-align: start;}
 	border-right: 25px solid transparent;
 	border-top: 50px solid #555;
 }
+
+
+/* waleed css*/
+
+.w-fit{
+  max-width: fit-content;
+  background-color: rgb(214,239,240);
+  color: rgb(32,175,178);
+}
+select.bg-select{
+  background-color: rgb(236,248,248);
+}
+select.bg-select option{
+  background-color: rgb(255, 255, 255);
+}
+
+

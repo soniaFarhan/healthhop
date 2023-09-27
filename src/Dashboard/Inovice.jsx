@@ -1,5 +1,6 @@
 import { Button, TextField } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Inovice = () => {
   return (
@@ -36,8 +37,11 @@ scalp and grafting these pieces of skin onto bald or thinning areas of the scalp
 <h5 className='fw-bold'>  Date: <span  style={{fontSize:"13px"}}>  9-1-2023</span> </h5>
   </div>
 <div className="m-2">
+<Link to={"/Invoice-details"}>
+
 
 <Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px"}}>see details</Button>
+</Link>
 </div>
 </div>
 </div>

@@ -82,8 +82,8 @@ export const Home = () => {
         <MedicalServicesOutlined
           style={{
             backgroundColor: "#07A6A9",
-            width: "70px",
-            height: "70px",
+            width: "90px",
+            height: "90px",
             color: "white",
             borderRadius: "10px",
             fontSize: "10px",
@@ -101,8 +101,8 @@ export const Home = () => {
         <Person
           style={{
             backgroundColor: "#07A6A9",
-            width: "70px",
-            height: "70px",
+            width: "90px",
+            height: "90px",
             color: "white",
             borderRadius: "10px",
             fontSize: "10px",
@@ -119,8 +119,8 @@ export const Home = () => {
         <Lock
           style={{
             backgroundColor: "#07A6A9",
-            width: "70px",
-            height: "70px",
+            width: "90px",
+            height: "90px",
             color: "white",
             borderRadius: "10px",
             fontSize: "10px",
@@ -287,11 +287,11 @@ export const Home = () => {
               <div className="col-lg-9">
                 <div className="p-4">
 
-                <h1 className="fw-bold lh-3" style={{ color: "white" }}>
+                <h1 className=" heading" style={{ color: "white" }}>
                   Discover Medical Tourism 
                   with HealthHop
                 </h1>
-                <p className="text-white pe-lg-5">
+                <p className="text-white pe-lg-5 " style={{color:"#8699A3",fontWeight:"lighter"}}>
                   HealthHop was founded in San Francisco, CA. Our mission is to
                   make medical 
                   tourism more safe and accessible than ever. We only work with
@@ -310,7 +310,7 @@ export const Home = () => {
 
       <section className="py-5">
         <div className="d-flex justify-content-center  py-3 mb-5">
-          <h3
+          <h3 className="heading"
             style={{
               borderBottom: "2px solid green",
               display: "inline-block",
@@ -393,7 +393,7 @@ export const Home = () => {
 
       <section className="">
         <div className="d-flex justify-content-center  py-5">
-          <h3 className="text-center"
+          <h3 className="text-center heading"
             style={{
               borderBottom: "2px solid green",
               display: "inline-block",
@@ -403,8 +403,8 @@ export const Home = () => {
             Access to World Class medical providers
           </h3>
         </div>
-        <div className="container">
-          <div className="mx-md-5">
+        <div className="">
+          <div className="">
             <div className="p-3 bg">
               <div
                 className=" px-md-5 d-md-flex"
@@ -438,7 +438,7 @@ export const Home = () => {
 
       <section className="py-5">
         <div className="d-flex justify-content-center  py-3">
-          <h2
+          <h2 className="heading"
             style={{
               borderBottom: "2px solid green",
               display: "inline-block",
@@ -492,7 +492,7 @@ export const Home = () => {
       </section>
       <section className="py-5">
         <div className="d-flex justify-content-center  py-3">
-          <h2
+          <h2 className="heading"
             style={{
               borderBottom: "2px solid green",
               display: "inline-block",
@@ -506,9 +506,9 @@ export const Home = () => {
           className="text-center"
           style={{ color: "#939393", fontSize: "11px" }}
         >
-          <p>
+          <p className="mb-5" style={{fontSize:"15px"}} >
             We collect reviews from our usersso you can get an honest opinion of
-            what{" "}
+            what <br /> experience with our website are really  like!
           </p>
           <p></p>
         </div>
@@ -601,8 +601,8 @@ export const Home = () => {
         
       </section>
 
-      <section className="mx-lg-5">
-        <div className="mx-lg-5 ">
+      <section className="">
+        <div className=" ">
           <div className="bg1 ">
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
               <h2 className="heading"
@@ -628,7 +628,10 @@ export const Home = () => {
 
             <div className=" m-5">
               <div className=" d-md-flex p-lg-5 mx-lg-5">
-                <div className="col-md-7 p-0">
+                <div className="col-md-7  p-0 mt-5 pt-5">
+                   <div className="mt-1">
+
+                   
                   <div
                     className=""
                     style={{
@@ -642,21 +645,22 @@ export const Home = () => {
                     </h4>
                   </div>
                   <h2>Book Your Procedure</h2>
-                  <p className="" style={{ fontSize: "12px" }}>
+                  <p className="" style={{ fontSize: "16px", }}>
                     Simply browse our selection of medical providers and
                     services and book a consultation with the one that best
                     meets your needs. Our app provides detailed information on
                     each procedure to help you make an informed decision.
                   </p>
+                  </div>
                 </div>
 
                 <div className="col-lg-5">
-                  <div className="mx-auto d-flex justify-content-center m-sm-5 p-sm-5">
-                    <img
-                      className="mx-auto"
+                  <div className="mx-auto d-flex justify-content-center  " style={{width:"15rem"}}>
+                    <img 
+                      className="mx-auto img-fluid"
                       src={require("../../src/assets/Image 4.png")}
                       alt="Card image"
-                      style={{ width: "150px" }}
+                    
                     />
                   </div>
                 </div>
@@ -722,13 +726,13 @@ export const Home = () => {
                   </p>
                 </div>
 
-                <div className="col-md-5">
-                  <div className="mx-auto d-flex justify-content-center">
-                    <img
-                      className="mx-auto"
+                <div className="col-lg-5">
+                  <div className="mx-auto d-flex justify-content-center  " style={{width:"15rem"}}>
+                    <img 
+                      className="mx-auto img-fluid"
                       src={require("../../src/assets/Image 4.png")}
                       alt="Card image"
-                      style={{ width: "150px" }}
+                    
                     />
                   </div>
                 </div>
@@ -788,12 +792,13 @@ export const Home = () => {
         </div>
 
         <Box>
-          <Container>
-            <Grid
-              className=" mx-auto px-md-5"
+          <div className="mx-md-5">
+            <Grid 
+              className=" mx-auto "
               container
-              spacing={3}
+              spacing={0}
               alignItems={"center"}
+              width={"80%"}
             >
               {card.map((e, index) => (
                 <Grid
@@ -807,21 +812,21 @@ export const Home = () => {
                     style={{
                       borderRadius: "10px",
                       color: "#939393",
-                      width: "300px",
-                      height: "210px",
+                      width: "350px",
+                      height: "330px",
                     }}
                   >
                     <div className="    ">
-                      <div className=" px-4 ">{e.icon}</div>
-                      <h5
+                      <div className=" px-4 mb-3 ">{e.icon}</div>
+                      <h4
                         className="mb-0  px-4 pt-3 "
                         style={{ color: "black" }}
                       >
                        {e.name}
-                      </h5>
+                      </h4>
                       <p
                         className="mb-0  card-content px-4 pb-5  "
-                        style={{ fontSize: "12px" }}
+                        style={{ fontSize: "15px" }}
                       >
                         {e.title}
                       </p>
@@ -830,7 +835,7 @@ export const Home = () => {
                 </Grid>
               ))}
             </Grid>
-          </Container>
+          </div>
         </Box>
       </section>
 
@@ -856,22 +861,22 @@ export const Home = () => {
                 className=" row px-md-5 mx-md-5 mb-4 pt-1 "
               
               >
-                <div className="px-3  col-md-7  my-auto " >
+                <div className="px-3  col-md-7  my-auto pb-5 " >
                 
 
 
                  
-                  <h3 className="px-3" style={{ color: "white",fontSize:"26px" }}>
+                  <h2 className="px-3" style={{ color: "white", }}>
                     Our Mission
-                  </h3>
-                  <p className="px-3" style={{ color: "white",fontSize:"12px" }}>
+                  </h2>
+                  <p className="px-3" style={{ color: "white",fontSize:"14px" }}>
                     At HealthHop, we believe that everyone should have access to
                     affordable and quality medical care. Our mission is to make
                     safe and affordable medical care accessible to anyone by
                     providing a centralized, all-in-one application that
                     streamlines the booking process.
                   </p>
-                  <p className="px-3" style={{ color: "white",fontSize:"12px" }}>
+                  <p className="px-3 mb-5" style={{ color: "white",fontSize:"14px" }}>
                     At HealthHop, we believe that everyone should have access to
                     affordable and quality medical care. Our mission is to make
                     safe and affordable medical care accessible to anyone by
@@ -880,14 +885,15 @@ export const Home = () => {
                   </p>
                   
                 </div>
-                <div className=" col-md-5 my-auto ">
-                  <h3 style={{ color: "white" }}>
+                <div className=" col-md-5 my-auto " style={{height:"500px"}}>
+                 
                     <img
                       src={require("../assets/md-3.png")}
                       width={"100%"}
+                      height={"100%"}
                       alt=""
                     />
-                  </h3>
+                  
                 </div>
               </div>
             </div>

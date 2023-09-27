@@ -1,6 +1,10 @@
 /* usman css  */
 
 /* utility classes  */
+body{
+  font-family: 'Rubik';
+}
+
 
 .fs_14px{
   font-size: 14px !important;

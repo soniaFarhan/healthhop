@@ -8,9 +8,10 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { Avatar, Container, Grid, Paper, Rating, TextField } from "@mui/material";
 import { Lock, MedicalServicesOutlined, Person } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaQuoteLeft } from 'react-icons/fa';
 export const Home = () => {
+ 
   const [value, setValue] = useState([20, 37]);
 
   const handleChange = (event, newValue) => {

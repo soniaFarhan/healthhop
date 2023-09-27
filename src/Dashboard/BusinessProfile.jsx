@@ -181,7 +181,7 @@ export const BusinessProfile = () => {
          <p>
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quasi doloremque dolorum non magnam. Exercitationem, voluptatibus accusamus, itaque animi voluptatem consequatur esse illo illum molestias neque aspernatur, quas tempore autem.
          </p>
-<div className="d-flex me-auto" >
+         <div className="d-flex me-auto" >
 <div className="me-2">
 
 <div className="d-flex" style={{color:"#07A6A9"}}>
@@ -200,14 +200,11 @@ export const BusinessProfile = () => {
   <div className="me-2">
   <i class="bi bi-2-circle " style={{fontSize:"20px"}}></i>
   </div>
-  <div className="">
-  <p className='my-auto me-auto' >
+  <p className='my-auto me-auto'>
   All inclusion price range:
 
   </p>
-
-  </div>
-  <p className='my-auto ms-auto' style={{color:"black"}}>500 to 1000 USA</p>
+  <p className='my-auto mx-3' style={{color:"black"}}>500 to 1000 USA</p>
   
   
   </div>
@@ -225,7 +222,7 @@ export const BusinessProfile = () => {
   </div>
 <div className="d-flex" style={{color:"#07A6A9"}}>
   <div className="me-2">
-  <i class="bi bi-4-circle " style={{fontSize:"20px"}}></i>
+  <i class="bi bi-1-circle " style={{fontSize:"20px"}}></i>
   </div>
   <p className='my-auto me-auto' >
   Istant booking  fixed price for All-inclusive:

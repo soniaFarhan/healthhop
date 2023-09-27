@@ -70,23 +70,23 @@ export const OurBlogs = () => {
     <div>
 
     <div className='container pt-5'>
-        <div className='blog_background_img d-flex justify-content-center align-items-center'>
-            <h2 className='text-white'>
+        <div className='blog_background_img d-flex justify-content-center align-items-end'>
+            <h2 className='text-white mb-5'>
                Our Blogs
             </h2>
         </div>
 
         <div className="container">
             <div className="row my-5">
-              <div className='col-md-7 d-flex flex-wrap justify-content-center'>
+              <div className='col-md-7 d-flex flex-wrap justify-content-center px-0'>
                 {cardData.map((card, index) => (
-                <div key={index} className="col-12 col-sm-8 col-md-6 col-lg-5">
+                <div key={index} className="col-12 col-sm-8 col-md-6 ">
                     <div className="card border-0">
                       <img width={"100%"} className="card-img img-fluid" src={card.imageSrc} alt={`card image ${index}`} />
-                    <div className="card-img-overlay text-white d-flex flex-column justify-content-center px-5">
+                    <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5">
                         <h5 className="card-title">{card.title}</h5>
-                        <p className="card-text fs_14px">{card.description}</p>
-                        <p>{card.date}</p>
+                        <p className="card-text fs_14px" style={{opacity:"0.8"}}>{card.description}</p>
+                        <p  style={{opacity:"0.8"}}>{card.date}</p>
                     </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ export const OurBlogs = () => {
                 <div>
                   {blogPosts.map((post, index) => (
                     <div className='p-3 border rounded-4 my-2' key={index} style={{backgroundColor:'#FAFAFA'}}>
-                      <h6 className='text_color'>{post.title}</h6>
+                      <h6 className='h-color fw-bold'>{post.title}</h6>
                       <div>
                       <p className='fs_14px'>
                         {expandedPosts[index]
@@ -110,9 +110,9 @@ export const OurBlogs = () => {
                           : <p className='mb-0'>{post.description.slice(0, 50)}...</p>
                         }
                         <span
-                          className='text_color'
+                          className='h-color fw-bold'
                           onClick={() => toggleExpand(index)}
-                          style={{ cursor: 'pointer', color: 'blue' }}
+                          style={{ cursor: 'pointer', }}
                         >
                           {expandedPosts[index] ? 'Read Less' : 'Read More'}
                         </span>

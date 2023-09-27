@@ -469,5 +469,13 @@ select.bg-select{
 select.bg-select option{
   background-color: rgb(255, 255, 255);
 }
-
+.cu-color{
+  color: rgb(112,112,112);
+}
+.h-color{
+  color: rgb(3, 169, 172);
+}
+.gradient-btn{
+  background-image: linear-gradient(to right,rgb(7,165,168), rgb(0,26,53));
+}
 

@@ -559,7 +559,7 @@ export const Home = () => {
         <div className="mx-lg-5 ">
           <div className="bg1 ">
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
-              <h2
+              <h2 className="heading"
                 style={{
                   borderBottom: "2px solid green",
                   display: "inline-block",
@@ -728,9 +728,9 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-5">
+      <section className="py-5" style={{marginBottom:"200px"}}>
         <div className="d-flex justify-content-center  py-3">
-          <h2
+          <h2 className="heading"
             style={{
               borderBottom: "2px solid green",
               display: "inline-block",
@@ -789,17 +789,17 @@ export const Home = () => {
       </section>
 
       <section className="">
-        <div className="container">
-          <div className="mx-md-5">
+        <div className="">
+          <div className="">
             <div className="p-3 bg">
               <div className="d-flex justify-content-center  pt-5 mt-5">
-                <h2
+                <h2 className="heading"
                   style={{
                     borderBottom: "2px solid green",
                     display: "inline-block",
                     paddingBottom: "7px",
                     color: "white",
-                    fontSize:"38px"
+                   
                   }}
                 >
                   About HealthHop
@@ -852,12 +852,14 @@ export const Home = () => {
         <div className="container">
           <div className="mx-md-5 ">
             <div className="p-3 ">
-              <div className="d-flex justify-content-center  py-5">
-                <h1
+              <div className="d-flex justify-content-center  pt-5 pb-4 ">
+                <h1 className="heading"
                   style={{
-                    borderBottom: "2px solid green",
+                    borderBottom: "2px solid #07A6A9",
                     display: "inline-block",
                     paddingBottom: "7px",
+                   
+                   
                   }}
                 >
                   Contact us

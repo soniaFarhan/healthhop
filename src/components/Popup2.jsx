@@ -73,9 +73,12 @@ function MyVerticallyCenteredModal(props) {
                    backgroundColor: "white",
                    color: "#07A6A9",
                    padding: "16px 80px",
-                   fontSize: "10px",
+                   fontSize: "30px",
                    width: "100%",
-                   border:"0px"
+                   border:"0px",
+                   fontWeight:"500",
+                   paddingBottom:"5px"
+
                  }}
                >
                 login
@@ -176,7 +179,7 @@ function MyVerticallyCenteredModal(props) {
       text: (
         <p className="text-center" style={{ fontSize: "10px" }}>
           {" "}
-          Enter your password for business frofile
+          Enter your password for business profile
         </p>
         ),
      
@@ -700,7 +703,7 @@ function MyVerticallyCenteredModal(props) {
               backgroundColor: "#07A6A9",
               color: "white",
               padding: "16px 80px",
-              fontSize: "10px",
+              fontSize: "15px",
               width: "100%",
             }}
           >
@@ -714,7 +717,7 @@ function MyVerticallyCenteredModal(props) {
               backgroundColor: "#07A6A9",
               color: "white",
               padding: "16px 80px",
-              fontSize: "10px",
+              fontSize: "15px",
               width: "100%",
             }}
           >

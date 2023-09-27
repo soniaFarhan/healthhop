@@ -792,41 +792,47 @@ export const Home = () => {
         <div className="container">
           <div className="mx-md-5">
             <div className="p-3 bg">
-              <div className="d-flex justify-content-center  py-5">
-                <h3
+              <div className="d-flex justify-content-center  pt-5 mt-5">
+                <h2
                   style={{
                     borderBottom: "2px solid green",
                     display: "inline-block",
                     paddingBottom: "7px",
                     color: "white",
+                    fontSize:"38px"
                   }}
                 >
                   About HealthHop
-                </h3>
+                </h2>
               </div>
 
               <div
-                className=" row px-md-5 "
-                style={{ paddingBottom: "140px", paddingTop: "50px" }}
+                className=" row px-md-5 mx-md-5 mb-4 pt-1 "
+              
               >
-                <div className="px-3  col-md-7 ">
-                  <h4 className="px-3" style={{ color: "white" }}>
+                <div className="px-3  col-md-7  my-auto " >
+                
+
+
+                 
+                  <h3 className="px-3" style={{ color: "white",fontSize:"26px" }}>
                     Our Mission
-                  </h4>
-                  <p className="px-3" style={{ color: "white" }}>
+                  </h3>
+                  <p className="px-3" style={{ color: "white",fontSize:"12px" }}>
                     At HealthHop, we believe that everyone should have access to
                     affordable and quality medical care. Our mission is to make
                     safe and affordable medical care accessible to anyone by
                     providing a centralized, all-in-one application that
                     streamlines the booking process.
                   </p>
-                  <p className="px-3" style={{ color: "white" }}>
+                  <p className="px-3" style={{ color: "white",fontSize:"12px" }}>
                     At HealthHop, we believe that everyone should have access to
                     affordable and quality medical care. Our mission is to make
                     safe and affordable medical care accessible to anyone by
                     providing a centralized, all-in-one application that
                     streamlines the booking process.
                   </p>
+                  
                 </div>
                 <div className=" col-md-5 my-auto ">
                   <h3 style={{ color: "white" }}>
@@ -847,15 +853,15 @@ export const Home = () => {
           <div className="mx-md-5 ">
             <div className="p-3 ">
               <div className="d-flex justify-content-center  py-5">
-                <h3
+                <h1
                   style={{
                     borderBottom: "2px solid green",
                     display: "inline-block",
                     paddingBottom: "7px",
                   }}
                 >
-                  Contact Us
-                </h3>
+                  Contact us
+                </h1>
               </div>
 
               <Box

@@ -169,10 +169,10 @@ export const Home = () => {
         <div className="h-100">
           <div className="row gx-0 ">
             <div
-              className="col-lg-5 d-flex justify-content-center mt-5 mb-5"
+              className="col-lg-5 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
              
             >
-              <div className="col-md-7 bg-light rounded px-4 py-4"  style={{ maxWidth:" 400px", minHeight: "300px" }}>
+              <div className="col-md-7 bg-light rounded px-4 py-4"  style={{ minWidth:" 350px", minHeight: "300px" }}>
                 <h6 className="text-dark text-center fw-bold">
                   Book Your Medical Procedure
                 </h6>
@@ -180,37 +180,83 @@ export const Home = () => {
 
                 <div className="mb-3">
                   <select
-                    class="form-select"
+                    class="form-select bg-select"
                     aria-label="Default select example"
                   >
-                    <option selected>Chose Category</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected>Choose Category</option>
+                    <option value="1">Addiction Treatment</option>
+                    <option value="2">Aesthetics Nn-Surgical</option>
+                    <option value="3">Bone Marrow Transplant</option>
+                    <option value="4">Cancer Treatment</option>
+                    <option value="5">Cardiac Surgery</option>
+                    <option value="6">Cardiology</option>
+                    <option value="7">Cosmetic Surgery</option>
+                    <option value="8">Dermatology</option>
+                    <option value="9">Dialysis</option>
+                    <option value="10">Ears, Nose, Throat</option>
+                    <option value="11">Endocrinology</option>
+                    <option value="12">Gastroenterology</option>
+                    <option value="13">Hair Transplant</option>
+                    <option value="14">Hematology</option>
+                    <option value="15">Neurolgy</option>
+                    <option value="16">OB_GYN</option>
+                    <option value="17">Dental Care</option>
+                    <option value="18">Plastic Surgery / Aesthetic Surgery</option>
+                    <option value="19">Bariatic Surgery</option>
+                    <option value="20">Orthopedic Surgery</option>
+                    <option value="21">IVF/Fertility Treatment</option>
+                    <option value="22">Optometry/ Eye Surgery</option>
+                    <option value="23">Pediatrics</option>
+                    <option value="24">Sports Medicine</option>
+                    <option value="25">Stem Cell Therapy</option>
                   </select>
                 </div>
 
                 <div className="mb-3">
                   <select
-                    class="form-select"
+                    class="form-select  bg-select"
                     aria-label="Default select example"
                   >
-                    <option selected>Chose Sub Category</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected>Choose Sub Category</option>
+                    <option value="1">Addiction Treatment</option>
+                    <option value="2">Aesthetics Nn-Surgical</option>
+                    <option value="3">Bone Marrow Transplant</option>
+                    <option value="4">Cancer Treatment</option>
+                    <option value="5">Cardiac Surgery</option>
+                    <option value="6">Cardiology</option>
+                    <option value="7">Cosmetic Surgery</option>
+                    <option value="8">Dermatology</option>
+                    <option value="9">Dialysis</option>
+                    <option value="10">Ears, Nose, Throat</option>
+                    <option value="11">Endocrinology</option>
+                    <option value="12">Gastroenterology</option>
+                    <option value="13">Hair Transplant</option>
+                    <option value="14">Hematology</option>
+                    <option value="15">Neurolgy</option>
+                    <option value="16">OB_GYN</option>
+                    <option value="17">Dental Care</option>
+                    <option value="18">Plastic Surgery / Aesthetic Surgery</option>
+                    <option value="19">Bariatic Surgery</option>
+                    <option value="20">Orthopedic Surgery</option>
+                    <option value="21">IVF/Fertility Treatment</option>
+                    <option value="22">Optometry/ Eye Surgery</option>
+                    <option value="23">Pediatrics</option>
+                    <option value="24">Sports Medicine</option>
+                    <option value="25">Stem Cell Therapy</option>
                   </select>
                 </div>
 
                 <div>
                   <select
-                    class="form-select"
+                    class="form-select bg-select"
                     aria-label="Default select example"
                   >
-                    <option selected>Chose Location</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected>Any Location</option>
+                    <option value="1">-Istanbul</option>
+                    <option value="2">-Izmir</option>
+                    <option value="3">-Antalya</option>
+                    <option value="4">-Bursa</option>
+                    <option value="5">-Mugla (Fethiye, Marmaris, Bodrum)</option>
                   </select>
                 </div>
 
@@ -241,15 +287,15 @@ export const Home = () => {
               <div className="col-lg-9">
                 <div className="p-4">
 
-                <h1 style={{ color: "white" }}>
-                  Discover Medical Tourism <br />
+                <h1 className="fw-bold lh-3" style={{ color: "white" }}>
+                  Discover Medical Tourism 
                   with HealthHop
                 </h1>
-                <p className="text-white">
+                <p className="text-white pe-lg-5">
                   HealthHop was founded in San Francisco, CA. Our mission is to
-                  make medical <br />
+                  make medical 
                   tourism more safe and accessible than ever. We only work with
-                  the best medical <br />
+                  the best medical 
                   practitioners and hospitals in the area, so that you are in
                   good hands
                 </p>
@@ -263,7 +309,7 @@ export const Home = () => {
       {/* simple section  */}
 
       <section className="py-5">
-        <div className="d-flex justify-content-center  py-3">
+        <div className="d-flex justify-content-center  py-3 mb-5">
           <h3
             style={{
               borderBottom: "2px solid green",
@@ -299,11 +345,11 @@ export const Home = () => {
                       lg={6}
                       sx={{ position: "relative"}}
                     >
-                      <Card className="" sx={{minHeight: 300 }}>
+                      <Card className="" sx={{height: 370 }}>
                         <CardMedia
                           component="img"
                           alt={card.title}
-                          height="140"
+                          height="240"
                           image={card.image}
                         />
                         <CardContent>
@@ -321,16 +367,16 @@ export const Home = () => {
                         </CardContent>
                       </Card>
                       <div
-                        className="d-flex justify-content-center align-items-center text-white px-2 py-2 white_space"
+                        className="d-flex justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
                         style={{
                           width: "45px",
                           height: "45px",
                           borderRadius: "50%",
                           backgroundColor: "#07A6A9",
                           position: "absolute",
-                          top: "3px",
+                          top: "20px",
                           zIndex: "2000",
-                          left: "150px",
+                          left: "50%",
                           fontSize: "11px",
                         }}
                       >

@@ -4,6 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Rating } from '@mui/material';
 import ReactSlider from '../components/ReactSLider';
 import HelpIcon from '@mui/icons-material/Help';
+import { Link } from 'react-router-dom';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
@@ -88,7 +89,7 @@ export const LearnMore = () => {
     
     const defaultValue = 4;
   return (
-    <div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
         <div className='container py-5'>
         <div className='row'>
             <div className="col-md-7 ">
@@ -178,7 +179,7 @@ export const LearnMore = () => {
                     </button>
                     </div>
 
-                    <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
+                    {/* <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
                         <p onClick={() => handleTabClick('Overview')} className={activeTab === 'Overview' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
                             <span className='mx-2'>Overview</span>
                         </p>
@@ -197,7 +198,31 @@ export const LearnMore = () => {
                         <p onClick={() => handleTabClick('Videos')} className={activeTab === 'Videos' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
                         <span className='mx-2'>Gallery</span>
                         </p>
+                     </div> */}
+                    <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
+                        <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#item-2"><span className='mx-2'>Overview</span></a>
+                            
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#pricing"><span className='mx-2'>Price</span></a> 
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                              <a class="nav-link" href="#gallery"><span className='mx-2'>Location</span></a> 
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#Review "> <span className='mx-2'>Reviews</span> </a>
+                       
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                           <a class="nav-link" href="#staff">  <span className='mx-2'>Medical Staff</span> </a>
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                          <a class="nav-link" href="#gallery">  <span className='mx-2'>Gallery</span> </a>
+                        </p>
                      </div>
+                     
+
 
                      {activeTab === 'Overview' && <OverviewComponent />}
                      {activeTab === 'Price' && <PriceComponent />}
@@ -209,7 +234,7 @@ export const LearnMore = () => {
 
 
 
-                    <div className='py-md-5 py-2'>
+                    <div id='pricing' className='py-md-5 py-2'>
                         <h3 className='fw-bold'>
                             Pricing
                         </h3>
@@ -244,20 +269,20 @@ export const LearnMore = () => {
 
                     </div>
 
-                    <div className='py-md-5 py-2'>
+                    <div id='map' className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Location
                         </h3>
 
-                        <div className='my-4 '>
+                        <div id='map' className='my-4 '>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6727.52478126572!2d74.44625339223997!3d32.53249249043371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ee8df4221562b%3A0xfa3bd1b74369b63f!2sKapurowali%2C%20Sialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695019725799!5m2!1sen!2s" width="100%"  height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         </div>
                         
                     </div>
 
-                    <div className='py-md-5 py-2'>
+                    <div id='Review ' className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Review  
@@ -296,7 +321,7 @@ export const LearnMore = () => {
                         
                     </div>
 
-                    <div className='py-md-5 py-2'>                       
+                    <div id='staff' className='py-md-5 py-2'>                       
                     <h3 className='fw-bold mt-5'>
                     Medical Staff
                      </h3>
@@ -318,7 +343,7 @@ export const LearnMore = () => {
 
                     </div>
 
-                    <div className='py-md-5 py-2'>
+                    <div id='gallery' className='py-md-5 py-2'>
 
                     <h3 className='fw-bold'>
                     Gallery

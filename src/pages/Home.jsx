@@ -407,7 +407,7 @@ export const Home = () => {
           <div className="">
             <div className="p-3 bg">
               <div
-                className=" px-md-5 d-md-flex"
+                className=" px-md-5 mx-5 d-md-flex "
                 style={{ paddingBottom: "140px", paddingTop: "50px" }}
               >
                 <div className="me-5" style={{ width: "30%" }}>
@@ -656,7 +656,7 @@ export const Home = () => {
 
                 <div className="col-lg-5">
                   <div className="mx-auto d-flex justify-content-center  " style={{width:"15rem"}}>
-                    <img 
+                    <img  style={{objectFit:"contain"}}
                       className="mx-auto img-fluid"
                       src={require("../../src/assets/Image 4.png")}
                       alt="Card image"
@@ -703,7 +703,7 @@ export const Home = () => {
 
               </div>
               <div className=" d-md-flex p-md-5 mx-md-5">
-                <div className="col-md-7 p-0">
+                <div className="col-md-7 mt-5 pt-5">
                   <div
                     className=""
                     style={{

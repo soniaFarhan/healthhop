@@ -84,7 +84,7 @@ export const OurBlogs = () => {
                     <div className="card border-0 ">
                       <div className=''>
                       <img width={"100%"} className="card-img img-fluid position-relative" src={card.imageSrc} alt={`card image ${index}`} />
-                      <div className='position-absolute w-100 h-100  bg-dark ' style={{opacity:"0.5", top: "0"}}></div>
+                      <div className='position-absolute   bg-dark rounded-5' style={{opacity:"0.9", top: "10px", right:"10px", left:"10px", bottom:"10px"}}></div>
                       </div>
                     <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5">
                         <h5 className="card-title">{card.title}</h5>

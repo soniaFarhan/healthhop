@@ -80,13 +80,13 @@ export const OurBlogs = () => {
             <div className="row my-5">
               <div className='col-md-7 d-flex flex-wrap justify-content-center px-0'>
                 {cardData.map((card, index) => (
-                <div key={index} className="col-12 col-sm-8 col-md-6  ">
+                <div key={index} className="col-11 col-sm-8 col-lg-6">
                     <div className="card border-0 ">
                       <div className=''>
                       <img width={"100%"} className="card-img img-fluid position-relative" src={card.imageSrc} alt={`card image ${index}`} />
-                      <div className='position-absolute   bg-dark rounded-5' style={{opacity:"0.9", top: "10px", right:"10px", left:"10px", bottom:"10px"}}></div>
+                      <div className='position-absolute rounded-4  bg-dark' style={{opacity:"0.7", top: "10px", right:"10px", left:"10px", bottom:"10px"}}></div>
                       </div>
-                    <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5">
+                    <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5 ">
                         <h5 className="card-title">{card.title}</h5>
                         <p className="card-text fs_14px" style={{opacity:"0.8"}}>{card.description}</p>
                         <p  style={{opacity:"0.8"}}>{card.date}</p>

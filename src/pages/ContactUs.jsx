@@ -59,10 +59,10 @@ export const ContactUs = () => {
                     <form action="">
 
                     <div className="row">
-                        <div className='col-md-6'>
+                        <div className='col-md-6 mt-md-0 mt-3'>
                            <input className='form-control' type="text" name="" id="" placeholder='Your Name' />
                         </div>
-                        <div className='col-md-6'>
+                        <div className='col-md-6 mt-md-0 mt-3'>
                              <input className='form-control' type="email" name="" id="" placeholder='Your Email' />
                         </div>
                     </div>
@@ -71,7 +71,7 @@ export const ContactUs = () => {
                         <div className='col-md-6'>
                            <input className='form-control' type="text" name="" id="" placeholder='Your Name' />
                         </div>
-                        <div className='col-md-6'>
+                        <div className='col-md-6 mt-md-0 mt-3'>
                              <input className='form-control' type="email" name="" id="" placeholder='Your Email' />
                         </div>
                     </div>

@@ -81,8 +81,11 @@ export const OurBlogs = () => {
               <div className='col-md-7 d-flex flex-wrap justify-content-center px-0'>
                 {cardData.map((card, index) => (
                 <div key={index} className="col-12 col-sm-8 col-md-6 ">
-                    <div className="card border-0">
-                      <img width={"100%"} className="card-img img-fluid" src={card.imageSrc} alt={`card image ${index}`} />
+                    <div className="card border-0 ">
+                      <div className=''>
+                      <img width={"100%"} className="card-img img-fluid position-relative" src={card.imageSrc} alt={`card image ${index}`} />
+                      <div className='position-absolute w-100 h-100 top-0 right-0 left-0 bottom-0 bg-dark ' style={{opacity:"0.5"}}></div>
+                      </div>
                     <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5">
                         <h5 className="card-title">{card.title}</h5>
                         <p className="card-text fs_14px" style={{opacity:"0.8"}}>{card.description}</p>

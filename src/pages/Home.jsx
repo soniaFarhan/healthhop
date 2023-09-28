@@ -54,7 +54,7 @@ export const Home = () => {
       defaultValue:" 5.00/5.00",
       name2:"Adam johens",
       title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
+        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debit",
     },
     {
       icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
@@ -63,7 +63,7 @@ export const Home = () => {
       reviews: 5,
       defaultValue: "5.00/5.00",
       title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
+        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debit",
     },
     {
       icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
@@ -72,7 +72,7 @@ export const Home = () => {
       reviews: 5,
       defaultValue:"5.00/5.00",
       title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debitis, enim saepe deleniti odio dolore facilis!",
+        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo deb",
     },
   ];
 
@@ -169,10 +169,10 @@ export const Home = () => {
         <div className="h-100">
           <div className="row gx-0 ">
             <div
-              className="col-lg-5 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
+              className="col-lg-4 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
              
             >
-              <div className="col-md-7 bg-light rounded px-4 py-4"  style={{ minWidth:" 350px", minHeight: "300px" }}>
+              <div className="col-md-7 bg-light rounded px-4 py-4"  style={{ width:" 390px", minHeight: "300px" }}>
                 <h6 className="text-dark text-center fw-bold">
                   Book Your Medical Procedure
                 </h6>
@@ -283,15 +283,15 @@ export const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-7  h-100 mt-5 ">
+            <div className="col-md-8  h-100 mt-5 ">
               <div className="col-lg-9">
                 <div className="p-4">
 
-                <h1 className=" heading" style={{ color: "white" }}>
+                <h1 className=" heading" style={{ color: "white",fontSize:"50px" }}>
                   Discover Medical Tourism 
                   with HealthHop
                 </h1>
-                <p className="text-white pe-lg-5 " style={{color:"#8699A3",fontWeight:"lighter"}}>
+                <p className="text-white pe-lg-5 " style={{color:"#8699A3",fontWeight:"lighter",opacity:"0.7"}}>
                   HealthHop was founded in San Francisco, CA. Our mission is to
                   make medical 
                   tourism more safe and accessible than ever. We only work with
@@ -309,10 +309,10 @@ export const Home = () => {
       {/* simple section  */}
 
       <section className="py-5">
-        <div className="d-flex justify-content-center  py-3 mb-5">
-          <h3 className="heading"
+        <div className="d-flex justify-content-center  py-5  mb-5">
+          <h3 className="heading mb-5 mt-1 "
             style={{
-              borderBottom: "2px solid green",
+              borderBottom: "2px solid #07A6A9",
               display: "inline-block",
               paddingBottom: "7px",
             }}
@@ -392,10 +392,10 @@ export const Home = () => {
       </section>
 
       <section className="">
-        <div className="d-flex justify-content-center  py-5">
+        <div className="d-flex justify-content-center my-5  py-5">
           <h3 className="text-center heading"
             style={{
-              borderBottom: "2px solid green",
+              borderBottom: "2px solid #07A6A9",
               display: "inline-block",
               paddingBottom: "7px",
             }}
@@ -407,11 +407,11 @@ export const Home = () => {
           <div className="">
             <div className="p-3 bg">
               <div
-                className=" px-md-5 mx-5 d-md-flex "
-                style={{ paddingBottom: "140px", paddingTop: "50px" }}
+                className=" px-md-5 mx-md-5 d-md-flex "
+                style={{ paddingBottom: "170px", paddingTop: "100px" }}
               >
-                <div className="me-5" style={{ width: "30%" }}>
-                  <h3 style={{ color: "white" }}>
+                <div className="me-5 ms-md-5" style={{ width: "30%" }}>
+                  <h3 className="" style={{ color: "white",fontSize:"45px" }}>
                     Get the <br />
                     Best <br />
                     Medical <br />
@@ -420,7 +420,7 @@ export const Home = () => {
                   </h3>
                 </div>
                 <div className="" style={{ width: "70%" }}>
-                  <p style={{ color: "white" }}>
+                  <p style={{ color: "white",fontSize:"23px" }}>
                     HealthHop is a centralized, all-in-one medical tourism
                     application that allows you to book your medical procedures,
                     transportation, and accommodation logistics in another city,
@@ -440,7 +440,7 @@ export const Home = () => {
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
-              borderBottom: "2px solid green",
+              borderBottom: "2px solid #07A6A9",
               display: "inline-block",
               paddingBottom: "7px",
             }}
@@ -494,7 +494,7 @@ export const Home = () => {
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
-              borderBottom: "2px solid green",
+              borderBottom: "2px solid #07A6A9",
               display: "inline-block",
               paddingBottom: "7px",
             }}
@@ -506,7 +506,7 @@ export const Home = () => {
           className="text-center"
           style={{ color: "#939393", fontSize: "11px" }}
         >
-          <p className="mb-5" style={{fontSize:"15px"}} >
+          <p className="mb-5 fw-bold" style={{fontSize:"15px"}} >
             We collect reviews from our usersso you can get an honest opinion of
             what <br /> experience with our website are really  like!
           </p>
@@ -528,7 +528,7 @@ export const Home = () => {
                     style={{
                       backgroundColor: "#F9F9F9",
 
-                      width: "300px",
+                      maxWidth: "370px",
                       borderRadius: "10px",
                       color: "#939393",
                     }}
@@ -555,7 +555,7 @@ export const Home = () => {
 
                       <p
                         className="mb-0  card-content p-3 py-3   ps-0 pt-0 pb-0"
-                        style={{ fontSize: "12px" }}
+                        style={{ fontSize: "15px" }}
                       >
 
 
@@ -571,7 +571,7 @@ export const Home = () => {
                       
 
                     </div>
-                       <div className="text-center fw-bold pt-3 pb-2" style={{fontSize:"12px"}}>
+                       <div className="text-center fw-bold pt-5 pb-2" style={{fontSize:"15px"}}>
                         <div>
 
                         <p className="mb-0">This patiend was treated for 
@@ -607,17 +607,17 @@ export const Home = () => {
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
               <h2 className="heading"
                 style={{
-                  borderBottom: "2px solid green",
+                  borderBottom: "2px solid #07A6A9",
                   display: "inline-block",
                   paddingBottom: "7px",
                 }}
               >
-                How HealthHop Works
+               <span className="fw-light"> How  </span> HealthHop Works
               </h2>
             </div>
             <div
-              className="text-center"
-              style={{ color: "#939393", fontSize: "11px" }}
+              className="text-center fw-bold"
+              style={{ color: "#939393", fontSize: "15px" }}
             >
               <p>
                 Health-Tourism.com is a medical tourism guide and a directory
@@ -626,9 +626,9 @@ export const Home = () => {
               <p></p>
             </div>
 
-            <div className=" m-5">
-              <div className=" d-md-flex p-lg-5 mx-lg-5">
-                <div className="col-md-7  p-0 mt-5 pt-5">
+            <div className=" my-5 ms-md-5 me-md-0 ps-md-5">
+              <div className=" d-md-flex p-lg-5 mx-lg-5 ">
+                <div className="col-md-7  p-0 mt-5 pt-5 ">
                    <div className="mt-1">
 
                    
@@ -667,7 +667,7 @@ export const Home = () => {
               </div>
               <div className=" d-md-flex flex-row-reverse p-xl-5 mx-xl-5">
 
-              <div className="col-md-7 p-0">
+              <div className="col-md-7 p-0 ">
                   <div
                     className=""
                     style={{
@@ -689,7 +689,7 @@ export const Home = () => {
                     arranged with ease.
                   </p>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 pe-md-5">
                   <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
                     <img
                       className="mx-auto"
@@ -762,7 +762,7 @@ export const Home = () => {
                   </p>
                 </div>
 
-                <div className="col-md-5">
+                <div className="col-md-5 pe-md-5">
                   <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
                     <img
                       className="mx-auto"
@@ -782,7 +782,7 @@ export const Home = () => {
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
-              borderBottom: "2px solid green",
+              borderBottom: "2px solid #07A6A9",
               display: "inline-block",
               paddingBottom: "7px",
             }}
@@ -802,7 +802,7 @@ export const Home = () => {
             >
               {card.map((e, index) => (
                 <Grid
-                  component={Paper}
+                  component={Paper}  elevation={5}
                   className="mx-auto my-5 p-0"
                   item
                   key={index}
@@ -812,7 +812,7 @@ export const Home = () => {
                     style={{
                       borderRadius: "10px",
                       color: "#939393",
-                      width: "350px",
+                      maxWidth: "350px",
                       height: "330px",
                     }}
                   >
@@ -846,7 +846,7 @@ export const Home = () => {
               <div className="d-flex justify-content-center  pt-5 mt-5">
                 <h2 className="heading"
                   style={{
-                    borderBottom: "2px solid green",
+                    borderBottom: "2px solid #07A6A9",
                     display: "inline-block",
                     paddingBottom: "7px",
                     color: "white",
@@ -919,7 +919,7 @@ export const Home = () => {
               </div>
 
               <Box
-                component={Paper}
+                component={Paper} elevation={5}
                 className=" px-md-5 mb-5 "
                 style={{ paddingBottom: "20px", paddingTop: "50px" }}
               >

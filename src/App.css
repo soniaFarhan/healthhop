@@ -79,6 +79,10 @@ body{
 .navbar-togl-btn {
   background-color: white !important;
 }
+
+.opacity_custom{
+opacity: 0.7;
+}
 /* utility classes end  */
 
 .home_background_img {

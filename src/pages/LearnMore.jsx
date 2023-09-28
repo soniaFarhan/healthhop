@@ -56,31 +56,31 @@ export const LearnMore = () => {
           name: "Dr. Smith",
           procedure: "Facial Rejuvenation",
           description: "Dr. Smith is a highly skilled surgeon with a passion for helping patients achieve their desired look through facial rejuvenation procedures.",
-          imageSrc: require("../assets/md-1.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Johnson",
           procedure: "Breast Augmentation",
           description: "Dr. Johnson specializes in breast augmentation procedures, providing personalized care to help patients enhance their confidence and appearance.",
-          imageSrc: require("../assets/md-2.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Davis",
           procedure: "Liposuction",
           description: "With years of experience, Dr. Davis is known for delivering outstanding results in liposuction, helping patients achieve a more sculpted physique.",
-          imageSrc: require("../assets/md-3.png")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Williams",
           procedure: "Rhinoplasty",
           description: "Dr. Williams is dedicated to perfecting the art of rhinoplasty, ensuring that patients achieve a harmonious and balanced facial appearance.",
-          imageSrc: require("../assets/md-4.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Brown",
           procedure: "Tummy Tuck",
           description: "Specializing in tummy tuck procedures, Dr. Brown focuses on helping patients regain confidence and achieve a more contoured abdominal area.",
-          imageSrc: require("../assets/md-5.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         }
       ];
       
@@ -178,24 +178,24 @@ export const LearnMore = () => {
                     </button>
                     </div>
 
-                    <div className='d-flex flex-wrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
+                    <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
                         <p onClick={() => handleTabClick('Overview')} className={activeTab === 'Overview' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                            Overview
+                            <span className='mx-2'>Overview</span>
                         </p>
                         <p onClick={() => handleTabClick('Price')} className={activeTab === 'Price' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                            Price
+                            <span className='mx-2'>Price</span>
                         </p>
                         <p onClick={() => handleTabClick('Location')} className={activeTab === 'Location' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                            Location
+                            <span className='mx-2'>Location</span>
                         </p>
                         <p onClick={() => handleTabClick('Reviews')} className={activeTab === 'Reviews' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                        Reviews
+                        <span className='mx-2'>Reviews</span>
                         </p>
                         <p onClick={() => handleTabClick('Staff')} className={activeTab === 'Staff' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                        Medical Staff
+                        <span className='mx-2'>Medical Staff</span>
                         </p>
                         <p onClick={() => handleTabClick('Videos')} className={activeTab === 'Videos' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                        Gallery
+                        <span className='mx-2'>Gallery</span>
                         </p>
                      </div>
 
@@ -209,7 +209,7 @@ export const LearnMore = () => {
 
 
 
-                    <div className='py-5'>
+                    <div className='py-md-5 py-2'>
                         <h3 className='fw-bold'>
                             Pricing
                         </h3>
@@ -233,7 +233,7 @@ export const LearnMore = () => {
                         </div>
 
                         <div className='d-flex gap-3'>
-                            <button className='btn border py-3 fs_14px' style={{backgroundColor:"#D8F1F2"}}>
+                            <button className='btn bor-bn py-3 fs_14px' >
                                 Get My Package Quote
                             </button>
 
@@ -244,7 +244,7 @@ export const LearnMore = () => {
 
                     </div>
 
-                    <div className='py-5'>
+                    <div className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Location
@@ -257,7 +257,7 @@ export const LearnMore = () => {
                         
                     </div>
 
-                    <div className='py-5'>
+                    <div className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Review  
@@ -296,29 +296,29 @@ export const LearnMore = () => {
                         
                     </div>
 
-                    <div className='py-5'>                       
-                    <h3 className='fw-bold'>
+                    <div className='py-md-5 py-2'>                       
+                    <h3 className='fw-bold mt-5'>
                     Medical Staff
                      </h3>
 
                      {
                         doctorData.map((doctor, index) => (
-                            <div key={index} className='d-flex gap-2 align-items-center p-2 rounded my-2' style={{backgroundColor:"#F9F9F9"}}>
-                            <div style={{width:"10rem"}}>
-                                <img className='img-fluid' src={doctor.imageSrc} alt="imge" />
-                            </div>
-                            <div>
-                                <h4>{doctor.name}</h4>
-                                <p className='mb-0 fs_10px text-muted'>{doctor.procedure}</p>
-                                <p className='mb-0 fs_14px'>{doctor.description}</p>
-                            </div>
+                            <div key={index} className='d-flex row  align-items-center p-2 rounded my-2' style={{ backgroundColor: "#F9F9F9"}}>
+                                <div className='col-lg-3 col-sm-4 col-5'>
+                                    <img className='w-100 h-100 object-fit-contain' src={doctor.imageSrc} alt="imge" />
+                                </div>
+                                <div className='col-lg-9 col-sm-8 col-7'>
+                                    <h4>{doctor.name}</h4>
+                                    <p className='mb-0 fs_10px text-muted'>{doctor.procedure}</p>
+                                    <p className='mb-0 fs_14px'>{doctor.description}</p>
+                                </div>
                             </div>
                         ))
                         }
 
                     </div>
 
-                    <div className='py-5'>
+                    <div className='py-md-5 py-2'>
 
                     <h3 className='fw-bold'>
                     Gallery
@@ -326,21 +326,21 @@ export const LearnMore = () => {
 
                           <div className='my-4 '>
                               <div className=' row'>
-                                  <div className='col-md-6'>
+                                  <div className='col-md-4 col-6'>
                                       <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={require("../assets/video-1.jpg")} alt="" />
                                   </div>
 
-                                  <div  className='col-md-6 mt-md-0 mt-3'>
+                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
                                       <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-2.jpg")} alt="" />
                                   </div>
                               </div>
 
                               <div className=' my-3 row'>
-                                  <div  className='col-md-6'>
+                                  <div  className='col-md-4 col-6'>
                                       <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-3.jpg")} alt="" />
                                   </div>
 
-                                  <div  className='col-md-6 mt-md-0 mt-3'>
+                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
                                       <img className='w-100 h-100 ' style={{objectFit:"fill"}}  src={require("../assets/blog-card-2.png")} alt="" />
                                   </div>
                               </div>

@@ -105,8 +105,8 @@ export const ContactUs = () => {
             </div>
 
                 <div class="input-group d-flex justify-content-center">
-                <div class="form-outline col-md-4 col-sm-6 col-12">
-                    <input type="search" id="form1" class="form-control" placeholder='ENTER YOUR EMAIL ADDRESS' />
+                <div class="form-outline col-md-4 col-sm-6 col-12 fs_14px">
+                    <input type="search" id="form1" class="form-control" placeholder='Enter your email address' />
                     {/* <label class="form-label" for="form1">Search</label> */}
                 </div>
                 <button type="button" class="btn btn_green mt-sm-0 mt-2">

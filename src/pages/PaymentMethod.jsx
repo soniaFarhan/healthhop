@@ -7,7 +7,7 @@ export const PaymentMethod = () => {
             <h2 className='fw-bold'>
                 Payment Method
             </h2>
-            <p className='fw-medium'>
+            <p className='fs_14px'>
             Pay your deposit with HealthHop to secure your booking and price" Deposits are fully refundable if you decide to cancel your plans up until 3 days before your procedure." The rest of the payment is due at the discretion of the medical provider. Some will take the payment the day of the procedure and some upon completion.
             </p>
 

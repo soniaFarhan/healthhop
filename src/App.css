@@ -478,4 +478,6 @@ select.bg-select option{
 .gradient-btn{
   background-image: linear-gradient(to right,rgb(7,165,168), rgb(0,26,53));
 }
-
+.bor-bn{
+  border: 1px solid rgb(7,166,169) !important;
+}

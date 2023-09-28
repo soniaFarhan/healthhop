@@ -51,8 +51,8 @@ export const Procedures = () => {
   return (
     <div>
         <div className='container pt-3'>
-        <div className='procedure_background_img d-flex justify-content-center align-items-center'>
-            <h2 className='text-white'>
+        <div className='procedure_background_img d-flex justify-content-center align-items-end'>
+            <h2 className='text-white mb-5'>
               Procedures
             </h2>
         </div>
@@ -61,13 +61,13 @@ export const Procedures = () => {
             <h3>
                 Medical Providers Picked for you
             </h3>
-            <p className='fw-bold'>
-            We've picked the top medical providers for your procedure. We only work with the best of the best to ensure top-care and safety from <br />
+            <p className='fw-medium me-md-5 pe-md-5 w-75'>
+            We've picked the top medical providers for your procedure. We only work with the best of the best to ensure top-care and safety from
              the beginning of your journey until the end."
             </p>
 
             <div className='row'>
-            <div className="col-md-6 " style={{height:"auto"}}>
+            <div className="col-md-8 " style={{height:"auto"}}>
             {data.map((data, index)=>(
                     <div className='d-flex align-items-center gap-1 justify-content-between flex-column flex-md-row shadow rounded-4 p-2 mb-3'>
                     <div className='p-2'>
@@ -84,13 +84,13 @@ export const Procedures = () => {
                         </h5>
 
                         <Link>
-                        <button className='btn_yellow btn rounded-pill py-0 fs_10px'>
+                        <button className='btn_blue btn rounded-pill py-0 fs_10px'>
                            {data.procedure}
                         </button>
                         </Link>
                     </div>
     
-                    <p className='fs_10px'>
+                    <p className='fs_10px cu-color'>
                         {data.description}
                     </p>
                     </div>
@@ -100,7 +100,7 @@ export const Procedures = () => {
                             <p className='fs_14px fw-bold mb-0'>
                                 Averrage Price
                             </p>
-                            <p className='fs_14px'>
+                            <p className='fs_14px cu-color'>
                                 ( {data.price} )
                             </p>
     
@@ -114,7 +114,7 @@ export const Procedures = () => {
                         <div>
                             <div className='mb-3'>
                                 <Link>
-                                    <button className='btn btn_light rounded-pill border fs_10px'>
+                                    <button className='btn btn_light rounded-pill border border-dark fs_10px'>
                                         Instant Quote and booking
                                     </button>
                                 </Link>
@@ -122,7 +122,7 @@ export const Procedures = () => {
     
                             <div>
                                 <Link>
-                                    <button className='btn btn_green rounded-pill fs_10px'>
+                                    <button className='btn gradient-btn text-white rounded-pill fs_10px'>
                                         Learn More and Contact Us   
                                     </button>
                                 </Link>
@@ -138,8 +138,8 @@ export const Procedures = () => {
                     </div>
                 
 
-            <div className="col-md-6 rounded">
-                <div className='col-md-8 shadow p-5'>
+            <div className="col-md-4">
+                <div className=' shadow p-5 rounded-4'>
               
                 <h3 className='mb-3'>
                     Filters
@@ -170,7 +170,7 @@ export const Procedures = () => {
 
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="tansportation"/>
-                    <label class="form-check-label fs_14px" for="tansportation">
+                    <label class="form-check-label fs_14px text-break" for="tansportation">
                        Transportation Services(Airport/hotel/clinic)
                     </label>
                     </div>
@@ -208,7 +208,7 @@ export const Procedures = () => {
                             Select min and max price range
                         </p>
 
-                        <Box className="" sx={{ width: 250 }}>
+                        <Box className="" >
                             <Slider
                                 getAriaLabel={() => "Temperature range"}
                                 value={value}

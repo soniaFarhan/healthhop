@@ -1,6 +1,10 @@
 /* usman css  */
 
 /* utility classes  */
+body{
+  font-family: 'Rubik';
+}
+
 
 .fs_14px{
   font-size: 14px !important;
@@ -74,6 +78,10 @@
 
 .navbar-togl-btn {
   background-color: white !important;
+}
+
+.opacity_custom{
+opacity: 0.7;
 }
 /* utility classes end  */
 
@@ -402,6 +410,8 @@ ul li {text-align: start;}
 
 
 
+
+
 /* Media query for mobile view */
 @media (max-width: 768px) {
   .fc .fc-toolbar {
@@ -439,14 +449,6 @@ ul li {text-align: start;}
 .place-card-medium{
   display: none !important;
 }
-/* waleed css*/
-
-.w-fit{
-  max-width: fit-content;
-  background-color: rgb(214,239,240);
-  color: rgb(32,175,178);
-}
-
 .triangle-down {
 	width: 0;
 	height: 0;
@@ -454,3 +456,33 @@ ul li {text-align: start;}
 	border-right: 25px solid transparent;
 	border-top: 50px solid #555;
 }
+
+.heading{
+  font-size: 3rem;
+}
+
+
+/* waleed css*/
+
+.w-fit{
+  max-width: fit-content;
+  background-color: rgb(214,239,240);
+  color: rgb(32,175,178);
+}
+select.bg-select{
+  background-color: rgb(236,248,248);
+}
+select.bg-select option{
+  background-color: rgb(255, 255, 255);
+}
+.cu-color{
+  color: rgb(112,112,112);
+}
+.h-color{
+  color: rgb(3, 169, 172);
+}
+.gradient-btn{
+  background-image: linear-gradient(to right,rgb(7,165,168), rgb(0,26,53));
+}
+
+

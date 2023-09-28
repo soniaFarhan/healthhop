@@ -3,6 +3,7 @@ import {
   Outlet,
   Link,
   NavLink,
+  useLocation,
 } from "react-router-dom";
 import LoginIcon from '@mui/icons-material/Login';
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
@@ -17,7 +18,11 @@ import Popup3 from "./Popup3";
 
 export const Layout = () => {
 
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
 
+  // Access specific query parameters
+  const method = searchParams.get('method');
 
   return (
     <div className="layout">
@@ -198,7 +203,7 @@ export const Layout = () => {
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
           
-       <Popup2/>
+       <Popup2 show={method==="patient"}/>
        <Popup3/>
 
 
@@ -232,10 +237,10 @@ export const Layout = () => {
                 />
               </div>
               <div>
-              <h5 class="mb-2 text-dark" title="Services">
+              <h4 class="mb-2 text-dark" title="Services">
                 Medical tourisum
-              </h5>
-              <p class="text-upper_case mt-2 text-dark fs_14px">
+              </h4>
+              <p p class="text-upper_case mt-2 text-dark fs_14px opacity_custom" >
                 We make job finding very easy. We are best job provider company
                 where any user can apply for different jobs created by our
                 admin.
@@ -255,42 +260,42 @@ export const Layout = () => {
               <div className="row d-flex justify-content-end">
                 
                 <div className="col-6 col-sm-3 style-none">
-                  <h5 class="mb-2 text-dark" title="Services">
+                  <h4 class="mb-2 text-dark " title="Services">
                     Helpful Links
-                  </h5>
-                  <Link to={"/jobs"} className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px" title="Job Search">
+                  </h4>
+                  <Link to={"/jobs"} className="decoration-none ">
+                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Job Search">
                     Reviews
                     </p>
                   </Link>
                   <Link className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px" title="Travel">
+                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Travel">
                       Bookmarks
                     </p>
                   </Link>
                   <Link className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px" title="Per Diem">
+                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Per Diem">
                       Bookings
                     </p>
                   </Link>
                   <Link className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px" title="Placement">
+                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Placement">
                      Contact
                     </p>
                   </Link>
                 </div>
 
                 <div className="col-6 col-sm-3 style-none">
-                  <h5 class="mb-2 text-dark" title="Resources">
+                  <h4 class="mb-2 text-dark " title="Resources">
                     Contact Us
-                  </h5>
+                  </h4>
                   <Link to={"/jobs"} className="decoration-none text-dark">
-                    <p className="mb-1  text-dark fs_14px" title="Job Search">
+                    <p className="mb-1  text-dark fs_14px opacity_custom" title="Job Search">
                     Street: 123 Main Street Springfield
                     </p>
                   </Link>
                   <Link  className="decoration-none text-dark" >
-                    <p className="mb-1 text-dark fs_14px" title="Clients">
+                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Clients">
                      Phone: (123) 123-456
                     </p>
                   </Link>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import MenuIcon from '@mui/icons-material/Menu'
 import { ArrowForward, NotificationAdd } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
   function Navbar({handleDrawerToggle}) {
 
@@ -26,7 +27,12 @@ import { ArrowForward, NotificationAdd } from '@mui/icons-material';
         </Button> */}
         </div>
 
-      <div className='m-1'><Avatar alt="Travis Howard" src={require("../assets/card-3.jpg")} /></div>
+      <div className='m-1'>
+      <Link to={"/business-profile"}>
+      <Avatar alt="Travis Howard" src={require("../assets/card-3.jpg")} />
+      
+      </Link>  
+        </div>
     {/* <div style={{color:"black"}}><h5 className='m-1' style={{fontSize:"14px"}}>Ola Boluwatife</h5><p className='m-0' style={{fontSize:"12px"}}>PANTENT</p></div> */}
     </div>
 

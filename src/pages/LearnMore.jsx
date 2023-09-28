@@ -178,7 +178,7 @@ export const LearnMore = () => {
                     </button>
                     </div>
 
-                    <div className='d-flex justify-content-between mt-4' style={{ borderBottom: '2px solid', }}>
+                    <div className='d-flex flex-wrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
                         <p onClick={() => handleTabClick('Overview')} className={activeTab === 'Overview' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
                             Overview
                         </p>
@@ -233,7 +233,7 @@ export const LearnMore = () => {
                         </div>
 
                         <div className='d-flex gap-3'>
-                            <button className='btn btn_light border py-3 fs_14px'>
+                            <button className='btn border py-3 fs_14px' style={{backgroundColor:"#D8F1F2"}}>
                                 Get My Package Quote
                             </button>
 
@@ -250,8 +250,8 @@ export const LearnMore = () => {
                             Location
                         </h3>
 
-                        <div className='my-4'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6727.52478126572!2d74.44625339223997!3d32.53249249043371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ee8df4221562b%3A0xfa3bd1b74369b63f!2sKapurowali%2C%20Sialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695019725799!5m2!1sen!2s" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div className='my-4 '>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6727.52478126572!2d74.44625339223997!3d32.53249249043371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ee8df4221562b%3A0xfa3bd1b74369b63f!2sKapurowali%2C%20Sialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695019725799!5m2!1sen!2s" width="100%"  height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         </div>
                         
@@ -324,27 +324,27 @@ export const LearnMore = () => {
                     Gallery
                     </h3>
 
-                    <div className='my-4 '>
-                        <div className='d-flex gap-2'>
-                        <div style={{width:"10rem"}}>
-                        <img className='img-fluid' src={require("../assets/video-1.jpg")} alt="" />
-                        </div>
+                          <div className='my-4 '>
+                              <div className=' row'>
+                                  <div className='col-md-6'>
+                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={require("../assets/video-1.jpg")} alt="" />
+                                  </div>
 
-                        <div style={{width:"10rem"}}>
-                        <img className='img-fluid' src={require("../assets/video-2.jpg")} alt="" />
-                        </div>
-                        </div>
+                                  <div  className='col-md-6 mt-md-0 mt-3'>
+                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-2.jpg")} alt="" />
+                                  </div>
+                              </div>
 
-                        <div className='d-flex gap-2 px-3 my-3'>
-                        <div style={{width:"10rem"}}>
-                        <img className='img-fluid' src={require("../assets/video-3.jpg")} alt="" />
-                        </div>
+                              <div className=' my-3 row'>
+                                  <div  className='col-md-6'>
+                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-3.jpg")} alt="" />
+                                  </div>
 
-                        <div style={{width:"10rem"}}>
-                        <img className='img-fluid' src={require("../assets/blog-card-2.png")} alt="" />
-                        </div>
-                        </div>
-                    </div>
+                                  <div  className='col-md-6 mt-md-0 mt-3'>
+                                      <img className='w-100 h-100 ' style={{objectFit:"fill"}}  src={require("../assets/blog-card-2.png")} alt="" />
+                                  </div>
+                              </div>
+                          </div>
 
                     </div>
 
@@ -357,9 +357,9 @@ export const LearnMore = () => {
                 <div >
                     <img className='img-fluid' src={require("../assets/consulation.png")} alt="" />
                 </div>
-                <h6 className='text-center py-3'>
+                <h5 className='text-center py-3 fw-bold '>
                     Book My Free Consultation
-                </h6>
+                </h5>
                 <hr />
 
                 <div className='px-3'>
@@ -376,80 +376,80 @@ export const LearnMore = () => {
 
                 </div>
 
-                <div className='my-3 px-3'>
+                <div className='my-3 px-3 cu-color'>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="4star"/>
-                <label class="form-check-label fs_10px" for="4star">
+                <label class="form-check-label fs_14px" for="4star">
                 4 & 5 Star Hotel Accommodation 
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="3star"/>
-                <label class="form-check-label fs_10px" for="3star">
+                <label class="form-check-label fs_14px" for="3star">
                 3 Star Hotel Accommodation 
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="service"/>
-                <label class="form-check-label fs_10px" for="service">
+                <label class="form-check-label fs_14px text-break" for="service">
                 Transportation Services (Airport/hotel/clinic)
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="visa"/>
-                <label class="form-check-label fs_10px" for="visa">
+                <label class="form-check-label fs_14px" for="visa">
                 Visa Support 
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="language"/>
-                <label class="form-check-label fs_10px" for="language">
+                <label class="form-check-label fs_14px" for="language">
                 Language/Translation Support 
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="tour"/>
-                <label class="form-check-label fs_10px" for="tour">
+                <label class="form-check-label fs_14px" for="tour">
                 Touristic 
                 </label>
                 </div>
 
                 <div className='my-2'>
-                    <p className='fs_10px'>
+                    <p className='fs_14px'>
                         What time frame would you like to do the procedure?
                     </p>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="1month"/>
-                <label class="form-check-label fs_10px" for="1month">
+                <label class="form-check-label fs_14px" for="1month">
                  0 -1 month 
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="2month"/>
-                <label class="form-check-label fs_10px" for="2month">
+                <label class="form-check-label fs_14px" for="2month">
                  1-3 months
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="3month"/>
-                <label class="form-check-label fs_10px" for="3month">
+                <label class="form-check-label fs_14px" for="3month">
                  3-6 months
                 </label>
                 </div>
 
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="4month"/>
-                <label class="form-check-label fs_10px" for="4month">
+                <label class="form-check-label fs_14px" for="4month">
                  Other/I'm Unsure
                 </label>
                 </div>
@@ -459,7 +459,7 @@ export const LearnMore = () => {
                 </div>
 
                 <div className='my-3'>
-                    <h6 className='text-center'>
+                    <h6 className='text-center fw-bold'>
                     Preferred contact method
                     </h6>
                     <div className='d-flex justify-content-center gap-3'>
@@ -479,7 +479,7 @@ export const LearnMore = () => {
                     </div>
 
                     <div className='d-flex justify-content-center my-3'>
-                    <button className='btn btn_green rounded-pill'>
+                    <button className='btn btn_green rounded-pill px-4 py-3'>
                         Contact Provider
                     </button>
                     </div>
@@ -505,7 +505,7 @@ export const LearnMore = () => {
 const OverviewComponent = () => {
   return (
     <div>
-          <p className='fs_14px'>
+          <p className='fs_14px cu-color'>
             <p className='cu-color'> 
              Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
             </p>
@@ -518,32 +518,32 @@ const OverviewComponent = () => {
 
 const PriceComponent = () => {
   return (
-    <div>PriceComponent</div>
+    <div></div>
   )
 };
 
 
 const LocationComponent = () => {
   return (
-    <div>LocationComponent</div>
+    <div></div>
   )
 };
 
 const ReviewsComponent = () => {
   return (
-    <div>ReviewsComponent</div>
+    <div></div>
   )
 };
 
 const MedicalComponent = () => {
   return (
-    <div>MedicalComponent</div>
+    <div></div>
   )
 };
 
 const GalleryComponent = () => {
   return (
-    <div>GalleryComponent</div>
+    <div></div>
   )
 };
 

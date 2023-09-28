@@ -9,7 +9,7 @@ const InstantBooking = () => {
             Book Your Procedure Instantly
         </h3>
         <div className='d-flex justify-content-center'>
-            <p className='text-center fs_14px fw-semibold' style={{width:'70ch'}}>
+            <p className='text-center fs_14px fw-medium' style={{width:'70ch'}}>
             You can book instantly on certain procedures. On average our patients save 10%-20% when they instantly book. Deposits are fully refundable if the medical practitioner later confirms they cannot do your procedure or if you change your mind up until 1 week before your procedure date, so you can book with peace of mind!
             </p>
         </div>

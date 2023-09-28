@@ -61,7 +61,7 @@ export const Procedures = () => {
             <h3>
                 Medical Providers Picked for you
             </h3>
-            <p className='fw-semibold me-md-5 pe-md-5 w-75'>
+            <p className='fw-medium me-md-5 pe-md-5 w-75'>
             We've picked the top medical providers for your procedure. We only work with the best of the best to ensure top-care and safety from
              the beginning of your journey until the end."
             </p>

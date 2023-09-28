@@ -54,13 +54,13 @@ export const HealthJourney = () => {
         <h3>
             Medical Providers Picked for you
         </h3>
-        <p className='fs_14px'>
-            We've picked the top medical providers for your procedure. We only work with <br />
-            the best of the best to ensure top-care and safety from the beginning of your <br />
+        <p className='fs_14px w-75 me-md-5 pe-md-5 fw-semibold'>
+            We've picked the top medical providers for your procedure. We only work with 
+            the best of the best to ensure top-care and safety from the beginning of your 
             journey until the end.
         </p>
         <div className='row'>
-            <div className="col-md-6 " style={{height:"auto"}}>
+            <div className="col-md-8 " style={{height:"auto"}}>
             {data.map((data, index)=>(
                     <div className='d-flex align-items-center gap-1 justify-content-between flex-column flex-md-row shadow rounded-4 p-2 mb-3'>
                     <div className='p-2'>
@@ -83,7 +83,7 @@ export const HealthJourney = () => {
                         </Link>
                     </div>
     
-                    <p className='fs_10px'>
+                    <p className='fs_10px cu-color'>
                         {data.description}
                     </p>
                     </div>
@@ -107,7 +107,7 @@ export const HealthJourney = () => {
                         <div>
                             <div className='mb-3'>
                                 <Link to={'/instatnt-booking'}>
-                                    <button className='btn btn_light rounded-pill border fs_10px'>
+                                    <button className='btn btn_light rounded-pill border border-dark fs_10px'>
                                         Instant Quote and booking
                                     </button>
                                 </Link>
@@ -115,7 +115,7 @@ export const HealthJourney = () => {
     
                             <div>
                                 <Link to={'/learn-more'}>
-                                    <button className='btn btn_green rounded-pill fs_10px'>
+                                    <button className='btn gradient-btn rounded-pill fs_10px text-white'>
                                         Learn More and Contact Us   
                                     </button>
                                 </Link>
@@ -131,8 +131,8 @@ export const HealthJourney = () => {
                     </div>
                 
 
-            <div className="col-md-6 rounded">
-                <div className='col-md-8 shadow p-5'>
+            <div className="col-md-4 rounded">
+                <div className=' shadow p-5'>
               
                 <h3 className='mb-3'>
                     Filters
@@ -163,7 +163,7 @@ export const HealthJourney = () => {
 
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="tansportation"/>
-                    <label class="form-check-label fs_14px" for="tansportation">
+                    <label class="form-check-label fs_14px text-break" for="tansportation">
                        Transportation Services(Airport/hotel/clinic)
                     </label>
                     </div>
@@ -201,7 +201,7 @@ export const HealthJourney = () => {
                             Select min and max price range
                         </p>
 
-                        <Box sx={{ width: 250 }}>
+                        <Box >
                     <Slider
                         getAriaLabel={() => "Temperature range"}
                         value={value}

@@ -172,7 +172,7 @@ export const Home = () => {
               className="col-lg-4 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
              
             >
-              <div className="col-md-7 bg-light rounded px-4 py-4"  style={{ width:" 390px", minHeight: "300px" }}>
+              <div className="col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"79%" }}>
                 <h6 className="text-dark text-center fw-bold">
                   Book Your Medical Procedure
                 </h6>
@@ -180,7 +180,7 @@ export const Home = () => {
 
                 <div className="mb-3">
                   <select
-                    class="form-select bg-select"
+                    class="form-select bg-select  px-5"
                     aria-label="Default select example"
                   >
                     <option selected>Choose Category</option>
@@ -264,7 +264,8 @@ export const Home = () => {
                 <p>Select min and max price range</p>
 
                 <Box  sx={{   }}>
-                  <Slider className="card-width"
+                  <Slider className="card-width custom-slider"
+                  style={{color:"#07A6A9"}}
                     getAriaLabel={() => "Temperature range"}
                     value={value}
                     onChange={handleChange}

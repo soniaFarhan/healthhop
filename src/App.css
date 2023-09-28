@@ -410,6 +410,8 @@ ul li {text-align: start;}
 
 
 
+
+
 /* Media query for mobile view */
 @media (max-width: 768px) {
   .fc .fc-toolbar {
@@ -482,4 +484,5 @@ select.bg-select option{
 .gradient-btn{
   background-image: linear-gradient(to right,rgb(7,165,168), rgb(0,26,53));
 }
+
 

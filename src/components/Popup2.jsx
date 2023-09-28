@@ -1,4 +1,4 @@
-import { ArrowBack, Login, MedicalServices } from "@mui/icons-material";
+import { ArrowBack, Login, MedicalServices, MedicalServicesOutlined } from "@mui/icons-material";
 import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
@@ -758,11 +758,10 @@ setModalShow(show)
      
 
 
-      <button  className="btn btn_light rounded-pill fs_10px white_space"  onClick={() => setModalShow(true)}>
-            <MedicalServices fontSize="small"  className='my-auto'/>
-            
-            Medical Provider
-          </button>
+     <button className="btn btn_light rounded-pill fs_10px white_space" onClick={() => setModalShow(true)}>
+  <MedicalServicesOutlined fontSize="small" className='my-auto' style={{ marginRight: '5px' }} />
+  Medical Provider
+</button>
 
       <MyVerticallyCenteredModal
         show={modalShow}

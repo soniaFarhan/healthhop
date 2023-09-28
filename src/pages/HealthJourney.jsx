@@ -54,7 +54,7 @@ export const HealthJourney = () => {
         <h3>
             Medical Providers Picked for you
         </h3>
-        <p className='fs_14px w-75 me-md-5 pe-md-5 fw-semibold'>
+        <p className='fs_14px w-75 me-md-5 pe-md-5 fw-medium'>
             We've picked the top medical providers for your procedure. We only work with 
             the best of the best to ensure top-care and safety from the beginning of your 
             journey until the end.

@@ -4,6 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Rating } from '@mui/material';
 import ReactSlider from '../components/ReactSLider';
 import HelpIcon from '@mui/icons-material/Help';
+import { Link } from 'react-router-dom';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
@@ -56,31 +57,31 @@ export const LearnMore = () => {
           name: "Dr. Smith",
           procedure: "Facial Rejuvenation",
           description: "Dr. Smith is a highly skilled surgeon with a passion for helping patients achieve their desired look through facial rejuvenation procedures.",
-          imageSrc: require("../assets/md-1.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Johnson",
           procedure: "Breast Augmentation",
           description: "Dr. Johnson specializes in breast augmentation procedures, providing personalized care to help patients enhance their confidence and appearance.",
-          imageSrc: require("../assets/md-2.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Davis",
           procedure: "Liposuction",
           description: "With years of experience, Dr. Davis is known for delivering outstanding results in liposuction, helping patients achieve a more sculpted physique.",
-          imageSrc: require("../assets/md-3.png")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Williams",
           procedure: "Rhinoplasty",
           description: "Dr. Williams is dedicated to perfecting the art of rhinoplasty, ensuring that patients achieve a harmonious and balanced facial appearance.",
-          imageSrc: require("../assets/md-4.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         },
         {
           name: "Dr. Brown",
           procedure: "Tummy Tuck",
           description: "Specializing in tummy tuck procedures, Dr. Brown focuses on helping patients regain confidence and achieve a more contoured abdominal area.",
-          imageSrc: require("../assets/md-5.jpg")
+          imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         }
       ];
       
@@ -88,7 +89,7 @@ export const LearnMore = () => {
     
     const defaultValue = 4;
   return (
-    <div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
         <div className='container py-5'>
         <div className='row'>
             <div className="col-md-7 ">
@@ -178,26 +179,50 @@ export const LearnMore = () => {
                     </button>
                     </div>
 
-                    <div className='d-flex flex-wrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
+                    {/* <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
                         <p onClick={() => handleTabClick('Overview')} className={activeTab === 'Overview' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                            Overview
+                            <span className='mx-2'>Overview</span>
                         </p>
                         <p onClick={() => handleTabClick('Price')} className={activeTab === 'Price' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                            Price
+                            <span className='mx-2'>Price</span>
                         </p>
                         <p onClick={() => handleTabClick('Location')} className={activeTab === 'Location' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                            Location
+                            <span className='mx-2'>Location</span>
                         </p>
                         <p onClick={() => handleTabClick('Reviews')} className={activeTab === 'Reviews' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                        Reviews
+                        <span className='mx-2'>Reviews</span>
                         </p>
                         <p onClick={() => handleTabClick('Staff')} className={activeTab === 'Staff' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                        Medical Staff
+                        <span className='mx-2'>Medical Staff</span>
                         </p>
                         <p onClick={() => handleTabClick('Videos')} className={activeTab === 'Videos' ? 'active-tab' : ''} style={{cursor:"pointer"}}>
-                        Gallery
+                        <span className='mx-2'>Gallery</span>
+                        </p>
+                     </div> */}
+                    <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
+                        <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#item-2"><span className='mx-2'>Overview</span></a>
+                            
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#pricing"><span className='mx-2'>Price</span></a> 
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                              <a class="nav-link" href="#gallery"><span className='mx-2'>Location</span></a> 
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#Review "> <span className='mx-2'>Reviews</span> </a>
+                       
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                           <a class="nav-link" href="#staff">  <span className='mx-2'>Medical Staff</span> </a>
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
+                          <a class="nav-link" href="#gallery">  <span className='mx-2'>Gallery</span> </a>
                         </p>
                      </div>
+                     
+
 
                      {activeTab === 'Overview' && <OverviewComponent />}
                      {activeTab === 'Price' && <PriceComponent />}
@@ -209,7 +234,7 @@ export const LearnMore = () => {
 
 
 
-                    <div className='py-5'>
+                    <div id='pricing' className='py-md-5 py-2'>
                         <h3 className='fw-bold'>
                             Pricing
                         </h3>
@@ -233,7 +258,7 @@ export const LearnMore = () => {
                         </div>
 
                         <div className='d-flex gap-3'>
-                            <button className='btn border py-3 fs_14px' style={{backgroundColor:"#D8F1F2"}}>
+                            <button className='btn bor-bn py-3 fs_14px' >
                                 Get My Package Quote
                             </button>
 
@@ -244,20 +269,20 @@ export const LearnMore = () => {
 
                     </div>
 
-                    <div className='py-5'>
+                    <div id='map' className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Location
                         </h3>
 
-                        <div className='my-4 '>
+                        <div id='map' className='my-4 '>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6727.52478126572!2d74.44625339223997!3d32.53249249043371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ee8df4221562b%3A0xfa3bd1b74369b63f!2sKapurowali%2C%20Sialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695019725799!5m2!1sen!2s" width="100%"  height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         </div>
                         
                     </div>
 
-                    <div className='py-5'>
+                    <div id='Review ' className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Review  
@@ -296,29 +321,29 @@ export const LearnMore = () => {
                         
                     </div>
 
-                    <div className='py-5'>                       
-                    <h3 className='fw-bold'>
+                    <div id='staff' className='py-md-5 py-2'>                       
+                    <h3 className='fw-bold mt-5'>
                     Medical Staff
                      </h3>
 
                      {
                         doctorData.map((doctor, index) => (
-                            <div key={index} className='d-flex gap-2 align-items-center p-2 rounded my-2' style={{backgroundColor:"#F9F9F9"}}>
-                            <div style={{width:"10rem"}}>
-                                <img className='img-fluid' src={doctor.imageSrc} alt="imge" />
-                            </div>
-                            <div>
-                                <h4>{doctor.name}</h4>
-                                <p className='mb-0 fs_10px text-muted'>{doctor.procedure}</p>
-                                <p className='mb-0 fs_14px'>{doctor.description}</p>
-                            </div>
+                            <div key={index} className='d-flex row  align-items-center p-2 rounded my-2' style={{ backgroundColor: "#F9F9F9"}}>
+                                <div className='col-lg-3 col-sm-4 col-5'>
+                                    <img className='w-100 h-100 object-fit-contain' src={doctor.imageSrc} alt="imge" />
+                                </div>
+                                <div className='col-lg-9 col-sm-8 col-7'>
+                                    <h4>{doctor.name}</h4>
+                                    <p className='mb-0 fs_10px text-muted'>{doctor.procedure}</p>
+                                    <p className='mb-0 fs_14px'>{doctor.description}</p>
+                                </div>
                             </div>
                         ))
                         }
 
                     </div>
 
-                    <div className='py-5'>
+                    <div id='gallery' className='py-md-5 py-2'>
 
                     <h3 className='fw-bold'>
                     Gallery
@@ -326,21 +351,21 @@ export const LearnMore = () => {
 
                           <div className='my-4 '>
                               <div className=' row'>
-                                  <div className='col-md-6'>
+                                  <div className='col-md-4 col-6'>
                                       <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={require("../assets/video-1.jpg")} alt="" />
                                   </div>
 
-                                  <div  className='col-md-6 mt-md-0 mt-3'>
+                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
                                       <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-2.jpg")} alt="" />
                                   </div>
                               </div>
 
                               <div className=' my-3 row'>
-                                  <div  className='col-md-6'>
+                                  <div  className='col-md-4 col-6'>
                                       <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-3.jpg")} alt="" />
                                   </div>
 
-                                  <div  className='col-md-6 mt-md-0 mt-3'>
+                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
                                       <img className='w-100 h-100 ' style={{objectFit:"fill"}}  src={require("../assets/blog-card-2.png")} alt="" />
                                   </div>
                               </div>

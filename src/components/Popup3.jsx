@@ -751,7 +751,7 @@ function Popup3() {
        
        className="btn btn_light rounded-pill fs_10px white_space"
      >
-       <Login fontSize="small" />
+       <Login fontSize="small"  style={{marginRight:"7px"}}/>
        Patient
      </button>
 

@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { Avatar, Container, Grid, Paper, Rating, TextField } from "@mui/material";
 import { Lock, MedicalServicesOutlined, Person } from "@mui/icons-material";
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { Link, useLocation } from "react-router-dom";
 import { FaQuoteLeft } from 'react-icons/fa';
 export const Home = () => {
@@ -79,7 +80,7 @@ export const Home = () => {
   const card = [
     {
       icon: (
-        <MedicalServicesOutlined
+        <StarBorderIcon
           style={{
             backgroundColor: "#07A6A9",
             width: "90px",
@@ -173,14 +174,14 @@ export const Home = () => {
              
             >
               <div className="col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"79%" }}>
-                <h6 className="text-dark text-center fw-bold">
+                <h5 className="text-dark text-center fw-bold">
                   Book Your Medical Procedure
-                </h6>
-                <p className="text-center">Find the top providers in Turkey</p>
+                </h5>
+                <p className="text-center" style={{fontSize:"12px"}}>Find the top providers in Turkey</p>
 
                 <div className="mb-3">
                   <select
-                    class="form-select bg-select  px-5"
+                    class="form-select bg-select "
                     aria-label="Default select example"
                   >
                     <option selected>Choose Category</option>
@@ -260,7 +261,7 @@ export const Home = () => {
                   </select>
                 </div>
 
-                <h6 className="py-4">Your Budget</h6>
+                <h5 className="py-4">Your Budget</h5>
                 <p>Select min and max price range</p>
 
                 <Box  sx={{   }}>
@@ -276,7 +277,7 @@ export const Home = () => {
 
                 <div className="pt-5">
                   <Link to={"/heath-journey"}>
-                    <button className="btn btn_green w-100 rounded-pill">
+                    <button className="btn btn_green w-100 py-3 rounded-pill">
                       Start Your Health Journey
                     </button>
                   </Link>
@@ -310,8 +311,8 @@ export const Home = () => {
       {/* simple section  */}
 
       <section className="py-5">
-        <div className="d-flex justify-content-center  py-5  mb-5">
-          <h3 className="heading mb-5 mt-1 "
+        <div className="d-flex justify-content-center  py-5  mb-3">
+          <h3 className="heading mb-3 mt-1 "
             style={{
               borderBottom: "2px solid #07A6A9",
               display: "inline-block",
@@ -337,7 +338,7 @@ export const Home = () => {
                   spacing={3}
                 >
                   {cardData.map((card, index) => (
-                    <Grid className="mx-auto"
+                    <Grid className="mx-auto mt-3"
                       item
                       key={index}
                       xs={12}
@@ -393,8 +394,8 @@ export const Home = () => {
       </section>
 
       <section className="">
-        <div className="d-flex justify-content-center my-5  py-5">
-          <h3 className="text-center heading"
+        <div className=" d-flex justify-content-center my-5  py-5">
+          <h3 className="text-center heading "
             style={{
               borderBottom: "2px solid #07A6A9",
               display: "inline-block",
@@ -421,7 +422,7 @@ export const Home = () => {
                   </h3>
                 </div>
                 <div className="" style={{ width: "70%" }}>
-                  <p style={{ color: "white",fontSize:"23px" }}>
+                  <p style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
                     HealthHop is a centralized, all-in-one medical tourism
                     application that allows you to book your medical procedures,
                     transportation, and accommodation logistics in another city,
@@ -437,9 +438,9 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-5">
+      <section className="py-5 mt-4 mb-2">
         <div className="d-flex justify-content-center  py-3">
-          <h2 className="heading"
+          <h2 className="heading mt-5 pt-5"
             style={{
               borderBottom: "2px solid #07A6A9",
               display: "inline-block",
@@ -586,12 +587,12 @@ export const Home = () => {
                   </div>
                        
                   <div className="text-center">
-                    <Avatar style={{padding:"40px"}}
+                    <Avatar style={{width:"100px",height:"100px"}}
                       className="mx-auto mt-4"
                       alt="Travis Howard"
-                      src="/static/images/avatar/2.jpg"
+                      src={require("../assets/Ellipse 1.png")}
                     />
-                    <h6>{e.name2}</h6>
+                    <h6 className="mt-3">{e.name2}</h6>
                   </div>
                   
                 </Grid>
@@ -741,16 +742,16 @@ export const Home = () => {
               <div className=" d-md-flex flex-row-reverse p-xl-5 mx-xl-5">
 
 
-                <div className="col-md-7 p-0">
+                <div className="col-md-7 my-5 ">
                   <div
-                    className="mx-auto d-flex justify-content-center"
+                    className=" d-flex justify-content-center"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 " style={{ color: "white" }}>
                       04
                     </h4>
                   </div>
@@ -763,7 +764,7 @@ export const Home = () => {
                   </p>
                 </div>
 
-                <div className="col-md-5 pe-md-5">
+                <div className="col-md-5 pe-md-5 ">
                   <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
                     <img
                       className="mx-auto"
@@ -773,6 +774,7 @@ export const Home = () => {
                     />
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -793,41 +795,40 @@ export const Home = () => {
         </div>
 
         <Box>
-          <div className="mx-md-5">
+          <div className="">
             <Grid 
-              className=" mx-auto "
+              className=" "
               container
-              spacing={0}
               alignItems={"center"}
-              width={"80%"}
+              justifyContent={"center"}
             >
               {card.map((e, index) => (
-                <Grid
+                <Grid 
                   component={Paper}  elevation={5}
-                  className="mx-auto my-5 p-0"
+                  className=" rounded-4 my-5 p-0 d-flex mx-2 justify-content-center "
                   item
                   key={index}
                 >
                   <div
-                    className=" my-4"
+                    className=" my-4 "
                     style={{
                       borderRadius: "10px",
                       color: "#939393",
-                      maxWidth: "350px",
-                      height: "330px",
+                      maxWidth: "300px",
+                      height: "270px",
                     }}
                   >
                     <div className="    ">
                       <div className=" px-4 mb-3 ">{e.icon}</div>
-                      <h4
+                      <h6
                         className="mb-0  px-4 pt-3 "
                         style={{ color: "black" }}
                       >
                        {e.name}
-                      </h4>
+                      </h6>
                       <p
                         className="mb-0  card-content px-4 pb-5  "
-                        style={{ fontSize: "15px" }}
+                        style={{ fontSize: "14px" }}
                       >
                         {e.title}
                       </p>

@@ -210,6 +210,7 @@ export const Procedures = () => {
 
                         <Box className="" >
                             <Slider
+                              style={{color:"#07A6A9"}}
                                 getAriaLabel={() => "Temperature range"}
                                 value={value}
                                 onChange={handleChange}

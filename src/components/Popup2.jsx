@@ -26,6 +26,11 @@ function MyVerticallyCenteredModal(props) {
     }
   };
 
+    const styles = {
+      progress: {
+        backgroundColor: 'red',
+      }
+    };
 
 
   const [selectedImages, setSelectedImages] = useState([]);
@@ -707,13 +712,13 @@ function MyVerticallyCenteredModal(props) {
           style={{ width: "100%" }}
           id="contained-modal-title-vcenter"
         >
-          <div style={{marginLeft:"80px"}} className="text-center d-flex   ps-5 " >
+          <div style={{marginLeft:"80px"}} className="text-center d-flex   ps-5" >
             {data[activeStep] === data[0] ? (
               ""
             ) : (
        
 
-                <ProgressMobileStepper activeStep={activeStep} />
+                <ProgressMobileStepper  activeStep={activeStep} />
             
             )}
 

@@ -421,7 +421,7 @@ export const Home = () => {
                   </h3>
                 </div>
                 <div className="" style={{ width: "70%" }}>
-                  <p style={{ color: "white",fontSize:"20px" }}>
+                  <p style={{ color: "white",fontSize:"18px" }}>
                     HealthHop is a centralized, all-in-one medical tourism
                     application that allows you to book your medical procedures,
                     transportation, and accommodation logistics in another city,

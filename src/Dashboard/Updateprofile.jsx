@@ -59,6 +59,42 @@ const Updateprofile = () => {
   return (
     <>
       <div>
+      <div className="row">
+          
+        
+          <div className="">
+          {selectedImages.length > 0 && (
+            
+            <div className="row">
+           {selectedImages.map((image, index) => (
+             <div className="col-2" key={index}>
+               <img src={image} alt={`Selected ${index}`} width={"100%"} height={"100px"}  />
+             </div>
+           ))}
+
+           
+         </div>
+       )}
+          <div className="col d-flex justify-content-start px-4">
+           <div className="mt-2">
+ 
+ 
+ 
+ 
+           <input  onChange={handleImageChange} type="file" name="" id="img" hidden multiple />
+           <label  style={{fontSize:"60px", border:"3px dashed #9E9E9E"}} className="text-center px-4 rounded" htmlFor="img">
+           <i class="bi bi-plus"></i>
+           </label>
+         
+           </div>
+          </div>
+
+
+          </div>
+ 
+          
+
+             </div>
 
         <div className="container px-4 fs_14px mt-4">
           <h6 className=' fw-bold  ps-2 mt-4'>Summary Of Your Medical Practice:</h6>

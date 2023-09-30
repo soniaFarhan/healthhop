@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { Avatar, Container, Grid, Paper, Rating, TextField } from "@mui/material";
 import { Lock, MedicalServicesOutlined, Person } from "@mui/icons-material";
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { Link, useLocation } from "react-router-dom";
 import { FaQuoteLeft } from 'react-icons/fa';
 export const Home = () => {
@@ -79,7 +80,7 @@ export const Home = () => {
   const card = [
     {
       icon: (
-        <MedicalServicesOutlined
+        <StarBorderIcon
           style={{
             backgroundColor: "#07A6A9",
             width: "90px",
@@ -393,8 +394,8 @@ export const Home = () => {
       </section>
 
       <section className="">
-        <div className="d-flex justify-content-center my-5  py-5">
-          <h3 className="text-center heading"
+        <div className=" d-flex justify-content-center my-5  py-5">
+          <h3 className="text-center heading "
             style={{
               borderBottom: "2px solid #07A6A9",
               display: "inline-block",
@@ -421,7 +422,7 @@ export const Home = () => {
                   </h3>
                 </div>
                 <div className="" style={{ width: "70%" }}>
-                  <p style={{ color: "white",fontSize:"20px" }}>
+                  <p style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
                     HealthHop is a centralized, all-in-one medical tourism
                     application that allows you to book your medical procedures,
                     transportation, and accommodation logistics in another city,
@@ -741,7 +742,7 @@ export const Home = () => {
               <div className=" d-md-flex flex-row-reverse p-xl-5 mx-xl-5">
 
 
-                <div className="col-md-7 p-0">
+                <div className="col-md-7 my-5 ">
                   <div
                     className=" d-flex justify-content-center"
                     style={{
@@ -763,7 +764,7 @@ export const Home = () => {
                   </p>
                 </div>
 
-                <div className="col-md-5 pe-md-5">
+                <div className="col-md-5 pe-md-5 ">
                   <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
                     <img
                       className="mx-auto"
@@ -773,6 +774,7 @@ export const Home = () => {
                     />
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -797,38 +799,36 @@ export const Home = () => {
             <Grid 
               className=" "
               container
-              
               alignItems={"center"}
               justifyContent={"center"}
-             
             >
               {card.map((e, index) => (
                 <Grid 
                   component={Paper}  elevation={5}
-                  className=" my-5 p-0 d-flex mx-2 justify-content-center "
+                  className=" rounded-4 my-5 p-0 d-flex mx-2 justify-content-center "
                   item
                   key={index}
                 >
                   <div
-                    className=" my-4"
+                    className=" my-4 "
                     style={{
                       borderRadius: "10px",
                       color: "#939393",
-                      maxWidth: "350px",
-                      height: "330px",
+                      maxWidth: "300px",
+                      height: "270px",
                     }}
                   >
                     <div className="    ">
                       <div className=" px-4 mb-3 ">{e.icon}</div>
-                      <h4
+                      <h6
                         className="mb-0  px-4 pt-3 "
                         style={{ color: "black" }}
                       >
                        {e.name}
-                      </h4>
+                      </h6>
                       <p
                         className="mb-0  card-content px-4 pb-5  "
-                        style={{ fontSize: "15px" }}
+                        style={{ fontSize: "14px" }}
                       >
                         {e.title}
                       </p>

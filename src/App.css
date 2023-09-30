@@ -13,6 +13,9 @@ body{
 .fs_10px{
   font-size: 10px !important;
 }
+.fs_25px {
+  font-size: 25px!important;
+}
 .white_space{
   white-space: nowrap;
 }
@@ -152,7 +155,6 @@ color: #FFFFFF;
 background-color: #07A6A9;
 color: #FFFFFF !important; 
  border-radius: 10px;
-
  width: 100%;
  height: 100%;
 
@@ -166,9 +168,6 @@ color: #FFFFFF !important;
 .card-content {
   /* Styles for the card content when the card is hovered */
   pointer-events: none; /* Disable mouse events on the content */
-}
-.fs_14px{
-  font-size: 14px;
 }
 .white_space{
   white-space: nowrap;

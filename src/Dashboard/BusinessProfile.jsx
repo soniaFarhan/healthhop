@@ -358,12 +358,12 @@ export const BusinessProfile = () => {
       <div>
       <div className='me-auto'>
         <div className="d-flex justify-content-between">
-           <h5> {e.name} </h5>
+           <h6 > {e.name} </h6>
            <BorderColorOutlined sx={{color:"#07A6A9"}}/>
            
         </div>
         <div className="me-5  ">
-        <div className="">
+        <div className="" style={{fontSize:"13px"}}>
           <p style={{opacity:"0.4"}}>Hair transplant procedure</p>
         </div>
 

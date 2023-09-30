@@ -44,30 +44,27 @@ date:" 002"
   return (
     <>
   <div className="container my-5  pt-2 shadows" style={{borderRadius:"12px",paddingBottom:"90px"}}>
-
+  <div className=" row  m-2 p-1 " >
+    <div className="col">
 {
   data.map((e)=>{
     return(
 
-      <div className="">
-
-
-<div className=" row shadows m-2 p-1 " style={{borderRadius:"12px"}}>
+   
 
 
 
 
+<div className="d-md-flex shadows p-2 my-3" style={{borderRadius:"12px" }}>
 
 
-<div className="col-md-2 col-sm-4 col-6 px-0" style={{maxHeight:"130px"}}>
 
-
-{e.img}
-  
-
-
-</div>
-<div className="col-md-10 ">
+<div className='p-1 me-2'>
+      <div style={{width:"8rem"}}>
+      <img className='img-fluid' src={require("../assets/h-card.png")} alt="" />
+      </div>
+      </div>
+<div className=" ">
 
 <div className="d-flex justify-content-between aling-items-center">
   <h6 style={{fontSize:"13px"}}>  {e.name} </h6>
@@ -84,10 +81,10 @@ date:" 002"
 </div>
 <div className="d-md-flex aling-items-center justify-content-between">
 
-<div className="d-flex justify-content-between">
+<div className="d-sm-flex justify-content-between ">
 
 <p className='my-auto' style={{fontSize:"12px"}}>  <span className='fw-bold'>  Amount:  </span> { e.amount } </p>
-<p className='my-auto mx-4' style={{fontSize:"12px"}}>  <span className='fw-bold'>Order No</span> { e.orderno}</p>
+<p className='my-auto mx-sm-4' style={{fontSize:"12px"}}>  <span className='fw-bold'>Order No</span> { e.orderno}</p>
 <p className='my-auto ' style={{fontSize:"12px"}}> <span className='fw-bold'>Scheduled pro:</span>  {   e.date }</p>
 
 
@@ -109,17 +106,21 @@ date:" 002"
 </div>
 
 </div>
-
-
 </div>
-      </div>
+
+
+
+
+
+      
 
     )
   })
 }
 
+</div>
 
-
+</div>
     </div>
     
     

@@ -7,24 +7,24 @@ export const BusinessProfile = () => {
 
   const data =[
     {
-    name:"Herry",
-    chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair tran",
+    name:"Dr.Herry",
+    chat:"      Dr. Bego has also worked for multinational insurance companies in a global role leading health partnerships",
     img:
-    <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />
+    <img src={require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />
     
     },
     {
-    name:"Herry",
-    chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair tran",
+    name:"Dr.Herry",
+    chat:"        Dr. Bego has also worked for multinational insurance companies in a global role leading health partnerships",
     img:
-    <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
+    <img src={require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
     
     },
     {
-    name:"Herry",
-    chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair tran",
+    name:"Dr.Herry",
+    chat:"        Dr. Bego has also worked for multinational insurance companies in a global role leading health partnerships",
     img:
-    <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
+    <img src={require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
     
     },
     
@@ -172,7 +172,7 @@ export const BusinessProfile = () => {
         <div className="mt-3 shadows pt-3 ps-3 pb-5 pe-5" style={{borderRadius:"20px"}}>
         <div className="d-flex justify-content-between aling-items-center">
 
-        <h5>Hair Transplant</h5>
+        <h6>Hair Transplant</h6>
  
         <BorderColorOutlined sx={{color:"#07A6A9"}}/>
          </div>
@@ -251,11 +251,11 @@ export const BusinessProfile = () => {
     <hr/>
         <div className="d-flex justify-content-between aling-items-center">
 
-        <h5>Hair Transplant</h5>
+        <h6>Hair Transplant</h6>
  
         <BorderColorOutlined sx={{color:"#07A6A9"}}/>
          </div>
-         <h5 style={{color:"#07A6A9"}}> Sub-category name</h5>
+         <h6 style={{color:"#07A6A9"}}> Sub-category name</h6>
          <div className='pe-md-5 me-md-5' style={{fontSize:"12px"}}>  
          <p>
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quasi doloremque dolorum non magnam. Exercitationem, voluptatibus accusamus, itaque animi voluptatem consequatur esse illo illum molestias neque aspernatur, quas tempore autem.
@@ -341,7 +341,7 @@ export const BusinessProfile = () => {
 
 
     <div className=" my-5 row  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
-    <div className="col-md-8 " style={{height:"auto"}}>
+    <div className="col-md-9 " style={{height:"auto"}}>
       <h4 className='ms-1'>  Medical Staff   </h4>
 
 {
@@ -349,7 +349,7 @@ export const BusinessProfile = () => {
     return(
 
       <div className='d-flex align-items-center   flex-column flex-md-row shadow rounded-4 p-2 mb-3' style={{borderRadius:"12px"}}>
-      <div className='p-2'>
+      <div className='p-1 me-2'>
       <div style={{width:"8rem"}}>
       <img className='img-fluid' src={require("../assets/h-card.png")} alt="" />
       </div>
@@ -360,18 +360,21 @@ export const BusinessProfile = () => {
         <div className="d-flex justify-content-between">
            <h5> {e.name} </h5>
            <BorderColorOutlined sx={{color:"#07A6A9"}}/>
-
+           
         </div>
+        <div className="me-5  ">
         <div className="">
-          <p>Hair transplant procedure</p>
+          <p style={{opacity:"0.4"}}>Hair transplant procedure</p>
         </div>
 
-      <div className='d-flex align-items-center gap-2 flex-column flex-md-row me-3'>
+      <div className='d-flex align-items-center gap-2 flex-column me-5 flex-md-row me-3'>
           <p style={{fontSize:"12px"}}>
           {e.chat}
           </p>
          
       </div>
+        </div>
+   
 
      
       </div>

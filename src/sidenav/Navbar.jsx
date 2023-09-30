@@ -29,7 +29,7 @@ import { Link } from 'react-router-dom';
 
       <div className='m-1'>
       <Link to={"/business-profile"}>
-      <Avatar alt="Travis Howard" src={require("../assets/card-3.jpg")} />
+      <Avatar alt="Travis Howard" src={require("../assets/logo.png")} />
       
       </Link>  
         </div>

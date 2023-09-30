@@ -141,7 +141,7 @@ export const BusinessProfile = () => {
         </div>
           </div>
           <div className="col-md-6">
-          <div className="my-3 shadows pt-3 ps-3 pb-5 pe-5" style={{borderRadius:"20px",height:"276px"}}>
+          <div className="my-3 shadows pt-3 ps-3 pb-5 pe-md-5 " style={{borderRadius:"20px",height:"276px"}}>
         <div className="d-flex justify-content-between aling-items-center">
 
         <h5 style={{fontSize:"18px"}}> Your Business Offers Care in the Following Languages:</h5>

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
     <Box class="" sx={{ flexGrow: 1 }}>
        
               
-           <AppBar className='' position="fixed" sx={{ backgroundColor:"#EFF3F4" }}>
+           <AppBar className='' position="fixed" sx={{ backgroundColor:"#000000" }}>
             <Toolbar variant="dense" style={{display:'flex',
               justifyContent:'flex-end',minHeight:'65px'}} >
                
@@ -26,6 +26,9 @@ import { Link } from 'react-router-dom';
          < NotificationAdd style={{ color: "red" }}/>
         </Button> */}
         </div>
+<div className="d-flex">
+
+
 
       <div className='m-1'>
       <Link to={"/business-profile"}>
@@ -43,6 +46,8 @@ mdUp
     <MenuIcon style={{color:"white"}} />
   </IconButton>
   </Hidden>
+  </div>
+  
 
 </Box>
   </Toolbar>

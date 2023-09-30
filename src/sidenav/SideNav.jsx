@@ -77,7 +77,7 @@ function SideNav(props) {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const drawer = (
-    <div className="">
+    <div className="" style={{backgroundColor:"black"}}>
       <div className="" style={{width:"14rem"}}>
       <img width={"100%"} src={require("../assets/HealthHop logo reverse on dark background.png")} alt="" />
       </div>
@@ -115,7 +115,7 @@ function SideNav(props) {
       sx={{
         width: { md: drawerWidth },
         flexShrink: { md: 0 },
-        bgcolor: "",
+        bgcolor: "black",
       }}
       aria-label="mailbox folders"
     >

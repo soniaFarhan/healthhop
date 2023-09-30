@@ -262,9 +262,9 @@ export const LearnMore = () => {
                                 Get My Package Quote
                             </button>
 
-                            <button className='btn btn_green border fs_14px'>
+                            {/* <button className='btn btn_green border fs_14px'>
                                Instant Boooking 20% off <br /> an average
-                            </button>
+                            </button> */}
                         </div>
 
                     </div>

@@ -9,7 +9,7 @@ export const Inovice = () => {
 <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{borderRadius:"20px",backgroundColor:"transparent",border:"1px solid black"}}/>
 
 </div>
-<div className=" my-5 p-3 container shadows2" style={{height:"60%",borderRadius:"14px"}}>
+<div className=" my-5 p-3 container shadows2 " style={{height:"60%",borderRadius:"14px", backgroundColor:"#ffff"}}>
   <div className=" m-2 p-3"  style={{backgroundColor:"#F5F5F5",borderRadius:"14px"}}>
   <div className="d-flex aling-items-center justify-content-between">
 
@@ -22,7 +22,8 @@ export const Inovice = () => {
 </div>
 </div>
 <div className="fw-light"><p>air transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing skin from one part of the
-scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma</p></div>
+scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma</p>
+</div>
 
 
 <div className="d-flex aling-items-center justify-content-between">

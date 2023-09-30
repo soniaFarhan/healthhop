@@ -88,7 +88,7 @@ opacity: 0.7;
 .home_background_img {
     height: 100%;
     width: 100%;
-   background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./assets/home\ top.jpg) ;
+   background:linear-gradient(rgba(39, 39, 39, 0.4),rgba(39, 39, 39, 0.4)),url(../src/assets/homeimg.png) ;
    background-size: cover;
    background-position: center;
 }
@@ -125,7 +125,7 @@ opacity: 0.7;
 .procedure_background_img {
     height: 350px;
     width: 100%;
-    background: linear-gradient(rgba(83, 171, 177, 0.6), rgba(83, 171, 177, 0.6)), url(./assets/procrdure.jpg);
+    background: linear-gradient(to right,rgba(83, 171, 177, 0.6), rgba(28, 63, 66, 0.6)), url(./assets/homeimg.png);
     background-size: cover;
     background-position: center;
     border-radius: 50px !important;

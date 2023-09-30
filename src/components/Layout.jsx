@@ -109,7 +109,7 @@ export const Layout = () => {
           <div className="h">
 
           <div class="dropdown-content  ">
-            <div className=" main d-flex p-5" style={{backgroundColor:"#07A6A9",borderRadius:"29px"}}>
+            <div className=" main d-flex  p-5" style={{backgroundColor:"#07A6A9",borderRadius:"29px"}}>
 
             <ul className="pb-5 p-2" style={{listStyleType: ""}} >
               <li className="custom-list-style text-white">
@@ -125,7 +125,7 @@ export const Layout = () => {
                       <li><Link>-Hair Transpland</Link></li>
                       </ul>
 
-                    <ul  className="pb-5 p-2"> 
+                    <ul  className="pb-md-5 p-2"> 
                     <li className="custom-list-style text-white">
 
                             Canser
@@ -163,7 +163,7 @@ export const Layout = () => {
                       <li><Link>-Hair Transpland</Link></li>
                       <li><Link>-Hair Transpland</Link></li>
                       </ul>
-                    <ul  className="pb-5 p-2">
+                    <ul  className="pb--md5 p-2">
                     <li className="custom-list-style text-white">
 
               ETC

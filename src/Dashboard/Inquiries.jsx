@@ -37,32 +37,30 @@ img:
   return (
     <>
     <div className="container my-5  pt-2 shadows" style={{borderRadius:"12px",paddingBottom:"90px"}}>
-
+    <div className=" row   m-2 p-2 " >
+      <div className="col"></div>
 {
   data.map((e)=>{
     return(
 
-      <div className="">
-
-
-<div className=" row shadows m-2 p-1 " style={{borderRadius:"12px"}}>
+      <div className="d-md-flex my-3 m-2 p-1 shadows" style={{borderRadius:"12px"}}>
 
 
 
 
 
 
-<div className="col-md-2 col-sm-4 col-6 px-0" style={{maxHeight:"130px"}}>
 
 
-{e.img}
-  
 
+<div className='p-1 me-2'>
+      <div style={{width:"8rem"}}>
+      <img className='img-fluid' src={require("../assets/h-card.png")} alt="" />
+      </div>
+      </div>
+<div className=" ">
 
-</div>
-<div className="col-md-10 ">
-
-<div className="d-flex justify-content-between aling-items-center">
+<div className="d-flex justify-content-between aling-items-center p-2">
   <h6 style={{fontSize:"13px"}}>  {e.name} </h6>
   
   
@@ -70,7 +68,7 @@ img:
 </div>
 
 <div className="">
-<p style={{fontSize:"9px"}}>
+<p style={{fontSize:"11px"}}>
 {e.chat}
 </p>
 
@@ -98,14 +96,14 @@ img:
 
 
 </div>
-      </div>
+     
 
     )
   })
 }
 
 
-
+</div>
     </div>
     
     

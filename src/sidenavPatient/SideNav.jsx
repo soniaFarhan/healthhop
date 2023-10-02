@@ -36,38 +36,38 @@ const listItemData = [
 // </svg>
 //  },
   {
-    label: "Inquiries",
-    link: "/inquiries",
+    label: "My Inquiries",
+    link: "/patient-inquiries",
     icon: <FolderSharedIcon />
   },
   {
-    label: "Confirmed Bookings",
-    link: "/confirmed-booking",
+    label: "My Bookings",
+    link: "/patient-booking",
     icon:<ConfirmationNumberIcon/>
   },
-  {
-    label: "Packages",
-    link: "/packages",
-    icon: <InventoryIcon/>
-  },
+  // {
+  //   label: "Packages",
+  //   link: "/packages",
+  //   icon: <InventoryIcon/>
+  // },
   {
     label: "Calendar",
-    link: "/calendar",
+    link: "/patient-calendar",
     icon: <CalendarMonthIcon/>
   },
   {
     label: "Message Portal",
-    link: "/message",
+    link: "/patient-message",
     icon: <ChatIcon/>
   },
   {
-    label: "Invoice/ Receipts",
-    link: "/inovice",
+    label: "Order Receipts",
+    link: "/patient-inovice",
     icon: <InsertDriveFileIcon/>
   },
   {
-    label: "Business Profile",
-    link: "/business-profile",
+    label: "My Medical Profile",
+    link: "/patient-details",
     icon:<AccountBoxIcon/>
   },
 

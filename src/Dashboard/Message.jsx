@@ -2,6 +2,8 @@ import { Avatar } from '@mui/material'
 import React from 'react'
 import { PiPaperPlaneRightBold } from 'react-icons/pi'
 import { SlCalender } from 'react-icons/sl'
+import PopupCalender from '../components/PopupCalender'
+
 
 export const Message = () => {
 
@@ -348,11 +350,11 @@ export const Message = () => {
                 <input type="text" class="form-control" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent", fontSize: "12px", padding: "16px" }} ewwe />
                 <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-30px", top:"50%"}}>
                 <div className='d-flex ' >
-                  <div className='rounded-circle bg-success text-center ' style={{height:"40px", width:"40px"}}>
+                  <div className='rounded-circle bg-success justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px"}}>
                     <button className='btn  text-white fs-4 m-auto p-0'><PiPaperPlaneRightBold /></button>
                   </div>
                   <div className='rounded-circle bg-secondary    text-center ms-2' style={{height:"40px", width:"40px"}}>
-                    <button className='btn text-white fs-4 m-auto p-0'><SlCalender /></button>
+                  <PopupCalender/>
                   </div>
                 </div>
                 </div>

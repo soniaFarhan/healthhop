@@ -167,7 +167,7 @@ export const Home = () => {
   return (
     <div>
       <div className="home_background_img">
-        <div className="h-100">
+        <div className="h-100 shrink">
           <div className="row gx-0 ">
             <div
               className="col-lg-4 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
@@ -310,7 +310,7 @@ export const Home = () => {
 
       {/* simple section  */}
 
-      <section className="py-5">
+      <section className="py-5 shrink">
         <div className="d-flex justify-content-center  py-5  mb-3">
           <h3 className="heading mb-3 mt-1 "
             style={{
@@ -394,7 +394,7 @@ export const Home = () => {
       </section>
 
       <section className="">
-        <div className=" d-flex justify-content-center my-5  py-5">
+        <div className=" d-flex justify-content-center my-5 shrink py-5">
           <h3 className="text-center heading "
             style={{
               borderBottom: "2px solid #07A6A9",
@@ -409,8 +409,8 @@ export const Home = () => {
           <div className="">
             <div className="p-3 bg">
               <div
-                className=" px-md-5 mx-md-5 d-md-flex "
-                style={{ paddingBottom: "170px", paddingTop: "100px" }}
+                className=" px-md-5 mx-md-5 d-md-flex py-4  shrink"
+                // style={{ paddingBottom: "10px", paddingTop: "100px" }}
               >
                 <div className="me-5 ms-md-5" style={{ width: "30%" }}>
                   <h3 className="" style={{ color: "white",fontSize:"45px" }}>
@@ -421,8 +421,8 @@ export const Home = () => {
                     Your Needs
                   </h3>
                 </div>
-                <div className="" style={{ width: "70%" }}>
-                  <p style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
+                <div className="my-auto" style={{ width: "70%" }}>
+                  <p className="" style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
                     HealthHop is a centralized, all-in-one medical tourism
                     application that allows you to book your medical procedures,
                     transportation, and accommodation logistics in another city,
@@ -438,7 +438,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-5 mt-4 mb-2">
+      <section className="py-5 mt-4 mb-2 shrink">
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading mt-5 pt-5"
             style={{
@@ -492,7 +492,7 @@ export const Home = () => {
           </Link>
         </p>
       </section>
-      <section className="py-5">
+      <section className="py-5 shrink ">
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -518,7 +518,7 @@ export const Home = () => {
         <Box>
           <Container>
             <Grid
-              className=" mx-auto"
+              className=" mx-auto "
               container
               spacing={3}
               alignItems={"center"}
@@ -606,6 +606,10 @@ export const Home = () => {
       <section className="">
         <div className=" ">
           <div className="bg1 ">
+            <div className="shrink">
+
+           
+
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
               <h2 className="heading"
                 style={{
@@ -777,11 +781,12 @@ export const Home = () => {
 
               </div>
             </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-5" style={{marginBottom:"200px"}}>
+      <section className="py-5 shrink" style={{marginBottom:"200px"}}>
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -843,8 +848,8 @@ export const Home = () => {
 
       <section className="">
         <div className="">
-          <div className="">
             <div className="p-3 bg">
+          <div className="shrink">
               <div className="d-flex justify-content-center  pt-5 mt-5">
                 <h2 className="heading"
                   style={{
@@ -902,7 +907,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className="">
+      <section className="shrink">
         <div className="container">
           <div className="mx-md-5 ">
             <div className="p-3 ">

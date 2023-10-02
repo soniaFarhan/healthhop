@@ -1,6 +1,14 @@
 /* usman css  */
 
 /* utility classes  */
+
+.shrink {
+  transform: scale(0.9); 
+}
+/* body {
+  transform: scaleY(0.8); 
+  transform-origin: top center; 
+} */
 body{
   font-family: 'Rubik';
 }
@@ -155,8 +163,7 @@ color: #FFFFFF;
 background-color: #07A6A9;
 color: #FFFFFF !important; 
  border-radius: 10px;
- width: 100%;
- height: 100%;
+
 
 }
 .chat :hover .color{

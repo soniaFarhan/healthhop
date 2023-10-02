@@ -33,8 +33,8 @@ export const Layout = () => {
 
     <Link className="navbar-brand ms-5" to="/">
       <div style={{ width: "6rem" }}>
-        <img
-          src={require("../assets/HighRes_Icon-And-Name.jpg")}
+        <img style={{backgroundColor:"transparent"}}
+          src={require("../assets/navberlogo.png" )}
           className="img-fluid logo_img_size"
         />
       </div>
@@ -61,38 +61,11 @@ export const Layout = () => {
             exact
             activeClassName="active"
             end="/"
-            to="/"
+            to="/Home"
             title="Home"
           >
             Home
           </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            className="nav-link"
-            style={{ fontSize: '16px' , padding:"9px 30px",}}
-            exact
-            activeClassName="active"
-            to="/contact-us"
-            title="Contact-us"
-          >
-            Contact Us
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink
-            className="nav-link white_space"
-            exact
-            activeClassName="active"
-            to="/blogs"
-            title="Articles"
-            style={{ fontSize: '16px' , padding:"9px 30px",}}
-           
-          >
-            Articles
-          </NavLink>
-         
-  
         </li>
         <li className="nav-item  dropdown">
           <NavLink
@@ -182,6 +155,35 @@ export const Layout = () => {
   
           </div>
         </li>
+
+        <li className="nav-item">
+          <NavLink
+            className="nav-link white_space"
+            exact
+            activeClassName="active"
+            to="/blogs"
+            title="Articles"
+            style={{ fontSize: '16px' , padding:"9px 30px",}}
+           
+          >
+            Articles
+          </NavLink>
+         
+  
+        </li>
+        <li className="nav-item">
+          <NavLink
+            className="nav-link"
+            style={{ fontSize: '16px' , padding:"9px 30px",}}
+            exact
+            activeClassName="active"
+            to="/contact-us"
+            title="Contact-us"
+          >
+            Contact Us
+          </NavLink>
+        </li>
+
         {/* <li className="nav-item">
           <NavLink
             className="nav-link white_space"

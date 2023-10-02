@@ -52,8 +52,6 @@ function App() {
         <Route path='/business-profile' element={<BusinessProfile/>}/>
         <Route path='/Meet' element={<Meet/>}/>
         <Route path='/Updateprofile' element={<Updateprofile/>}/>
-
-
       </Route>
 
     </Routes>

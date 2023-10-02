@@ -12,7 +12,7 @@ import SideNav from './SideNav';
 
 
 
-const DashboardLayout = ({type}) => {
+const DashboardLayoutPatient = ({type}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const {userType,debugMode} = useSelector((state) => state.auth)
   
@@ -55,4 +55,4 @@ return (
 )
 };
 
-export default DashboardLayout;
+export default DashboardLayoutPatient;

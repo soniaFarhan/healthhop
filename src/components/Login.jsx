@@ -42,7 +42,7 @@ const Login = ({ role }) => {
 
   return (
     <Box className='d-flex justify-content-center align-items-center layout'>
-    <Box className=' col-md-3 rounded-4   ' elevation={6} component={Paper} sx={{ p: 4 }}>
+    <Box className=' col-md-5 col-lg-3 rounded-4' elevation={6} component={Paper} sx={{ p: 4 }}>
       <Typography className='text-center' variant="h5"  fontWeight="bold" mb={2}>
         Login
       </Typography>
@@ -88,7 +88,7 @@ const Login = ({ role }) => {
             </button>
             </Link>
           </Grid>
-          
+
         <Box className='d-flex justify-content-center w-100'>
           <Link className='text-center text_color my-3 fs_25px' to={`/Home?method=${method}`} style={{textDecoration:'none'}}>
            Register

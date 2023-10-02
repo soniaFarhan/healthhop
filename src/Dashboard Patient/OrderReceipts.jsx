@@ -2,7 +2,7 @@ import { Button, TextField } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const Inovice = () => {
+export const OrderReceipts = () => {
   return (
     <>
 <div className="mt-4" style={{width:"18rem"}}>

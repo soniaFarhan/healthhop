@@ -9,25 +9,34 @@ const SingeupStepForm = () => {
       };
     console.log(step)
       const prevStep = () => {
-        setStep(step===6?step: step - 1);
+        setStep(step===1?step: step - 1);
       };
 
 
   return (
     <>
+<div className=""style={{}}>
+
+
+    <div className=" mx-auto my-auto" style={{width:"2px",background:"red"}}>
+
+          <button className='btn' onClick={prevStep}>Previous</button>
+
      {step === 1 && <Step1 />}
       {step === 2 && <Step2 />}
       {step === 3 && <Step3 />}
       {step === 4 && <Step4 />}
       {step === 5 && <Step5 />}
       {step === 6 && <Step6 />}
-     
-      
-          <button className='btn' onClick={prevStep}>Previous</button>
+
        
        
           <button className='btn' onClick={nextStep}>Next</button>
        
+
+    </div>
+    </div>
+      
     </>
   )
 }

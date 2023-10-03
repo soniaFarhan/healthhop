@@ -92,12 +92,12 @@ export const HealthJourney = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button class="carousel-control-prev text-dark" type="button" data-bs-target={`#carouselExampleControls-${index}`} data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <button style={{left:"7px"}} class="carousel-control-prev text-dark" type="button" data-bs-target={`#carouselExampleControls-${index}`} data-bs-slide="prev">
+                                                    <div className='d-flex align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
                                                     <span class="visually-hidden">Previous</span>
                                                 </button>
-                                                <button class="carousel-control-next text-dark" type="button" data-bs-target={`#carouselExampleControls-${index}`} data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <button style={{right:"7px"}} class="carousel-control-next text-dark" type="button" data-bs-target={`#carouselExampleControls-${index}`} data-bs-slide="next">
+                                                    <div className='d-flex align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
                                                     <span class="visually-hidden">Next</span>
                                                 </button>
                                             </div>

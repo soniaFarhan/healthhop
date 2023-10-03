@@ -27,13 +27,14 @@ import { MyBooking } from './Dashboard Patient/MyBooking';
 import { OrderReceipts } from './Dashboard Patient/OrderReceipts';
 import PInvoicedetails from './Dashboard Patient/Calender/PInvoicedetails';
 import Myprofile from './Dashboard Patient/Myprofile';
+import SingeupStepForm from './components/SingeupStepForm';
 
 
 
 function App() {
   return (<div>
     <Routes>
-
+    <Route path='/singeupstepform' element={<SingeupStepForm/>} /> 
         <Route path='/' element={<Login/>} />
       <Route element={<Layout/>}>
         <Route path='/Home' element={<Home/>}/>
@@ -44,6 +45,8 @@ function App() {
         <Route path='/procedure' element={<Procedures/>} />
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
+        
+        
        
       </Route>
 

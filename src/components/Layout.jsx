@@ -81,77 +81,90 @@ export const Layout = () => {
           </NavLink>
           <div className="h">
 
-          <div class="dropdown-content  ">
-            <div className=" main d-flex  p-5" style={{backgroundColor:"#07A6A9",borderRadius:"29px"}}>
+          <div class="dropdown-content">
+  <div className="main d-flex  p-5" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
+    <ul className="pb-2 p-2" style={{ listStyleType: "" }}>
+      <li className="custom-list-style text-white">Hair Transplants/ Hair Plugs</li>
+      <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
+      <li><Link>-Beard Transplant</Link></li>
+      <li><Link>-Hair Transplant for Men</Link></li>
+      <li><Link>-Hair Transplant for Women</Link></li>
+    </ul>
 
-            <ul className="pb-5 p-2" style={{listStyleType: ""}} >
-              <li className="custom-list-style text-white">
+    <ul className="pb-md-5 p-2">
+      <li className="custom-list-style text-white">Dentistry</li>
+      <li><Link>-Cosmetic Dentistry “Hollywood Smile”</Link></li>
+      <li><Link>-Dental Implants</Link></li>
+      <li><Link>-Crowns</Link></li>
+      <li><Link>-Veneers</Link></li>
+      <li><Link>-Teeth Whitening</Link></li>
+      <li><Link>-Orthodontics - Braces/Invisalign, Corrective Jaw Surgery</Link></li>
+      <li><Link>-Endodontics - Root Treatments</Link></li>
+      <li><Link>-Oral Surgery</Link></li>
+      <li><Link>-Prosthodontics - Full Mouth Reconstruction, Dental Crowns & Bridges, Dentures</Link></li>
+      <li><Link>-Periodontal - Gum Surgeries, Gum Cleaning, Gum Depigmentation</Link></li>
+      <li><Link>-General dentistry - Fillings, Cleanings</Link></li>
+      <li><Link>-Implantology - Dental Implants</Link></li>
+    </ul>
 
-              Hair Transpland
-              </li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      </ul>
+    <ul className="pb-5 p-2">
+      <li className="custom-list-style text-white">Plastic Surgery and Aesthetic Surgeries</li>
+      <li><Link>-Liposuction</Link></li>
+      <li><Link>-Breast Lift and Augmentation</Link></li>
+      <li><Link>-Abdominoplasty (Tummy Tuck)</Link></li>
+      <li><Link>-Rhinoplasty (Nose Job)</Link></li>
+      <li><Link>-Facelift</Link></li>
+      <li><Link>-Lips Aesthetic - lip operations</Link></li>
+      <li><Link>-Mommy Makeover (Labiaplasty, Vaginoplasty)</Link></li>
+      <li><Link>-Eye lift</Link></li>
+      <li><Link>-Neck Lift</Link></li>
+      <li><Link>-Brow/ Forehead lift</Link></li>
+      <li><Link>-Otoplasty (Ear Pinning)</Link></li>
+      <li><Link>-Reconstructive (other surgery)</Link></li>
+    </ul>
 
-                    <ul  className="pb-md-5 p-2"> 
-                    <li className="custom-list-style text-white">
+    <ul className="pb-md-5 p-2">
+      <li className="custom-list-style text-white">Aesthetic Procedures (Non-Surgical)</li>
+      <li><Link>-Botox and Fillers</Link></li>
+      <li><Link>-Chemical Peel</Link></li>
+      <li><Link>-Laser Hair Removal</Link></li>
+      <li><Link>-Microdermabrasion</Link></li>
+      <li><Link>-Intense Pulsed Light (IPL) Treatment</Link></li>
+      <li><Link>-Cellulite Laser and Cream Treatments</Link></li>
+    </ul>
 
-                            Canser
-              </li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      </ul>
-                    <ul className="pb-5 p-2">
-                    <li className="custom-list-style text-white">
-                    ETC
-</li>
-                    <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      </ul>
-                    <ul  className="pb-5 p-2">
-                    <li className="custom-list-style text-white">
+    <ul className="pb-5 p-2">
+      <li className="custom-list-style text-white">Bariatric Surgery (Obesity Surgery)</li>
+      <li><Link>-Gastric Bypass</Link></li>
+      <li><Link>-Gastric Sleeve</Link></li>
+      <li><Link>-Stomach Balloon</Link></li>
+      <li><Link>-Stomach Band</Link></li>
+    </ul>
 
-                         ETC
-</li>
-                    <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      </ul>
-                    <ul  className="pb--md5 p-2">
-                    <li className="custom-list-style text-white">
+    <ul className="pb-5 p-2">
+      <li className="custom-list-style text-white">Ophthalmology (Eye Procedures and Surgeries)</li>
+      <li><Link>-Eye Procedures and Surgeries</Link></li>
+    </ul>
 
-              ETC
-              </li>
-                    <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      <li><Link>-Hair Transpland</Link></li>
-                      </ul>
-            </div>
-                    
-                    </div>
+    <ul className="pb-5 p-2">
+      <li className="custom-list-style text-white">Fertility & IVF</li>
+      <li><Link>-Invitro Fertilization IVF/ICSI</Link></li>
+      <li><Link>-Egg (embryo) & Sperm Freezing</Link></li>
+      <li><Link>-Intrauterine Insemination (IUI)</Link></li>
+      <li><Link>-Other Fertility Procedures and Diagnosis</Link></li>
+    </ul>
+
+    <ul className="pb-5 p-2">
+      <li className="custom-list-style text-white">Orthopedics (All)</li>
+      <li><Link>-Spine Surgeries</Link></li>
+      <li><Link>-Sports Injuries</Link></li>
+      <li><Link>-Knee, Hip, Shoulder Surgeries</Link></li>
+      <li><Link>-Carpal Tunnel</Link></li>
+      <li><Link>-And more</Link></li>
+    </ul>
+  </div>
+</div>
+
   
           </div>
         </li>

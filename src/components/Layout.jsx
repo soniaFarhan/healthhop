@@ -82,7 +82,7 @@ export const Layout = () => {
           <div className="h">
 
           <div class="dropdown-content">
-  <div className="main d-flex  p-5" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
+  <div className="main d-flex flex-wrap p-5" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
     <ul className="pb-2 p-2" style={{ listStyleType: "" }}>
       <li className="custom-list-style text-white">Hair Transplants/ Hair Plugs</li>
       <li><Link>-Hair Transplants/ Hair Plugs</Link></li>

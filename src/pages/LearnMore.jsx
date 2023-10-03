@@ -166,11 +166,11 @@ export const LearnMore = () => {
                               </div>
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <div  style={{background:"#504f4f", borderRadius:"40%"}}><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+                              <div className='d-flex flex-column align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
                               <span class="visually-hidden">Previous</span>
                           </button>
                           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
-                          <div  style={{background:"#504f4f", borderRadius:"40%"}}><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
+                          <div className='d-flex flex-column align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
                               <span class="visually-hidden">Next</span>
                           </button>
                       </div>
@@ -202,6 +202,10 @@ export const LearnMore = () => {
                             
                         </p>
                         <p  style={{cursor:"pointer"}}>
+                        <a class="nav-link" href="#aboutus"><span className='mx-2'>About Us</span></a>
+                            
+                        </p>
+                        <p  style={{cursor:"pointer"}}>
                         <a class="nav-link" href="#pricing"><span className='mx-2'>Price</span></a> 
                         </p>
                         <p  style={{cursor:"pointer"}}>
@@ -222,11 +226,25 @@ export const LearnMore = () => {
 
 
                      {/* {activeTab === 'Overview' && <OverviewComponent />}
+                     {activeTab === 'Aboutus' && <AboutusComponent />}
                      {activeTab === 'Price' && <PriceComponent />}
                      {activeTab === 'Location' && <LocationComponent />}
                      {activeTab === 'Reviews' && <ReviewsComponent />}
                      {activeTab === 'Staff' && <MedicalComponent />}
                      {activeTab === 'Videos' && <GalleryComponent />} */}
+
+
+                     <div id='aboutus' className='py-md-5 py-2 mt-5'>
+
+                        <h3 className='fw-bold pt-4'>
+                            About Us
+                        </h3>
+
+                        <div id='aboutus' className='my-4 cu-color fs_14px'>
+                            <p>To better serve the wide-ranging need of the community. The modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.</p>
+                        </div>
+                        
+                    </div>
 
 
 <div id='overview'>
@@ -551,6 +569,19 @@ const OverviewComponent = () => {
     </div>
   )
 };
+const AboutusComponent = () => {
+    return (
+      <div>
+            <p className='fs_14px cu-color'>
+              <p className='cu-color'> 
+              To better serve the wide-ranging need of the community. The modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
+              </p>
+      
+               
+               </p>
+      </div>
+    )
+  };
 
 const PriceComponent = () => {
   return (

@@ -265,14 +265,7 @@ export const Home = () => {
                 <p>Select min and max price range</p>
 
                 <Box  sx={{   }}>
-                  <Slider className="card-width custom-slider"
-                  style={{color:"#07A6A9"}}
-                    getAriaLabel={() => "Temperature range"}
-                    value={value}
-                    onChange={handleChange}
-                    valueLabelDisplay="auto"
-                    // getAriaValueText={valuetext}
-                  />
+                <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" style={{ color: "#07A6A9" }} />
                 </Box>
 
                 <div className="pt-5">

@@ -261,6 +261,11 @@ export const HealthJourney = () => {
                         <Box >
                         <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" style={{ color: "#07A6A9" }} />
                  </Box>
+                 <div className='my-3'>
+                                        <button className='btn btn_green rounded-pill px-4'>
+                                            Search
+                                        </button>
+                                    </div>
 
 
                     </div>

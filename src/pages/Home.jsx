@@ -18,7 +18,7 @@ export const Home = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const [selectedCategory, setSelectedCategory] = useState(''); // State for selected category
+  const [selectedCategory, setSelectedCategory] = useState(''); 
   const [subCategories, setSubCategories] = useState([]);
 
   const categorySubcategoryMap = {
@@ -297,8 +297,8 @@ export const Home = () => {
                     <option value="Aesthetic Procedures (Non-Surgical)">Aesthetic Procedures (Non-Surgical)</option>
                     <option value="Bariatric Surgery (Obesity Surgery)">Bariatric Surgery (Obesity Surgery)</option>
                     <option value="Ophthalmology (Eye Procedures and Surgeries)">Ophthalmology (Eye Procedures and Surgeries)</option>
-                    <option value="'Fertility & IVF'">Fertility & IVF</option>
-                    <option value="8">Orthopedics</option>
+                    <option value="Fertility & IVF">Fertility & IVF</option>
+                    <option value="Orthopedics">Orthopedics</option>
 
                    
                   </select>

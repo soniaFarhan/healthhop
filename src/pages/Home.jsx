@@ -18,6 +18,91 @@ export const Home = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const [selectedCategory, setSelectedCategory] = useState(''); // State for selected category
+  const [subCategories, setSubCategories] = useState([]);
+
+  const categorySubcategoryMap = {
+    HairTransplants: ["Beard Transplant", "Hair Transplant for Men","Hair Transplant for Women"],
+    Dentistry: [
+      'Cosmetic Dentistry “Hollywood Smile”',
+      'Dental Implants',
+      'Crowns',
+      'Veneers',
+      'Teeth Whitening',
+      'Orthodontics - Braces/Invisalign, Corrective Jaw Surgery',
+      'Endodontics - Root Treatments',
+      'Oral Surgery',
+      'Prosthodontics - Full Mouth Reconstruction, Dental Crowns & Bridges, Dentures',
+      'Periodontal - Gum Surgeries, Gum Cleaning, Gum Depigmentation',
+      'General dentistry - Fillings, Cleanings',
+      'Implantology - Dental Implants',
+    ],
+    'Plastic Surgery and Aesthetic Surgeries': [
+      'Liposuction',
+      'Breast Lift and Augmentation',
+      'Abdominoplasty (Tummy Tuck)',
+      'Rhinoplasty (Nose Job)',
+      'Facelift',
+      'Lips Aesthetic - Lip Operations',
+      'Mommy Makeover (Labiaplasty, Vaginoplasty)',
+      'Eye Lift',
+      'Neck Lift',
+      'Brow/Forehead Lift',
+      'Otoplasty (Ear Pinning)',
+      'Reconstructive (Other Surgery)',],
+
+
+      'Aesthetic Procedures (Non-Surgical)': [
+        'Botox and Fillers',
+        'Chemical Peel',
+        'Laser Hair Removal',
+        'Microdermabrasion',
+        'Intense Pulsed Light (IPL) Treatment',
+        'Cellulite Laser and Cream Treatments',
+      ],
+
+
+      'Bariatric Surgery (Obesity Surgery)': [
+        'Gastric Bypass',
+        'Gastric Sleeve',
+        'Stomach Balloon',
+        'Stomach Band',
+      ],
+     " Ophthalmology (Eye Procedures and Surgeries)":[
+
+     ],
+     'Fertility & IVF': [
+      'Invitro Fertilization IVF/ICSI',
+      'Egg (embryo) & Sperm Freezing',
+      'Intrauterine Insemination (IUI)',
+      'Other Fertility Procedures and Diagnosis',
+    ],
+
+    Orthopedics: [
+      'All',
+      'Spine Surgeries',
+      'Sports Injuries',
+      'Knee Surgeries',
+      'Hip Surgeries',
+      'Shoulder Surgeries',
+      'Carpal Tunnel',
+      'And More...',
+    ],
+  };
+  // Function to handle category selection
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    setSelectedCategory(selectedCategory);
+
+    // Update sub-categories based on the selected category
+    const subCategories = categorySubcategoryMap[selectedCategory] || [];
+    setSubCategories(subCategories);
+  };
+
+
+
+
+
 
   const cardData = [
     {
@@ -55,7 +140,7 @@ export const Home = () => {
       defaultValue:" 5.00/5.00",
       name2:"Adam johens",
       title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debit",
+        "Inadequate information about medical tourism is the reason that some people avoid this option. If you are considering treatment abroad, you should make an informed decision based on research. Discuss your concerns with medical tourists who have already been abroad for a treatment.",
     },
     {
       icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
@@ -64,7 +149,7 @@ export const Home = () => {
       reviews: 5,
       defaultValue: "5.00/5.00",
       title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo debit",
+        "Inadequate information about medical tourism is the reason that some people avoid this option. If you are considering treatment abroad, you should make an informed decision based on research. Discuss your concerns with medical tourists who have already been abroad for a treatment.",
     },
     {
       icon: < FaQuoteLeft style={{fontSize:"25px",color:"#3B4652"}}/>,
@@ -73,7 +158,7 @@ export const Home = () => {
       reviews: 5,
       defaultValue:"5.00/5.00",
       title:
-        "cancer     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel harum ullam quod repellendus quas officia eum molestias voluptas animi corporis quasi nemo deb",
+        "Inadequate information about medical tourism is the reason that some people avoid this option. If you are considering treatment abroad, you should make an informed decision based on research. Discuss your concerns with medical tourists who have already been abroad for a treatment.",
     },
   ];
 
@@ -131,7 +216,7 @@ export const Home = () => {
       ),
       name:"Customized Packages",
       title:
-        "Our partnered medical providers offer personalized packages to meet your unique medical and  logistical needs. Our app allows us to create   customized packages tailored to your budget and preferences.",
+        "Our partnered medical providers offer personalized packages to meet your unique medical and logistical needs. Our app allows us to create customized packages tailored to your budget and preferences.",
     },
   ];
 
@@ -163,7 +248,28 @@ export const Home = () => {
   ];
 
   const defaultValue =5
-
+  const marks = [
+    {
+      value: 1000,
+     
+    },
+    {
+      value: 3000,
+     
+    },
+    {
+      value: 5000,
+     
+    },
+    {
+      value: 10000,
+     
+    },
+    {
+      value: 15000,
+     
+    },
+  ];
   return (
     <div>
       <div className="home_background_img">
@@ -175,75 +281,40 @@ export const Home = () => {
             >
               <div className="col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"79%" }}>
                 <h5 className="text-dark text-center fw-bold">
-                  Book Your Medical Procedure
+                Book Your Medical Procedure
                 </h5>
                 <p className="text-center" style={{fontSize:"12px"}}>Find the top providers in Turkey</p>
 
                 <div className="mb-3">
-                  <select
+                  <select id="category" onChange={handleCategoryChange} value={selectedCategory}
                     class="form-select bg-select "
                     aria-label="Default select example"
                   >
                     <option selected>Choose Category</option>
-                    <option value="1">Addiction Treatment</option>
-                    <option value="2">Aesthetics Nn-Surgical</option>
-                    <option value="3">Bone Marrow Transplant</option>
-                    <option value="4">Cancer Treatment</option>
-                    <option value="5">Cardiac Surgery</option>
-                    <option value="6">Cardiology</option>
-                    <option value="7">Cosmetic Surgery</option>
-                    <option value="8">Dermatology</option>
-                    <option value="9">Dialysis</option>
-                    <option value="10">Ears, Nose, Throat</option>
-                    <option value="11">Endocrinology</option>
-                    <option value="12">Gastroenterology</option>
-                    <option value="13">Hair Transplant</option>
-                    <option value="14">Hematology</option>
-                    <option value="15">Neurolgy</option>
-                    <option value="16">OB_GYN</option>
-                    <option value="17">Dental Care</option>
-                    <option value="18">Plastic Surgery / Aesthetic Surgery</option>
-                    <option value="19">Bariatic Surgery</option>
-                    <option value="20">Orthopedic Surgery</option>
-                    <option value="21">IVF/Fertility Treatment</option>
-                    <option value="22">Optometry/ Eye Surgery</option>
-                    <option value="23">Pediatrics</option>
-                    <option value="24">Sports Medicine</option>
-                    <option value="25">Stem Cell Therapy</option>
+                    <option value="HairTransplants">Hair Transplants/ Hair Plugs </option>
+                    <option value="Dentistry">Dentistry</option>
+                    <option value="Plastic Surgery and Aesthetic Surgeries">Plastic Surgery and Aesthetic Surgeries</option>
+                    <option value="Aesthetic Procedures (Non-Surgical)">Aesthetic Procedures (Non-Surgical)</option>
+                    <option value="Bariatric Surgery (Obesity Surgery)">Bariatric Surgery (Obesity Surgery)</option>
+                    <option value="Ophthalmology (Eye Procedures and Surgeries)">Ophthalmology (Eye Procedures and Surgeries)</option>
+                    <option value="'Fertility & IVF'">Fertility & IVF</option>
+                    <option value="8">Orthopedics</option>
+
+                   
                   </select>
                 </div>
 
                 <div className="mb-3">
-                  <select
+                  <select id="subCategory" disabled={subCategories.length === 0}
                     class="form-select  bg-select"
                     aria-label="Default select example"
                   >
                     <option selected>Choose Sub Category</option>
-                    <option value="1">Addiction Treatment</option>
-                    <option value="2">Aesthetics Nn-Surgical</option>
-                    <option value="3">Bone Marrow Transplant</option>
-                    <option value="4">Cancer Treatment</option>
-                    <option value="5">Cardiac Surgery</option>
-                    <option value="6">Cardiology</option>
-                    <option value="7">Cosmetic Surgery</option>
-                    <option value="8">Dermatology</option>
-                    <option value="9">Dialysis</option>
-                    <option value="10">Ears, Nose, Throat</option>
-                    <option value="11">Endocrinology</option>
-                    <option value="12">Gastroenterology</option>
-                    <option value="13">Hair Transplant</option>
-                    <option value="14">Hematology</option>
-                    <option value="15">Neurolgy</option>
-                    <option value="16">OB_GYN</option>
-                    <option value="17">Dental Care</option>
-                    <option value="18">Plastic Surgery / Aesthetic Surgery</option>
-                    <option value="19">Bariatic Surgery</option>
-                    <option value="20">Orthopedic Surgery</option>
-                    <option value="21">IVF/Fertility Treatment</option>
-                    <option value="22">Optometry/ Eye Surgery</option>
-                    <option value="23">Pediatrics</option>
-                    <option value="24">Sports Medicine</option>
-                    <option value="25">Stem Cell Therapy</option>
+                    {subCategories.map((subCategory) => (
+          <option key={subCategory} value={subCategory}>
+            {subCategory}
+          </option>
+        ))}
                   </select>
                 </div>
 
@@ -265,7 +336,16 @@ export const Home = () => {
                 <p>Select min and max price range</p>
 
                 <Box  sx={{   }}>
-                <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" style={{ color: "#07A6A9" }} />
+                <Slider
+      sx={{ color: "#07A6A9",height:"10px" }}
+      aria-label="Temperature"
+      defaultValue={3000} // Set your initial value here
+      valueLabelDisplay="auto"
+      step={null}
+      marks={marks}
+      min={1000}
+      max={15000}
+    />
                 </Box>
 
                 <div className="pt-5">
@@ -283,16 +363,10 @@ export const Home = () => {
                 <div className="p-4">
 
                 <h1 className=" heading" style={{ color: "white",fontSize:"50px" }}>
-                  Discover Medical Tourism 
-                  with HealthHop
+                Discover Medical Tourism with HealthHop
                 </h1>
                 <p className="text-white pe-lg-5 " style={{color:"#8699A3",fontWeight:"lighter",opacity:"0.7"}}>
-                  HealthHop was founded in San Francisco, CA. Our mission is to
-                  make medical 
-                  tourism more safe and accessible than ever. We only work with
-                  the best medical 
-                  practitioners and hospitals in the area, so that you are in
-                  good hands
+                HealthHop was founded in San Francisco, CA. Our mission is to make medical tourism more safe and accessible than ever. We only work with the best medical practitioners and hospitals in the area, so that you are in good hands
                 </p>
                 </div>
               </div>
@@ -416,13 +490,7 @@ export const Home = () => {
                 </div>
                 <div className="my-auto" style={{ width: "70%" }}>
                   <p className="" style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
-                    HealthHop is a centralized, all-in-one medical tourism
-                    application that allows you to book your medical procedures,
-                    transportation, and accommodation logistics in another city,
-                    country or overseas. Our app is easy to use and provides a
-                    personalized experience to make your medical journey as
-                    stress-free as possible. Download the app today and start
-                    exploring your options.
+                   HealthHop is a centralized, all-in-one medical tourism application that allows you to book your medical procedures, transportation, and accommodation logistics in another city, country or overseas. Our app is easy to use and provides a personalized experience to make your medical journey as stress-free as possible. Download the app today and start exploring your options.
                   </p>
                 </div>
               </div>
@@ -502,8 +570,7 @@ export const Home = () => {
           style={{ color: "#939393", fontSize: "11px" }}
         >
           <p className="mb-5 fw-bold" style={{fontSize:"15px"}} >
-            We collect reviews from our usersso you can get an honest opinion of
-            what <br /> experience with our website are really  like!
+          We collect reviews from our users so you can get an honest opinion of what  <br />an experience with our website are really like!
           </p>
           <p></p>
         </div>
@@ -645,10 +712,7 @@ export const Home = () => {
                   </div>
                   <h2>Book Your Procedure</h2>
                   <p className="" style={{ fontSize: "16px", }}>
-                    Simply browse our selection of medical providers and
-                    services and book a consultation with the one that best
-                    meets your needs. Our app provides detailed information on
-                    each procedure to help you make an informed decision.
+                  Simply browse our selection of medical providers and services and book a consultation with the one that best meets your needs. Our app provides detailed information on each procedure to help you make an informed decision.
                   </p>
                   </div>
                 </div>
@@ -681,11 +745,7 @@ export const Home = () => {
                   </div>
                   <h2>Transportation & Accommodation</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                    Once you have booked your procedure, our providers can even
-                    help you take care of your transportation and accommodation
-                    logistics. Need to be picked up from the airport? No
-                    problem. Transportation from your hotel and clinic can be
-                    arranged with ease.
+                  Once you have booked your procedure, our providers can even help you take care of your transportation and accommodation logistics. Need to be picked up from the airport? No problem. Transportation from your hotel and clinic can be arranged with ease.
                   </p>
                 </div>
                 <div className="col-md-5 pe-md-5">
@@ -717,11 +777,7 @@ export const Home = () => {
                   </div>
                   <h2>Travel!</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                    Once you have selected your procedure and provider, a
-                    package will be offered to you. This could include
-                    procedure, accomodation, pickup logistics and more. Once you
-                    accept and pay through our secure online portal, you are
-                    ready to travell
+                  Once you have selected your procedure and provider, a package will be offered to you. This could include procedure, accomodation, pickup logistics and more. Once you accept and pay through our secure online portal, you are ready to travel!
                   </p>
                 </div>
 
@@ -754,10 +810,7 @@ export const Home = () => {
                   </div>
                   <h2> Sightsee!</h2>
                   <p className="" style={{ fontSize: "12px" }}>
-                    Have extra time before or after your medical procedure and
-                    want to sightsee? Our team can help you plan activities or
-                    give you recommendations on places to see, the local
-                    cuisine, and more!
+                  Have extra time before or after your medical procedure and want to sightsee? Our team can help you plan activities or give you recommendations on places to see, the local cuisine, and more!
                   </p>
                 </div>
 
@@ -870,18 +923,10 @@ export const Home = () => {
                     Our Mission
                   </h2>
                   <p className="px-3" style={{ color: "white",fontSize:"14px" }}>
-                    At HealthHop, we believe that everyone should have access to
-                    affordable and quality medical care. Our mission is to make
-                    safe and affordable medical care accessible to anyone by
-                    providing a centralized, all-in-one application that
-                    streamlines the booking process.
+                  At HealthHop, we believe that everyone should have access to affordable and quality medical care. Our mission is to make safe and affordable medical care accessible to anyone by providing a centralized, all-in-one application that streamlines the booking process.
                   </p>
                   <p className="px-3 mb-5" style={{ color: "white",fontSize:"14px" }}>
-                    At HealthHop, we believe that everyone should have access to
-                    affordable and quality medical care. Our mission is to make
-                    safe and affordable medical care accessible to anyone by
-                    providing a centralized, all-in-one application that
-                    streamlines the booking process.
+                  At HealthHop, we believe that everyone should have access to affordable and quality medical care. Our mission is to make safe and affordable medical care accessible to anyone by providing a centralized, all-in-one application that streamlines the booking process.
                   </p>
                   
                 </div>

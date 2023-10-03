@@ -243,9 +243,7 @@ export const Layout = () => {
                 Medical tourisum
               </h4>
               <p p class="text-upper_case mt-2 text-dark fs_14px opacity_custom" >
-                We make job finding very easy. We are best job provider company
-                where any user can apply for different jobs created by our
-                admin.
+              Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
               </p>
               </div>
               {/* <div>
@@ -293,7 +291,8 @@ export const Layout = () => {
                   </h4>
                   <Link to={"/jobs"} className="decoration-none text-dark">
                     <p className="mb-1  text-dark fs_14px opacity_custom" title="Job Search">
-                    Street: 123 Main Street Springfield
+                    12345 Little Lonsdale St, Melbourne 
+                    
                     </p>
                   </Link>
                   <Link  className="decoration-none text-dark" >

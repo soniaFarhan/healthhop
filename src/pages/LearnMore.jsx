@@ -197,7 +197,8 @@ export const LearnMore = () => {
                      </div> */}
                     <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
                         <p  style={{cursor:"pointer"}}>
-                        <a class="nav-link" href="#item-2"><span className='mx-2'>Overview</span></a>
+                        <a class="nav-link" href="#overview"><span className='mx-2'>Overview</span></a>
+                        
                             
                         </p>
                         <p  style={{cursor:"pointer"}}>
@@ -220,15 +221,23 @@ export const LearnMore = () => {
                      
 
 
-                     {activeTab === 'Overview' && <OverviewComponent />}
+                     {/* {activeTab === 'Overview' && <OverviewComponent />}
                      {activeTab === 'Price' && <PriceComponent />}
                      {activeTab === 'Location' && <LocationComponent />}
                      {activeTab === 'Reviews' && <ReviewsComponent />}
                      {activeTab === 'Staff' && <MedicalComponent />}
-                     {activeTab === 'Videos' && <GalleryComponent />}
+                     {activeTab === 'Videos' && <GalleryComponent />} */}
 
 
-
+<div id='overview'>
+          <p className='fs_14px cu-color'>
+            <p className='cu-color'> 
+             Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
+            </p>
+    
+              To better serve the wide-ranging needs of the community, the modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
+             </p>
+    </div>
 
                     <div id='pricing' className='py-md-5 py-2'>
                         <h3 className='fw-bold'>
@@ -278,7 +287,7 @@ export const LearnMore = () => {
                         
                     </div>
 
-                    <div id='Review ' className='py-md-5 py-2'>
+                    <div id='Review' className='py-md-5 py-2'>
 
                         <h3 className='fw-bold'>
                             Review  

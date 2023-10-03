@@ -12,7 +12,28 @@ export const HealthJourney = () => {
     setValue(newValue);
   };
 
-
+  const marks = [
+    {
+      value: 1000,
+     
+    },
+    {
+      value: 3000,
+     
+    },
+    {
+      value: 5000,
+     
+    },
+    {
+      value: 10000,
+     
+    },
+    {
+      value: 15000,
+     
+    },
+  ];
     const data = [
         {
             name: "Anadulo Medical Center 1",
@@ -259,7 +280,16 @@ export const HealthJourney = () => {
                         </p>
 
                         <Box >
-                        <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" style={{ color: "#07A6A9" }} />
+                        <Slider
+      sx={{ color: "#07A6A9",height:"10px" }}
+      aria-label="Temperature"
+      defaultValue={3000} // Set your initial value here
+      valueLabelDisplay="auto"
+      step={null}
+      marks={marks}
+      min={1000}
+      max={15000}
+    />
                  </Box>
 
 

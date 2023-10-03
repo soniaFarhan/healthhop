@@ -166,11 +166,11 @@ export const LearnMore = () => {
                               </div>
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <div  style={{background:"#504f4f", borderRadius:"40%"}}><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+                              <div className='d-flex flex-column align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
                               <span class="visually-hidden">Previous</span>
                           </button>
                           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
-                          <div  style={{background:"#504f4f", borderRadius:"40%"}}><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
+                          <div className='d-flex flex-column align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
                               <span class="visually-hidden">Next</span>
                           </button>
                       </div>

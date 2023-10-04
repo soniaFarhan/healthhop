@@ -8,17 +8,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 export default function ProgressMobileStepper({ activeStep }) {
   const theme = useTheme();
 
-  const stepperStyles = {
-    "& .MuiMobileStepper-dot": {
-      backgroundColor: "green", // Change to your desired green color for dots
-    },
-    "& .MuiButtonBase-root": {
-      color: "green", // Change to your desired green color for buttons
-    },
-    "& .MuiSvgIcon-root": {
-      fill: "green", // Change to your desired green color for icons
-    },
-  };
+
 
   return (
     <MobileStepper
@@ -28,7 +18,7 @@ export default function ProgressMobileStepper({ activeStep }) {
       activeStep={activeStep}
       
       
-      sx={{ maxWidth: "100%", color:"red",  flexGrow: 1, padding: "0px", ...stepperStyles }}
+      sx={{ maxWidth: "100%", color:"red",  flexGrow: 1, padding: "0px", marginX:"auto"  }}
     />
   );
 }

@@ -52,7 +52,7 @@ function App() {
         <Route path='/inquiries' element={<Inquiries/>}/>
         <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
         <Route path='/packages' element={<Packges/>}/>
-        <Route path='/calendar' element={<Calender/>}/>
+        <Route path='/calendar' element={<Calender month={"month"}/>}/>
         <Route path='/message' element={<Message/>}/>
         <Route path='/inovice' element={<Inovice/>}/>
         <Route path='/Invoice-details' element={<Invoicedetails/>}/>

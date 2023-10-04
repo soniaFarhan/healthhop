@@ -11,7 +11,7 @@ import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import { toast } from 'react-toastify';
 
 
-const Calender = () => {
+const Calender = ({month}) => {
   
   const [modalShow, setModalShow] = useState(false);
   const [data, setData] = useState();
@@ -56,7 +56,7 @@ const Calender = () => {
       headerToolbar={{
         right: '', // Add any other left buttons you want
         center: 'prev title next',
-        left: 'dayGridMonth,timeGridWeek,timeGridDay', // Add week and day view buttons
+        left: month ? 'dayGridMonth,timeGridWeek,timeGridDay' : 'timeGridWeek,timeGridDay'// Add week and day view buttons
       }}
       views={{
         week: {
@@ -190,12 +190,9 @@ async function fetchData(){
         </Modal.Header>
         <form onSubmit={handleSubmit}>
         <Modal.Body>
-        <div className="row">
+        {/* <div className="row">
       
-        {/* <div class="d-flex align-items-center gap-1 equal-width py-2">
-            <label class="white_space mb-0" for="">Patient Name:</label>
-            <input className="form-control" value={appointment.patient} onChange={(e)=>handleChange("patient",e.target.value)} type="text" name="" id="" />
-          </div> */}
+        
           <div class=" d-flex align-items-center gap-1 py-2 equal-width">
             <label for="exampleInputEmail1" class="form-label white_space"> Select: </label>
             <select class="form-select mb-0" 
@@ -208,10 +205,7 @@ async function fetchData(){
             </select>
           </div>
   
-          {/* <div class="d-flex align-items-center gap-1 equal-width">
-            <label class="white_space mb-0" for="">Date: </label>
-            <input className="form-control" type="date" name="" id="" />
-          </div> */}
+          
 
           <div class="d-flex align-items-center gap-1 equal-width py-2">
             <label class="white_space mb-0" for="">Booking</label>
@@ -223,8 +217,22 @@ async function fetchData(){
             <textarea class="form-control" id="" value={appointment.description} onChange={(e)=>handleChange("description",e.target.value)}  rows="3"></textarea>
           </div>
 
+        </div> */}
+        <div className='row'>
+        <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Name' /></div>
+        <div className=" mx-auto mb-2"><textarea name="" className='form-control' placeholder='Description' id="" cols="30" rows="10"></textarea></div>
+        <div className=" mx-auto mb-2">
+        <div className='form-floating'>
+        <select name="" className='form-control form-select' id="packageSelect">
+          <option value="0">$10,000</option>
+          <option value="1">$20,000</option>
+          <option value="2">$30,000</option>
+        </select>
+        <label htmlFor="packageSelect">Package</label>
         </div>
-       
+        </div>
+        {/* <div className="col-md-10 mx-auto mb-2"><button type='submit' className='btn btn-primary w-100'>Done</button></div> */}
+      </div>
         </Modal.Body>
         <Modal.Footer>
           <button type="submit" class="btn btn_green text-white">Save </button>

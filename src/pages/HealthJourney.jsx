@@ -12,7 +12,28 @@ export const HealthJourney = () => {
     setValue(newValue);
   };
 
-
+  const marks = [
+    {
+      value: 1000,
+     
+    },
+    {
+      value: 3000,
+     
+    },
+    {
+      value: 5000,
+     
+    },
+    {
+      value: 10000,
+     
+    },
+    {
+      value: 15000,
+     
+    },
+  ];
     const data = [
         {
             name: "Anadulo Medical Center 1",
@@ -64,9 +85,44 @@ export const HealthJourney = () => {
             {data.map((data, index)=>(
                     <div className='d-flex align-items-center gap-1 justify-content-between flex-column flex-md-row shadow rounded-4 p-2 mb-3'>
                     <div className='p-2'>
-                    <div style={{width:"8rem"}}>
-                    <img className='img-fluid' src={require("../assets/h-card.png")} alt="" />
-                    </div>
+                    <div style={{ width: "8rem" }}>
+                                            <div id={`carouselExampleControls-${index}`} class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" >
+                                                        <div className='d-flex align-items-center gap-1'>
+                                                            <div style={{ width: "10rem" }}>
+                                                                <img className='img-fluid' src={require("../assets/h-card.png")} class="d-block w-100" alt="..." />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div className='d-flex align-items-center gap-1'>
+                                                            <div style={{ width: "10rem" }}>
+                                                                <img className='img-fluid' src={require("../assets/h-card.png")} class="d-block w-100" alt="..." />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div className='d-flex align-items-center gap-1'>
+                                                            <div style={{ width: "10rem" }}>
+                                                                <img className='img-fluid' src={require("../assets/h-card.png")} class="d-block w-100" alt="..." />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button style={{left:"7px"}} class="carousel-control-prev text-dark" type="button" data-bs-target={`#carouselExampleControls-${index}`} data-bs-slide="prev">
+                                                    <div className='d-flex align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button style={{right:"7px"}} class="carousel-control-next text-dark" type="button" data-bs-target={`#carouselExampleControls-${index}`} data-bs-slide="next">
+                                                    <div className='d-flex align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-next-icon" aria-hidden="true"></span></div>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
                     </div>
     
                     <div>
@@ -139,12 +195,27 @@ export const HealthJourney = () => {
                 </h3>
              
                     <div className='mb-3'>
-                        <select class="form-select" aria-label="Default select example">
-                        <option selected>Languages</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        </select>
+                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Languages</option>
+                                        <option value="">Arabic</option>
+                                        <option value="">Azerbaijani</option>
+                                        <option value="">Dutch</option>
+                                        <option value="">English</option>
+                                        <option value="">Farsi</option>
+                                        <option value="">French</option>
+                                        <option value="">German</option>
+                                        <option value="">Hindi</option>
+                                        <option value="">Italian</option>
+                                        <option value="">Pashto</option>
+                                        <option value="">Polish</option>
+                                        <option value="">Portuguese</option>
+                                        <option value="">Russian</option>
+                                        <option value="">Spanish</option>
+                                        <option value="">Turkish</option>
+                                        <option value="">Ukrainian</option>
+                                        <option value="">Urdu</option>
+
+                                    </select>
                     </div>
 
                     <div class="form-check">
@@ -190,7 +261,14 @@ export const HealthJourney = () => {
                     </div>
 
                     <div class="">
-                    <input className='form-control' type="text" name="" id="" placeholder='Choose Location' />
+                    <select name="" className='form-control form-select' id="">
+                                        <option selected>Any Location</option>
+                                        <option value="1">-Istanbul</option>
+                                        <option value="2">-Izmir</option>
+                                        <option value="3">-Antalya</option>
+                                        <option value="4">-Bursa</option>
+                                        <option value="5">-Mugla (Fethiye, Marmaris, Bodrum)</option>
+                                    </select>
                     </div>
 
                     <div className='py-3'>
@@ -202,14 +280,22 @@ export const HealthJourney = () => {
                         </p>
 
                         <Box >
-                    <Slider
-                        getAriaLabel={() => "Temperature range"}
-                        value={value}
-                        onChange={handleChange}
-                        valueLabelDisplay="auto"
-                        // getAriaValueText={valuetext}
-                    />
+                        <Slider
+      sx={{ color: "#07A6A9",height:"10px" }}
+      aria-label="Temperature"
+      defaultValue={3000} // Set your initial value here
+      valueLabelDisplay="auto"
+      step={null}
+      marks={marks}
+      min={1000}
+      max={15000}
+    />
                  </Box>
+                 <div className='my-3'>
+                                        <button className='btn btn_green rounded-pill px-4'>
+                                            Search
+                                        </button>
+                                    </div>
 
                  <Box>
                     <button className='btn btn_green'>

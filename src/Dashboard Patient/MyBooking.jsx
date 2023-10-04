@@ -1,130 +1,114 @@
-import { Chat } from '@mui/icons-material'
-import { Button } from '@mui/material'
+
+
+import { Avatar, Button, TextField } from '@mui/material'
 import React from 'react'
-
-export const MyBooking = () => {
-
+import { Link } from 'react-router-dom'
 const data =[
-{
-name:"Herry",
-chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
-img:
-<img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />,
-amount:" $ 1000",
-orderno:"002",
-date:" 002"
-},
-{
-name:"Herry",
-chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
-img:
-<img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />,
-amount:" $ 1000",
-orderno:"002",
-date:" 002"
+  {
 
-},
-{
-name:"Herry",
-chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
-img:
-<img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />,
-amount:" $ 1000",
-orderno:"002",
-date:" 002"
+  },
+  {
 
-},
+  },
+  {
 
-
-
-
-]
-
-
+  },
+] 
+export const  MyBooking= () => {
   return (
     <>
-  <div className="container my-5  pt-2 shadows" style={{borderRadius:"12px",paddingBottom:"90px"}}>
-  <div className=" row  m-2 p-1 " >
-    <div className="col">
+
 {
-  data.map((e)=>{
+  data.map(()=>{
     return(
 
-   
 
-
-
-
-<div className="d-md-flex shadows p-2 my-3" style={{borderRadius:"12px" }}>
-
-
-
-<div className='p-1 me-2'>
-      <div style={{width:"8rem"}}>
-      <img className='img-fluid' src={require("../assets/h-card.png")} alt="" />
-      </div>
-      </div>
-<div className=" ">
-
-<div className="d-flex justify-content-between aling-items-center">
-  <h6 style={{fontSize:"13px"}}>  {e.name} </h6>
-  
-  
-   <p style={{fontSize:"8px",color:"#07A6A9"}}>Quote offered</p>
-</div>
-
-<div className="">
-<p style={{fontSize:"9px"}}>
-{e.chat}
-</p>
-
-</div>
-<div className="d-md-flex aling-items-center justify-content-between">
-
-<div className="d-sm-flex justify-content-between ">
-
-<p className='my-auto' style={{fontSize:"12px"}}>  <span className='fw-bold'>  Amount:  </span> { e.amount } </p>
-<p className='my-auto mx-sm-4' style={{fontSize:"12px"}}>  <span className='fw-bold'>Order No</span> { e.orderno}</p>
-<p className='my-auto ' style={{fontSize:"12px"}}> <span className='fw-bold'>Scheduled pro:</span>  {   e.date }</p>
-
-
-
- </div>
-<div className="d-flex">
-
-  <div className="m-2">
-
-<Button variant="text" style={{color:'#07A6A9'}} ><Chat/></Button>
-  </div>
-
-<div className="m-2">
-
-<Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px"}}>Meet</Button>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-
-
-
-
-      
-
-    )
+    <div className="container bg-white rounded-4 py-2 mt-2">
+    <div className="d-flex align-items-center mt-2">
+     <Avatar sx={{width:"60px",height:"60px"}}/>
+     <h5 className='ms-3 my-auto'>  Sunny Apartment</h5>
+    </div>
+         <div className="row mt-3">
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Medical Provider:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>Anadolo Medical Center</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Total Price:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>10,000 USD</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Deposit (30%):</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>30,000 USD</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Remaining Balance Due On Day of procedure to Clinic:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>17,000 USD</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Procedure Name:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>Hair Transplant</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Details:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className=' fs_14px px-4'>Hair Transplant surgery is a procedure used to treat hair loss. Various Techniques are available. But all hair transplant involve taking hair-bearing Skin from one part to the scalp and grafting these pieces of skin onto baid or thining areas of scalp or areas of troma.</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Order Date:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>September 16, 2022</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Order Number:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>000000897557-2</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Scheduled Procedure Date:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>September 16 2022 at 12:45pm</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Reciept:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>google.com.sdicinidnccm</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Address:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>First floor Akbar plaza sialkot</p></div>
+           </div>
+           <div className='col-sm-2 text-sm-end'>
+             <p className='fs_14px fw-bold'>Location:</p>
+           </div>
+           <div className='col-10 d-flex flex-column '>
+             <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>Turkey</p></div>
+           </div>
+         </div>
+       </div>    )
   })
 }
 
-</div>
 
-</div>
-    </div>
-    
-    
+
+
     </>
   )
 }
-

@@ -506,6 +506,9 @@ select.bg-select option{
   text-wrap: nowrap;
  
 }
+.text_dark{
+  color: #000 !important;
+}
 
 
 @media screen and (max-width:1025px){

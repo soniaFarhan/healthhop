@@ -9,12 +9,13 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import {BiSearch} from 'react-icons/bi'
 
 export const Message = () => {
-  const StyledBadge = styled(Badge)(({ theme }) => ({
+  const StyledBadge = styled(Badge)(({ theme, colr }) => ({
     '& .MuiBadge-badge': {
-      backgroundColor: '#44b700',
-      color: '#44b700',
+      backgroundColor: colr,
+      color: colr,
       boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
       '&::after': {
         position: 'absolute',
@@ -31,15 +32,15 @@ export const Message = () => {
   }));
   const data = [
     {
-      // avater: <img className='rounded-circle' style={{objectFit:"cover", width: 55, height: 55}} src={require("../assets/card-2.jpg")} alt=""  />,
-      avater:  <StyledBadge
+      avater:  <StyledBadge 
+      colr="#44b700"
       overlap="circular"
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       variant="dot"
     >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/card-2.jpg")} />
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/card-2.jpg")} />
     </StyledBadge>,
-      name: "Farnky Schmid",
+      name:  <span>FRANKY SCHMID<span className='rounded-circle  fw-normal p-1 ms-2 px-2' style={{backgroundColor:"rgb(53,199,90)"}}>3</span></span>,
       inquire: <span style={{color:"rgb(249,9,9)"}}>New Inquiry</span>,
       chat: "Me: what does This Dimmy",
       date: <AiFillMinusCircle style={{fontSize:"20px", color:"rgb(249,9,9)"}}/>
@@ -47,11 +48,12 @@ export const Message = () => {
     },
     {
       avater:  <StyledBadge
+      colr="#44b700"
       overlap="circular"
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       variant="dot"
     >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/card-1.jpg")} />
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/card-1.jpg")} />
     </StyledBadge>,
       name: "SAHSA COHEN",
       inquire: <span style={{color:"rgb(243,174,36)"}}>Responded</span>,
@@ -61,11 +63,12 @@ export const Message = () => {
     },
     {
       avater:  <StyledBadge
+      colr="#44b700"
       overlap="circular"
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       variant="dot"
     >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/card-3.jpg")} />
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/card-3.jpg")} />
     </StyledBadge>,
       name: "ROBERT LANDSBERG",
       inquire:<span style={{color:"rgb(0,114,180)"}}>Quote Offered</span>,
@@ -75,11 +78,12 @@ export const Message = () => {
     },
     {
       avater:  <StyledBadge
+      colr="rgb(175,187,198)"
       overlap="circular"
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       variant="dot"
     >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/Ellipse 1.png")} />
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/Ellipse 1.png")} />
     </StyledBadge>,
       name: "CRISTINA ROHMER",
       inquire: <span style={{color:"rgb(101,129,68)"}}>Accepted and Confirmed</span>,
@@ -89,11 +93,12 @@ export const Message = () => {
     },
     {
       avater:  <StyledBadge
+      colr="rgb(175,187,198)"
       overlap="circular"
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       variant="dot"
     >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/md-1.jpg")} />
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/md-1.jpg")} />
     </StyledBadge>,
       name: "LUKAS SCHULTZ",
       // inquire: "New Inquiry",
@@ -103,25 +108,12 @@ export const Message = () => {
     },
     {
       avater:  <StyledBadge
+      colr="rgb(175,187,198)"
       overlap="circular"
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       variant="dot"
     >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/md-5.jpg")} />
-    </StyledBadge>,
-      name: "BOBBY BEUGER",
-      // inquire: "New Inquiry",
-      chat: "Was machst du?",
-      date: "30.2.2021"
-
-    },
-    {
-      avater:  <StyledBadge
-      overlap="circular"
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-      variant="dot"
-    >
-      <Avatar style={{width: 55, height: 55}} alt="Remy Sharp" src={require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")} />
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/md-5.jpg")} />
     </StyledBadge>,
       name: "BOBBY BEUGER",
       // inquire: "New Inquiry",
@@ -135,15 +127,15 @@ export const Message = () => {
   return (
     <>
 
-      <div className="container shadows " style={{ borderRadius: "10px", height: "85vh", backgroundColor:"white" }}>
+      <div className="container shadows " style={{ borderRadius: "10px", height: "85vh", backgroundColor:"rgb(253,253,253)" }}>
         <h4 className='p-3'>MESSAGE THREADS</h4>
 
         <div className="row ">
           <div className="col-md-4 ">
 
-            <div className="mb-4 mx-2" >
-              <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent" }} />
-
+            <div className="mb-4 mx-2 position-relative" >
+              <input type="text" class="form-control" placeholder="Search people" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{  backgroundColor: "rgb(251,253,251)" }} />
+              <button className='position-absolute translate-middle border-0 bg-transparent' style={{top:"50%", right:"0"}}><BiSearch style={{fontSize:"20px"}} /></button>
             </div>
             <div className="scroll-container2">
               <div className="content2">
@@ -190,9 +182,9 @@ export const Message = () => {
 
 
           </div>
-          <div className="col-md-8  " >
+          <div className="col-md-8  ps-0" >
 
-            <div className="shadows mx-2 py-5 px-3" style={{ height: "73vh", borderRadius: "12px", backgroundColor:"white" }}>
+            <div className="shadows me-2 py-4 px-3" style={{ height: "73vh", borderRadius: "12px", backgroundColor:"white" }}>
               <div className="scroll-container1">
                 <div className="content1">
                   <div className="d-flex justify-content-end ">
@@ -200,18 +192,18 @@ export const Message = () => {
 
                       <div className="word" >
                         <div className='ms-auto'>
-                          <p className='mt-2 p-2 fw-light ms-auto' style={{ backgroundColor: "rgb(251,253,251)", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth:"fit-content" }}>Hello Franky!</p>
+                          <p className='mt-2 p-2 fw-light ms-auto mb-0' style={{ backgroundColor: "rgb(251,253,251)", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth:"fit-content" }}>Hello Franky!</p>
                         </div>
 
                       </div>
                       <div className="word" >
                         <div className='ms-auto'>
-                          <p className='mt-2 p-2 fw-light word' style={{ backgroundColor: "rgb(251,253,251)", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth:"fit-content"  }}>What are you doing today?</p>
+                          <p className='mt-2 p-2 fw-light word mb-0' style={{ backgroundColor: "rgb(251,253,251)", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth:"fit-content"  }}>What are you doing today?</p>
                         </div>
                       </div>
                       <div className="word" >
                         <div className='ms-auto'>
-                          <p className=' fw-light word float-end' style={{ backgroundColor: "white", borderRadius: "10px", color: "green", fontSize: "12px", maxWidth:"fit-content"  }}>09:45</p>
+                          <p className=' fw-light word float-end mb-0' style={{ backgroundColor: "white", borderRadius: "10px", color: "rgb(90,156,77)", fontSize: "12px", maxWidth:"fit-content"  }}>09:45</p>
                         </div>
                       </div>
                     </div>
@@ -229,19 +221,20 @@ export const Message = () => {
                       </div>
 
                       <div className="word" >
-                        <p className='mt-2 p-2 fw-light' style={{ backgroundColor: "#FFFFF", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth: "fit-content", border: "1px solid rgb(90,156,77)" }}>Hi George! nice to hear you again!</p>
+                        <p className='mt-2 p-2 fw-light mb-0' style={{ backgroundColor: "#FFFFF", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth: "fit-content", border: "1px solid rgb(90,156,77)" }}>Hi George! nice to hear you again!</p>
+                        <div className="word" >
+                    <div className='ms-auto'>
+                      <p className=' fw-light word mb-0' style={{ backgroundColor: "white", borderRadius: "10px", color: "rgb(90,156,77)", fontSize: "12px", maxWidth: "fit-content" }}>09:47</p>
+                    </div>
+                  </div>
                       </div>
                   </div>
-                  <div className="word" >
-                        <div className='ms-auto'>
-                          <p className=' fw-light word ' style={{ backgroundColor: "white", borderRadius: "10px", color: "green", fontSize: "12px", maxWidth:"fit-content"  }}>09:47</p>
-                        </div>
-                      </div>
+                 
                   <div className="d-flex justify-content-end ">
                     <div className="word" style={{ maxWidth: "40%" }} >
 
                       <div className='ms-auto'>
-                        <p className='mt-2 p-2 fw-light' style={{ backgroundColor: "rgb(251,253,251)", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth: "fit-content" }}>
+                        <p className='mt-2 p-2 fw-light mb-0' style={{ backgroundColor: "rgb(251,253,251)", borderRadius: "10px", color: "#999A99", fontSize: "12px", maxWidth: "fit-content" }}>
                           <span className='fw-bold fs-6 text-dark'>Hair Transplant</span><br />
                           <span>Hair transplant surgery is a procedure used to treat hair loss. various techniques are available, but all hair transplant invovlve taking hair-bearingskin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma.</span>
                           <br /><span className='fw-bold fs-6 text-dark'>Amount: $20,000</span>

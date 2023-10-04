@@ -11,14 +11,20 @@ export default function ProgressMobileStepper({ activeStep }) {
 
 
   return (
-    <MobileStepper
+
+   
+   <div className="my-auto ms-5 ps-5" style={{width:"300px"}}>
+
+  
+    <MobileStepper className=""
       variant="progress"
       steps={10}
       position="static"
       activeStep={activeStep}
       
       
-      sx={{ maxWidth: "100%", color:"red",  flexGrow: 1, padding: "0px", marginX:"auto"  }}
+      sx={{ maxWidth: "100%",   flexGrow: 1, padding: "0px", marginX:"auto"  }}
     />
+      </div>
   );
 }

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
     <Box class="" sx={{ flexGrow: 1 }}>
        
               
-           <AppBar className='' position="fixed" sx={{ backgroundColor:"white" }}>
+           <AppBar className='' position="fixed" sx={{ backgroundColor:"#000000" }}>
             <Toolbar variant="dense" style={{display:'flex',
               justifyContent:'flex-end',minHeight:'65px'}} >
                
@@ -43,7 +43,7 @@ import { Link } from 'react-router-dom';
 mdUp
 >
   <IconButton onClick={handleDrawerToggle}>
-    <MenuIcon style={{color:"black"}} />
+    <MenuIcon style={{color:"white"}} />
   </IconButton>
   </Hidden>
   </div>

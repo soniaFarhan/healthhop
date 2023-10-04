@@ -1,5 +1,6 @@
 import React from 'react'
 import SendIcon from '@mui/icons-material/Send';
+import ReCAPTCHA from "react-google-recaptcha";
 export const ContactUs = () => {
   return (
     <div>
@@ -80,7 +81,14 @@ export const ContactUs = () => {
                     <textarea placeholder='Message'  class="form-control" id="" rows="3"></textarea>
                     </div>
 
-                    <button className='btn btn_green'>
+                    <ReCAPTCHA
+                    // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
+                    sitekey={process.env.REACT_APP_SITE_KEY}
+                    // ref={captchaRef}
+                    // color="blue"
+                    />
+
+                    <button className='btn btn_green my-2'>
                         Send Message <SendIcon/>
                     </button>
 

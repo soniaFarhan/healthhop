@@ -211,6 +211,12 @@ export const HealthJourney = () => {
                     />
                  </Box>
 
+                 <Box>
+                    <button className='btn btn_green'>
+                        Search
+                    </button>
+                 </Box>
+
 
                     </div>
 

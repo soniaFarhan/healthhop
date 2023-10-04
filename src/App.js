@@ -34,7 +34,7 @@ function App() {
   return (<div>
     <Routes>
 
-        <Route path='/' element={<Login/>} />
+      <Route path='/' element={<Login/>} />
       <Route element={<Layout/>}>
         <Route path='/Home' element={<Home/>}/>
         <Route path='/heath-journey'  element={<HealthJourney/>} />
@@ -69,8 +69,6 @@ function App() {
         <Route path='/patient-details' element={<PInvoicedetails/>}/>
         <Route path='/meet' element={<Meet/>}/>
         <Route path='/my-profile' element={<Myprofile/>}/>
-
-
       </Route>
 
     </Routes>

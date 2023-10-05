@@ -29,6 +29,7 @@ import PInvoicedetails from './Dashboard Patient/Calender/PInvoicedetails';
 import Myprofile from './Dashboard Patient/Myprofile';
 import SingeupStepForm from './components/SingeupStepForm';
 import { PMessage } from './Dashboard Patient/PMessage';
+import Profile from './Dashboard Patient/Profile';
 
 
 
@@ -68,7 +69,7 @@ function App() {
         <Route path='/patient-calendar' element={<Calender month={"month"} patient={"patient"}/>}/>
         <Route path='/patient-message' element={<PMessage/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
-        <Route path='/patient-details' element={<PInvoicedetails/>}/>
+        <Route path='/patient-details' element={<Profile/>}/>
         <Route path='/meet' element={<Meet/>}/>
         <Route path='/my-profile' element={<Myprofile/>}/>
       </Route>

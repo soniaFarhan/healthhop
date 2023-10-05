@@ -506,13 +506,23 @@ select.bg-select option{
   text-wrap: nowrap;
  
 }
+.text_dark{
+  color: #000 !important;
+}
 
-
+.main ul{
+  width: 25%;
+  text-wrap: wrap;
+}
 @media screen and (max-width:1025px){
   .dropdown-content{
       left: -280px;
       width: 970px;
 
+  }
+  .main ul{
+    width: 25%;
+    text-wrap: wrap;
   }
 }
 @media screen and (max-width:768px){
@@ -521,6 +531,10 @@ select.bg-select option{
       width: 700px;
 
   }
+  .main ul{
+    width: 33.33%;
+    text-wrap: wrap;
+  }
 }
 @media screen and (max-width:426px){
   .dropdown-content{
@@ -528,6 +542,10 @@ select.bg-select option{
       width: 400px;
       text-wrap: wrap
 
+  }
+  .main ul{
+    width: 100%;
+    text-wrap: wrap;
   }
 }
 @media screen and (max-width:376px){

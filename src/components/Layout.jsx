@@ -231,8 +231,18 @@ export const Layout = () => {
         Medical Provider
       </button>
       </Link>
-       <Popup3/>
 
+
+      <Link to={"/"}>
+     
+      <button  
+       
+       className="btn btn_light rounded-pill fs_10px white_space"
+     >
+       <Login fontSize="small"  style={{marginRight:"7px"}}/>
+       Login
+     </button>
+     </Link>
 
       
        

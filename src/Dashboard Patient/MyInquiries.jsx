@@ -81,8 +81,8 @@ export const MyInquiries = () => {
                   </Link>
               </div>
 
-              <p className='fs_10px cu-color'>
-                  {data.description}
+              <p className='fs_10px cu-color' style={{opacity:"0.5"}}>
+                  { data.description}
               </p>
               </div>
 
@@ -91,7 +91,7 @@ export const MyInquiries = () => {
                       <p className='fs_14px fw-bold mb-0'>
                           Averrage Price
                       </p>
-                      <p className='fs_14px cu-color'>
+                      <p className='fs_14px cu-color' style={{opacity:"0.5",fontSize:"8px"}} >
                           ( {data.price} )
                       </p>
 

@@ -12,7 +12,7 @@ import SideNav from './SideNav';
 
 
 
-const DashboardLayout = ({type}) => {
+const DashboardLayoutPatient = ({type}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const {userType,debugMode} = useSelector((state) => state.auth)
   
@@ -21,7 +21,6 @@ const DashboardLayout = ({type}) => {
   };
   // const auth = useContext(AuthContext);
   const navigate=useNavigate()
-  
   // useEffect(()=>{
   //  if(!auth.isLoggedIn)
   //         navigate('/')
@@ -56,4 +55,4 @@ return (
 )
 };
 
-export default DashboardLayout;
+export default DashboardLayoutPatient;

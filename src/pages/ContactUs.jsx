@@ -1,5 +1,6 @@
 import React from 'react'
 import SendIcon from '@mui/icons-material/Send';
+import ReCAPTCHA from "react-google-recaptcha";
 export const ContactUs = () => {
   return (
     <div>
@@ -60,27 +61,28 @@ export const ContactUs = () => {
 
                     <div className="row">
                         <div className='col-md-6 mt-md-0 mt-3'>
-                           <input className='form-control' type="text" name="" id="" placeholder='Your Name' />
+                           <input className='form-control' type="text" name="" id="" placeholder='Name' />
                         </div>
                         <div className='col-md-6 mt-md-0 mt-3'>
-                             <input className='form-control' type="email" name="" id="" placeholder='Your Email' />
+                           <input className='form-control' type="number" name="" id="" placeholder='Phone' />
+                        </div>
+                        <div className='col-md-12  mt-3'>
+                             <input className='form-control' type="email" name="" id="" placeholder='Email' />
                         </div>
                     </div>
 
-                    <div className="row my-4">
-                        <div className='col-md-6'>
-                           <input className='form-control' type="text" name="" id="" placeholder='Your Name' />
-                        </div>
-                        <div className='col-md-6 mt-md-0 mt-3'>
-                             <input className='form-control' type="email" name="" id="" placeholder='Your Email' />
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
+                    <div class="my-3">
                     <textarea placeholder='Message'  class="form-control" id="" rows="3"></textarea>
                     </div>
 
-                    <button className='btn btn_green'>
+                    <ReCAPTCHA
+                    // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
+                    sitekey={process.env.REACT_APP_SITE_KEY}
+                    // ref={captchaRef}
+                    // color="blue"
+                    />
+
+                    <button className='btn btn_green my-2'>
                         Send Message <SendIcon/>
                     </button>
 

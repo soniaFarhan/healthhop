@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { PiPaperPlaneRightBold } from 'react-icons/pi'
 import { AiFillMinusCircle } from 'react-icons/ai'
@@ -10,8 +9,9 @@ import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import {BiSearch} from 'react-icons/bi'
+import { Button } from 'react-bootstrap'
 
-export const Message = () => {
+export const PMessage = () => {
   const StyledBadge = styled(Badge)(({ theme, colr }) => ({
     '& .MuiBadge-badge': {
       backgroundColor: colr,
@@ -255,6 +255,27 @@ export const Message = () => {
                           <span>Hair transplant surgery is a procedure used to treat hair loss. various techniques are available, but all hair transplant invovlve taking hair-bearingskin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma.</span>
                           <br /><span className='fw-bold fs-6 text-dark'>Amount: $20,000</span>
                         </p>
+                        <div className="d-flex aling-items-center">
+
+                        
+
+<div className="m-2">
+
+
+
+<Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px",color:"white"}}> Accept</Button>
+
+</div>
+<div className="m-2">
+  
+
+
+  <Button variant="contained" style={{backgroundColor:"transparent",padding:"6px 27px",fontSize:"10px",border:"1px solid #07A6A9",color:"#07A6A9"}}>Decline</Button>
+  
+    </div>
+
+
+</div>
                       </div>
 
                     </div>
@@ -271,14 +292,12 @@ export const Message = () => {
               <div className="mt-2  position-relative text_dark">
 
                 <input type="text" class="form-control text_dark" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent", fontSize: "12px", padding: "16px" }} ewwe />
-                <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-30px", top:"50%"}}>
+                <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-15px", top:"50%"}}>
                 <div className='d-flex  ' >
-                  <div className='rounded-circle bg-success justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px"}}>
-                    <button className='btn  text-white fs-4 m-auto p-0'><PiPaperPlaneRightBold /></button>
+                  <div className='rounded-circle  justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px",backgroundColor:"#07A6A9"}}>
+                    <button className='btn  text-white fs-4 m-auto p-0'><PiPaperPlaneRightBold style={{}} /></button>
                   </div>
-                  <div className='rounded-circle bg-secondary    text-center ms-2' style={{height:"40px", width:"40px"}}>
-                  <PopupCalender/>
-                  </div>
+                 
                 </div>
                 </div>
               </div>

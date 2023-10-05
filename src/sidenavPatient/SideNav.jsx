@@ -36,38 +36,38 @@ const listItemData = [
 // </svg>
 //  },
   {
-    label: "Inquiries",
-    link: "/inquiries",
+    label: "My Inquiries",
+    link: "/patient-inquiries",
     icon: <FolderSharedIcon />
   },
   {
-    label: "Confirmed Bookings",
-    link: "/confirmed-booking",
+    label: "My Bookings",
+    link: "/patient-booking",
     icon:<ConfirmationNumberIcon/>
   },
-  {
-    label: "Packages",
-    link: "/packages",
-    icon: <InventoryIcon/>
-  },
+  // {
+  //   label: "Packages",
+  //   link: "/packages",
+  //   icon: <InventoryIcon/>
+  // },
   {
     label: "Calendar",
-    link: "/calendar",
+    link: "/patient-calendar",
     icon: <CalendarMonthIcon/>
   },
   {
     label: "Message Portal",
-    link: "/message",
+    link: "/patient-message",
     icon: <ChatIcon/>
   },
   {
-    label: "Invoice/ Receipts",
-    link: "/inovice",
+    label: "Order Receipts",
+    link: "/patient-inovice",
     icon: <InsertDriveFileIcon/>
   },
   {
-    label: "Business Profile",
-    link: "/business-profile",
+    label: "My Medical Profile",
+    link: "/patient-details",
     icon:<AccountBoxIcon/>
   },
 
@@ -83,10 +83,10 @@ function SideNav(props) {
       </div>
 
       <Divider sx={{ backgroundColor: 'white' }} />
-      <List className="">
+      <List>
         {listItemData.map((value, i) => (
-           <>
-           <div className=" my-1 mx-3 " style={{backgroundColor:"#161616" ,borderRadius:"10px"}}>
+          <>
+          <div className=" my-1 mx-3 " style={{backgroundColor:"#161616",borderRadius:"10px"}}>
           <RenderItem value={value} i={i} />
           </div>
           </>
@@ -94,15 +94,15 @@ function SideNav(props) {
       </List>
      
       <List>
-        <ListItem disablePadding className=" list_text " onClick={() => {
+        <ListItem disablePadding className=" list_text" onClick={() => {
           // dispatch(logout())
           navigate('/')
         }}>
-          <ListItemButton className=" list_text">
-            <ListItemIcon sx={{ color: "white",  marginRight: -3 }} >
+          <ListItemButton className=" list_text"   >
+            <ListItemIcon sx={{ color: "white" }} >
               <LogoutIcon />
             </ListItemIcon>
-            <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white",}} title='logout'>Logout</Typography>} />
+            <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white" }} title='logout'>Logout</Typography>} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -186,18 +186,19 @@ const RenderItem = ({ value, i }) => {
       sx={listItemStyle}
     >
       <ListItemButton
-        className="list-item list_text "
+        className="list-item list_text"
         sx={{ ...buttonStyle }}
       >
-        <ListItemIcon className="myIconClass" sx={{color:"white",  marginRight: -3}}> {value.icon}</ListItemIcon>
-        <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white", paddingLeft: 0 }} title={value.label}>{value.label}</Typography>} />
+        <ListItemIcon className="myIconClass" sx={{color:"white"}}> {value.icon}</ListItemIcon>
+        <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white", paddingLeft: 1 }} title={value.label}>{value.label}</Typography>} />
       </ListItemButton>
     </ListItem> :
 
-      <ListItemButton className="list-item list_text no_link_list_item "
+      <ListItemButton
+        className="list-item list_text no_link_list_item"
         sx={{ ...buttonStyle, "&:hover": { backgroundColor: "" } }}
       >
-        <ListItemIcon className="myIconClass" sx={{ color: "white",  }}>{value.icon}</ListItemIcon>
+        <ListItemIcon className="myIconClass" sx={{ color: "white" }}>{value.icon}</ListItemIcon>
         <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white", fontWeight: "bold" }} title={value.label}>{value.label}</Typography>} />
       </ListItemButton>
   );

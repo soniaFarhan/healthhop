@@ -747,12 +747,12 @@ function Popup3() {
 
 
      
-          <button   onClick={() => setModalShow(true)}
+          <button  
        
        className="btn btn_light rounded-pill fs_10px white_space"
      >
        <Login fontSize="small"  style={{marginRight:"7px"}}/>
-       Patient
+       Login
      </button>
 
       <MyVerticallyCenteredModal

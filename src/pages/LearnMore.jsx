@@ -99,7 +99,7 @@ export const LearnMore = () => {
                 </button>
                 </div>
 
-                <div className='py-3'>
+                <div id='back' className='py-3'>
                     <h4 >
                         Anadulo Medical Center
                     </h4>
@@ -195,7 +195,7 @@ export const LearnMore = () => {
                         <span className='mx-2'>Gallery</span>
                         </p>
                      </div> */}
-                    <div className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
+                    <div  className='d-flex overflow-auto text-nowrap justify-content-between mt-4 cu-color' style={{ borderBottom: '2px solid', }}>
                         <p  style={{cursor:"pointer"}}>
                         <a class="nav-link" href="#overview"><span className='mx-2'>Overview</span></a>
                         
@@ -243,10 +243,10 @@ export const LearnMore = () => {
              </p>
     </div>
                      <div id='aboutus' className='py-md-5 py-2 mt-5'>
-
-                        <h3 className='fw-bold pt-4'>
-                            About Us
-                        </h3>
+                     <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
+                     About Us
+                    </h3></a>
+                       
 
                         <div id='aboutus' className='my-4 cu-color fs_14px'>
                             <p>To better serve the wide-ranging need of the community. The modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.</p>
@@ -294,9 +294,10 @@ export const LearnMore = () => {
 
                     <div id='map' className='py-md-5 py-2'>
 
-                        <h3 className='fw-bold'>
-                            Location
-                        </h3>
+                      
+                        <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
+                        Location
+                    </h3></a>
 
                         <div id='map' className='my-4 '>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6727.52478126572!2d74.44625339223997!3d32.53249249043371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ee8df4221562b%3A0xfa3bd1b74369b63f!2sKapurowali%2C%20Sialkot%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695019725799!5m2!1sen!2s" width="100%"  height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -307,9 +308,10 @@ export const LearnMore = () => {
 
                     <div id='Review' className='py-md-5 py-2'>
 
-                        <h3 className='fw-bold'>
-                            Review  
-                        </h3>
+                      
+                        <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
+                        Review 
+                    </h3></a>
 
                         <div className='shadow p-3 rounded'>
                         { commentData.map((comment, index) => (
@@ -345,9 +347,10 @@ export const LearnMore = () => {
                     </div>
 
                     <div id='staff' className='py-md-5 py-2'>                       
-                    <h3 className='fw-bold mt-5'>
-                    Medical Staff
-                     </h3>
+                   
+                     <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
+                     Medical Staff
+                    </h3></a>
 
                      {
                         doctorData.map((doctor, index) => (
@@ -368,9 +371,9 @@ export const LearnMore = () => {
 
                     <div id='gallery' className='py-md-5 py-2'>
 
-                    <h3 className='fw-bold'>
+                  <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
                     Gallery
-                    </h3>
+                    </h3></a>
 
                           <div className='my-4 '>
                               <div className=' row'>

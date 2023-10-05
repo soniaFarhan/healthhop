@@ -8,21 +8,27 @@ export const Inquiries = () => {
 const data =[
 {
 name:"Herry",
-chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
+chat:<p>  
+  
+Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... <Link className='color' style={{textDecoration:"none",}} to={"/meet"}>Read more </Link> </p>,
 img:
 <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}} />
 
 },
 {
 name:"Herry",
-chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
+chat: <p>  
+  
+         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... <Link className='color' style={{textDecoration:"none",}} to={"/meet"}>Read more </Link> </p>,
 img:
 <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
 
 },
 {
 name:"Herry",
-chat:"         Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... Read more",
+chat:<p>  
+  
+Hair transplant surgery is a procedure used to treat hair loss. Various techniques are available, but all hair transplants involve taking hair-bearing No comments on this screen skin from one part of the scalp and grafting these pieces of skin onto bald or thinning areas of the scalp or areas of trauma....... <Link className='color' style={{textDecoration:"none",}} to={"/meet"}>Read more </Link> </p>,
 img:
 <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{objectFit:"contain"}}/>
 
@@ -63,11 +69,13 @@ img:
 <div className="d-flex justify-content-between aling-items-center p-2">
   <h6 style={{fontSize:"13px"}}>  {e.name} </h6>
   
+  <Link style={{textDecoration:"none"}} to={"/meet"}>
   
    <p style={{fontSize:"8px",color:"#07A6A9"}}>Quote offered</p>
+  </Link>
 </div>
 
-<div className="">
+<div className="me-4">
 <p style={{fontSize:"11px"}}>
 {e.chat}
 </p>

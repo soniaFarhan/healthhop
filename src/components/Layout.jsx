@@ -11,7 +11,7 @@ import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import { Navbar } from "./Navbar";
 import Popup from "./Popup";
 import Popup2 from "./Popup2";
-import { Login, MedicalServices } from "@mui/icons-material";
+import { Login, MedicalServices, MedicalServicesOutlined } from "@mui/icons-material";
 import Popup3 from "./Popup3";
 
 
@@ -217,8 +217,20 @@ export const Layout = () => {
       <div className="row justify-content-end mx-1 me-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
+        <Link to={"/singeupstepform"}>
           
-       <Popup2 show={method==="patient"}/>
+        <button
+        className="btn btn_light rounded-pill fs_10px white_space"
+       
+      >
+        <MedicalServicesOutlined
+          fontSize="small"
+          className="my-auto"
+          style={{ marginRight: "5px" }}
+        />
+        Medical Provider
+      </button>
+      </Link>
        <Popup3/>
 
 

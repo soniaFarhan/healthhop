@@ -8,27 +8,23 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 export default function ProgressMobileStepper({ activeStep }) {
   const theme = useTheme();
 
-  const stepperStyles = {
-    "& .MuiMobileStepper-dot": {
-      backgroundColor: "green", // Change to your desired green color for dots
-    },
-    "& .MuiButtonBase-root": {
-      color: "green", // Change to your desired green color for buttons
-    },
-    "& .MuiSvgIcon-root": {
-      fill: "green", // Change to your desired green color for icons
-    },
-  };
+
 
   return (
-    <MobileStepper
+
+   
+   <div className="my-auto ms-5 ps-5" style={{width:"300px"}}>
+
+  
+    <MobileStepper className=""
       variant="progress"
       steps={10}
       position="static"
       activeStep={activeStep}
       
       
-      sx={{ maxWidth: "100%", color:"red",  flexGrow: 1, padding: "0px", ...stepperStyles }}
+      sx={{ maxWidth: "100%",   flexGrow: 1, padding: "0px", marginX:"auto"  }}
     />
+      </div>
   );
 }

@@ -91,7 +91,7 @@ img:
   </div>
 
 <div className="m-2">
-<Link to={"/meet"}>
+<Link to={"/calendar"}>
 
 <Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px"}}>Meet</Button>
 </Link>

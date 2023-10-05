@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,8 +11,11 @@ import { Lock, MedicalServicesOutlined, Person } from "@mui/icons-material";
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { Link, useLocation } from "react-router-dom";
 import { FaQuoteLeft } from 'react-icons/fa';
+import ReCAPTCHA from "react-google-recaptcha";
+
+
 export const Home = () => {
- 
+  const captchaRef = useRef(null)
   const [value, setValue] = useState([20, 37]);
 
   const handleChange = (event, newValue) => {
@@ -1008,8 +1011,15 @@ export const Home = () => {
                   </div>
 
                   <div className="pt-5">
-{/* <Link to={"/learn-more"}> */}
-<Button
+                  {/* <Link to={"/learn-more"}> */}
+                  <ReCAPTCHA
+                  // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
+                  sitekey={process.env.REACT_APP_SITE_KEY}
+                  // ref={captchaRef}
+                  // color="blue"
+                  />
+                      <Button
+                      className="my-2"
                       style={{
                         backgroundColor: "#07A6A9",
                         color: "white",
@@ -1019,7 +1029,7 @@ export const Home = () => {
                     >
                       Submmit
                     </Button>
-{/* </Link> */}
+                  {/* </Link> */}
 
                  
                   </div>

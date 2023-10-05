@@ -363,13 +363,49 @@ const Step5 = () => {
         </h6>
         <div class="form-check my-4 ">
           <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Arabic
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+         Azerbaijani
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Dutch
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
             class="form-check-input"
             type="checkbox"
             value=""
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            English
+          English
           </label>
         </div>
         <hr />
@@ -381,7 +417,7 @@ const Step5 = () => {
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Spanish
+          Farsi
           </label>
         </div>
         <hr />
@@ -393,7 +429,7 @@ const Step5 = () => {
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Turkey
+          French
           </label>
         </div>
         <hr />
@@ -405,7 +441,7 @@ const Step5 = () => {
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Urdu
+          German
           </label>
         </div>
         <hr />
@@ -417,7 +453,7 @@ const Step5 = () => {
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Hindi
+          Hindi
           </label>
         </div>
         <hr />
@@ -429,7 +465,91 @@ const Step5 = () => {
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Persian
+          Italian
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Pashto
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Polish
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Portuguese
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Russian
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Spanish
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Turkish
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Ukrainian
           </label>
         </div>
         <hr />
@@ -441,7 +561,7 @@ const Step5 = () => {
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Arabic
+          Urdu
           </label>
         </div>
         <hr />

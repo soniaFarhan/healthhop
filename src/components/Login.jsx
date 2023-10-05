@@ -90,7 +90,7 @@ const Login = ({ role }) => {
           </Grid>
 
         <Box className='d-flex justify-content-center w-100'>
-          <Link className='text-center text_color my-3 fs_25px' to={`/Home?method=${method}`} style={{textDecoration:'none'}}>
+          <Link className='text-center text_color my-3 fs_25px' to={"/singeupstepform"} style={{textDecoration:'none'}}>
            Register
           </Link>
         </Box>

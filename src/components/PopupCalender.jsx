@@ -25,7 +25,7 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Header> */}
       <Modal.Body style={{height:"90vh", overflow:"auto"}}>
       <Calender/>
-      <div className='row'>
+      {/* <div className='row'>
         <div className="col-md-10 mx-auto mb-2"><input type="text" className='form-control' placeholder='Name' /></div>
         <div className="col-md-10 mx-auto mb-2"><textarea name="" className='form-control' placeholder='Description' id="" cols="30" rows="10"></textarea></div>
         <div className="col-md-10 mx-auto mb-2">
@@ -39,7 +39,7 @@ function MyVerticallyCenteredModal(props) {
         </div>
         </div>
         <div className="col-md-10 mx-auto mb-2"><button type='submit' className='btn btn-primary w-100'>Done</button></div>
-      </div>
+      </div> */}
       </Modal.Body>
       
     </Modal>

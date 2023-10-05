@@ -106,9 +106,9 @@ export const MyInquiries = () => {
                      
 
                       <div>
-                          <Link>
+                          <Link to={"/patient-message"}>
                               <button className='btn  colo text-white py-2 fs_10px' style={{backgroundColor:'#07A6A9'}}>
-                                 Massege Provider  
+                                 Message Provider  
                               </button>
                           </Link>
                       </div>

@@ -64,7 +64,7 @@ function App() {
       <Route element={<DashboardLayoutPatient/>}>
        <Route path='/patient-inquiries' element={<MyInquiries/>}/>
         <Route path='/patient-booking' element={<MyBooking/>}/>
-        <Route path='/patient-calendar' element={<Calender/>}/>
+        <Route path='/patient-calendar' element={<Calender month={"month"} patient={"patient"}/>}/>
         <Route path='/patient-message' element={<Message/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
         <Route path='/patient-details' element={<PInvoicedetails/>}/>

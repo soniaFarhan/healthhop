@@ -7,9 +7,9 @@
 
 
 
-import { Box, Button, FormControl, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
+import { Box, FormControl, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { Modal } from 'react-bootstrap'
+import { Button, Modal } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export const OrderReceipts = () => {
@@ -121,14 +121,14 @@ data.map((e)=>{
   
 
 
-<Button onClick={()=>setModalShow(true)} variant="contained" style={{backgroundColor:"transparent",color:'black',padding:"6px 27px",fontSize:"10px",border:"1px solid #07A6A9"}}>Add Review</Button>
+<Button onClick={()=>setModalShow(true)} variant="contained" style={{backgroundColor:"transparent",color:"#07A6A9",padding:"6px 27px",fontSize:"10px",border:"1px solid #07A6A9"}}>Add Review</Button>
 
   </div>
 <div className="m-2">
 <Link to={"/Invoice-details"}>
 
 
-<Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px"}}>see details</Button>
+<Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px",color:"white"}}>See details</Button>
 </Link>
 </div>
 </div>

@@ -86,7 +86,7 @@ function SideNav(props) {
       <List>
         {listItemData.map((value, i) => (
           <>
-          <div className=" m-1 " style={{backgroundColor:"#161616",borderRadius:"10px"}}>
+          <div className=" my-1 mx-3 " style={{backgroundColor:"#161616",borderRadius:"10px"}}>
           <RenderItem value={value} i={i} />
           </div>
           </>

@@ -77,7 +77,7 @@ function SideNav(props) {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const drawer = (
-    <div className="" style={{backgroundColor:"black"}}>
+    <div className="" style={{backgroundColor:"black",height:"100vh"}}>
       <div className="" style={{width:"14rem"}}>
       <img width={"100%"} src={require("../assets/HealthHop logo reverse on dark background.png")} alt="" />
       </div>

@@ -85,7 +85,11 @@ function SideNav(props) {
       <Divider sx={{ backgroundColor: 'white' }} />
       <List className="">
         {listItemData.map((value, i) => (
+           <>
+           <div className=" m-1 " style={{backgroundColor:"#161616"}}>
           <RenderItem value={value} i={i} />
+          </div>
+          </>
         ))}
       </List>
      

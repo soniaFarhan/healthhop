@@ -340,15 +340,9 @@ ul li {text-align: start;}
   scrollbar-width: none;
 }
 
-
-
-
-
-
-
-
-
-
+.shadows4{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
 
 
 
@@ -444,6 +438,17 @@ ul li {text-align: start;}
 
 }
 .links ul li{
+  color: #39B7BA;
+}
+
+.linke ul li a{
+  text-decoration: none;
+  color: rgb(112,112,112);
+  font-size: 14px;
+ word-wrap: normal;
+
+}
+.linke ul li{
   color: #39B7BA;
 }
 

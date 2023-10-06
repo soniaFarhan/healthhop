@@ -122,6 +122,22 @@ export const Message = () => {
 
     },
     
+    {
+      avater:  <StyledBadge
+      colr="rgb(175,187,198)"
+      overlap="circular"
+      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+      variant="dot"
+    >
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/md-5.jpg")} />
+    </StyledBadge>,
+      name: "BOBBY BEUGER",
+      // inquire: "New Inquiry",
+      chat: "Was machst du?",
+      date: "30.2.2021"
+
+    },
+    
     
   ]
   return (
@@ -256,7 +272,7 @@ export const Message = () => {
 
                 <input type="text" class="form-control text_dark" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent", fontSize: "12px", padding: "16px" }} ewwe />
                 <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-30px", top:"50%"}}>
-                <div className='d-flex ' >
+                <div className='d-flex  ' >
                   <div className='rounded-circle bg-success justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px"}}>
                     <button className='btn  text-white fs-4 m-auto p-0'><PiPaperPlaneRightBold /></button>
                   </div>

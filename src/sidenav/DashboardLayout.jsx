@@ -21,6 +21,7 @@ const DashboardLayout = ({type}) => {
   };
   // const auth = useContext(AuthContext);
   const navigate=useNavigate()
+  
   // useEffect(()=>{
   //  if(!auth.isLoggedIn)
   //         navigate('/')

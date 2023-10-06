@@ -28,6 +28,8 @@ import { OrderReceipts } from './Dashboard Patient/OrderReceipts';
 import PInvoicedetails from './Dashboard Patient/Calender/PInvoicedetails';
 import Myprofile from './Dashboard Patient/Myprofile';
 import SingeupStepForm from './components/SingeupStepForm';
+import { PMessage } from './Dashboard Patient/PMessage';
+import Profile from './Dashboard Patient/Profile';
 
 
 
@@ -45,8 +47,6 @@ function App() {
         <Route path='/procedure' element={<Procedures/>} />
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
-        
-        
        
       </Route>
 
@@ -54,7 +54,7 @@ function App() {
         <Route path='/inquiries' element={<Inquiries/>}/>
         <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
         <Route path='/packages' element={<Packges/>}/>
-        <Route path='/calendar' element={<Calender/>}/>
+        <Route path='/calendar' element={<Calender month={"month"}/>}/>
         <Route path='/message' element={<Message/>}/>
         <Route path='/inovice' element={<Inovice/>}/>
         <Route path='/Invoice-details' element={<Invoicedetails/>}/>
@@ -66,14 +66,12 @@ function App() {
       <Route element={<DashboardLayoutPatient/>}>
        <Route path='/patient-inquiries' element={<MyInquiries/>}/>
         <Route path='/patient-booking' element={<MyBooking/>}/>
-        <Route path='/patient-calendar' element={<Calender/>}/>
-        <Route path='/patient-message' element={<Message/>}/>
+        <Route path='/patient-calendar' element={<Calender month={"month"} patient={"patient"}/>}/>
+        <Route path='/patient-message' element={<PMessage/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
-        <Route path='/patient-details' element={<PInvoicedetails/>}/>
+        <Route path='/patient-details' element={<Profile/>}/>
         <Route path='/meet' element={<Meet/>}/>
         <Route path='/my-profile' element={<Myprofile/>}/>
-
-
       </Route>
 
     </Routes>

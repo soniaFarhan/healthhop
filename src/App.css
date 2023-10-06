@@ -383,19 +383,19 @@ ul li {text-align: start;}
 
 .fc-button-group{
   padding: 4px;
-  background-color: #2B4C58;
+  background-color: #07A6A9;
   
 }
 .fc .fc-button{
-  background-color: #2B4C58;
-  border: 1px solid #2B4C58;
+  background-color: #07A6A9;
+  border: 1px solid #07A6A9;
   border-radius: 50px;
   /* height: 30px; */
 }
 
 .fc.fc-prev-button .fc-button .fc-button-primary{
   background-color: white;
-  color: #2B4C58;
+  color: #07A6A9;
 }
 .fc .fc-daygrid-day-number {
   padding: 4px;

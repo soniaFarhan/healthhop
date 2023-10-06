@@ -1,6 +1,6 @@
 const listItemStyle={
     color: "inherit",
-    "&.active": { backgroundColor: "#07A6A9", color: "#ffff",
+    "&.active": { backgroundColor: "#07A6A9", color: "#ffff",borderRadius:"10px",
     "& .myIconClass, & .MuiTypography-root": {
       color: "#ffff"
     } }

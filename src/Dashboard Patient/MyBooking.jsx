@@ -25,7 +25,7 @@ export const  MyBooking= () => {
 
     <div className="container bg-white rounded-4 py-2 mt-2">
     <div className="d-flex align-items-center mt-2">
-     <Avatar sx={{width:"60px",height:"60px"}}/>
+     <Avatar src={require("../assets/WhatsApp Image 2023-08-29 at 11.43.13 AM (1).png")} sx={{width:"60px",height:"60px"}}/>
      <h5 className='ms-3 my-auto'>  Sunny Apartment</h5>
     </div>
          <div className="row mt-3">

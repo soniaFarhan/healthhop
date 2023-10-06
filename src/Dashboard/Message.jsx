@@ -122,6 +122,22 @@ export const Message = () => {
 
     },
     
+    {
+      avater:  <StyledBadge
+      colr="rgb(175,187,198)"
+      overlap="circular"
+      anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+      variant="dot"
+    >
+      <Avatar style={{width: 45, height: 45}} alt="Remy Sharp" src={require("../assets/md-5.jpg")} />
+    </StyledBadge>,
+      name: "BOBBY BEUGER",
+      // inquire: "New Inquiry",
+      chat: "Was machst du?",
+      date: "30.2.2021"
+
+    },
+    
     
   ]
   return (

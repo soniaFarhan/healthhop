@@ -77,7 +77,7 @@ function SideNav(props) {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const drawer = (
-    <div className="" style={{backgroundColor:"black"}}>
+    <div className="" style={{backgroundColor:"black",height:"100vh"}}>
       <div className="" style={{width:"14rem"}}>
       <img width={"100%"} src={require("../assets/HealthHop logo reverse on dark background.png")} alt="" />
       </div>
@@ -85,7 +85,11 @@ function SideNav(props) {
       <Divider sx={{ backgroundColor: 'white' }} />
       <List>
         {listItemData.map((value, i) => (
+          <>
+          <div className=" my-1 mx-3 " style={{backgroundColor:"#161616",borderRadius:"10px"}}>
           <RenderItem value={value} i={i} />
+          </div>
+          </>
         ))}
       </List>
      

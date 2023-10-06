@@ -123,86 +123,69 @@ const Updateprofile = () => {
               </select>
             </div>
           </div>
-          <div className="row mt-4 me-md-5 bg-white py-4 px-3 rounded rounded-4">
-            <p className='fw-bold mb-0'>Pictures & Videos</p>
-            <div className="col-md-12">
+          <div className=' pe-md-5  mt-4  me-md-3 ms-md-2'>
+            <div className="row pe-4 p-2 bg-white rounded-4">
+              <h6 className=' fw-bold  ps-2 mt-4'>Breif Description:</h6>
+              <div className="col-md-2 col-4   p-1">
+                <img   src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
 
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
 
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
 
-            <div className="row">
-          
-        
-          <div className="">
-          {selectedImages.length > 0 && (
-            
-            <div className="row">
-           {selectedImages.map((image, index) => (
-             <div className="col-2" key={index}>
-               <img src={image} alt={`Selected ${index}`} width={"100%"} height={"100px"}  />
-             </div>
-           ))}
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
 
-           
-         </div>
-       )}
-          </div>
- 
-          
-          <div className="col text-center">
-           <div className="mt-2">
- 
- 
- 
- 
-           <input  onChange={handleImageChange} type="file" name="" id="img" hidden multiple />
-           <label  style={{fontSize:"60px"}} className="text-center " htmlFor="img">
-           <i class="bi bi-plus"></i>
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+              <input className='d-none'   type="file" name="" id="img1"  />
+           <label  className="" htmlFor="img1">
+           <img className='img-fluid' src={require("../assets/Capture.PNG")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
            </label>
-         
-           </div>
-          </div>
-             </div>
- 
-            </div>
-            <div className="col-md-12">
-            <div className="row">
-          
-        
-          <div className="">
-          {selectedImages.length > 0 && (
-            
-            <div className="row">
-           {selectedImages.map((image, index) => (
-             <div className="col-2" key={index}>
-               <img src={image} alt={`Selected ${index}`} width={"100%"} height={"100px"}  />
-             </div>
-           ))}
 
-           
-         </div>
-       )}
-          </div>
- 
-          
-          <div className="col text-center">
-           <div className="mt-2">
- 
- 
- 
- 
-           <input  onChange={handleImageChange} type="file" name="" id="img" hidden multiple />
-           <label  style={{fontSize:"60px"}} className="text-center " htmlFor="img">
-           <i class="bi bi-plus"></i>
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+              <input className='d-none'   type="file" name="" id="img1"  />
+           <label  className="" htmlFor="img1">
+           <img src={require("../assets/Capture.PNG")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
            </label>
-         
-           </div>
-          </div>
-             </div>
+
+              </div>
             </div>
-            
           </div>
 
-          <div className=" my-5 row  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
+          <div className=" my-4 row  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
            
     <div className="col-12 " style={{height:"auto"}}>
 

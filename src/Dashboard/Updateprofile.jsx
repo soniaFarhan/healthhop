@@ -214,7 +214,7 @@ const Updateprofile = () => {
 
           <div className=" my-5 row  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
            
-    <div className="col-md-9 " style={{height:"auto"}}>
+    <div className="col-12 " style={{height:"auto"}}>
 
 
     <div className="d-flex justify-content-between">
@@ -222,7 +222,7 @@ const Updateprofile = () => {
       <h4 className='ms-1'>  Medical Staff   </h4>
     <div className=" " >
        
-       <Button className='text_color fw-bold' variant="outlined" sx={{color:"red",border:"1px solid #39B7BA",borderRadius:"25px" ,fontSize:"9px"}}> <MedicalServicesOutlined style={{ fontSize: "19px",marginRight:"6px" }} /> Upload profile</Button>
+       <Button className='text_color fw-bold' variant="outlined" style={{color:"red",border:"1px solid #39B7BA",borderRadius:"25px" ,fontSize:"9px"}}>   Add Medical Staff</Button>
     
    
    </div>
@@ -232,22 +232,22 @@ const Updateprofile = () => {
   data.map((e)=>{
     return(
 
-      <div className='d-flex align-items-center   flex-column flex-md-row shadow rounded-4 p-2 mb-3'>
-      <div className='p-2'>
+      <div className='d-flex align-items-center   flex-column flex-md-row shadows4 bg-white rounded-4 p-2 mb-3'>
+      <div className=''>
       <div style={{width:"8rem"}}>
       <img className='img-fluid' src={require("../assets/h-card.png")} alt="" />
       </div>
       </div>
 
       <div>
-      <div className='me-auto'>
+      <div className='me-auto ms-2'>
         <div className="d-flex justify-content-between">
            <h5> {e.name} </h5>
            
 
         </div>
         <div className="d-flex justify-content-between aling-items-center">
-          <p>Hair transplant procedure</p>
+          <p className='cu-color'>Hair transplant procedure</p>
          
         </div>
 

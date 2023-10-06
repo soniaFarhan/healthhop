@@ -64,12 +64,20 @@ export const ContactUs = () => {
                            <input className='form-control' type="text" name="" id="" placeholder='Name' />
                         </div>
                         <div className='col-md-6 mt-md-0 mt-3'>
+                           <input className='form-control' type="email" name="" id="" placeholder='Your Email' />
+                        </div>
+
+                    </div>
+
+                    <div className="row mt-3">
+                        <div className='col-md-6 mt-md-0 mt-3'>
                            <input className='form-control' type="number" name="" id="" placeholder='Phone' />
                         </div>
-                        <div className='col-md-12  mt-3'>
-                             <input className='form-control' type="email" name="" id="" placeholder='Email' />
+                        <div className='col-md-6 mt-md-0 mt-3'>
+                             <input className='form-control' type="text" name="" id="" placeholder='subject' />
                         </div>
                     </div>
+
 
                     <div class="my-3">
                     <textarea placeholder='Message'  class="form-control" id="" rows="3"></textarea>

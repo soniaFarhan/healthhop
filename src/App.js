@@ -54,7 +54,7 @@ function App() {
         <Route path='/inquiries' element={<Inquiries/>}/>
         <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
         <Route path='/packages' element={<Packges/>}/>
-        <Route path='/calendar' element={<Calender month={"month"}/>}/>
+        <Route path='/calendar' element={<Calender month={"month"} patient={"patient"}/>}/>
         <Route path='/message' element={<Message/>}/>
         <Route path='/inovice' element={<Inovice/>}/>
         <Route path='/Invoice-details' element={<Invoicedetails/>}/>
@@ -66,7 +66,7 @@ function App() {
       <Route element={<DashboardLayoutPatient/>}>
        <Route path='/patient-inquiries' element={<MyInquiries/>}/>
         <Route path='/patient-booking' element={<MyBooking/>}/>
-        <Route path='/patient-calendar' element={<Calender month={"month"} patient={"patient"}/>}/>
+        <Route path='/patient-calendar' element={<Calender month={"month"} />}/>
         <Route path='/patient-message' element={<PMessage/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
         <Route path='/patient-details' element={<Profile/>}/>

@@ -102,7 +102,7 @@ export const BusinessProfile = () => {
         <div className="my-2 shadows pt-3 ps-3 pb-5 pe-5" style={{borderRadius:"20px"}}>
         <div className="d-flex justify-content-between aling-items-center">
 
-        <h4> details Description:</h4>
+        <h4> Details Description:</h4>
         <BorderColorOutlined sx={{color:"#07A6A9"}}/>
          </div>
 

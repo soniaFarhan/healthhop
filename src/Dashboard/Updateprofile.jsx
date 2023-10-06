@@ -97,28 +97,43 @@ const Updateprofile = () => {
              </div>
 
         <div className="container px-4 fs_14px mt-4">
-          <h6 className=' fw-bold  ps-2 mt-4'>Summary Of Your Medical Practice:</h6>
+
+          {/* <h6 className=' fw-bold  ps-2 mt-4'>Summary Of Your Medical Practice:</h6>
           <div className='rounded-4  border border-1 border-dark py-2 px-3'>
             <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, reprehenderit deleniti adipisci expedita sint sapiente velit in neque molestiae cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quas esse odio. Ut distinctio obcaecati molestiae, maiores quos eius neque.</p>
-          </div>
-          <h6 className=' fw-bold  ps-2 mt-4'>Breif Description:</h6>
+          </div> */}
+          <div class="mb-3">
+          <label for="" class="form-label fw-bold">Summary Of Your Medical Practice:</label>
+          <textarea class="form-control" id="" rows="3"></textarea>
+        </div>
+
+          {/* <h6 className=' fw-bold  ps-2 mt-4'>Breif Description:</h6>
           <div className='rounded-4  border border-1 border-dark py-2 px-3'>
             <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, reprehenderit deleniti adipisci expedita sint sapiente velit in neque molestiae cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quas esse odio. Ut distinctio obcaecati molestiae, maiores quos eius neque.</p>
-          </div>
+          </div> */}
+
+          <div class="mb-3">
+          <label for="" class="form-label fw-bold">Breif Description:</label>
+          <textarea class="form-control" id="" rows="3"></textarea>
+        </div>
+
+
+
           <div className="row mt-2 me-md-5">
             <div className="col-md-6 mt-3">
               <label htmlFor="" className='fw-bold'>Address</label>
-              <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Add'/>
+              <input type="text" className='form-control rounded-4 mt-1  fs_14px p-3' placeholder='Add'/>
             </div>
             <div className="col-md-6 mt-3">
               <label htmlFor="" className='fw-bold'>Your Buissnes Offer The Following:</label>
-              <select className='form-control rounded-4 mt-1 border border-1 border-dark form-select fs_14px p-3'  name="" id="">
+              <select className='form-control rounded-4 mt-1  form-select fs_14px p-3'  name="" id="">
+                <option value="">4&5 Star Hotel Accomodation</option>
                 <option value="">4&5 Star Hotel Accomodation</option>
               </select>
             </div>
             <div className="col-md-6 mt-3">
               <label htmlFor="" className='fw-bold'>Language</label>
-              <select className='form-control rounded-4 mt-1 border border-1 border-dark form-select fs_14px p-3'  name="" id="">
+              <select className='form-control rounded-4 mt-1 form-select fs_14px p-3'  name="" id="">
                 <option value="" selected>English</option>
               </select>
             </div>
@@ -127,10 +142,7 @@ const Updateprofile = () => {
             <p className='fw-bold mb-0'>Pictures & Videos</p>
             <div className="col-md-12">
 
-
-
             <div className="row">
-          
         
           <div className="">
           {selectedImages.length > 0 && (
@@ -141,10 +153,8 @@ const Updateprofile = () => {
                <img src={image} alt={`Selected ${index}`} width={"100%"} height={"100px"}  />
              </div>
            ))}
-
-           
          </div>
-       )}
+            )}
           </div>
  
           

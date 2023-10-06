@@ -97,122 +97,114 @@ const Updateprofile = () => {
              </div>
 
         <div className="container px-4 fs_14px mt-4">
-
           {/* <h6 className=' fw-bold  ps-2 mt-4'>Summary Of Your Medical Practice:</h6>
           <div className='rounded-4  border border-1 border-dark py-2 px-3'>
             <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, reprehenderit deleniti adipisci expedita sint sapiente velit in neque molestiae cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quas esse odio. Ut distinctio obcaecati molestiae, maiores quos eius neque.</p>
           </div> */}
-          <div class="mb-3">
-          <label for="" class="form-label fw-bold">Summary Of Your Medical Practice:</label>
-          <textarea class="form-control" id="" rows="3"></textarea>
-        </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label fw-bold">Summary Of Your Medical Practice:</label>
+              <textarea class="bg-transparent form-control rounded-4 mt-1 border border-1 border-dark" id="" rows="3"></textarea>
+            </div>
+
+
 
           {/* <h6 className=' fw-bold  ps-2 mt-4'>Breif Description:</h6>
           <div className='rounded-4  border border-1 border-dark py-2 px-3'>
             <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, reprehenderit deleniti adipisci expedita sint sapiente velit in neque molestiae cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quas esse odio. Ut distinctio obcaecati molestiae, maiores quos eius neque.</p>
           </div> */}
 
-          <div class="mb-3">
-          <label for="" class="form-label fw-bold">Breif Description:</label>
-          <textarea class="form-control" id="" rows="3"></textarea>
-        </div>
+
+              <div class="mb-3">
+              <label for="" class="form-label fw-bold">Breif Description:</label>
+              <textarea class="bg-transparent form-control rounded-4 mt-1 border border-1 border-dark" id="" rows="3"></textarea>
+            </div>
+
+
 
 
 
           <div className="row mt-2 me-md-5">
             <div className="col-md-6 mt-3">
               <label htmlFor="" className='fw-bold'>Address</label>
-              <input type="text" className='form-control rounded-4 mt-1  fs_14px p-3' placeholder='Add'/>
+              <input type="text" className='bg-transparent form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Add'/>
             </div>
             <div className="col-md-6 mt-3">
               <label htmlFor="" className='fw-bold'>Your Buissnes Offer The Following:</label>
-              <select className='form-control rounded-4 mt-1  form-select fs_14px p-3'  name="" id="">
-                <option value="">4&5 Star Hotel Accomodation</option>
+              <select className='bg-transparent form-control rounded-4 mt-1 border border-1 border-dark form-select fs_14px p-3'  name="" id="">
                 <option value="">4&5 Star Hotel Accomodation</option>
               </select>
             </div>
             <div className="col-md-6 mt-3">
               <label htmlFor="" className='fw-bold'>Language</label>
-              <select className='form-control rounded-4 mt-1 form-select fs_14px p-3'  name="" id="">
+              <select className='bg-transparent form-control rounded-4 mt-1 border border-1 border-dark form-select fs_14px p-3'  name="" id="">
                 <option value="" selected>English</option>
               </select>
             </div>
           </div>
-          <div className="row mt-4 me-md-5 bg-white py-4 px-3 rounded rounded-4">
-            <p className='fw-bold mb-0'>Pictures & Videos</p>
-            <div className="col-md-12">
+          <div className=' pe-md-5  mt-4  me-md-3 ms-md-2'>
+            <div className="row pe-4 p-2 bg-white rounded-4">
+              <h6 className=' fw-bold  ps-2 mt-4'>Breif Description:</h6>
+              <div className="col-md-2 col-4   p-1">
+                <img   src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
 
-            <div className="row">
-        
-          <div className="">
-          {selectedImages.length > 0 && (
-            
-            <div className="row">
-           {selectedImages.map((image, index) => (
-             <div className="col-2" key={index}>
-               <img src={image} alt={`Selected ${index}`} width={"100%"} height={"100px"}  />
-             </div>
-           ))}
-         </div>
-            )}
-          </div>
- 
-          
-          <div className="col text-center">
-           <div className="mt-2">
- 
- 
- 
- 
-           <input  onChange={handleImageChange} type="file" name="" id="img" hidden multiple />
-           <label  style={{fontSize:"60px"}} className="text-center " htmlFor="img">
-           <i class="bi bi-plus"></i>
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+              <input className='d-none'   type="file" name="" id="img1"  />
+           <label  className="" htmlFor="img1">
+           <img className='img-fluid' src={require("../assets/capture.jpeg")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
            </label>
-         
-           </div>
-          </div>
-             </div>
- 
-            </div>
-            <div className="col-md-12">
-            <div className="row">
-          
-        
-          <div className="">
-          {selectedImages.length > 0 && (
-            
-            <div className="row">
-           {selectedImages.map((image, index) => (
-             <div className="col-2" key={index}>
-               <img src={image} alt={`Selected ${index}`} width={"100%"} height={"100px"}  />
-             </div>
-           ))}
 
-           
-         </div>
-       )}
-          </div>
- 
-          
-          <div className="col text-center">
-           <div className="mt-2">
- 
- 
- 
- 
-           <input  onChange={handleImageChange} type="file" name="" id="img" hidden multiple />
-           <label  style={{fontSize:"60px"}} className="text-center " htmlFor="img">
-           <i class="bi bi-plus"></i>
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+                <img src={require("../assets/blog-card-4.png")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
+              </div>
+              <div className="col-md-2 col-4   p-1">
+              <input className='d-none'   type="file" name="" id="img1"  />
+           <label  className="" htmlFor="img1">
+           <img src={require("../assets/capture.jpeg")} width={"100%"} height={"100%"} alt="" style={{ objectFit: "contain" }} />
+
            </label>
-         
-           </div>
-          </div>
-             </div>
+
+              </div>
             </div>
-            
           </div>
 
-          <div className=" my-5 row  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
+          <div className=" my-4 row  pt-2 " style={{borderRadius:"12px",paddingBottom:"90px"}}>
            
     <div className="col-12 " style={{height:"auto"}}>
 

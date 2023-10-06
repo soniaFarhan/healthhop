@@ -31,12 +31,14 @@ export const Layout = () => {
   <div className="container-fluid">
    
 
-    <Link className="navbar-brand ms-5" to="/">
-      <div style={{ width: "6rem" }}>
-        <img style={{backgroundColor:"transparent"}}
-          src={require("../assets/navberlogo.png" )}
-          className="img-fluid logo_img_size"
+    <Link className=" ms-2" to="/">
+      {/* <div style={{ width: "10rem" }}>
+        <img width="100%"
+          src={require("../assets/HealthHop logo reverse on dark background (1).png" )}
         />
+      </div> */}
+      <div className="" style={{width:"7rem"}}>
+      <img width={"100%"} src={require("../assets/HealthHop logo reverse on dark background (1).png")} alt="" />
       </div>
     </Link>
     
@@ -240,7 +242,7 @@ export const Layout = () => {
        className="btn btn_light rounded-pill fs_10px white_space"
      >
        <Login fontSize="small"  style={{marginRight:"7px"}}/>
-       Login
+       Patient
      </button>
      </Link>
 

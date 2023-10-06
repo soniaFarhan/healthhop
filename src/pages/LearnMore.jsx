@@ -409,16 +409,15 @@ export const LearnMore = () => {
             </div>
 
 
-                  <div className="col-md-4">
+                  <div className="col-md-4 ">
                       <div className=" ">
-                          <div >
-                              <img className=' object-fit-contain w-100' src={require("../assets/consulation.png")} alt=""/>
+                          <div className='' style={{width:"25rem"}}>
+                              <img className='rounded-4 img-fluid' src={require("../assets/contact-us.jpg")} alt=""/>
                           </div>
                           <h5 className='text-center py-3 fw-bold '>
                               Book My Free Consultation
                           </h5>
-                          <hr />
-
+                          {/* <hr /> */}
                           <div className='px-3'>
                               <div className='my-3'>
                                   <input className='form-control' type="text" name="" id="" placeholder='First & Last Name' />

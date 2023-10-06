@@ -297,11 +297,11 @@ export const HealthJourney = () => {
                                         </button>
                                     </div>
 
-                 <Box>
+                 {/* <Box>
                     <button className='btn btn_green'>
                         Search
                     </button>
-                 </Box>
+                 </Box> */}
 
 
                     </div>

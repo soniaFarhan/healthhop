@@ -690,7 +690,7 @@ export const Home = () => {
             >
               <p>
                 Health-Tourism.com is a medical tourism guide and a directory
-                <br /> of medical centers,
+                <br /> of medical centers.
               </p>
               <p></p>
             </div>

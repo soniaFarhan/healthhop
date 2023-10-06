@@ -76,9 +76,9 @@ export const BusinessProfile = () => {
 
 
 
-        <div className="row mt-md-0 mt-3">
+        <div className="row mt-md-0 my-3">
           <div className="col-lg-6 mb-3 ">
-            <div className='me-md-2 shadows4 bg-white pt-3 ps-3 pe-5'  style={{ borderRadius: "20px", paddingBottom: "100px" }}>
+            <div className='me-md-2 h-100 shadows4 bg-white pt-3 ps-3 pe-5'  style={{ borderRadius: "20px", paddingBottom: "100px" }}>
             <h5>Summary of your medical practice:</h5>
             <p className='cu-color' style={{ fontSize: "14px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam fugiat corrupti veniam, impedit praesentium sapiente odio, iure vel alias asperiores hic, reiciendis consectetur magni! Odit ullam dolor optio distinctio.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident impedit omnis itaque cumque earum quod laboriosam, eaque sequi, optio magnam laudantium ratione, iure architecto animi? Esse labore quibusdam quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis eius quas reiciendis magnam modi ipsam ipsum doloribus tempora, dicta ea perferendis quo aspernatur fugit, placeat obcaecati sit commodi nesciunt?
@@ -88,7 +88,7 @@ export const BusinessProfile = () => {
           </div>
           <div className="col-lg-6  mb-3 ">
 
-            <div className=' my-3 ms-md-2 h-100'>
+            <div className=' my-3 pb-3 ms-md-2 h-100'>
               <div className=" d-flex aling-items-center">
 
                 < LocationOnOutlined sx={{ color: "#39B7BA" }} /> <p>Address of medical provider here</p>
@@ -103,7 +103,7 @@ export const BusinessProfile = () => {
         </div>
 
 
-        <div className="my-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-5 mt-md-0 mt-3" style={{ borderRadius: "20px" }}>
+        <div className="mb-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-5 mt-md-0 my-3" style={{ borderRadius: "20px" }}>
           <div className="d-flex justify-content-between aling-items-center">
 
             <h4> Detailed Description:</h4>
@@ -116,57 +116,49 @@ export const BusinessProfile = () => {
 
 
 
-        <div className="row ">
-
+        <div className="row mb-3">
           <div className="col-md-6">
-            <div className="my-3 me-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-5 mb-0" style={{ borderRadius: "20px", minHeight: "320px" }}>
-              <div className="d-flex justify-content-between aling-items-center">
-
-                <h5 style={{ fontSize: "18px" }}>   Your Business Offers the Following Services:</h5>
+            <div className="d-flex flex-column h-100 my-3 me-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-5 mb-0" style={{ borderRadius: "20px" }}>
+              <div className="d-flex justify-content-between align-items-center">
+                <h5 style={{ fontSize: "18px" }}>Your Business Offers the Following Services:</h5>
                 <BorderColorOutlined sx={{ color: "#07A6A9" }} />
               </div>
-
-              <p className=' linke'>
-                <ul className='d-flex flex-column fs_14px cu-color'>
-                  <li><Link>485 Star Hotel Accomodation</Link></li>
-                  <li><Link>3 Star Hotel Accomodation</Link></li>
+              <p className="linke">
+                <ul className="d-flex flex-column fs_14px cu-color">
+                  <li><Link>485 Star Hotel Accommodation</Link></li>
+                  <li><Link>3 Star Hotel Accommodation</Link></li>
                   <li><Link>Transportation To and From Airport/Clinic/Hotel</Link></li>
                   <li><Link>Visa Support</Link></li>
                   <li><Link>Travel Health Insurance or Medical Tourism Health Insurance</Link></li>
                   <li><Link>Sightseeing Support Bookings</Link></li>
-                  <li><Link> Other Language and Translation Support</Link></li>
-
-                </ul>      </p>
+                  <li><Link>Other Language and Translation Support</Link></li>
+                </ul>
+              </p>
             </div>
           </div>
-          <div className="col-md-6">
-            <div className="my-3 ms-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-md-5 mb-0" style={{ borderRadius: "20px", minHeight: "320px" }}>
-              <div className="d-flex justify-content-between aling-items-center">
-
-                <h5 style={{ fontSize: "18px" }}> Your Business Offers Care in the Following Languages:</h5>
+          <div className="col-md-6 pt-md-0 pt-4">
+            <div className="d-flex flex-column h-100 my-3 ms-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-md-5 mb-0" style={{ borderRadius: "20px" }}>
+              <div className="d-flex justify-content-between align-items-center">
+                <h5 style={{ fontSize: "18px" }}>Your Business Offers Care in the Following Languages:</h5>
                 <BorderColorOutlined sx={{ color: "#07A6A9" }} />
               </div>
-
-              <p className='pe-md-5 me-md-5 linke'>
-                <ul className='d-flex flex-column'>
+              <p className="pe-md-5 me-md-5 linke">
+                <ul className="d-flex flex-column">
                   <li><Link>Spanish</Link></li>
                   <li><Link>Turkish</Link></li>
                   <li><Link>Arabic</Link></li>
                   <li><Link>Urdu</Link></li>
                   <li><Link>Hindi</Link></li>
                   <li><Link>Persian</Link></li>
-
                 </ul>
-
-
-
               </p>
-
             </div>
           </div>
         </div>
 
-        <h4 className='ms-2 mt-3 fw-bold'>Procedures:</h4>
+
+       <div className='mt-5'>
+       <h4 className='ms-2 mt-3 fw-bold'>Procedures:</h4>
         <div className="mt-3 shadows4 bg-white pt-3 ps-3 pb-5 pe-5" style={{ borderRadius: "20px" }}>
           <div className="d-flex justify-content-between aling-items-center">
 
@@ -328,6 +320,7 @@ export const BusinessProfile = () => {
           <hr />
 
         </div>
+       </div>
 
 
 
@@ -338,7 +331,7 @@ export const BusinessProfile = () => {
 
 
 
-        <div className=" my-5 row   pt-2 " style={{ borderRadius: "12px", paddingBottom: "90px" }}>
+        <div className=" my-3 row   pt-2 " style={{ borderRadius: "12px", paddingBottom: "90px" }}>
           <div className="col-md-9 " style={{ height: "auto" }}>
             <h4 className='ms-1 fw-bold'>  Medical Staff   </h4>
 

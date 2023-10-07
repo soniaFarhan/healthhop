@@ -27,7 +27,7 @@ export const Layout = () => {
   return (
     <div className="layout">
      
-  <nav className="navbar navbar-expand-lg navbar-light navbg"  style={{backgroundColor:"#012837",color:"white"}}>
+  <nav className="navbar navbar-expand-lg navbar-light navbg"  style={{backgroundColor:"#012837",color:"white",zIndex:"999"}}>
   <div className="container-fluid">
    
 
@@ -81,10 +81,17 @@ export const Layout = () => {
           >
             Procedures
           </NavLink>
-          <div className="h">
+          <div className="h " style={{backgroundColor:"red",width:"100%"}} >
 
-          <div class="dropdown-content">
-  <div className="main d-flex flex-wrap p-5" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
+
+
+          <div class="dropdown-content  ">
+          
+
+           
+  <div className="main   " >
+
+    <div className="d-flex flex-wrap p-5  mt-4" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
     <ul className="pb-2 p-2" style={{ listStyleType: "" }}>
       <li className="custom-list-style text-white">Hair Transplants/ Hair Plugs</li>
       <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
@@ -164,10 +171,11 @@ export const Layout = () => {
       <li><Link>-Carpal Tunnel</Link></li>
       <li><Link>-And more</Link></li>
     </ul>
+    </div>
   </div>
 </div>
 
-  
+
           </div>
         </li>
 

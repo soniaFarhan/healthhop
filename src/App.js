@@ -37,9 +37,9 @@ function App() {
   return (<div>
     <Routes>
     <Route path='/singeupstepform' element={<SingeupStepForm/>} /> 
-        <Route path='/' element={<Login/>} />
+        <Route path='/login' element={<Login/>} />
       <Route element={<Layout/>}>
-        <Route path='/Home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/heath-journey'  element={<HealthJourney/>} />
         <Route path='/contact-us' element={<ContactUs/>} />  
         <Route path='/blogs' element={<OurBlogs/>} /> 
@@ -69,7 +69,8 @@ function App() {
         <Route path='/patient-calendar' element={<Calender month={"month"} />}/>
         <Route path='/patient-message' element={<PMessage/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
-        <Route path='/patient-details' element={<Profile/>}/>
+        <Route path='/patient-details' element={<PInvoicedetails/>} />  
+        <Route path='/patient-profile' element={<Profile/>}/>
         <Route path='/meet' element={<Meet/>}/>
         <Route path='/my-profile' element={<Myprofile/>}/>
       </Route>

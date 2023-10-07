@@ -247,7 +247,7 @@ export const BusinessProfile = () => {
 
             <h6 className='fw-bold'>Hair Transplant</h6>
 
-            <BorderColorOutlined sx={{ color: "#07A6A9" }} />
+            {/* <BorderColorOutlined sx={{ color: "#07A6A9" }} /> */}
           </div>
           <h6 className='fw-semibold' style={{ color: "#07A6A9" }}> Sub-category name</h6>
           <div className='pe-md-5 me-md-5' style={{ fontSize: "14px" }}>
@@ -864,7 +864,7 @@ function MohModal4({onHide, show,}) {
         <h6 className="text-center">
           {" "}
           Let's set up the Procedures your clinic provides! We will add these
-          one at a time. so let's add the first <br /> procedure here{" "}
+          one at a time. so let's add the first procedure here.
         </h6>{" "}
         <TextField
           id="outlined-basic"
@@ -923,7 +923,7 @@ function MohModal4({onHide, show,}) {
             </div>
           </div>
         </div>
-        <div className="d-flex gap-2 ">
+        <div className="d-flex gap-3 justify-content-center ">
           <div className="">
             <TextField
               id="outlined-basic"

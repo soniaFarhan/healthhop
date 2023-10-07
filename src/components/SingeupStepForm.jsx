@@ -37,8 +37,8 @@ const SingeupStepForm = () => {
                   style={{ width: "100%" }}
                 />
               )}
-
-              <div
+{
+     step>1 ?(    <div
                 className="my-3"
                 style={{ position: step === 1 ? "absolute" : "relative" }}
               >
@@ -46,7 +46,23 @@ const SingeupStepForm = () => {
                   {" "}
                   <ArrowBack />
                 </button>
+              </div>) :  <div
+                className="my-3"
+                style={{ position: step === 1 ? "absolute" : "relative" }}
+              >
+
+                <Link to={"/"}>
+
+              
+                <button className="btn ms-2 py-3" onClick={prevStep}>
+                  {" "}
+                  <ArrowBack />
+                </button>
+                </Link>
               </div>
+              
+              
+              }
 
               {step === 1 || <ProgressMobileStepper activeStep={step} />}
 
@@ -162,7 +178,7 @@ const SingeupStepForm = () => {
                         paddingBottom: "0px",
                       }}
                     >
-                      skip
+                     { `skip >>`}
                     </Button>
                   </div>
                 )}

@@ -87,6 +87,7 @@ const SingeupStepForm = () => {
                       padding: "16px 80px",
                       fontSize: "15px",
                       width: "100%",
+                      border:"none"
                     }}
                   >
                     {step == 1 ? "Start Setup" : "continue"}
@@ -101,6 +102,7 @@ const SingeupStepForm = () => {
                         padding: "16px 80px",
                         fontSize: "12px",
                         width: "100%",
+                        border:"none"
                       }}
                     >
                       {step == 1 ? "Start Setup" : "continue"}
@@ -804,9 +806,9 @@ const Step9 = () => {
         }}
       >
        
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 " >
   
-  <input style={{ backgroundColor: "#7E7D7B ", borderRadius: "9px", border: "1px solid #07A6A9",color:"white", opacity:"0.9"}} type="text" class="form-control" placeholder="Username" aria-label="Enter your address" aria-describedby="basic-addon1"/>
+  <input className="py-2 form-control" style={{ backgroundColor: "black ", borderRadius: "9px", border: "1px solid #07A6A9",color:"white", opacity:"0.5"}} type="text" class="form-control" placeholder="Enter your address" aria-label="Enter your address" aria-describedby="basic-addon1"/>
 </div>
         
       </div>

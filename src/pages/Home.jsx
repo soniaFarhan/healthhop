@@ -92,12 +92,11 @@ export const Home = () => {
       'And More...',
     ],
   };
-  // Function to handle category selection
+ 
   const handleCategoryChange = (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
 
-    // Update sub-categories based on the selected category
     const subCategories = categorySubcategoryMap[selectedCategory] || [];
     setSubCategories(subCategories);
   };
@@ -552,7 +551,7 @@ export const Home = () => {
 
         <p className="text-center mt-4 decoration-none">
           <Link className="decoration-none" style={{ color: "#6C6C6C" }}>
-            {`see more >>`}{" "}
+            {`see more >>`}
           </Link>
         </p>
       </section>

@@ -63,7 +63,7 @@ export const Layout = () => {
             exact
             activeClassName="active"
             end="/"
-            to="/Home"
+            to="/"
             title="Home"
           >
             Home

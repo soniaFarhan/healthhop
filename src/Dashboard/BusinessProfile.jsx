@@ -1,10 +1,14 @@
 import { BorderColorOutlined, Chat, LocationOnOutlined, MedicalServicesOutlined } from '@mui/icons-material'
-import { Avatar, Button } from '@mui/material'
-import React from 'react'
+import { Avatar, Button, TextField } from '@mui/material'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import Modal from 'react-bootstrap/Modal';
 export const BusinessProfile = () => {
-
+  const [modalShow, setModalShow] = useState(false);
+  const [modalShow2, setModalShow2] = useState(false);
+  const [modalShow3, setModalShow3] = useState(false);
+  const [modalShow4, setModalShow4] = useState(false);
+  const [modalShow5, setModalShow5] = useState(false);
   const data = [
     {
       name: "Dr.Herry",
@@ -107,7 +111,7 @@ export const BusinessProfile = () => {
           <div className="d-flex justify-content-between aling-items-center">
 
         <h4> Details Description:</h4>
-        <BorderColorOutlined sx={{color:"#07A6A9"}}/>
+        <BorderColorOutlined onClick={()=>setModalShow(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
          </div>
 
           <p className='pe-md-5 me-md-5 cu-color' style={{ fontSize: "14px" }}>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi quibusdam voluptate voluptatibus suscipit dolores iste incidunt enim sunt pariatur ullam, modi similique quis rem nostrum inventore iusto. Repellendus facere odio libero explicabo, corporis sunt ducimus cumque labore quo impedit quibusdam placeat neque tempora quam, tenetur adipisci asperiores, beatae animi mollitia vitae nam rerum nulla dolorum. Officiis nihil, corrupti molestiae exercitationem quisquam excepturi repellendus, cupiditate officia delectus ipsum consequuntur. Atque iusto porro illo accusantium a, aperiam saepe sit aspernatur, temporibus iure distinctio. Tenetur maxime labore totam laborum obcaecati optio nulla soluta deleniti, consectetur sed, omnis distinctio accusantium harum molestias. Consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur accusamus, debitis nam perspiciatis impedit labore repudiandae tenetur? Quibusdam accusamus aut a. Recusandae aliquid perspiciatis rem ipsa eius at dolor cum.        </p>
@@ -121,7 +125,7 @@ export const BusinessProfile = () => {
             <div className="d-flex flex-column h-100 my-3 me-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-5 mb-0" style={{ borderRadius: "20px" }}>
               <div className="d-flex justify-content-between align-items-center">
                 <h5 style={{ fontSize: "18px" }}>Your Business Offers the Following Services:</h5>
-                <BorderColorOutlined sx={{ color: "#07A6A9" }} />
+                <BorderColorOutlined onClick={()=>setModalShow2(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
               </div>
               <p className="linke">
                 <ul className="d-flex flex-column fs_14px cu-color">
@@ -140,7 +144,7 @@ export const BusinessProfile = () => {
             <div className="d-flex flex-column h-100 my-3 ms-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-md-5 mb-0" style={{ borderRadius: "20px" }}>
               <div className="d-flex justify-content-between align-items-center">
                 <h5 style={{ fontSize: "18px" }}>Your Business Offers Care in the Following Languages:</h5>
-                <BorderColorOutlined sx={{ color: "#07A6A9" }} />
+                <BorderColorOutlined onClick={()=>setModalShow3(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
               </div>
               <p className="pe-md-5 me-md-5 linke">
                 <ul className="d-flex flex-column">
@@ -164,7 +168,7 @@ export const BusinessProfile = () => {
 
             <h6 className='fw-bold'>Hair Transplant</h6>
 
-            <BorderColorOutlined sx={{ color: "#07A6A9" }} />
+            <BorderColorOutlined onClick={()=>setModalShow4(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
           </div>
           <h6 className='fw-semibold' style={{ color: "rgb(7,166,169)" }}> Sub-category name</h6>
           <div className='pe-md-5 me-md-5' style={{ fontSize: "14px" }}>
@@ -350,7 +354,7 @@ export const BusinessProfile = () => {
                       <div className='me-auto'>
                         <div className="d-flex justify-content-between">
                           <h6 > {e.name} </h6>
-                          <BorderColorOutlined sx={{ color: "#07A6A9" }} />
+                          <BorderColorOutlined onClick={()=>setModalShow5(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
 
                         </div>
                         <div className="me-5  ">
@@ -388,7 +392,645 @@ export const BusinessProfile = () => {
         </div>
       </div>
 
-
+      {modalShow&& <MohModal1
+    show={modalShow}
+    onHide={() => setModalShow(false)}
+    />}
+      {modalShow2&& <MohModal2
+    show={modalShow2}
+    onHide={() => setModalShow2(false)}
+    />}
+      {modalShow3&& <MohModal3
+    show={modalShow3}
+    onHide={() => setModalShow3(false)}
+    />}
+      {modalShow4&& <MohModal4
+    show={modalShow4}
+    onHide={() => setModalShow4(false)}
+    />}
+      {modalShow5&& <MohModal5
+    show={modalShow5}
+    onHide={() => setModalShow5(false)}
+    />}
     </>
   )
+}
+
+
+function MohModal1({onHide, show,}) {
+  
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+         Description
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <>
+      <h4 className="text-center">
+        {" "}
+        Summary of your Medical <br /> Practice:{" "}
+      </h4>
+      <div class="mb-3">
+        <textarea
+          style={{ fontSize: "9px" }}
+          class="form-control"
+          placeholder="Tell People How great you are qualifications and why  they should chose your clinic "
+          id="exampleFormControlTextarea1"
+          rows="10"
+        ></textarea>
+      </div>
+    </>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
+}
+function MohModal2({onHide, show,}) {
+  
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+        Business Services
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <div className="scroll-container">
+      <div className="content">
+        <h6 className="text-center">
+          Which of these exter Services dose your Busniness <br /> provide your
+          medical tourism Patients?
+        </h6>
+        <div class="form-check my-4 ">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            4&3 star Hotel Accomodation
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            3 star Hotel Accomodation
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Travel Excursions
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Transportation to and from Airport/Clinic/Hotel
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Vise Suppert
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Sightseeing Support Booking
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Medical Complication Insurance/Travel Insurance
+          </label>
+        </div>
+        <hr />
+      </div>
+    </div>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
+}
+function MohModal3({onHide, show,}) {
+  
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+       Language
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <div className="scroll-container">
+      <div className="content">
+        <h6 className="text-center">
+          Choose the Language, you want to <br /> provide your services in
+        </h6>
+        <div class="form-check my-4 ">
+          <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Arabic
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+         Azerbaijani
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Dutch
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          English
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          Farsi
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          French
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          German
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          Hindi
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          Italian
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Pashto
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Polish
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Portuguese
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Russian
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Spanish
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Turkish
+        </label>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+        Ukrainian
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+          Urdu
+          </label>
+        </div>
+        <hr />
+      </div>
+    </div>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
+}
+function MohModal4({onHide, show,}) {
+  const [selectedImages, setSelectedImages] = useState([]);
+
+  function handleImageChange(event) {
+    const files = event.target.files;
+    const newImages = [];
+
+    for (let i = 0; i < files.length; i++) {
+      const reader = new FileReader();
+      reader.readAsDataURL(files[i]);
+
+      reader.onload = () => {
+        newImages.push(reader.result);
+
+        if (newImages.length === files.length) {
+          setSelectedImages([...selectedImages, ...newImages]);
+        }
+      };
+    }
+  }
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+       Category
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <div className="scroll-container">
+      <div class="mb-3 d-grid gap-3 p-0 content">
+        <h6 className="text-center">
+          {" "}
+          Let's set up the Procedures your clinic provides! We will add these
+          one at a time. so let's add the first <br /> procedure here{" "}
+        </h6>{" "}
+        <TextField
+          id="outlined-basic"
+          label="Choose category"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+        <TextField
+          id="outlined-basic"
+          label=" Choose Sub-category"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+        <textarea
+          style={{ fontSize: "12px", height: "150px" }}
+          class="form-control"
+          placeholder="Discription "
+          id="exampleFormControlTextarea1"
+          rows="29"
+        ></textarea>
+        <div className="row">
+          <div className="">
+            {selectedImages.length > 0 && (
+              <div className="row">
+                {selectedImages.map((image, index) => (
+                  <div className="col-4" key={index}>
+                    <img
+                      src={image}
+                      alt={`Selected ${index}`}
+                      width={"100%"}
+                      height={"100px"}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="col text-center">
+            <div className="mt-2">
+              <input
+                onChange={handleImageChange}
+                type="file"
+                name=""
+                id="img"
+                hidden
+                multiple
+              />
+              <label
+                style={{ fontSize: "60px" }}
+                className="text-center "
+                htmlFor="img"
+              >
+                <i class="bi bi-plus"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div className="d-flex gap-2 ">
+          <div className="">
+            <TextField
+              id="outlined-basic"
+              label=" Min"
+              variant="outlined"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="">
+            {" "}
+            <TextField
+              id="outlined-basic"
+              label="Max"
+              variant="outlined"
+              style={{ width: "100%" }}
+            />
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
+}
+function MohModal5({onHide, show,}) {
+  
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+       Medical Staff
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <>
+      <h4 className="text-center">Add Medical Staff</h4>
+
+      <div class="mb-3 d-grid gap-3">
+        <div className=""></div>
+
+        <TextField
+          hidden
+          type="file"
+          id="q"
+          label=" Upload Image"
+          variant="outlined"
+          style={{ width: "100%", backgroundColor: "#DFDFDF" }}
+        />
+        <label
+          className="px-2 py-3 my-auto"
+          htmlFor="q"
+          style={{
+            backgroundColor: "#DFDFDF",
+            borderRadius: "9px",
+            border: "2px dashed #8B8B8B",
+          }}
+        >
+          Upload image
+        </label>
+
+        <TextField
+          id="outlined-basic"
+          label="Mesical Staff Frist Name"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+        <TextField
+          id="outlined-basic"
+          label=" Categroy name"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+
+        <textarea
+          style={{ fontSize: "9px" }}
+          class="form-control"
+          placeholder="Discription "
+          id="exampleFormControlTextarea1"
+          rows="10"
+        ></textarea>
+      </div>
+
+      
+    </>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
 }

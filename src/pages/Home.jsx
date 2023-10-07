@@ -92,12 +92,11 @@ export const Home = () => {
       'And More...',
     ],
   };
-  // Function to handle category selection
+ 
   const handleCategoryChange = (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
 
-    // Update sub-categories based on the selected category
     const subCategories = categorySubcategoryMap[selectedCategory] || [];
     setSubCategories(subCategories);
   };
@@ -340,15 +339,15 @@ export const Home = () => {
 
                 <Box  sx={{   }}>
                 <Slider
-      sx={{ color: "#07A6A9",height:"10px" }}
-      aria-label="Temperature"
-      defaultValue={3000} // Set your initial value here
-      valueLabelDisplay="auto"
-      step={null}
-      marks={marks}
-      min={1000}
-      max={15000}
-    />
+                    sx={{ color: "#07A6A9",height:"10px" }}
+                    aria-label="Temperature"
+                    defaultValue={3000} // Set your initial value here
+                    valueLabelDisplay="auto"
+                    step={null}
+                    marks={marks}
+                    min={1000}
+                    max={15000}
+                  />
                 </Box>
 
                 <div className="pt-5">
@@ -464,7 +463,7 @@ export const Home = () => {
       </section>
 
       <section className="">
-        <div className=" d-flex justify-content-center my-5 shrink py-5">
+        <div className=" d-flex justify-content-center my-5 shrink">
           <h3 className="text-center heading "
             style={{
               borderBottom: "2px solid #07A6A9",
@@ -502,9 +501,9 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-5 mt-4 mb-2 shrink">
+      <section className="py-5  shrink">
         <div className="d-flex justify-content-center  py-3">
-          <h2 className="heading mt-5 pt-5"
+          <h2 className="heading  pt-5"
             style={{
               borderBottom: "2px solid #07A6A9",
               display: "inline-block",
@@ -552,11 +551,12 @@ export const Home = () => {
 
         <p className="text-center mt-4 decoration-none">
           <Link className="decoration-none" style={{ color: "#6C6C6C" }}>
-            {`see more >>`}{" "}
+            {`see more >>`}
           </Link>
         </p>
       </section>
-      <section className="py-5 shrink ">
+
+      <section className=" shrink ">
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -835,7 +835,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="py-5 shrink" style={{marginBottom:"200px"}}>
+      <section className="py-5 shrink" style={{marginBottom:"100px"}}>
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -895,7 +895,7 @@ export const Home = () => {
         </Box>
       </section>
 
-      <section className="">
+      <section className="test">
         <div className="">
             <div className="p-3 bg">
           <div className="shrink">

@@ -2,10 +2,11 @@ import React from "react";
 import { useState } from "react";
 import ProgressMobileStepper from "./Steper";
 import { ArrowBack } from "@mui/icons-material";
-import { TextField } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import Slider from "@mui/material/Slider";
 
 const SingeupStepForm = () => {
   const [step, setStep] = useState(1);
@@ -37,8 +38,8 @@ const SingeupStepForm = () => {
                   style={{ width: "100%" }}
                 />
               )}
-
-              <div
+{
+     step>1 ?(    <div
                 className="my-3"
                 style={{ position: step === 1 ? "absolute" : "relative" }}
               >
@@ -46,7 +47,23 @@ const SingeupStepForm = () => {
                   {" "}
                   <ArrowBack />
                 </button>
+              </div>) :  <div
+                className="my-3"
+                style={{ position: step === 1 ? "absolute" : "relative" }}
+              >
+
+                <Link to={"/"}>
+
+              
+                <button className="btn ms-2 py-3" onClick={prevStep}>
+                  {" "}
+                  <ArrowBack />
+                </button>
+                </Link>
               </div>
+              
+              
+              }
 
               {step === 1 || <ProgressMobileStepper activeStep={step} />}
 
@@ -87,6 +104,7 @@ const SingeupStepForm = () => {
                       padding: "16px 80px",
                       fontSize: "15px",
                       width: "100%",
+                      border:"none"
                     }}
                   >
                     {step == 1 ? "Start Setup" : "continue"}
@@ -101,6 +119,7 @@ const SingeupStepForm = () => {
                         padding: "16px 80px",
                         fontSize: "12px",
                         width: "100%",
+                        border:"none"
                       }}
                     >
                       {step == 1 ? "Start Setup" : "continue"}
@@ -160,7 +179,7 @@ const SingeupStepForm = () => {
                         paddingBottom: "0px",
                       }}
                     >
-                      skip
+                     { `skip >>`}
                     </Button>
                   </div>
                 )}
@@ -271,9 +290,9 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="3&4"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="3&4">
             4&3 star Hotel Accomodation
           </label>
         </div>
@@ -283,9 +302,9 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="3"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="3">
             3 star Hotel Accomodation
           </label>
         </div>
@@ -295,9 +314,9 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="travel"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="travel">
             Travel Excursions
           </label>
         </div>
@@ -307,9 +326,9 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="hotel"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="hotel">
             Transportation to and from Airport/Clinic/Hotel
           </label>
         </div>
@@ -319,10 +338,10 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="visa"
           />
-          <label class="form-check-label" for="flexCheckDefault">
-            Vise Suppert
+          <label class="form-check-label" for="visa">
+            Visa Support
           </label>
         </div>
         <hr />
@@ -331,9 +350,9 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="book"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="book">
             Sightseeing Support Booking
           </label>
         </div>
@@ -343,9 +362,9 @@ const Step4 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="medical"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="medical">
             Medical Complication Insurance/Travel Insurance
           </label>
         </div>
@@ -366,9 +385,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="arabic"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="arabic">
           Arabic
         </label>
       </div>
@@ -378,9 +397,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="azrbaijan"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="azrbaijan">
          Azerbaijani
         </label>
       </div>
@@ -390,9 +409,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="ducth"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="ducth">
         Dutch
         </label>
       </div>
@@ -402,9 +421,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="eng"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="eng">
           English
           </label>
         </div>
@@ -414,9 +433,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="farsi"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="farsi">
           Farsi
           </label>
         </div>
@@ -426,9 +445,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="french"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="french">
           French
           </label>
         </div>
@@ -438,9 +457,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="german"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="german">
           German
           </label>
         </div>
@@ -450,9 +469,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="hindi"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="hindi">
           Hindi
           </label>
         </div>
@@ -462,9 +481,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="italy"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="italy">
           Italian
         </label>
       </div>
@@ -474,9 +493,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="pashto"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="pashto">
         Pashto
         </label>
       </div>
@@ -486,9 +505,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="polish"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="polish">
         Polish
         </label>
       </div>
@@ -498,9 +517,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="posrtug"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="posrtug">
         Portuguese
         </label>
       </div>
@@ -510,9 +529,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="russia"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="russia">
         Russian
         </label>
       </div>
@@ -522,9 +541,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="spanish"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="spanish">
         Spanish
         </label>
       </div>
@@ -534,9 +553,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="turkish"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="turkish">
         Turkish
         </label>
       </div>
@@ -546,9 +565,9 @@ const Step5 = () => {
           class="form-check-input"
           type="checkbox"
           value=""
-          id="flexCheckDefault"
+          id="ukrain"
         />
-        <label class="form-check-label" for="flexCheckDefault">
+        <label class="form-check-label" for="ukrain">
         Ukrainian
           </label>
         </div>
@@ -558,9 +577,9 @@ const Step5 = () => {
             class="form-check-input"
             type="checkbox"
             value=""
-            id="flexCheckDefault"
+            id="urdu"
           />
-          <label class="form-check-label" for="flexCheckDefault">
+          <label class="form-check-label" for="urdu">
           Urdu
           </label>
         </div>
@@ -589,6 +608,29 @@ const Step6 = () => {
       };
     }
   }
+  const marks = [
+    {
+      value: 1000,
+     
+    },
+    {
+      value: 3000,
+     
+    },
+    {
+      value: 5000,
+     
+    },
+    {
+      value: 10000,
+     
+    },
+    {
+      value: 15000,
+     
+    },
+  ];
+
   return (
     <div className="scroll-container">
       <div class="mb-3 d-grid gap-3 p-0 content">
@@ -654,7 +696,8 @@ const Step6 = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex gap-2 ">
+
+        <div className="d-flex justify-content-between">
           <div className="">
             <TextField
               id="outlined-basic"
@@ -664,7 +707,7 @@ const Step6 = () => {
             />
           </div>
           <div className="">
-            {" "}
+            
             <TextField
               id="outlined-basic"
               label="Max"
@@ -673,6 +716,52 @@ const Step6 = () => {
             />
           </div>
         </div>
+
+        <div className="">
+            
+            <TextField
+              id="outlined-basic"
+              label="All Inclusive Price"
+              variant="outlined"
+              style={{ width: "100%" }}
+            />
+          </div>
+
+        <div className="">
+            
+            <TextField
+              id="outlined-basic"
+              label="Instant booking"
+              variant="outlined"
+              style={{ width: "100%" }}
+            />
+          </div>
+
+        <div className="">
+            
+            <TextField
+              id="outlined-basic"
+              label="Instant booking Fixed price for All"
+              variant="outlined"
+              style={{ width: "100%" }}
+            />
+          </div>
+
+        <p className="mb-0">Select min and max price range</p>
+
+                <Box  sx={{width:"500px"}}>
+                <Slider
+                    sx={{ color: "#07A6A9",height:"4px" }}
+                    aria-label="Temperature"
+                    defaultValue={3000} // Set your initial value here
+                    valueLabelDisplay="auto"
+                    step={null}
+                    marks={marks}
+                    min={1000}
+                    max={15000}
+                  />
+                </Box>
+
         <div className="pt-2">
           <Button
             style={{
@@ -804,9 +893,9 @@ const Step9 = () => {
         }}
       >
        
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 " >
   
-  <input style={{ backgroundColor: "#7E7D7B ", borderRadius: "9px", border: "1px solid #07A6A9",color:"white", opacity:"0.9"}} type="text" class="form-control" placeholder="Username" aria-label="Enter your address" aria-describedby="basic-addon1"/>
+  <input className="py-2 form-control" style={{ backgroundColor: "black ", borderRadius: "9px", border: "1px solid #07A6A9",color:"white", opacity:"0.5"}} type="text" class="form-control" placeholder="Enter your address" aria-label="Enter your address" aria-describedby="basic-addon1"/>
 </div>
         
       </div>

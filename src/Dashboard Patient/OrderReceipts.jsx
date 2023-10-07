@@ -1,15 +1,7 @@
-
-
-
-
-
-
-
-
-
 import { Box, FormControl, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import { Button} from 'react-bootstrap'
+import {Modal} from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 export const OrderReceipts = () => {
@@ -125,7 +117,7 @@ data.map((e)=>{
 
   </div>
 <div className="m-2">
-<Link to={"/Invoice-details"}>
+<Link to={"/patient-details"}>
 
 
 <Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px",color:"white"}}>See details</Button>
@@ -163,17 +155,10 @@ data.map((e)=>{
 
 
 function MohModal({onHide, show,}) {
-  
 const handleSubmit=async(e)=>{
-
 e.preventDefault()
-
-onHide();
-
-
-  
+onHide(); 
 }
-
 const [users, setUsers] = useState([]);
 const [page, setPage] = useState(1);
 const [userReponse,setUserResponse]=useState()
@@ -183,11 +168,9 @@ const [userReponse,setUserResponse]=useState()
 // // const {request,data,error,loading}=useApi(()=>apiClient.get(`/visits/?limit=100`))
 
 const [selectedImages, setSelectedImages] = useState([]);
-
 function handleImageChange(event) {
   const files = event.target.files;
   const newImages = [];
-
   for (let i = 0; i < files.length; i++) {
     const reader = new FileReader();
     reader.readAsDataURL(files[i]);
@@ -201,18 +184,15 @@ function handleImageChange(event) {
     };
   }
 }
-
-
-
   return (
     <form>
-    <Modal
+    <Modal className=''
      show={show}
      onHide={onHide}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      style={{zIndex:'10000'}}
+      style={{zIndex:'900000'}}
     >
       <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
         <Modal.Title id="contained-modal-title-vcenter">
@@ -240,12 +220,7 @@ function handleImageChange(event) {
         <div className=" w-50  mb-2">
         <Rating
         className='py-3 form-control'
-  name="simple-controlled"
-  // value={value}
-  // onChange={(event, newValue) => {
-  //   setValue(newValue);
-  // }}
-/>
+        name="simple-controlled"/>
           </div>
         <TextField
             hidden
@@ -268,7 +243,7 @@ function handleImageChange(event) {
           
           </label>
           <div className="my-4">
-          {" "}
+       
           <TextField
             id="outlined-basic"
             label=""

@@ -66,8 +66,8 @@ const listItemData = [
     icon: <InsertDriveFileIcon/>
   },
   {
-    label: "My Medical Profile",
-    link: "/patient-details",
+    label: "My Profile",
+    link: "/patient-profile",
     icon:<AccountBoxIcon/>
   },
 

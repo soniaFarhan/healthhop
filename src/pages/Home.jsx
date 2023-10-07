@@ -339,15 +339,15 @@ export const Home = () => {
 
                 <Box  sx={{   }}>
                 <Slider
-      sx={{ color: "#07A6A9",height:"10px" }}
-      aria-label="Temperature"
-      defaultValue={3000} // Set your initial value here
-      valueLabelDisplay="auto"
-      step={null}
-      marks={marks}
-      min={1000}
-      max={15000}
-    />
+                    sx={{ color: "#07A6A9",height:"10px" }}
+                    aria-label="Temperature"
+                    defaultValue={3000} // Set your initial value here
+                    valueLabelDisplay="auto"
+                    step={null}
+                    marks={marks}
+                    min={1000}
+                    max={15000}
+                  />
                 </Box>
 
                 <div className="pt-5">

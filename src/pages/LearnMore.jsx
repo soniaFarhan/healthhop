@@ -273,7 +273,24 @@ export const LearnMore = () => {
 
                         <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
                             <p className='mb-0'>
-                                Medical procedure average range
+                            All Inclusive Price
+                            </p>
+                            <p className='mb-0'>
+                                $3000-$4000 USD
+                            </p>
+                        </div>
+
+                        <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
+                            <p className='mb-0'>
+                            Instant booking
+                            </p>
+                            <p className='mb-0'>
+                                $3000-$4000 USD
+                            </p>
+                        </div>
+                        <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
+                            <p className='mb-0'>
+                            Instant booking Fixed price for All
                             </p>
                             <p className='mb-0'>
                                 $3000-$4000 USD

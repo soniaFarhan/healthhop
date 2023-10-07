@@ -582,3 +582,10 @@ select.bg-select option{
 .custom-progress-bar {
   height: 10px; /* Adjust the height as per your requirements */
 }
+
+.custom-mobile-stepper .MuiMobileStepper-progress {
+  background-color: #97eced; /* Change this color to your desired color */
+}
+.custom-mobile-stepper .MuiMobileStepper-progress span {
+  background-color: #07A6A9; /* Change this color to your desired active step color */
+}

@@ -85,7 +85,11 @@ function SideNav(props) {
       <Divider sx={{ backgroundColor: 'white' }} />
       <List className="">
         {listItemData.map((value, i) => (
+           <>
+           <div className=" my-1 mx-3 " style={{backgroundColor:"#161616" ,borderRadius:"10px"}}>
           <RenderItem value={value} i={i} />
+          </div>
+          </>
         ))}
       </List>
      
@@ -98,7 +102,7 @@ function SideNav(props) {
             <ListItemIcon sx={{ color: "white",  marginRight: -3 }} >
               <LogoutIcon />
             </ListItemIcon>
-            <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white",  }} title='logout'>Logout</Typography>} />
+            <ListItemText className="" primary={<Typography variant="body2" style={{ fontSize: 14, color: "white",}} title='logout'>Logout</Typography>} />
           </ListItemButton>
         </ListItem>
       </List>

@@ -980,7 +980,7 @@ const  Orthopedics= [
           </div>
         </div>
       </section>
-      <section className="shrink">
+      <section className="shrink" id="navigate">
         <div className="container">
           <div className="mx-md-5 ">
             <div className="p-3 ">

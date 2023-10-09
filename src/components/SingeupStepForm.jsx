@@ -38,31 +38,31 @@ const SingeupStepForm = () => {
                   style={{ width: "100%" }}
                 />
               )}
-{
-     step>1 ?(    <div
-                className="my-3"
-                style={{ position: step === 1 ? "absolute" : "relative" }}
-              >
-                <button className="btn ms-2 py-3" onClick={prevStep}>
-                  {" "}
-                  <ArrowBack />
-                </button>
-              </div>) :  <div
-                className="my-3"
-                style={{ position: step === 1 ? "absolute" : "relative" }}
-              >
+              {
+                step > 1 ? (<div
+                  className="my-3"
+                  style={{ position: step === 1 ? "absolute" : "relative" }}
+                >
+                  <button className="btn ms-2 py-3" onClick={prevStep}>
+                    {" "}
+                    <ArrowBack />
+                  </button>
+                </div>) : <div
+                  className="my-3"
+                  style={{ position: step === 1 ? "absolute" : "relative" }}
+                >
 
-                <Link to={"/"}>
+                  <Link to={"/"}>
 
-              
-                <button className="btn ms-2 py-3" onClick={prevStep}>
-                  {" "}
-                  <ArrowBack />
-                </button>
-                </Link>
-              </div>
-              
-              
+
+                    <button className="btn ms-2 py-3" onClick={prevStep}>
+                      {" "}
+                      <ArrowBack />
+                    </button>
+                  </Link>
+                </div>
+
+
               }
 
               {step === 1 || <ProgressMobileStepper activeStep={step} />}
@@ -104,10 +104,10 @@ const SingeupStepForm = () => {
                       padding: "16px 80px",
                       fontSize: "15px",
                       width: "100%",
-                      border:"none"
+                      border: "none"
                     }}
                   >
-                    {step == 1 ? "Start Setup" : "continue"}
+                    {step == 1 ? "Start Setup" : "Continue"}
                   </Button>
                 ) : (
                   <Link to="/inquiries">
@@ -119,7 +119,7 @@ const SingeupStepForm = () => {
                         padding: "16px 80px",
                         fontSize: "12px",
                         width: "100%",
-                        border:"none"
+                        border: "none"
                       }}
                     >
                       {step == 1 ? "Start Setup" : "continue"}
@@ -128,7 +128,7 @@ const SingeupStepForm = () => {
                 )}
 
                 {/* logos.............................. */}
-                {step === 2 && (
+                {/* {step === 2 && (
                   <div className="d-flex justify-content-center aling-item-center mt-4 mb-1">
                     <div className="">
                       <img src={require("../assets/fb.svg").default} alt="" />
@@ -140,7 +140,7 @@ const SingeupStepForm = () => {
                       />
                     </div>
                   </div>
-                )}
+                )} */}
 
                 {/* loginbutton .....................*/}
 
@@ -160,7 +160,7 @@ const SingeupStepForm = () => {
                           paddingBottom: "5px",
                         }}
                       >
-                        login
+                        LOGIN
                       </Button>
                     </Link>
                   </div>
@@ -179,7 +179,7 @@ const SingeupStepForm = () => {
                         paddingBottom: "0px",
                       }}
                     >
-                     { `skip >>`}
+                      {`skip >>`}
                     </Button>
                   </div>
                 )}
@@ -197,7 +197,7 @@ export default SingeupStepForm;
 const Step1 = () => {
   return (
     <>
-      <h3 className="text-center">Set up your Patient profile</h3>
+      <h3 className="text-center">Set up your Business Profile</h3>
 
       <p className="text-center" style={{ fontSize: "10px" }}>
         In publishing and graphic design . lorem ipsum is placeholder text
@@ -214,15 +214,15 @@ const Step2 = () => {
     <>
       <h3 className="text-center mb-2">About You </h3>
       <p className="text-center" style={{ fontSize: "10px" }}>
-        Tell us more about yourself and you business
+        Tell us more about yourself and your business
       </p>
 
       <div className="mb-5">
         <TextField
           className="my-2"
           id="outlined-basic"
-          label=" Busniness name"
-          name="Busniness name"
+          label=" Business Name"
+          name="Business Name"
           variant="outlined"
           style={{ width: "100%" }}
         />
@@ -230,7 +230,7 @@ const Step2 = () => {
         <TextField
           className="my-2"
           id="outlined-basic"
-          label=" Your name"
+          label=" Your Name"
           name="your name"
           variant="outlined"
           style={{ width: "100%" }}
@@ -239,8 +239,8 @@ const Step2 = () => {
         <TextField
           className="my-2"
           id="outlined-basic"
-          label="  Busniness  email eddress"
-          name=" Busniness  email eddress"
+          label="  Business  Email Address"
+          name=" Business  email address"
           variant="outlined"
           style={{ width: "100%" }}
         />
@@ -281,9 +281,8 @@ const Step4 = () => {
   return (
     <div className="scroll-container">
       <div className="content">
-        <h6 className="text-center">
-          Which of these exter Services dose your Busniness <br /> provide your
-          medical tourism Patients?
+        <h6 className="text-center px-4">
+          Which one of these extra services does your business provide your patients?
         </h6>
         <div class="form-check my-4 ">
           <input
@@ -317,7 +316,7 @@ const Step4 = () => {
             id="travel"
           />
           <label class="form-check-label" for="travel">
-            Travel Excursions
+            Sightseeing Tours
           </label>
         </div>
         <hr />
@@ -382,49 +381,49 @@ const Step5 = () => {
         </h6>
         <div class="form-check my-4 ">
           <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="arabic"
-        />
-        <label class="form-check-label" for="arabic">
-          Arabic
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="azrbaijan"
-        />
-        <label class="form-check-label" for="azrbaijan">
-         Azerbaijani
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="ducth"
-        />
-        <label class="form-check-label" for="ducth">
-        Dutch
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="arabic"
+          />
+          <label class="form-check-label" for="arabic">
+            Arabic
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="azrbaijan"
+          />
+          <label class="form-check-label" for="azrbaijan">
+            Azerbaijani
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="ducth"
+          />
+          <label class="form-check-label" for="ducth">
+            Dutch
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
             class="form-check-input"
             type="checkbox"
             value=""
             id="eng"
           />
           <label class="form-check-label" for="eng">
-          English
+            English
           </label>
         </div>
         <hr />
@@ -436,7 +435,7 @@ const Step5 = () => {
             id="farsi"
           />
           <label class="form-check-label" for="farsi">
-          Farsi
+            Farsi
           </label>
         </div>
         <hr />
@@ -448,7 +447,7 @@ const Step5 = () => {
             id="french"
           />
           <label class="form-check-label" for="french">
-          French
+            French
           </label>
         </div>
         <hr />
@@ -460,7 +459,7 @@ const Step5 = () => {
             id="german"
           />
           <label class="form-check-label" for="german">
-          German
+            German
           </label>
         </div>
         <hr />
@@ -472,7 +471,7 @@ const Step5 = () => {
             id="hindi"
           />
           <label class="form-check-label" for="hindi">
-          Hindi
+            Hindi
           </label>
         </div>
         <hr />
@@ -484,91 +483,91 @@ const Step5 = () => {
             id="italy"
           />
           <label class="form-check-label" for="italy">
-          Italian
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="pashto"
-        />
-        <label class="form-check-label" for="pashto">
-        Pashto
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="polish"
-        />
-        <label class="form-check-label" for="polish">
-        Polish
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="posrtug"
-        />
-        <label class="form-check-label" for="posrtug">
-        Portuguese
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="russia"
-        />
-        <label class="form-check-label" for="russia">
-        Russian
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="spanish"
-        />
-        <label class="form-check-label" for="spanish">
-        Spanish
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="turkish"
-        />
-        <label class="form-check-label" for="turkish">
-        Turkish
-        </label>
-      </div>
-      <hr />
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="ukrain"
-        />
-        <label class="form-check-label" for="ukrain">
-        Ukrainian
+            Italian
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="pashto"
+          />
+          <label class="form-check-label" for="pashto">
+            Pashto
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="polish"
+          />
+          <label class="form-check-label" for="polish">
+            Polish
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="posrtug"
+          />
+          <label class="form-check-label" for="posrtug">
+            Portuguese
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="russia"
+          />
+          <label class="form-check-label" for="russia">
+            Russian
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="spanish"
+          />
+          <label class="form-check-label" for="spanish">
+            Spanish
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="turkish"
+          />
+          <label class="form-check-label" for="turkish">
+            Turkish
+          </label>
+        </div>
+        <hr />
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="ukrain"
+          />
+          <label class="form-check-label" for="ukrain">
+            Ukrainian
           </label>
         </div>
         <hr />
@@ -580,7 +579,7 @@ const Step5 = () => {
             id="urdu"
           />
           <label class="form-check-label" for="urdu">
-          Urdu
+            Urdu
           </label>
         </div>
         <hr />
@@ -611,29 +610,29 @@ const Step6 = () => {
   const marks = [
     {
       value: 1000,
-     
+
     },
     {
       value: 3000,
-     
+
     },
     {
       value: 5000,
-     
+
     },
     {
       value: 10000,
-     
+
     },
     {
       value: 15000,
-     
+
     },
   ];
 
   return (
     <div className="scroll-container">
-      <div class="mb-3 d-grid gap-3 p-0 content">
+      <div class="mb-3 d-grid gap-3 pe-4 content">
         <h6 className="text-center">
           {" "}
           Let's set up the Procedures your clinic provides! We will add these
@@ -643,18 +642,18 @@ const Step6 = () => {
           id="outlined-basic"
           label="Choose category"
           variant="outlined"
-          style={{ width: "100%" }}
+          className="form-control"
         />
         <TextField
           id="outlined-basic"
           label=" Choose Sub-category"
           variant="outlined"
-          style={{ width: "100%" }}
+          className="form-control"
         />
         <textarea
           style={{ fontSize: "12px", height: "150px" }}
           class="form-control"
-          placeholder="Discription "
+          placeholder="Add a detailed description of the procedure and why people should choose your clinic over other providers. The more details the better."
           id="exampleFormControlTextarea1"
           rows="29"
         ></textarea>
@@ -703,64 +702,64 @@ const Step6 = () => {
               id="outlined-basic"
               label=" Min"
               variant="outlined"
-              style={{ width: "100%" }}
+              className="form-control"
             />
           </div>
           <div className="">
-            
+
             <TextField
               id="outlined-basic"
               label="Max"
               variant="outlined"
-              style={{ width: "100%" }}
+              className="form-control"
             />
           </div>
         </div>
 
         <div className="">
-            
-            <TextField
-              id="outlined-basic"
-              label="All Inclusive Price"
-              variant="outlined"
-              style={{ width: "100%" }}
-            />
-          </div>
+
+          <TextField
+            id="outlined-basic"
+            label="All Inclusive Price"
+            variant="outlined"
+            className="form-control"
+          />
+        </div>
 
         <div className="">
-            
-            <TextField
-              id="outlined-basic"
-              label="Instant booking"
-              variant="outlined"
-              style={{ width: "100%" }}
-            />
-          </div>
+
+          <TextField
+            id="outlined-basic"
+            label="Instant booking"
+            variant="outlined"
+            className="form-control"
+          />
+        </div>
 
         <div className="">
-            
-            <TextField
-              id="outlined-basic"
-              label="Instant booking Fixed price for All"
-              variant="outlined"
-              style={{ width: "100%" }}
-            />
-          </div>
+
+          <TextField
+            id="outlined-basic"
+            label="Instant booking Fixed price for All"
+            variant="outlined"
+            className="form-control"
+          />
+        </div>
 
         <p className="mb-0">Select min and max price range</p>
 
-                <Box  sx={{width:"500px"}}>
-                <Slider
-                    sx={{ color: "#07A6A9",height:"4px" }}
-                    aria-label="Temperature"
-                    defaultValue={3000} // Set your initial value here
-                    valueLabelDisplay="auto"
-                    step={null}
-                    marks={marks}
-                    min={1000}
-                    max={15000}
-                  />
-                </Box>
+        <Box  >
+          <Slider
+            sx={{ color: "#07A6A9", height: "4px", maxWidth: "100%" }}
+            aria-label="Temperature"
+            defaultValue={3000} // Set your initial value here
+            valueLabelDisplay="auto"
+            step={null}
+            marks={marks}
+            min={1000}
+            max={15000}
+          />
+        </Box>
 
         <div className="pt-2">
           <Button
@@ -786,13 +785,13 @@ const Step7 = () => {
     <>
       <h4 className="text-center">
         {" "}
-        Summary of your Medical <br /> Practice:{" "}
+        Summary of Your Medical <br /> Practice:{" "}
       </h4>
       <div class="mb-3">
         <textarea
           style={{ fontSize: "9px" }}
           class="form-control"
-          placeholder="Tell People How great you are qualifications and why  they should chose your clinic "
+          placeholder="Tell people all about your clinic and how you stand out from your competitors. What are your qualifications, why should people choose and trust you?"
           id="exampleFormControlTextarea1"
           rows="10"
         ></textarea>
@@ -830,13 +829,13 @@ const Step8 = () => {
 
         <TextField
           id="outlined-basic"
-          label="Mesical Staff Frist Name"
+          label="Medical Practitioner's Name"
           variant="outlined"
           style={{ width: "100%" }}
         />
         <TextField
           id="outlined-basic"
-          label=" Categroy name"
+          label="Medical Specialties (e.g.. Orthopedics, Gynecology, etc.)"
           variant="outlined"
           style={{ width: "100%" }}
         />
@@ -844,7 +843,7 @@ const Step8 = () => {
         <textarea
           style={{ fontSize: "9px" }}
           class="form-control"
-          placeholder="Discription "
+          placeholder="Brief Bio"
           id="exampleFormControlTextarea1"
           rows="10"
         ></textarea>
@@ -892,12 +891,12 @@ const Step9 = () => {
           width: "27%",
         }}
       >
-       
+
         <div class="input-group mb-3 " >
-  
-  <input className="py-2 form-control" style={{ backgroundColor: "black ", borderRadius: "9px", border: "1px solid #07A6A9",color:"white", opacity:"0.5"}} type="text" class="form-control" placeholder="Enter your address" aria-label="Enter your address" aria-describedby="basic-addon1"/>
-</div>
-        
+
+          <input className="py-2 form-control" style={{ backgroundColor: "black ", borderRadius: "9px", border: "1px solid #07A6A9", color: "white", opacity: "0.5" }} type="text" class="form-control" placeholder="Enter your address" aria-label="Enter your address" aria-describedby="basic-addon1" />
+        </div>
+
       </div>
     </>
   );

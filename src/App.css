@@ -277,7 +277,7 @@ ul li {text-align: start;}
 
 .scroll-container {
   height: 300px; /* Set the desired height for the scrollable area */
-  overflow: hidden; /* Hide the scrollbar */
+  /* overflow: hidden; Hide the scrollbar */
   position: relative;
 }
 
@@ -288,16 +288,16 @@ ul li {text-align: start;}
 }
 
 /* Completely hide the scrollbar */
-.content::-webkit-scrollbar {
+/* .content::-webkit-scrollbar {
   width: 0;
   background: transparent;
   display: none;
-}
+} */
 
 /* Hide scrollbar in Firefox */
-.content {
+/* .content {
   scrollbar-width: none;
-}
+} */
 
 
 

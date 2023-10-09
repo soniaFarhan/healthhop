@@ -227,7 +227,7 @@ export const Layout = () => {
       <div className="row justify-content-end mx-1 me-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
-        <Link to={"/singeupstepform"}>
+        <Link to={"/login"}>
           
         <button
         className="btn btn_light rounded-pill fs_10px white_space"

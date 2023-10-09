@@ -3,6 +3,9 @@
 /* utility classes  */
 
 .shrink {
+  transform: scale(0.8); 
+}
+.shrink2 {
   transform: scale(0.9); 
 }
 /* body {

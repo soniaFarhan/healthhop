@@ -15,25 +15,25 @@ export const OurBlogs = () => {
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
+          
           imageSrc: require("../assets/md-1.jpg"),
         },
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
+          
           imageSrc: require("../assets/video-2.jpg"),
         },
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
+          
           imageSrc: require("../assets/video-3.jpg"),
         },
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
+          
           imageSrc: require("../assets/contact-us.jpg"),
         },
       ];
@@ -90,7 +90,7 @@ export const OurBlogs = () => {
                       <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5 ">
                         <h5 className="card-title">{card.title}</h5>
                         <p className="card-text fs_14px" style={{ opacity: "0.8" }}>{card.description}</p>
-                        <p style={{ opacity: "0.8" }}>{card.date}</p>
+                        
                       </div>
                     </div>
                   </div>

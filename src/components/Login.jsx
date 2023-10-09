@@ -81,7 +81,7 @@ const Login = ({ role }) => {
 
           <Grid item xs={12}>
 
-            <Link to={"/home"}>
+            <Link to={"/"}>
             
             <button className='btn btn_green w-100 py-3'>
                 Continue

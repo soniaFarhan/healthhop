@@ -105,7 +105,7 @@ export const ContactUs = () => {
         <div className='custom_padding container-fluid' style={{backgroundColor:"#F8F8F8"}}>
             <div className='d-flex justify-content-center py-3'>
             <div style={{width:"10rem"}}>
-                <img width={'100%'} src={require("../assets/High-res.jpg")} alt="" />
+                <img width={'100%'} src={require("../assets/Transparent-Icon.png")} alt="" />
             </div>
             </div>
             <div className='d-flex justify-content-center'>

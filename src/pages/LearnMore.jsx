@@ -5,6 +5,7 @@ import { Rating } from '@mui/material';
 import ReactSlider from '../components/ReactSLider';
 import HelpIcon from '@mui/icons-material/Help';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
@@ -264,7 +265,7 @@ export const LearnMore = () => {
 
                         <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
                             <p className='mb-0'>
-                                Medical procedure average range
+                            Medical Procedure Only
                             </p>
                             <p className='mb-0'>
                                 $3000-$4000 USD
@@ -273,38 +274,23 @@ export const LearnMore = () => {
 
                         <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
                             <p className='mb-0'>
-                            All Inclusive Price
+                            All-Inclusive Package
                             </p>
                             <p className='mb-0'>
                                 $3000-$4000 USD
                             </p>
                         </div>
 
-                        <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
-                            <p className='mb-0'>
-                            Instant booking
-                            </p>
-                            <p className='mb-0'>
-                                $3000-$4000 USD
-                            </p>
-                        </div>
-                        <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
-                            <p className='mb-0'>
-                            Instant booking Fixed price for All
-                            </p>
-                            <p className='mb-0'>
-                                $3000-$4000 USD
-                            </p>
-                        </div>
+                        
 
                         <div className='d-flex gap-3'>
                             <button className='btn bor-bn py-3 fs_14px' >
                                 Get My Package Quote
                             </button>
 
-                            {/* <button className='btn btn_green border fs_14px'>
-                               Instant Boooking 20% off <br /> an average
-                            </button> */}
+                            <button className='btn btn_green border fs_14px'>
+                               Instant Boooking
+                            </button>
                         </div>
 
                     </div>
@@ -421,6 +407,9 @@ export const LearnMore = () => {
                           </div>
 
                     </div>
+                    <HashLink smooth to="/#navigate" className='btn btn_green border fs_14px'>
+                    Message Clinic
+                            </HashLink>
 
 
             </div>
@@ -437,14 +426,14 @@ export const LearnMore = () => {
                           {/* <hr /> */}
                           <div className='px-3'>
                               <div className='my-3'>
-                                  <input className='form-control' type="text" name="" id="" placeholder='First & Last Name' />
+                                  <input className='form-control' type="text" name="" id="" placeholder='First & Last Name' style={{border: "1px solid #07A6A9"}} />
                               </div>
 
                               <div className='my-3'>
-                                  <input className='form-control' type="email" name="" id="" placeholder='Email' />
+                                  <input className='form-control' type="email" name="" id="" placeholder='Email' style={{border: "1px solid #07A6A9"}} />
                               </div>
                               <div className='my-3'>
-                                  <input className='form-control' type="number" name="" id="" placeholder='Phone' />
+                                  <input className='form-control' type="number" name="" id="" placeholder='Phone' style={{border: "1px solid #07A6A9"}} />
                               </div>
 
                           </div>
@@ -468,7 +457,7 @@ export const LearnMore = () => {
                               <div class="form-check">
                                   <input class="form-check-input" type="checkbox" value="" id="service" />
                                   <label class="form-check-label fs_14px text-break" for="service">
-                                      Transportation Services (Airport/hotel/clinic)
+                                      Transportation Services (Airport/Hotel/Clinic)
                                   </label>
                               </div>
 
@@ -489,7 +478,7 @@ export const LearnMore = () => {
                               <div class="form-check">
                                   <input class="form-check-input" type="checkbox" value="" id="tour" />
                                   <label class="form-check-label fs_14px" for="tour">
-                                      Touristic
+                                  Sightseeing Tours
                                   </label>
                               </div>
 

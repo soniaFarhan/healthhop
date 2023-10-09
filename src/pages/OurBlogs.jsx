@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 export const OurBlogs = () => {
   const [expandedPosts, setExpandedPosts] = useState([]);
@@ -119,7 +121,7 @@ export const OurBlogs = () => {
                           onClick={() => toggleExpand(index)}
                           style={{ cursor: 'pointer', }}
                         >
-                          {expandedPosts[index] ? 'Read Less' : 'Read More'}
+                          {expandedPosts[index] ? <Link style={{textDecoration:"none"}} to="/Blog">Read More</Link> : 'Read More'}
                         </span>
                       </p>
                     </div>

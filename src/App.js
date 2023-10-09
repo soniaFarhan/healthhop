@@ -30,6 +30,7 @@ import Myprofile from './Dashboard Patient/Myprofile';
 import SingeupStepForm from './components/SingeupStepForm';
 import { PMessage } from './Dashboard Patient/PMessage';
 import Profile from './Dashboard Patient/Profile';
+import Blog from './pages/Blog';
 
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path='/procedure' element={<Procedures/>} />
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
+        <Route path='/Blog' element={<Blog/>}/>
        
       </Route>
 

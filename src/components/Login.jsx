@@ -97,7 +97,19 @@ const Login = ({ role }) => {
 
         </Grid>
       </form>
+      <div className="d-flex justify-content-center aling-item-center me-3  mb-1">
+                    <div className="">
+                      <img src={require("../assets/fb.svg").default} alt="" />
+                    </div>
+                    <div className="">
+                      <img
+                        src={require("../assets/google.svg").default}
+                        alt=""
+                      />
+                    </div>
+                  </div>
     </Box>
+   
     </Box>
   );
 };

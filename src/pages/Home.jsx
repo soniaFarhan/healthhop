@@ -272,7 +272,14 @@ const  Orthopedics= [
 
   const str = 'usman'
 
-  const defaultValue =5
+  const defaultValue =5;
+  const valueLabelFormat = (value) => {
+    if (value === 20000) {
+      return 'No max'; // Custom text for 20000
+    }
+    return value; // Default behavior for other values
+  };
+
   const marks = [
     {
       value: 0,
@@ -369,13 +376,14 @@ const  Orthopedics= [
                 <h5 className="py-4">Your Budget</h5>
                 <p>Select min and max price range</p>
 
-                <Box  sx={{   }}>
+                <Box>
                 <Slider
                     sx={{ color: "#07A6A9",height:"10px" }}
                     aria-label="Temperature"
                     defaultValue={3000} // Set your initial value here
                     valueLabelDisplay={12}
                     step={null}
+                    valueLabelFormat={valueLabelFormat}
                     marks={marks}
                     min={0}
                     max={20000}

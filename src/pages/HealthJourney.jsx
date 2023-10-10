@@ -235,7 +235,7 @@ export const HealthJourney = () => {
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="tansportation"/>
                     <label class="form-check-label fs_14px text-break" for="tansportation">
-                       Transportation Services(Airport/hotel/clinic)
+                       Transportation Services (Airport/Hotel/Clinic)
                     </label>
                     </div>
 
@@ -256,7 +256,7 @@ export const HealthJourney = () => {
                     <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="touristic"/>
                     <label class="form-check-label fs_14px" for="touristic">
-                       Touristic Excursions
+                    Sightseeing Tours
                     </label>
                     </div>
 

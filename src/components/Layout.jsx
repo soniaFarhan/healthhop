@@ -86,10 +86,165 @@ export const Layout = () => {
 
 
           <div class="dropdown-content  ">
+          <div class="accordion mt-lg-4 mt-1" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Hair Transplants/ Hair Plugs
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body" style={{backgroundColor:"rgb(7,166,169)"}}>
+      <ul>
+      <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
+      <li><Link>-Beard Transplant</Link></li>
+      <li><Link>-Hair Transplant for Men</Link></li>
+      <li><Link>-Hair Transplant for Women</Link></li>
+    </ul>
+    
+        </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      Dentistry
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Cosmetic Dentistry “Hollywood Smile”</Link></li>
+      <li><Link>-Dental Implants</Link></li>
+      <li><Link>-Crowns</Link></li>
+      <li><Link>-Veneers</Link></li>
+      <li><Link>-Teeth Whitening</Link></li>
+      <li><Link>-Orthodontics - Braces/Invisalign, Corrective Jaw Surgery</Link></li>
+      <li><Link>-Endodontics - Root Treatments</Link></li>
+      <li><Link>-Oral Surgery</Link></li>
+      <li><Link>-Prosthodontics - Full Mouth Reconstruction, Dental Crowns & Bridges, Dentures</Link></li>
+      <li><Link>-Periodontal - Gum Surgeries, Gum Cleaning, Gum Depigmentation</Link></li>
+      <li><Link>-General dentistry - Fillings, Cleanings</Link></li>
+      <li><Link>-Implantology - Dental Implants</Link></li>
+    </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Plastic Surgery and Aesthetic Surgeries
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Liposuction</Link></li>
+      <li><Link>-Breast Lift and Augmentation</Link></li>
+      <li><Link>-Abdominoplasty (Tummy Tuck)</Link></li>
+      <li><Link>-Rhinoplasty (Nose Job)</Link></li>
+      <li><Link>-Facelift</Link></li>
+      <li><Link>-Lips Aesthetic - lip operations</Link></li>
+      <li><Link>-Mommy Makeover (Labiaplasty, Vaginoplasty)</Link></li>
+      <li><Link>-Eye lift</Link></li>
+      <li><Link>-Neck Lift</Link></li>
+      <li><Link>-Brow/ Forehead lift</Link></li>
+      <li><Link>-Otoplasty (Ear Pinning)</Link></li>
+      <li><Link>-Reconstructive (other surgery)</Link></li>
+    </ul>
+         </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      Aesthetic Procedures (Non-Surgical)
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Botox and Fillers</Link></li>
+      <li><Link>-Chemical Peel</Link></li>
+      <li><Link>-Laser Hair Removal</Link></li>
+      <li><Link>-Microdermabrasion</Link></li>
+      <li><Link>-Intense Pulsed Light (IPL) Treatment</Link></li>
+      <li><Link>-Cellulite Laser and Cream Treatments</Link></li>
+    </ul>
+         </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      Bariatric Surgery (Obesity Surgery)
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Gastric Bypass</Link></li>
+      <li><Link>-Gastric Sleeve</Link></li>
+      <li><Link>-Stomach Balloon</Link></li>
+      <li><Link>-Stomach Band</Link></li>
+    </ul>
+         </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      Ophthalmology (Eye Procedures and Surgeries)
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Eye Procedures and Surgeries</Link></li>
+    </ul>
+         </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      Fertility & IVF
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Invitro Fertilization IVF/ICSI</Link></li>
+      <li><Link>-Egg (embryo) & Sperm Freezing</Link></li>
+      <li><Link>-Intrauterine Insemination (IUI)</Link></li>
+      <li><Link>-Other Fertility Procedures and Diagnosis</Link></li>
+    </ul>
+         </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      Orthopedics (All)
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul className="">
+      <li><Link>-Spine Surgeries</Link></li>
+      <li><Link>-Sports Injuries</Link></li>
+      <li><Link>-Knee, Hip, Shoulder Surgeries</Link></li>
+      <li><Link>-Carpal Tunnel</Link></li>
+      <li><Link>-And more</Link></li>
+    </ul>
+         </div>
+    </div>
+  </div>
+</div>
           
 
            
-  <div className="main   " >
+  {/* <div className="main" >
 
     <div className="d-flex flex-wrap p-5  mt-4" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
     <ul className="pb-2 p-2" style={{ listStyleType: "" }}>
@@ -172,7 +327,7 @@ export const Layout = () => {
       <li><Link>-And more</Link></li>
     </ul>
     </div>
-  </div>
+  </div> */}
 </div>
 
 
@@ -227,7 +382,7 @@ export const Layout = () => {
       <div className="row justify-content-end mx-1 me-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
-        <Link to={"/singeupstepform"}>
+        <Link to={"/login"}>
           
         <button
         className="btn btn_light rounded-pill fs_10px white_space"

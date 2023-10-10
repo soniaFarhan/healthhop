@@ -79,7 +79,7 @@ function SideNav(props) {
   const drawer = (
     <div className="" style={{backgroundColor:"black",height:"100vh"}}>
       <div className="p-3" style={{width:"7rem"}}>
-      <img width={"100%"} src={require("../assets/HealthHop logo reverse on dark background (1).png")} alt="" />
+      <img width={"90px"} className="ms-3" src={require("../assets/HealthHop logo reverse on dark background (1).png")} alt="" />
       </div>
 
       <Divider sx={{ backgroundColor: 'white' }} />

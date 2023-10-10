@@ -46,6 +46,7 @@ const handleChange = (event) => {
 
   return (
     <>
+    <h4 className="my-3">Order Receipts</h4>
 <div className="mt-4 ms-auto" style={{width:"10rem"}}>
 <Box sx={{ minWidth: 120,bgcolor:"white" }}>
       <FormControl fullWidth>

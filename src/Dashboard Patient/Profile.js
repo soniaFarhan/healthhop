@@ -28,7 +28,7 @@ const Profile = () => {
 
     <div className=' mt-3 container px-0 w-100' style={{borderRadius:"20px",overflow:"hidden",backgroundColor:"white"}}>
         <div className='px-4' style={{backgroundColor:"#91D7D8",}}>
-            <h2 className='py-3 ' style={{color:"white"}}>Profile Detail</h2>
+            <h2 className='py-3 ' style={{color:"white"}}>Profile Details</h2>
         </div>
         <div className="col d-flex justify-content-start px-4">
            <div className="mt-2">
@@ -48,7 +48,7 @@ const Profile = () => {
 
           <div className="row mt-2 py-2 px-3">
             <div className="col-md-6 mt-3">
-              <label htmlFor="" className='fw-bold'>Full |Name</label>
+              <label htmlFor="" className='fw-bold'>Full Name</label>
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Name'/>
             </div>
             <div className="col-md-6 mt-3">
@@ -72,11 +72,11 @@ const Profile = () => {
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Current Weight'/>
             </div>
             <div className="col-md-6 mt-3">
-              <label htmlFor="" className='fw-bold'>Current Medication</label>
-              <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Current Medication'/>
+              <label htmlFor="" className='fw-bold'>Current Medications</label>
+              <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Current Medications'/>
             </div>
             <div className="col-md-6 mt-3">
-              <label htmlFor="" className='fw-bold'>Please list current medication condition</label>
+              <label htmlFor="" className='fw-bold'>Please List Any Existing Medical Conditions (if any)</label>
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Medication'/>
             </div>
             <div className="col-md-12 mt-3">
@@ -84,12 +84,12 @@ const Profile = () => {
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Country'/>
             </div>
             <div className="col-md-12 mt-3">
-              <label htmlFor="" className='fw-bold'>Are you allergic to any medication?If please list them here</label>
+              <label htmlFor="" className='fw-bold'>“Are you allergic to any medications? If so, please list them here</label>
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='List here'/>
             </div>
             </div>
             <div className="col mt-4 px-4">
-           <label htmlFor="" className='fw-bold'>Any photos to uplaod  for your medical  provider, please upload them here?(upload photos to their profile page)</label>
+           <label htmlFor="" className='fw-bold'>If you would like to upload any photos or videos for your medical provider, you may do so here.</label>
            <div className="mt-2">
  
  

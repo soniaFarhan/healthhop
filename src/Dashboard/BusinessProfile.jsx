@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Modal from 'react-bootstrap/Modal';
 export const BusinessProfile = () => {
+  const [repNameModal, setRepNameModal] = useState(false);
+  const [businessName, setBusinessName] = useState(false);
   const [modalShow, setModalShow] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
   const [modalShow3, setModalShow3] = useState(false);
@@ -42,9 +44,10 @@ export const BusinessProfile = () => {
       <div className="">
 
         <div className='bp-img d-flex justify-content-center mt-3 align-items-center '>
-          <h2 className='text-white'>
-            Medical Business name
-          </h2>
+
+          <div className='d-flex justify-content-between align-items-center'>
+            <h2 className='text-white'>Medical Business name</h2><BorderColorOutlined onClick={()=>setBusinessName(true)} className="ms-2" sx={{color:"#07A6A9",cursor:"pointer"}}/>
+          </div>
 
 
         </div>
@@ -60,7 +63,9 @@ export const BusinessProfile = () => {
               </div>
 
               <div className="mb-auto ms-5">
-                <h5>Rep name here</h5>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <h5>Rep name here:</h5><BorderColorOutlined onClick={()=>setRepNameModal(true)} className="ms-2" sx={{color:"#07A6A9",cursor:"pointer"}}/>
+                </div>
                 <p style={{ fontSize: "13px" }}>medicalporvider@gamil.com</p>
               </div>
               <p className=' ms-md-3 ms-5 ' style={{ fontSize: "13px", marginTop: '32px' }}>  +92838489093</p>
@@ -83,7 +88,9 @@ export const BusinessProfile = () => {
         <div className="row mt-md-0 my-3">
           <div className="col-lg-6 mb-3 ">
             <div className='me-md-2 h-100 shadows4 bg-white pt-3 ps-3 pe-5'  style={{ borderRadius: "20px", paddingBottom: "100px" }}>
-            <h5>Summary of your medical practice:</h5>
+            <div className='d-flex justify-content-between align-items-center'>
+            <h5>Summary of your medical practice:</h5><BorderColorOutlined onClick={()=>setModalShow(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
+            </div>
             <p className='cu-color' style={{ fontSize: "14px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quisquam fugiat corrupti veniam, impedit praesentium sapiente odio, iure vel alias asperiores hic, reiciendis consectetur magni! Odit ullam dolor optio distinctio.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident impedit omnis itaque cumque earum quod laboriosam, eaque sequi, optio magnam laudantium ratione, iure architecto animi? Esse labore quibusdam quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis eius quas reiciendis magnam modi ipsam ipsum doloribus tempora, dicta ea perferendis quo aspernatur fugit, placeat obcaecati sit commodi nesciunt?
             </p>
@@ -392,6 +399,14 @@ export const BusinessProfile = () => {
         </div>
       </div>
 
+      {repNameModal&& <RepNameModal
+    show={repNameModal}
+    onHide={() => setRepNameModal(false)}
+    />}
+      {businessName&& <BusinessName
+    show={businessName}
+    onHide={() => setBusinessName(false)}
+    />}
       {modalShow&& <MohModal1
     show={modalShow}
     onHide={() => setModalShow(false)}
@@ -416,6 +431,90 @@ export const BusinessProfile = () => {
   )
 }
 
+function RepNameModal({onHide, show,}) {
+  
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+        Rep Name
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <>
+      <h4 className="text-center">
+        Edit Rep Name
+      </h4>
+      <div class="mb-3">
+      <label htmlFor="">Edit Rep Name</label>
+        <input
+          style={{ fontSize: "9px" }}
+          class="form-control"
+          placeholder="Name"
+        />
+      </div>
+    </>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
+}
+function BusinessName({onHide, show,}) {
+  
+  return (
+    <form>
+    <Modal
+     show={show}
+     onHide={onHide}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      style={{zIndex:'10000'}}
+    >
+      <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+        <Modal.Title id="contained-modal-title-vcenter">
+        Medical Business Name
+        </Modal.Title>
+      </Modal.Header>
+      <form >
+      <Modal.Body>
+      <>
+      <h4 className="text-center">
+        Edit Medical Business Name
+      </h4>
+      <div class="mb-3">
+      <label htmlFor="">Edit Medical Business Name</label>
+        <input
+          style={{ fontSize: "9px" }}
+          class="form-control"
+          placeholder="Medical Business Name"
+        />
+      </div>
+    </>
+      
+      </Modal.Body>
+      <Modal.Footer>
+        <button type="submit" class="btn btn_green text-white">Save </button>
+      </Modal.Footer>
+      </form>
+    </Modal>
+      </form>
+  );
+}
 
 function MohModal1({onHide, show,}) {
   

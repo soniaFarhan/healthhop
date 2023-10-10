@@ -31,6 +31,8 @@ import SingeupStepForm from './components/SingeupStepForm';
 import { PMessage } from './Dashboard Patient/PMessage';
 import Profile from './Dashboard Patient/Profile';
 import Blog from './pages/Blog';
+import InquiryPatientProfile from './Dashboard/InquiryPatientProfile';
+import { InquiryBusinessProfile } from './Dashboard Patient/InquiryBusinessProfile';
 
 
 
@@ -54,6 +56,7 @@ function App() {
 
       <Route element={<DashboardLayout/>}>
         <Route path='/inquiries' element={<Inquiries/>}/>
+        <Route path='/inquiryPatient' element={<InquiryPatientProfile/>}/>
         <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
         <Route path='/packages' element={<Packges/>}/>
         <Route path='/calendar' element={<Calender month={"month"} patient={"patient"}/>}/>
@@ -67,6 +70,7 @@ function App() {
 
       <Route element={<DashboardLayoutPatient/>}>
        <Route path='/patient-inquiries' element={<MyInquiries/>}/>
+       <Route path='/inquirybusiness' element={<InquiryBusinessProfile/>}/>
         <Route path='/patient-booking' element={<MyBooking/>}/>
         <Route path='/patient-calendar' element={<Calender month={"month"} />}/>
         <Route path='/patient-message' element={<PMessage/>}/>

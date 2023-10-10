@@ -2,6 +2,7 @@ import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from '@m
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BiSearch } from 'react-icons/bi'
+import { FaSortAlphaDown, FaCalendar, FaDollarSign } from 'react-icons/fa';
 
 export const Inovice = () => {
   // const data=[
@@ -32,6 +33,18 @@ data.map(()=>{
 <div className="col-lg-4 col-sm-6 col-12 mt-md-0 mt-3 mx-lg-0 mx-auto position-relative" >
               <input type="text" class="form-control rounded-pill border-1 border-dark bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{  backgroundColor: "rgb(251,253,251)" }} />
               <button className='position-absolute translate-middle border-0 bg-transparent' style={{top:"50%", right:"0"}}><BiSearch style={{fontSize:"20px"}} /></button>
+            </div>
+            <div className='col-lg-4 col-sm-6 col-12'></div>
+            <div className="col-lg-4 col-sm-6 col-12 text-end">
+              <button className='btn'>
+                <FaSortAlphaDown /> A-Z
+              </button>
+              <button className='btn'>
+                <FaCalendar /> Date
+              </button>
+              <button className='btn'>
+                <FaDollarSign /> Paid
+              </button>
             </div>
 </div>
       <div className=" my-3 p-3 container shadows2 " style={{ minHeight: "70vh", borderRadius: "14px", backgroundColor: "#ffff" }}>

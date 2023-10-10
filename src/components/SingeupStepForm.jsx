@@ -703,7 +703,7 @@ const Step6 = () => {
           <div className="">
             <TextField
               id="outlined-basic"
-              label=" Min"
+              label=" Min Price in USD"
               variant="outlined"
               className="form-control"
             />
@@ -712,7 +712,7 @@ const Step6 = () => {
 
             <TextField
               id="outlined-basic"
-              label="Max"
+              label="Max Price in USD              "
               variant="outlined"
               className="form-control"
             />

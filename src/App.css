@@ -231,9 +231,7 @@ color: white !important ;
  
   display: none;
   position: absolute;
-  top: 39px;
-  
- 
+  top: 40px;
  
   z-index: 9;
 
@@ -268,6 +266,9 @@ color: white !important ;
   display: block;
 
  
+}
+.accordion-body{
+  background-color: rgb(7,166,169);
 }
 
 ul li {text-align: start;}
@@ -518,69 +519,21 @@ select.bg-select option{
   text-wrap: nowrap;
 }
 .dropdown-content{
-  left: -400px;
-  width: 1200px;
-  text-wrap: nowrap;
+  width: 450px ;
+  text-wrap: wrap;
  
+}
+@media screen and (max-width:480px) {
+  .dropdown-content{
+    width: 100%;
+  }
+  
 }
 .text_dark{
   color: #000 !important;
 }
 
-.main ul{
-  width: 25%;
-  text-wrap: wrap;
-}
-@media screen and (max-width:1025px){
-  .dropdown-content{
-      left: -280px;
-      width: 970px;
 
-  }
-  .main ul{
-    width: 25%;
-    text-wrap: wrap;
-  }
-}
-@media screen and (max-width:768px){
-  .dropdown-content{
-      left: 0px;
-      width: 700px;
-
-  }
-  .main ul{
-    width: 33.33%;
-    text-wrap: wrap;
-  }
-}
-@media screen and (max-width:426px){
-  .dropdown-content{
-      left: 0px;
-      width: 400px;
-      text-wrap: wrap
-
-  }
-  .main ul{
-    width: 100%;
-    text-wrap: wrap;
-  }
-}
-@media screen and (max-width:376px){
-  .dropdown-content{
-      left: 0px;
-      width: 350px;
-      text-wrap: wrap
-
-  }
-}
-@media screen and (max-width:321px){
-  .dropdown-content{
-      left: 0px;
-      width: 300px;
-      text-wrap: wrap
-
-  }
-}
 
 .custom-progress-bar {
   height: 10px; /* Adjust the height as per your requirements */

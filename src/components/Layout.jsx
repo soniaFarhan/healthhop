@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Outlet,
   Link,
@@ -23,6 +23,12 @@ export const Layout = () => {
 
   // Access specific query parameters
   const method = searchParams.get('method');
+
+  const [role, setRole] = useState('defaultRole');
+
+  const handleButtonClick = (newRole) => {
+    setRole(newRole);
+  };
 
   return (
     <div className="layout">
@@ -382,9 +388,9 @@ export const Layout = () => {
       <div className="row justify-content-end mx-1 me-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
-        <Link to={"/login"}>
+        <Link to="/login" state={{from:"dr"}}>
           
-        <button
+        <button 
         className="btn btn_light rounded-pill fs_10px white_space"
        
       >
@@ -398,10 +404,9 @@ export const Layout = () => {
       </Link>
 
 
-      <Link to={"/"}>
-     
-      <button  
-       
+      <Link to="/login">
+
+      <button   
        className="btn btn_light rounded-pill fs_10px white_space"
      >
        <Login fontSize="small"  style={{marginRight:"7px"}}/>

@@ -238,6 +238,8 @@ async function fetchData(){
         <label htmlFor="packageSelect">Package</label>
         </div>
         </div>
+
+        <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Paste Metting link' /></div>
         {/* <div className="col-md-10 mx-auto mb-2"><button type='submit' className='btn btn-primary w-100'>Done</button></div> */}
       </div>
         </Modal.Body>
@@ -433,12 +435,14 @@ async function fetchData(){
            <div className='col-10 d-flex flex-column '>
              <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>First floor Akbar plaza sialkot</p></div>
            </div>
+{/* 
            <div className='col-sm-2 text-sm-end'>
              <p className='fs_14px fw-bold'>Location:</p>
            </div>
            <div className='col-10 d-flex flex-column '>
              <div className='my-auto'><p className='rounded rounded-pill w-fit px-2 fs_14px'>Turkey</p></div>
-           </div>
+           </div> */}
+
          </div>
         </Modal.Body>
         <Modal.Footer>

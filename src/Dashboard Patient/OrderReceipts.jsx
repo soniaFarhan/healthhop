@@ -50,7 +50,7 @@ const handleChange = (event) => {
 <div className="mt-4 ms-auto" style={{width:"10rem"}}>
 <Box sx={{ minWidth: 120,bgcolor:"white" }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">In Progress</InputLabel>
+        <InputLabel id="demo-simple-select-label">Sort</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -58,9 +58,9 @@ const handleChange = (event) => {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={10}>Sort By Date</MenuItem>
+          <MenuItem value={20}>Sort Alphabetically</MenuItem>
+          <MenuItem value={30}>Sort By Price </MenuItem>
         </Select>
       </FormControl>
     </Box>

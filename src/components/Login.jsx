@@ -3,17 +3,23 @@ import { Box, Divider, Grid, Paper, TextField, Typography } from "@mui/material"
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Popup3 from './Popup3';
 
-const Login = ({ role }) => {
+const Login = ({ role, Content }) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState({ text: "", color: "" });
   const [loading, setLoading] = useState(false);
-  const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
 
+  
+
+  const {from} = location?.state||{}; 
+
+  console.log(location,"klkl")
   // Access specific query parameters
   const method = searchParams.get('method');
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -97,6 +103,7 @@ const Login = ({ role }) => {
 
         </Grid>
       </form>
+      {!from &&
       <div className="d-flex justify-content-center aling-item-center me-3  mb-1">
                     <div className="">
                       <img src={require("../assets/fb.svg").default} alt="" />
@@ -107,7 +114,8 @@ const Login = ({ role }) => {
                         alt=""
                       />
                     </div>
-                  </div>
+        </div>
+      }
     </Box>
    
     </Box>

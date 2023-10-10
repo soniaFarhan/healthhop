@@ -85,6 +85,28 @@ export const LearnMore = () => {
           imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         }
       ];
+
+
+      const gallery=[
+
+        {
+img:<img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={require("../assets/video-1.jpg")} alt="" />
+        },
+        {
+img:<img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-2.jpg")} alt="" />
+        },
+        {
+img: <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/md-5.jpg")} alt="" />
+        },
+        {
+img:     <img className='w-100 h-100 ' style={{objectFit:"fill"}}  src={require("../assets/blog-card-2.png")} alt="" />
+        },
+
+
+
+
+
+      ]
       
       
     

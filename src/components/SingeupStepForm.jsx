@@ -7,6 +7,8 @@ import { Box, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import Slider from "@mui/material/Slider";
+import Popupmedical from "./Popupmedical";
+import Popupprocedure from "./Popupprocedures";
 
 const SingeupStepForm = () => {
   const [step, setStep] = useState(1);
@@ -44,7 +46,7 @@ const SingeupStepForm = () => {
                   style={{ position: step === 1 ? "absolute" : "relative" }}
                 >
                   <button className="btn ms-2 py-3" onClick={prevStep}>
-                    {" "}
+                
                     <ArrowBack />
                   </button>
                 </div>) : <div
@@ -90,6 +92,7 @@ const SingeupStepForm = () => {
               {step === 7 && <Step7 />}
               {step === 8 && <Step8  />}
               {step === 9 && <Step9 />}
+          
             </div>
 
             <div className="footer m-4 mt-1 mb-3 pb-1">
@@ -609,28 +612,8 @@ const Step6 = () => {
       };
     }
   }
-  const marks = [
-    {
-      value: 1000,
 
-    },
-    {
-      value: 3000,
-
-    },
-    {
-      value: 5000,
-
-    },
-    {
-      value: 10000,
-
-    },
-    {
-      value: 15000,
-
-    },
-  ];
+ 
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
   return (
@@ -768,19 +751,10 @@ const Step6 = () => {
       </div>
     
 
-        <p className="mb-0">Select min and max price range</p>
+       
 
         <Box  >
-          <Slider
-            sx={{ color: "#07A6A9", height: "4px", maxWidth: "100%" }}
-            aria-label="Temperature"
-            defaultValue={3000} // Set your initial value here
-            valueLabelDisplay="auto"
-            step={null}
-            marks={marks}
-            min={1000}
-            max={15000}
-          />
+         
         </Box>
 
         <div className="pt-2">
@@ -794,8 +768,23 @@ const Step6 = () => {
               border: "1px solid #07A6A9",
             }}
           >
-            save
+            Save
           </Button>
+        </div>
+        <div className="pt-2">
+          {/* <Button
+            style={{
+              backgroundColor: " transparent",
+              color: "#07A6A9",
+              padding: "16px 80px",
+              fontSize: "15px",
+              width: "100%",
+              border: "1px solid #07A6A9",
+            }}
+          >
+            Add
+          </Button> */}
+          <Popupprocedure/>
         </div>
       </div>
     </div>
@@ -897,18 +886,8 @@ const Step8 = () => {
       </div>
 
       <div className="pt-2">
-        <Button
-          style={{
-            backgroundColor: " transparent",
-            color: "#07A6A9",
-            padding: "16px 80px",
-            fontSize: "15px",
-            width: "100%",
-            border: "1px solid #07A6A9",
-          }}
-        >
-          Add
-        </Button>
+       
+        <Popupmedical/>
       </div>
     </>
   );
@@ -945,6 +924,13 @@ const Step9 = () => {
         </div>
 
       </div>
+    </>
+  );
+};
+const Step10 = () => {
+  return (
+    <>
+shwgshgsjwj
     </>
   );
 };

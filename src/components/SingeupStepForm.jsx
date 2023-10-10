@@ -865,14 +865,12 @@ const Step8 = () => {
           className={`form-control ${isChecked1 ? '' : 'disabled'}`}
           disabled={!isChecked1}
         />
-        <TextField
-          id="outlined-basic"
-          label="Medical Specialties (e.g.. Orthopedics, Gynecology, etc.)"
-          variant="outlined"
-          style={{ width: "100%" }}
-          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
-          disabled={!isChecked1}
-        />
+       <select class="form-select" aria-label="Default select example">
+        <option disabled selected>Choose one</option>
+        <option value="1">Orthopedics</option>
+        <option value="2">Gynecology</option>
+        <option value="3">Orthopedics</option>
+      </select>
 
         <textarea
           style={{ fontSize: "9px" }}

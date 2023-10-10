@@ -147,7 +147,7 @@ export const HealthJourney = () => {
                     <div className='d-flex justify-content-between flex-column flex-md-row'>
                         <div>
                             <p className='fs_14px fw-bold mb-0'>
-                                Averrage Price
+                            Average Price
                             </p>
                             <p className='fs_14px'>
                                 ( {data.price} )
@@ -156,7 +156,7 @@ export const HealthJourney = () => {
                             <div className='d-flex  align-items-center gap-2'>
                             <Rating className='mb-0' name="size-medium" defaultValue = {defaultValue} /> 
                             <span className='fw-bold'>  
-                            ({data.defaultValue} review) </span>
+                            ({data.defaultValue} reviews) </span>
                             </div>
                         </div>
     

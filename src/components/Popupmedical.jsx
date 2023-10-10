@@ -32,7 +32,7 @@ function MyVerticallyCenteredModal(props) {
 
 
 <select class="form-select" aria-label="Default select example">
-  <option selected>Choose one(e.g.. Orthopedics, Gynecology, etc.)</option>
+  <option disabled selected>Choose one</option>
   <option value="1">Orthopedics</option>
   <option value="2">Gynecology</option>
   <option value="3">Orthopedics</option>

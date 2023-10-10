@@ -6,6 +6,7 @@ import ReactSlider from '../components/ReactSLider';
 import HelpIcon from '@mui/icons-material/Help';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Popupimg from '../components/Popupimg';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
@@ -193,6 +194,7 @@ export const LearnMore = () => {
                                       </div>
                                   </div>
                               </div>
+                                    
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                               <div className='d-flex flex-column align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
@@ -250,6 +252,7 @@ export const LearnMore = () => {
                         <p  style={{cursor:"pointer"}}>
                           <a class="nav-link" href="#gallery">  <span className='mx-2'>Gallery</span> </a>
                         </p>
+                       
                      </div>
                      
 
@@ -409,10 +412,16 @@ export const LearnMore = () => {
                          <div className='row'>
                             {
                               gallery.map((pic) => (
-                                
-                                    <div className="col-4 p-2">{pic.img}</div>
+                                <>
+                               
+                                    <div className="col-4 p-2">{pic.img  }
+                                    
+                                    
+                                  <Popupimg  img={pic.img}/>
+                                    </div>
                                 
 
+                                  </>
                                 ))}
                                 </div>
                         

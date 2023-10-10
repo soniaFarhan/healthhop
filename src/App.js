@@ -51,7 +51,6 @@ function App() {
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
         <Route path='/Blog' element={<Blog/>}/>
-       
       </Route>
 
       <Route element={<DashboardLayout/>}>

@@ -27,8 +27,8 @@ export const Layout = () => {
   return (
     <div className="layout">
      
-  <nav className="navbar navbar-expand-lg navbar-light navbg"  style={{backgroundColor:"#012837",color:"white",zIndex:"999"}}>
-  <div className="container-fluid">
+  <nav className="navbar navbar-expand-lg navbar-light navbg  "  style={{backgroundColor:"#012837",color:"white",zIndex:"999"}}>
+  <div className="container-fluid  shrink2">
    
 
     <Link className=" ms-2" to="/">
@@ -277,9 +277,9 @@ export const Layout = () => {
           <div class="row d-flex justify-content-around py-3">
         
             <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-between gap-3">
-              <div style={{width:"10rem"}}>
+              <div style={{width:"11rem"}}>
                 <img
-                  src={require("../assets/HighRes_Icon-And-Name.jpg")}
+                  src={require("../assets/HealthHop logo reverse on dark background (1).png")}
                   className="img-fluid"
                 />
               </div>

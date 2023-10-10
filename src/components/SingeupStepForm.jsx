@@ -88,7 +88,7 @@ const SingeupStepForm = () => {
               {step === 5 && <Step5 />}
               {step === 6 && <Step6 />}
               {step === 7 && <Step7 />}
-              {step === 8 && <Step8 />}
+              {step === 8 && <Step8  />}
               {step === 9 && <Step9 />}
             </div>
 
@@ -168,7 +168,9 @@ const SingeupStepForm = () => {
                 {step === 8 && (
                   <div className="mt-2">
                     <Button
-                      style={{
+                    onClick={() => nextStep()}
+                      style={{ 
+                        
                         backgroundColor: "white",
                         color: "#07A6A9",
                         padding: "16px 80px",
@@ -280,7 +282,7 @@ const Step3 = () => {
 const Step4 = () => {
   return (
     <div className="scroll-container">
-      <div className="content">
+      <div className="content px-2">
         <h6 className="text-center px-4">
           Which one of these extra services does your business provide your patients?
         </h6>
@@ -375,7 +377,7 @@ const Step4 = () => {
 const Step5 = () => {
   return (
     <div className="scroll-container">
-      <div className="content">
+      <div className="content px-2">
         <h6 className="text-center">
           Choose the Language, you want to <br /> provide your services in
         </h6>
@@ -629,10 +631,11 @@ const Step6 = () => {
 
     },
   ];
-
+  const [isChecked1, setIsChecked1] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
   return (
     <div className="scroll-container">
-      <div class="mb-3 d-grid gap-3 pe-4 content">
+      <div class="mb-3 d-grid gap-3 pe-4 px-2 content">
         <h6 className="text-center">
           {" "}
           Let's set up the Procedures your clinic provides! We will add these
@@ -685,13 +688,13 @@ const Step6 = () => {
                 hidden
                 multiple
               />
-              <label
-                style={{ fontSize: "60px" }}
-                className="text-center "
-                htmlFor="img"
-              >
-                <i class="bi bi-plus"></i>
-              </label>
+               <label  style={{fontSize:"20px", border:"3px dashed #9E9E9E",width:"120px",height:"120px"}} className="text-center px-4 rounded d-flex " htmlFor="img">
+
+                <div className="d-flex alig-items-center justify-content-center m-auto">
+                <p style={{fontSize:"9px"}}>Add photos/Video</p>  <i class="bi bi-plus "></i>
+                </div>
+                
+           </label>
             </div>
           </div>
         </div>
@@ -725,26 +728,45 @@ const Step6 = () => {
             className="form-control"
           />
         </div>
-
-        <div className="">
-
-          <TextField
-            id="outlined-basic"
-            label="Instant booking"
-            variant="outlined"
-            className="form-control"
+      
+      <div className="d-flex align-items-center ">
+        <div className="form-check my-auto">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            checked={isChecked1}
+            onChange={() => setIsChecked1(!isChecked1)}
+            id="1"
           />
         </div>
+        <TextField
+          id="outlined-basic"
+          label="Instant booking"
+          variant="outlined"
+          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
+          disabled={!isChecked1}
+        />
+      </div>
 
-        <div className="">
-
-          <TextField
-            id="outlined-basic"
-            label="Instant booking Fixed price for All"
-            variant="outlined"
-            className="form-control"
+      <div className="d-flex align-items-center">
+        <div className="form-check my-auto">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            checked={isChecked2}
+            onChange={() => setIsChecked2(!isChecked2)}
+            id="2"
           />
         </div>
+        <TextField
+          id="outlined-basic"
+          label="Instant booking Fixed price for All"
+          variant="outlined"
+          className={`form-control ${isChecked2 ? '' : 'disabled'}`}
+          disabled={!isChecked2}
+        />
+      </div>
+    
 
         <p className="mb-0">Select min and max price range</p>
 
@@ -800,12 +822,27 @@ const Step7 = () => {
   );
 };
 const Step8 = () => {
+
+    const [isChecked1, setIsChecked1] = useState(false);
   return (
     <>
       <h4 className="text-center">Add Medical Staff</h4>
 
       <div class="mb-3 d-grid gap-3">
-        <div className=""></div>
+      <div className="form-check my-auto">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            checked={isChecked1}
+            onChange={() => setIsChecked1(!isChecked1)}
+            id="1"
+          />
+             <label class="form-check-label" for="medical">
+             “Do you want to add medical staff to your business profile?
+          </label>
+        </div>
+      
+
 
         <TextField
           hidden
@@ -813,8 +850,12 @@ const Step8 = () => {
           id="q"
           label=" Upload Image"
           variant="outlined"
+          
           style={{ width: "100%", backgroundColor: "#DFDFDF" }}
+          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
+          disabled={!isChecked1}
         />
+        
         <label
           className="px-2 py-3 my-auto"
           htmlFor="q"
@@ -832,12 +873,16 @@ const Step8 = () => {
           label="Medical Practitioner's Name"
           variant="outlined"
           style={{ width: "100%" }}
+          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
+          disabled={!isChecked1}
         />
         <TextField
           id="outlined-basic"
           label="Medical Specialties (e.g.. Orthopedics, Gynecology, etc.)"
           variant="outlined"
           style={{ width: "100%" }}
+          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
+          disabled={!isChecked1}
         />
 
         <textarea
@@ -846,6 +891,8 @@ const Step8 = () => {
           placeholder="Brief Bio"
           id="exampleFormControlTextarea1"
           rows="10"
+          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
+          disabled={!isChecked1}
         ></textarea>
       </div>
 

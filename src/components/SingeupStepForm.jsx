@@ -689,7 +689,6 @@ const Step6 = () => {
             <TextField
               id="outlined-basic"
               label=" Min Price in USD"
-              label=" Min Price in USD"
               variant="outlined"
               className="form-control"
             />

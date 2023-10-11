@@ -6,6 +6,7 @@ import ReactSlider from '../components/ReactSLider';
 import HelpIcon from '@mui/icons-material/Help';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Popupimg from '../components/Popupimg';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
@@ -85,6 +86,34 @@ export const LearnMore = () => {
           imageSrc: require("../assets/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture.png")
         }
       ];
+
+
+      const gallery=[
+
+          {
+              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/video-1.jpg")} alt="" />
+          },
+          {
+              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/video-2.jpg")} alt="" />
+          },
+          {
+              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/md-5.jpg")} alt="" />
+          },
+          {
+              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/blog-card-2.png")} alt="" />
+          },
+          {
+              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/contact-us.png")} alt="" />
+          },
+          {
+              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/altumcode-dC6Pb2JdAqs-unsplash.png")} alt="" />
+          },
+
+
+
+
+
+      ]
       
       
     
@@ -165,6 +194,7 @@ export const LearnMore = () => {
                                       </div>
                                   </div>
                               </div>
+                                    
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                               <div className='d-flex flex-column align-items-center justify-content-center bg-dark rounded-5'><span class="carousel-control-prev-icon" aria-hidden="true"></span></div>
@@ -222,6 +252,7 @@ export const LearnMore = () => {
                         <p  style={{cursor:"pointer"}}>
                           <a class="nav-link" href="#gallery">  <span className='mx-2'>Gallery</span> </a>
                         </p>
+                       
                      </div>
                      
 
@@ -378,33 +409,22 @@ export const LearnMore = () => {
                     Gallery
                     </h3></a>
 
-                          <div className='my-4 '>
-                              <div className=' row'>
-                                  <div className='col-md-4 col-6'>
-                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={require("../assets/video-1.jpg")} alt="" />
-                                  </div>
+                         <div className='row'>
+                            {
+                              gallery.map((pic) => (
+                                <>
+                               
+                                    <div className="col-4 p-2">{pic.img  }
+                                    
+                                    
+                                  <Popupimg  img={pic.img}/>
+                                    </div>
+                                
 
-                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
-                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-2.jpg")} alt="" />
-                                  </div>
-                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
-                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/md-5.jpg")} alt="" />
-                                  </div>
-                              </div>
-
-                              <div className=' my-3 row'>
-                                  <div  className='col-md-4 col-6'>
-                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/video-3.jpg")} alt="" />
-                                  </div>
-
-                                  <div  className='col-md-4 col-6 mt-md-0 mt-3'>
-                                      <img className='w-100 h-100 ' style={{objectFit:"fill"}}  src={require("../assets/blog-card-2.png")} alt="" />
-                                  </div>
-                                  <div  className='col-md-4 col-6'>
-                                      <img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}}  src={require("../assets/md-4.jpg")} alt="" />
-                                  </div>
-                              </div>
-                          </div>
+                                  </>
+                                ))}
+                                </div>
+                        
 
                     </div>
                     <HashLink smooth to="/#navigate" className='btn btn_green border fs_14px'>

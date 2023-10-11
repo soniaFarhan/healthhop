@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ProgressMobileStepper from "./Steper";
 import { ArrowBack } from "@mui/icons-material";
-import { Box, TextField } from "@mui/material";
+import { Box, Radio, TextField } from "@mui/material";
 
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
@@ -612,10 +612,12 @@ const Step6 = () => {
       };
     }
   }
+  const [selectedValue, setSelectedValue] = React.useState('a');
 
- 
-  const [isChecked1, setIsChecked1] = useState(false);
-  const [isChecked2, setIsChecked2] = useState(false);
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+
   return (
     <div className="scroll-container">
       <div class="mb-3 d-grid gap-3 pe-4 px-2 content">
@@ -681,7 +683,7 @@ const Step6 = () => {
             </div>
           </div>
         </div>
-
+        <h6 className="mb-0">Procedure Only:</h6>
         <div className="d-flex justify-content-between">
           <div className="">
             <TextField
@@ -701,54 +703,85 @@ const Step6 = () => {
             />
           </div>
         </div>
+        <h6 className="mb-0">All Inclusive Price in USD:</h6>
+        <div className="d-flex justify-content-between">
+          <div className="">
+            <TextField
+              id="outlined-basic"
+              label=" Min Price in USD"
+              variant="outlined"
+              className="form-control"
+            />
+          </div>
+          <div className="">
 
-        <div className="">
+            <TextField
+              id="outlined-basic"
+              label="Max Price in USD"
+              variant="outlined"
+              className="form-control"
+            />
+          </div>
+        </div>
 
-          <TextField
-            id="outlined-basic"
-            label="All Inclusive Price"
-            variant="outlined"
-            className="form-control"
-          />
+        
+      
+        <div className=" d-flex align-items-center">
+        <span className="fs_14px me-4">Do you want to include an instant booking fixed price for this procedure?</span>
+        <div className="form-check my-auto d-flex">
+      <p className="my-auto">Yes</p>
+      <Radio
+  checked={selectedValue === 'b'}
+  onChange={handleChange}
+  value="b"
+  name="radio-buttons"
+  inputProps={{ 'aria-label': 'B' }}
+/>  
+
+<p className="my-auto">No</p>
+<Radio
+  checked={selectedValue === 'a'}
+  onChange={handleChange}
+  value="a"
+  name="radio-buttons"
+  inputProps={{ 'aria-label': 'A' }}
+/>
+        </div>
+        </div>
+        <div className="row">
+          <div className="col-6">
+            <span className="fs_14px">Instant Booking Fixed Price for Procedure Only:</span>
+          </div>
+          <div className="col-6">
+            <TextField
+              id="outlined-basic"
+              label="Price in USD"
+              variant="outlined"
+
+
+              className={`form-control ${selectedValue ==="a" ? '' : 'disabled'}`}
+              disabled={selectedValue==="a"}
+            />
+          </div>
         </div>
       
-      <div className="d-flex align-items-center ">
-        <div className="form-check my-auto">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            checked={isChecked1}
-            onChange={() => setIsChecked1(!isChecked1)}
-            id="1"
-          />
-        </div>
-        <TextField
-          id="outlined-basic"
-          label="Instant booking"
-          variant="outlined"
-          className={`form-control ${isChecked1 ? '' : 'disabled'}`}
-          disabled={!isChecked1}
-        />
-      </div>
 
-      <div className="d-flex align-items-center">
-        <div className="form-check my-auto">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            checked={isChecked2}
-            onChange={() => setIsChecked2(!isChecked2)}
-            id="2"
-          />
+        <div className="row">
+          <div className="col-6">
+            <span className="fs_14px">Instant Booking Fixed Price for All Inclusive Package:</span>
+          </div>
+          <div className="col-6">
+            <TextField
+              id="outlined-basic"
+              label="Price in USD"
+              variant="outlined"
+
+
+              className="form-control"
+              disabled={selectedValue==="a"}
+            />
+          </div>
         </div>
-        <TextField
-          id="outlined-basic"
-          label="Instant booking Fixed price for All"
-          variant="outlined"
-          className={`form-control ${isChecked2 ? '' : 'disabled'}`}
-          disabled={!isChecked2}
-        />
-      </div>
     
 
        

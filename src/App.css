@@ -311,6 +311,12 @@ ul li {text-align: start;}
   position: relative;
 
 }
+.scroll-container3 {
+  height: 60vh; /* Set the desired height for the scrollable area */
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+
+}
 
 .content1 {
   /* Add some right padding to prevent content from being cut off */

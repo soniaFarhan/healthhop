@@ -7,10 +7,13 @@ import HelpIcon from '@mui/icons-material/Help';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Popupimg from '../components/Popupimg';
+import MyVerticallyCenteredModal from '../components/Popupimg';
+import { object } from 'yup';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
-
+const [modal,setModal]=useState(false)
+const [image,setImage]=useState()
     const handleTabClick = (tab) => {
         setActiveTab(tab);
       };
@@ -91,22 +94,22 @@ export const LearnMore = () => {
       const gallery=[
 
           {
-              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/video-1.jpg")} alt="" />
+              img:  require("../assets/video-1.jpg") 
           },
           {
-              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/video-2.jpg")} alt="" />
+           img: require("../assets/video-2.jpg")  
           },
           {
-              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/md-5.jpg")} alt="" />
+              img:   require("../assets/md-5.jpg") 
           },
           {
-              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/blog-card-2.png")} alt="" />
+              img:   require("../assets/blog-card-2.png") 
           },
           {
-              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/contact-us.png")} alt="" />
+              img:  require( "../assets/contact-us.png") 
           },
           {
-              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/altumcode-dC6Pb2JdAqs-unsplash.png")} alt="" />
+              img:  require( "../assets/altumcode-dC6Pb2JdAqs-unsplash.png") 
           },
 
 
@@ -414,10 +417,12 @@ export const LearnMore = () => {
                               gallery.map((pic) => (
                                 <>
                                
-                                    <div className="col-4 p-2">{pic.img  }
+                                    <div onClick={()=>{
+                                        setImage(pic.img)
+                                        setModal(true)}} className="col-4 p-2"><img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={pic.img}  alt="" />
                                     
                                     
-                                  <Popupimg  img={pic.img}/>
+                                  {/* <Popupimg  img={pic.img}/> */}
                                     </div>
                                 
 
@@ -431,7 +436,11 @@ export const LearnMore = () => {
                     Message Clinic
                             </HashLink>
 
-
+                            <MyVerticallyCenteredModal
+                            image={image}
+        show={modal}
+        onHide={() => setModal(false)}
+        />
             </div>
 
 
@@ -584,63 +593,7 @@ export const LearnMore = () => {
 }
 
 
-const OverviewComponent = () => {
-  return (
-    <div>
-          <p className='fs_14px cu-color'>
-            <p className='cu-color'> 
-             Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
-            </p>
-    
-              To better serve the wide-ranging needs of the community, the modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
-             </p>
-    </div>
-  )
-};
-const AboutusComponent = () => {
-    return (
-      <div>
-            <p className='fs_14px cu-color'>
-              <p className='cu-color'> 
-              To better serve the wide-ranging need of the community. The modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
-              </p>
-      
-               
-               </p>
-      </div>
-    )
-  };
 
-const PriceComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-
-const LocationComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-const ReviewsComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-const MedicalComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-const GalleryComponent = () => {
-  return (
-    <div></div>
-  )
-};
 
 
 

@@ -147,7 +147,7 @@ export const HealthJourney = () => {
                     <div className='d-flex justify-content-between flex-column flex-md-row'>
                         <div>
                             <p className='fs_14px fw-bold mb-0'>
-                                Averrage Price
+                            Average Price
                             </p>
                             <p className='fs_14px'>
                                 ( {data.price} )
@@ -156,7 +156,7 @@ export const HealthJourney = () => {
                             <div className='d-flex  align-items-center gap-2'>
                             <Rating className='mb-0' name="size-medium" defaultValue = {defaultValue} /> 
                             <span className='fw-bold'>  
-                            ({data.defaultValue} review) </span>
+                            ({data.defaultValue} reviews) </span>
                             </div>
                         </div>
     
@@ -235,7 +235,7 @@ export const HealthJourney = () => {
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="tansportation"/>
                     <label class="form-check-label fs_14px text-break" for="tansportation">
-                       Transportation Services(Airport/hotel/clinic)
+                       Transportation Services (Airport/Hotel/Clinic)
                     </label>
                     </div>
 
@@ -256,7 +256,7 @@ export const HealthJourney = () => {
                     <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="touristic"/>
                     <label class="form-check-label fs_14px" for="touristic">
-                       Touristic Excursions
+                    Sightseeing Tours
                     </label>
                     </div>
 

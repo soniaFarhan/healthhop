@@ -78,8 +78,8 @@ function SideNav(props) {
   const dispatch = useDispatch()
   const drawer = (
     <div className="" style={{backgroundColor:"black",height:"100vh"}}>
-      <div className="p-3" style={{width:"7rem"}}>
-      <img width={"100%"} src={require("../assets/HealthHop logo reverse on dark background (1).png")} alt="" />
+      <div className="p-3" style={{width:"8rem"}}>
+      <img width={"100%"} className="ms-5" src={require("../assets/HealthHop logo reverse on dark background (1).png")} alt="" />
       </div>
 
       <Divider sx={{ backgroundColor: 'white' }} />

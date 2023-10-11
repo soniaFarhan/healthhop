@@ -25,7 +25,20 @@ export const Home = () => {
   const [subCategories, setSubCategories] = useState([]);
 
   const categorySubcategoryMap = {
-    HairTransplants: ["Beard Transplant", "Hair Transplant for Men","Hair Transplant for Women"],
+    'Aesthetic Procedures (Non-Surgical)': [
+      'Botox and Fillers',
+      'Chemical Peel',
+      'Laser Hair Removal',
+      'Microdermabrasion',
+      'Intense Pulsed Light (IPL) Treatment',
+      'Cellulite Laser and Cream Treatments',
+    ],
+    'Bariatric Surgery (Obesity Surgery)': [
+      'Gastric Bypass',
+      'Gastric Sleeve',
+      'Stomach Balloon',
+      'Stomach Band',
+    ],
     Dentistry: [
       'Cosmetic Dentistry “Hollywood Smile”',
       'Dental Implants',
@@ -40,6 +53,14 @@ export const Home = () => {
       'General dentistry - Fillings, Cleanings',
       'Implantology - Dental Implants',
     ],
+    'Fertility & IVF': [
+      'Invitro Fertilization IVF/ICSI',
+      'Egg (embryo) & Sperm Freezing',
+      'Intrauterine Insemination (IUI)',
+      'Other Fertility Procedures and Diagnosis',
+    ],
+    HairTransplants: ["Beard Transplant", "Hair Transplant for Men","Hair Transplant for Women"],
+
     'Plastic Surgery and Aesthetic Surgeries': [
       'Liposuction',
       'Breast Lift and Augmentation',
@@ -55,31 +76,14 @@ export const Home = () => {
       'Reconstructive (Other Surgery)',],
 
 
-      'Aesthetic Procedures (Non-Surgical)': [
-        'Botox and Fillers',
-        'Chemical Peel',
-        'Laser Hair Removal',
-        'Microdermabrasion',
-        'Intense Pulsed Light (IPL) Treatment',
-        'Cellulite Laser and Cream Treatments',
-      ],
 
 
-      'Bariatric Surgery (Obesity Surgery)': [
-        'Gastric Bypass',
-        'Gastric Sleeve',
-        'Stomach Balloon',
-        'Stomach Band',
-      ],
+
+
      " Ophthalmology (Eye Procedures and Surgeries)":[
 
      ],
-     'Fertility & IVF': [
-      'Invitro Fertilization IVF/ICSI',
-      'Egg (embryo) & Sperm Freezing',
-      'Intrauterine Insemination (IUI)',
-      'Other Fertility Procedures and Diagnosis',
-    ],
+
 
     Orthopedics: [
       'All',
@@ -93,18 +97,35 @@ export const Home = () => {
     ],
   };
  
+
+  
   const handleCategoryChange = (event) => {
     const selectedCategory = event.target.value;
     setSelectedCategory(selectedCategory);
 
     const subCategories = categorySubcategoryMap[selectedCategory] || [];
-    setSubCategories(subCategories);
+    // console.log(subCategories,"unsort")
+subCategories.sort()
+// console.log(sort,"sort")
+
+    setSubCategories(subCategories.sort());
   };
 
 
 
+const  Orthopedics= [
+  'All',
+  'Spine Surgeries',
+  'Sports Injuries',
+  'Knee Surgeries',
+  'Hip Surgeries',
+  'Shoulder Surgeries',
+  'Carpal Tunnel',
+  'And More...',
+]
 
 
+// console.log(Orthopedics.sort())
 
   const cardData = [
     {
@@ -249,8 +270,21 @@ export const Home = () => {
     },
   ];
 
-  const defaultValue =5
+  const str = 'usman'
+
+  const defaultValue =5;
+  const valueLabelFormat = (value) => {
+    if (value === 20000) {
+      return 'No max'; // Custom text for 20000
+    }
+    return value; // Default behavior for other values
+  };
+
   const marks = [
+    {
+      value: 0,
+     
+    },
     {
       value: 1000,
      
@@ -271,6 +305,11 @@ export const Home = () => {
       value: 15000,
      
     },
+    {
+      value: 20000,
+     
+    },
+   
   ];
   return (
     <div>
@@ -293,14 +332,14 @@ export const Home = () => {
                     aria-label="Default select example"
                   >
                     <option selected>Choose Category</option>
-                    <option value="HairTransplants">Hair Transplants/ Hair Plugs </option>
-                    <option value="Dentistry">Dentistry</option>
-                    <option value="Plastic Surgery and Aesthetic Surgeries">Plastic Surgery and Aesthetic Surgeries</option>
-                    <option value="Aesthetic Procedures (Non-Surgical)">Aesthetic Procedures (Non-Surgical)</option>
-                    <option value="Bariatric Surgery (Obesity Surgery)">Bariatric Surgery (Obesity Surgery)</option>
+                    <option value="Aesthetic Procedures (Non-Surgical)">Aesthetic Procedures (Non-Surgical)     </option>
+                    <option value="Bariatric Surgery (Obesity Surgery)"> Bariatric Surgery (Obesity Surgery) </option>
+                    <option value="Dentistry">Dentistry   </option>
+                    <option value="Fertility & IVF">Fertility & IVF </option>
+                    <option value="Hair Transplants/ Hair Plugs">Hair Transplants/ Hair Plugs </option>
                     <option value="Ophthalmology (Eye Procedures and Surgeries)">Ophthalmology (Eye Procedures and Surgeries)</option>
-                    <option value="Fertility & IVF">Fertility & IVF</option>
-                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Orthopedics"> Orthopedics </option>
+                    <option value="Plastic Surgery and Aesthetic Surgeries">Plastic Surgery and Aesthetic Surgeries </option>
 
                    
                   </select>
@@ -337,16 +376,17 @@ export const Home = () => {
                 <h5 className="py-4">Your Budget</h5>
                 <p>Select min and max price range</p>
 
-                <Box  sx={{   }}>
+                <Box>
                 <Slider
                     sx={{ color: "#07A6A9",height:"10px" }}
                     aria-label="Temperature"
                     defaultValue={3000} // Set your initial value here
-                    valueLabelDisplay="auto"
+                    valueLabelDisplay={12}
                     step={null}
+                    valueLabelFormat={valueLabelFormat}
                     marks={marks}
-                    min={1000}
-                    max={15000}
+                    min={0}
+                    max={20000}
                   />
                 </Box>
 
@@ -483,10 +523,10 @@ export const Home = () => {
               >
                 <div className="me-5 ms-md-5" style={{ width: "30%" }}>
                   <h3 className="" style={{ color: "white",fontSize:"45px" }}>
-                    Get the <br />
-                    Best <br />
-                    Medical <br />
-                    Care for <br />
+                    Get the 
+                    Best 
+                    Medical 
+                    Care <br /> for
                     Your Needs
                   </h3>
                 </div>
@@ -689,8 +729,8 @@ export const Home = () => {
               style={{ color: "#939393", fontSize: "15px" }}
             >
               <p>
-                Health-Tourism.com is a medical tourism guide and a directory
-                <br /> of medical centers.
+              HealthHop is a centralized medical tourism hub that allows you to book safe, secure medical treatment and travel 
+                <br />logistics overseas from licensed, internationally recognized medical providers.
               </p>
               <p></p>
             </div>
@@ -895,7 +935,7 @@ export const Home = () => {
         </Box>
       </section>
 
-      <section className="test">
+      <section className="">
         <div className="">
             <div className="p-3 bg">
           <div className="shrink">
@@ -948,7 +988,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className="shrink">
+      <section className="shrink" id="navigate">
         <div className="container">
           <div className="mx-md-5 ">
             <div className="p-3 ">
@@ -1027,7 +1067,7 @@ export const Home = () => {
                         fontSize: "10px",
                       }}
                     >
-                      Submmit
+                     Submit
                     </Button>
                   {/* </Link> */}
 

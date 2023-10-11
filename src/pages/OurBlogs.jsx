@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 export const OurBlogs = () => {
   const [expandedPosts, setExpandedPosts] = useState([]);
@@ -15,26 +17,26 @@ export const OurBlogs = () => {
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-1.png"),
+          
+          imageSrc: require("../assets/md-1.jpg"),
         },
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-4.png"),
+          
+          imageSrc: require("../assets/video-2.jpg"),
         },
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-3.png"),
+          
+          imageSrc: require("../assets/video-3.jpg"),
         },
         {
           title: "Blog Title 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequuntur!",
-          date: "9/12/2024 11:21 PM",
-          imageSrc: require("../assets/blog-card-5.png"),
+          
+          imageSrc: require("../assets/contact-us.jpg"),
         },
       ];
 
@@ -83,14 +85,14 @@ export const OurBlogs = () => {
 
                 {cardData.map((card, index) => (
                   <div key={index} className="col-11  col-sm-6 col-md-8 col-lg-6" >
-                    <div className="card border-0 h-100">
-                        <img width={"100%"} className="card-img h-100 position-relative" src={card.imageSrc} alt={`card image ${index}`} />
-                        <div className='position-absolute rounded-4  bg-dark' style={{ opacity: "0.7", top: "9px", right: "9px", left: "9px", bottom: "9px" }}></div>
+                    <div className="card border-0 h-100 p-2" style={{minHeight:"260px"}}>
+                        <img width={"100%"} height={"100%"} className="card-img position-relative rounded-4" src={card.imageSrc} alt={`card image ${index}`} />
+                        <div className='position-absolute rounded-4  bg-dark' style={{ opacity: "0.7", top: "7px", right: "7px", left: "7px", bottom: "7px" }}></div>
                      
                       <div className="card-img-overlay text-white d-flex flex-column justify-content-end  px-5 ">
                         <h5 className="card-title">{card.title}</h5>
                         <p className="card-text fs_14px" style={{ opacity: "0.8" }}>{card.description}</p>
-                        <p style={{ opacity: "0.8" }}>{card.date}</p>
+                        
                       </div>
                     </div>
                   </div>
@@ -119,7 +121,7 @@ export const OurBlogs = () => {
                           onClick={() => toggleExpand(index)}
                           style={{ cursor: 'pointer', }}
                         >
-                          {expandedPosts[index] ? 'Read Less' : 'Read More'}
+                          {expandedPosts[index] ? <Link style={{textDecoration:"none"}} to="/Blog">Read More</Link> : 'Read More'}
                         </span>
                       </p>
                     </div>

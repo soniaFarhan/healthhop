@@ -1,6 +1,7 @@
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { PiPaperPlaneRightBold } from 'react-icons/pi'
+import { IoMdAttach } from 'react-icons/io'
 import { AiFillMinusCircle } from 'react-icons/ai'
 import { BsDot } from 'react-icons/bs'
 import { SlCalender } from 'react-icons/sl'
@@ -30,6 +31,23 @@ export const Message = () => {
     },
     
   }));
+  const fileInputRef = useRef(null);
+
+  const handleButtonClick = () => {
+    // Trigger the file input's click event
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleFileInputChange = (e) => {
+    // Handle the selected file here
+    const selectedFile = e.target.files[0];
+    if (selectedFile) {
+      console.log('Selected file:', selectedFile);
+      // You can perform further actions with the selected file
+    }
+  };
   const data = [
     {
       avater:  <StyledBadge 
@@ -278,6 +296,15 @@ export const Message = () => {
                   </div>
                   <div className='rounded-circle bg-secondary    text-center ms-2' style={{height:"40px", width:"40px"}}>
                   <PopupCalender/>
+                  </div>
+                  <div className='rounded-circle bg-success justify-content-center d-flex align-items-center ms-2' style={{height:"40px", width:"40px"}}>
+                    <button  onClick={handleButtonClick} className='btn  text-white fs-4 m-auto p-0'><IoMdAttach /> </button>
+                    <input
+                      type="file"
+                      ref={fileInputRef}
+                      style={{ display: 'none' }}
+                      onChange={handleFileInputChange}
+                    />
                   </div>
                 </div>
                 </div>

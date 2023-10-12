@@ -509,7 +509,7 @@ select.bg-select option {
 }
 .btn-pink{
   background-color: rgb(205,88,204);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 

@@ -436,9 +436,9 @@ export const LearnMore = () => {
 
 
                   <div className="col-md-4 ">
-                      <div className=" ">
-                          <div className='' style={{width:"25rem"}}>
-                              <img className='rounded-4 img-fluid' src={require("../assets/contact-us.jpg")} alt=""/>
+                      <div className=" "  style={{border: "1px solid #07A6A9"}}>
+                          <div className='m-2'>
+                              <img className='rounded-4 img-fluid w-100 object-fit-cover' src={require("../assets/contact-us.jpg")} alt=""/>
                           </div>
                           <h5 className='text-center py-3 fw-bold '>
                               Book My Free Consultation
@@ -511,7 +511,7 @@ export const LearnMore = () => {
                               <div class="form-check">
                                   <input class="form-check-input" type="checkbox" value="" id="1month" />
                                   <label class="form-check-label fs_14px" for="1month">
-                                      0 -1 month
+                                      0-1 month
                                   </label>
                               </div>
 

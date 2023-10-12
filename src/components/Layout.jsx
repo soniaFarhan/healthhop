@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {IoIosArrowDown} from "react-icons/io"
 import {
   Outlet,
   Link,
@@ -17,6 +18,7 @@ import Popup3 from "./Popup3";
 
 
 export const Layout = () => {
+
 
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -64,7 +66,7 @@ export const Layout = () => {
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <NavLink 
-            style={{ padding:"9px 30px", fontSize: '16px' }}
+            style={{ padding:"9px 30px", fontSize: '16px', maxWidth:"fit-content" }}
             className="nav-link"
             exact
             activeClassName="active"
@@ -82,7 +84,7 @@ export const Layout = () => {
             activeClassName="active"
             to="/procedure"
             title="Procedure"
-            style={{ fontSize: '16px', padding:"9px 30px", }}
+            style={{ fontSize: '16px', padding:"9px 30px", maxWidth:"fit-content"}}
            
           >
             Procedures
@@ -91,15 +93,16 @@ export const Layout = () => {
 
 
 
-          <div class="dropdown-content  ">
+          <div class="dropdown-content">
           <div class="accordion mt-lg-4 mt-1" id="accordionExample">
   <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <h2 class="accordion-header" >
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       Hair Transplants/ Hair Plugs
+      <IoIosArrowDown className="drop-btn rotate-90"/>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body" style={{backgroundColor:"rgb(7,166,169)"}}>
       <ul>
       <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
@@ -111,13 +114,14 @@ export const Layout = () => {
         </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  <div class="accordion-item ">
+    <h2 class="accordion-header" >
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
       Dentistry
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseTwo" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Cosmetic Dentistry “Hollywood Smile”</Link></li>
@@ -138,11 +142,12 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
       Plastic Surgery and Aesthetic Surgeries
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseThree" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Liposuction</Link></li>
@@ -163,11 +168,12 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
       Aesthetic Procedures (Non-Surgical)
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseFour" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Botox and Fillers</Link></li>
@@ -182,11 +188,12 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
       Bariatric Surgery (Obesity Surgery)
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseFive" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Gastric Bypass</Link></li>
@@ -199,11 +206,12 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
       Ophthalmology (Eye Procedures and Surgeries)
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseSix" class="accordion-collapse collapse drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Eye Procedures and Surgeries</Link></li>
@@ -213,11 +221,12 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
       Fertility & IVF
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseSeven" class="accordion-collapse collapse drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Invitro Fertilization IVF/ICSI</Link></li>
@@ -230,11 +239,12 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
       Orthopedics (All)
+      <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseEight" class="accordion-collapse collapse drop-align" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul className="">
       <li><Link>-Spine Surgeries</Link></li>
@@ -250,90 +260,7 @@ export const Layout = () => {
           
 
            
-  {/* <div className="main" >
-
-    <div className="d-flex flex-wrap p-5  mt-4" style={{ backgroundColor: "#07A6A9", borderRadius: "29px" }}>
-    <ul className="pb-2 p-2" style={{ listStyleType: "" }}>
-      <li className="custom-list-style text-white">Hair Transplants/ Hair Plugs</li>
-      <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
-      <li><Link>-Beard Transplant</Link></li>
-      <li><Link>-Hair Transplant for Men</Link></li>
-      <li><Link>-Hair Transplant for Women</Link></li>
-    </ul>
-
-    <ul className="pb-md-5 p-2">
-      <li className="custom-list-style text-white">Dentistry</li>
-      <li><Link>-Cosmetic Dentistry “Hollywood Smile”</Link></li>
-      <li><Link>-Dental Implants</Link></li>
-      <li><Link>-Crowns</Link></li>
-      <li><Link>-Veneers</Link></li>
-      <li><Link>-Teeth Whitening</Link></li>
-      <li><Link>-Orthodontics - Braces/Invisalign, Corrective Jaw Surgery</Link></li>
-      <li><Link>-Endodontics - Root Treatments</Link></li>
-      <li><Link>-Oral Surgery</Link></li>
-      <li><Link>-Prosthodontics - Full Mouth Reconstruction, Dental Crowns & Bridges, Dentures</Link></li>
-      <li><Link>-Periodontal - Gum Surgeries, Gum Cleaning, Gum Depigmentation</Link></li>
-      <li><Link>-General dentistry - Fillings, Cleanings</Link></li>
-      <li><Link>-Implantology - Dental Implants</Link></li>
-    </ul>
-
-    <ul className="pb-5 p-2">
-      <li className="custom-list-style text-white">Plastic Surgery and Aesthetic Surgeries</li>
-      <li><Link>-Liposuction</Link></li>
-      <li><Link>-Breast Lift and Augmentation</Link></li>
-      <li><Link>-Abdominoplasty (Tummy Tuck)</Link></li>
-      <li><Link>-Rhinoplasty (Nose Job)</Link></li>
-      <li><Link>-Facelift</Link></li>
-      <li><Link>-Lips Aesthetic - lip operations</Link></li>
-      <li><Link>-Mommy Makeover (Labiaplasty, Vaginoplasty)</Link></li>
-      <li><Link>-Eye lift</Link></li>
-      <li><Link>-Neck Lift</Link></li>
-      <li><Link>-Brow/ Forehead lift</Link></li>
-      <li><Link>-Otoplasty (Ear Pinning)</Link></li>
-      <li><Link>-Reconstructive (other surgery)</Link></li>
-    </ul>
-
-    <ul className="pb-md-5 p-2">
-      <li className="custom-list-style text-white">Aesthetic Procedures (Non-Surgical)</li>
-      <li><Link>-Botox and Fillers</Link></li>
-      <li><Link>-Chemical Peel</Link></li>
-      <li><Link>-Laser Hair Removal</Link></li>
-      <li><Link>-Microdermabrasion</Link></li>
-      <li><Link>-Intense Pulsed Light (IPL) Treatment</Link></li>
-      <li><Link>-Cellulite Laser and Cream Treatments</Link></li>
-    </ul>
-
-    <ul className="pb-5 p-2">
-      <li className="custom-list-style text-white">Bariatric Surgery (Obesity Surgery)</li>
-      <li><Link>-Gastric Bypass</Link></li>
-      <li><Link>-Gastric Sleeve</Link></li>
-      <li><Link>-Stomach Balloon</Link></li>
-      <li><Link>-Stomach Band</Link></li>
-    </ul>
-
-    <ul className="pb-5 p-2">
-      <li className="custom-list-style text-white">Ophthalmology (Eye Procedures and Surgeries)</li>
-      <li><Link>-Eye Procedures and Surgeries</Link></li>
-    </ul>
-
-    <ul className="pb-5 p-2">
-      <li className="custom-list-style text-white">Fertility & IVF</li>
-      <li><Link>-Invitro Fertilization IVF/ICSI</Link></li>
-      <li><Link>-Egg (embryo) & Sperm Freezing</Link></li>
-      <li><Link>-Intrauterine Insemination (IUI)</Link></li>
-      <li><Link>-Other Fertility Procedures and Diagnosis</Link></li>
-    </ul>
-
-    <ul className="pb-5 p-2">
-      <li className="custom-list-style text-white">Orthopedics (All)</li>
-      <li><Link>-Spine Surgeries</Link></li>
-      <li><Link>-Sports Injuries</Link></li>
-      <li><Link>-Knee, Hip, Shoulder Surgeries</Link></li>
-      <li><Link>-Carpal Tunnel</Link></li>
-      <li><Link>-And more</Link></li>
-    </ul>
-    </div>
-  </div> */}
+  
 </div>
 
 
@@ -347,7 +274,7 @@ export const Layout = () => {
             activeClassName="active"
             to="/blogs"
             title="Articles"
-            style={{ fontSize: '16px' , padding:"9px 30px",}}
+            style={{ fontSize: '16px' , padding:"9px 30px", maxWidth:"fit-content"}}
            
           >
             Articles
@@ -358,7 +285,7 @@ export const Layout = () => {
         <li className="nav-item">
           <NavLink
             className="nav-link"
-            style={{ fontSize: '16px' , padding:"9px 30px",}}
+            style={{ fontSize: '16px' , padding:"9px 30px", maxWidth:"fit-content"}}
             exact
             activeClassName="active"
             to="/contact-us"

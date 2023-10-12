@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Outlet,
   Link,
@@ -23,6 +23,12 @@ export const Layout = () => {
 
   // Access specific query parameters
   const method = searchParams.get('method');
+
+  const [role, setRole] = useState('defaultRole');
+
+  const handleButtonClick = (newRole) => {
+    setRole(newRole);
+  };
 
   return (
     <div className="layout">
@@ -89,11 +95,11 @@ export const Layout = () => {
           <div class="accordion mt-lg-4 mt-1" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       Hair Transplants/ Hair Plugs
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body" style={{backgroundColor:"rgb(7,166,169)"}}>
       <ul>
       <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
@@ -382,9 +388,9 @@ export const Layout = () => {
       <div className="row justify-content-end mx-1 me-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
-        <Link to={"/login"}>
+        <Link to="/login" state={{from:"dr"}}>
           
-        <button
+        <button 
         className="btn btn_light rounded-pill fs_10px white_space"
        
       >
@@ -398,10 +404,9 @@ export const Layout = () => {
       </Link>
 
 
-      <Link to={"/"}>
-     
-      <button  
-       
+      <Link to="/login">
+
+      <button   
        className="btn btn_light rounded-pill fs_10px white_space"
      >
        <Login fontSize="small"  style={{marginRight:"7px"}}/>

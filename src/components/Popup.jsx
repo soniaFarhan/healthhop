@@ -25,7 +25,7 @@ function MyVerticallyCenteredModal(props) {
         
         <TextField className="my-2"
           id="outlined-basic"
-          label=" name"
+          label=" Name"
           variant="outlined"
           style={{ width: "100%" }}
         />
@@ -33,7 +33,7 @@ function MyVerticallyCenteredModal(props) {
   <textarea
               style={{ height:"120px" }}
               class="form-control"
-              placeholder="Discription "
+              placeholder="Description "
               id="exampleFormControlTextarea1"
               rows="4"
             ></textarea>

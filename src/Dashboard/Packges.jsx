@@ -50,9 +50,9 @@ export const Packges = () => {
                     </div>
                     <div className='mb-3' >
                       <select class="form-select py-3 rounded-4" aria-label="Default select example" style={{ backgroundColor: "#07A6A9", color: "white" }}>
-                        <option selected> send to patient</option>
-                        <option value="1">patient name</option>
-                        <option value="2">patient name</option>
+                        <option selected> Send to Patient</option>
+                        <option value="1">Patient Name</option>
+                        <option value="2">Patient Name</option>
                       </select>
                     </div>
 
@@ -80,9 +80,9 @@ export const Packges = () => {
                     </div>
                     <div className='mb-3' >
                       <select class="form-select py-3 rounded-4" aria-label="Default select example" style={{ backgroundColor: "#07A6A9", color: "white" }}>
-                        <option selected> send to patient</option>
-                        <option value="1">patient name</option>
-                        <option value="2">patient name</option>
+                        <option selected> Send to Patient</option>
+                        <option value="1">Patient Name</option>
+                        <option value="2">Patient Name</option>
                       </select>
                     </div>
 

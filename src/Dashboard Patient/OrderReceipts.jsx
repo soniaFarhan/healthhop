@@ -1,4 +1,4 @@
-import { Box, FormControl, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
+import { Box, FormControl, Grid, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { Button} from 'react-bootstrap'
 import {Modal} from 'react-bootstrap';
@@ -47,8 +47,9 @@ const handleChange = (event) => {
   return (
     <>
     <h4 className="my-3">Order Receipts</h4>
-<div className="mt-4 ms-auto" style={{width:"10rem"}}>
-<Box sx={{ minWidth: 120,bgcolor:"white" }}>
+    <Grid container className="d-flex justify-content-end">
+<Grid item xs={3} className="mt-4 ms-auto" >
+<Box sx={{minWidth:120,bgcolor:"white" }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Sort</InputLabel>
         <Select
@@ -58,15 +59,17 @@ const handleChange = (event) => {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={10}>Sort By Date</MenuItem>
-          <MenuItem value={20}>Sort Alphabetically</MenuItem>
-          <MenuItem value={30}>Sort By Price </MenuItem>
+          <MenuItem value={10}>Sort By Date(Most Recent)</MenuItem>
+          <MenuItem value={11}>Sort By Date(Oldest First)</MenuItem>
+          <MenuItem value={20}>Patient Name (Alphabetical)</MenuItem>
+          <MenuItem value={30}>Price (highest-lowest) </MenuItem>
+          <MenuItem value={30}>Price (lowest-highest) </MenuItem>
         </Select>
       </FormControl>
     </Box>
 
-</div>
-
+</Grid>
+</Grid>
 <div className=" my-5 p-3 container shadows2 " style={{borderRadius:"14px", backgroundColor:"#ffff"}}>
 
 

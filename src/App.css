@@ -192,6 +192,7 @@ body {
 header {
   background-color: #333;
   color: white;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -530,3 +531,4 @@ select.bg-select option {
 .custom-mobile-stepper .MuiMobileStepper-progress span {
   background-color: #07a6a9; /* Change this color to your desired active step color */
 }
+

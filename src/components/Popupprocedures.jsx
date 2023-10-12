@@ -240,7 +240,7 @@ function Popupprocedure () {
             border: "1px solid #07A6A9",
           }}
         >
-          Add
+          Done
         </Button>
 
       <MyVerticallyCenteredModal

@@ -1053,7 +1053,7 @@ const  Orthopedics= [
 
                   <div className="pt-5">
                   {/* <Link to={"/learn-more"}> */}
-                  <ReCAPTCHA
+                  <ReCAPTCHA className="q"
                   // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
                   sitekey={process.env.REACT_APP_SITE_KEY}
                   // ref={captchaRef}

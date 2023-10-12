@@ -160,8 +160,8 @@ export const Procedures = () => {
                                                 </Link>
                                             </div>
 
-                                            <p className='fs_10px cu-color'>
-                                                {data.description}
+                                            <p className='fs_10px cu-color' style={{fontWeight:"bold"}}>
+                                                {data.description }
                                             </p>
                                         </div>
 
@@ -185,7 +185,7 @@ export const Procedures = () => {
                                                 <div className='mb-3'>
                                                     <Link>
                                                         <button className='btn btn_light rounded-pill border border-dark fs_10px'>
-                                                            Instant Quote and booking
+                                                            Instant Quote and Booking
                                                         </button>
                                                     </Link>
                                                 </div>

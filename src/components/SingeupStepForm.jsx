@@ -9,10 +9,11 @@ import { Button } from "react-bootstrap";
 import Slider from "@mui/material/Slider";
 import Popupmedical from "./Popupmedical";
 import Popupprocedure from "./Popupprocedures";
+import { useLocation } from "react-router-dom";
 
 const SingeupStepForm = () => {
   const [step, setStep] = useState(1);
-
+  
   const nextStep = () => {
     setStep(step === 9 ? step : step + 1);
   };
@@ -20,7 +21,10 @@ const SingeupStepForm = () => {
   const prevStep = () => {
     setStep(step === 1 ? step : step - 1);
   };
+  const location=useLocation()
+  const {from} = location?.state||{}; 
 
+  console.log(from)
   return (
     <>
       <div className="" style={{}}>
@@ -112,7 +116,10 @@ const SingeupStepForm = () => {
                   >
                     {step == 1 ? "Start Setup" : "Continue"}
                   </Button>
-                ) : (
+                ) : 
+               
+                (
+                  from ?  
                   <Link to="/inquiries">
                     <Button
                       onClick={() => nextStep()}
@@ -127,8 +134,30 @@ const SingeupStepForm = () => {
                     >
                       {step == 1 ? "Start Setup" : "continue"}
                     </Button>
-                  </Link>
-                )}
+                  </Link>:
+                      <Link to="/patient-inquiries">
+                      <Button
+                        onClick={() => nextStep()}
+                        style={{
+                          backgroundColor: "#07A6A9",
+                          color: "white",
+                          padding: "16px 80px",
+                          fontSize: "12px",
+                          width: "100%",
+                          border: "none"
+                        }}
+                      >
+                        {step == 1 ? "Start Setup" : "continue"}
+                      </Button>
+                    </Link>
+
+
+                )
+             
+
+
+                
+                }
 
                 {/* logos.............................. */}
                 {/* {step === 2 && (
@@ -202,7 +231,7 @@ export default SingeupStepForm;
 const Step1 = () => {
   return (
     <>
-      <h3 className="text-center">Set up your Business Profile</h3>
+      <h3 className="text-center">Setup Your Business Profile</h3>
 
       <p className="text-center" style={{ fontSize: "10px" }}>
         In publishing and graphic design . lorem ipsum is placeholder text
@@ -623,8 +652,8 @@ const Step6 = () => {
       <div class="mb-3 d-grid gap-3 pe-4 px-2 content">
         <h6 className="text-center">
           {" "}
-          Let's set up the Procedures your clinic provides! We will add these
-          one at a time. so let's add the first <br /> procedure here{" "}
+          Let's set up the procedures your clinic provides! We will add these
+          one at a time so let's add the first <br /> procedure here{" "}
         </h6>{" "}
         <TextField
           id="outlined-basic"
@@ -790,7 +819,7 @@ const Step6 = () => {
          
         </Box>
 
-        <div className="pt-2">
+        <div className="pt-2 ">
           <Button
             style={{
               backgroundColor: " transparent",
@@ -801,10 +830,10 @@ const Step6 = () => {
               border: "1px solid #07A6A9",
             }}
           >
-            Save
+            + Add
           </Button>
         </div>
-        <div className="pt-2">
+        <div className="pt-2 mb-2">
           {/* <Button
             style={{
               backgroundColor: " transparent",

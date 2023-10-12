@@ -385,7 +385,7 @@ export const Layout = () => {
         </li> */}
         
       </ul>
-      <div className="row justify-content-end mx-1 me-5">
+      <div className=" justify-content-end mx-1 me-md-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
         <Link to="/login" state={{from:"dr"}}>

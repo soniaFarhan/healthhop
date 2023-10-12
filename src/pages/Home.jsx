@@ -478,7 +478,7 @@ const  Orthopedics= [
                         </CardContent>
                       </Card>
                       <div
-                        className="d-flex justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
+                        className="d-flex clr-grdn justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
                         style={{
                           width: "45px",
                           height: "45px",
@@ -489,6 +489,7 @@ const  Orthopedics= [
                           zIndex: "2000",
                           left: "50%",
                           fontSize: "11px",
+
                         }}
                       >
                         Step {card.step}
@@ -1052,7 +1053,7 @@ const  Orthopedics= [
 
                   <div className="pt-5">
                   {/* <Link to={"/learn-more"}> */}
-                  <ReCAPTCHA
+                  <ReCAPTCHA className="q"
                   // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
                   sitekey={process.env.REACT_APP_SITE_KEY}
                   // ref={captchaRef}

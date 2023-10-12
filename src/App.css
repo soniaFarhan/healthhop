@@ -145,8 +145,8 @@ body {
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(83, 171, 177, 0.6),
-      rgba(28, 63, 66, 0.6)
+      rgba(200, 58, 236, 0.6),
+      rgba(15, 220, 238, 0.6)
     ),
     url(./assets/homeimg.png);
   background-size: cover;
@@ -192,6 +192,7 @@ body {
 header {
   background-color: #333;
   color: white;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -317,6 +318,12 @@ ul li {
   height: 55vh; /* Set the desired height for the scrollable area */
   overflow: hidden; /* Hide the scrollbar */
   position: relative;
+}
+.scroll-container3 {
+  height: 60vh; /* Set the desired height for the scrollable area */
+  overflow: hidden; /* Hide the scrollbar */
+  position: relative;
+
 }
 
 .content1 {
@@ -548,3 +555,4 @@ select.bg-select option {
 .custom-mobile-stepper .MuiMobileStepper-progress span {
   background-color: #07a6a9; /* Change this color to your desired active step color */
 }
+

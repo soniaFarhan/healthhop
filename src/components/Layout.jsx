@@ -312,13 +312,13 @@ export const Layout = () => {
         </li> */}
         
       </ul>
-      <div className="row justify-content-end mx-1 me-5">
+      <div className=" justify-content-end mx-1 me-md-5">
         <div className="col-lg-12 d-flex justify-content-between align-items-center mb-3 mb-lg-0 text-white gap-2">
           
         <Link to="/login" state={{from:"dr"}}>
           
         <button 
-        className="btn btn_light rounded-pill fs_10px white_space"
+        className="btn btn_light rounded-pill fs_11px white_space"
        
       >
         <MedicalServicesOutlined
@@ -333,8 +333,8 @@ export const Layout = () => {
 
       <Link to="/login">
 
-      <button   
-       className="btn btn_light rounded-pill fs_10px white_space"
+      <button    
+       className="btn btn_light rounded-pill fs_11px white_space "
      >
        <Login fontSize="small"  style={{marginRight:"7px"}}/>
        Patient

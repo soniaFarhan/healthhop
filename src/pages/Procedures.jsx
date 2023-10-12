@@ -140,7 +140,7 @@ export const Procedures = () => {
                                                 </h5>
 
                                                 <Link>
-                                                    <button className='btn_blue btn rounded-pill py-0 fs_10px'>
+                                                    <button className='clr-grdn btn rounded-pill py-0 fs_10px'>
                                                         {data.procedure}
                                                     </button>
                                                 </Link>

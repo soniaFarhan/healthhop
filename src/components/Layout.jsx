@@ -89,21 +89,21 @@ export const Layout = () => {
           >
             Procedures
           </NavLink>
-          <div className="h " style={{backgroundColor:"red",width:"100%"}} >
+          <div className="" style={{backgroundColor:"red",width:"100%"}} >
 
 
 
-          <div class="dropdown-content">
-          <div class="accordion mt-lg-4 mt-1" id="accordionExample">
-  <div class="accordion-item">
+          <div class="dropdown-content " >
+          <div class=" accordion mt-lg-4 mt-1" id="accordionExample" style={{backgroundColor:"white"}}>
+  <div class="accordion-item ">
     <h2 class="accordion-header" >
       <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       Hair Transplants/ Hair Plugs
       <IoIosArrowDown className="drop-btn rotate-90"/>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body" style={{backgroundColor:"rgb(7,166,169)"}}>
+    <div id="collapseOne" class="accordion-collapse collapse  drop-align " style={{backgroundColor:"red"}} data-bs-parent="#accordionExample">
+    
       <ul>
       <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
       <li><Link>-Beard Transplant</Link></li>
@@ -111,7 +111,7 @@ export const Layout = () => {
       <li><Link>-Hair Transplant for Women</Link></li>
     </ul>
     
-        </div>
+       
     </div>
   </div>
   <div class="accordion-item ">
@@ -121,8 +121,8 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseTwo" class="accordion-collapse collapse  drop-align" style={{backgroundColor:"red"}} data-bs-parent="#accordionExample">
+      
       <ul className="">
       <li><Link>-Cosmetic Dentistry “Hollywood Smile”</Link></li>
       <li><Link>-Dental Implants</Link></li>
@@ -137,7 +137,7 @@ export const Layout = () => {
       <li><Link>-General dentistry - Fillings, Cleanings</Link></li>
       <li><Link>-Implantology - Dental Implants</Link></li>
     </ul>
-      </div>
+     
     </div>
   </div>
   <div class="accordion-item">

@@ -254,7 +254,7 @@ export const InquiryBusinessProfile = () => {
                       Average price range for the procedure:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 to 1000 USA
+                      500 to 1000 USD
                     </p>
                   </div>
                   <div className="d-flex" style={{ color: "#07A6A9" }}>
@@ -268,7 +268,7 @@ export const InquiryBusinessProfile = () => {
                       All inclusive price range:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 to 1000 USA
+                      500 to 1000 USD
                     </p>
                   </div>
                   <div className="d-flex" style={{ color: "#07A6A9" }}>
@@ -282,7 +282,7 @@ export const InquiryBusinessProfile = () => {
                       Instant booking fixed price for procedure only:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 USA
+                      500 USD
                     </p>
                   </div>
                   <div className="d-flex" style={{ color: "#07A6A9" }}>
@@ -296,7 +296,7 @@ export const InquiryBusinessProfile = () => {
                       Instant booking fixed price for All-inclusive:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 USA
+                      500 USD
                     </p>
                   </div>
                 </div>
@@ -370,7 +370,7 @@ export const InquiryBusinessProfile = () => {
                       Average price range for the procedure:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 to 1000 USA
+                      500 to 1000 USD
                     </p>
                   </div>
                   <div className="d-flex" style={{ color: "#07A6A9" }}>
@@ -384,7 +384,7 @@ export const InquiryBusinessProfile = () => {
                       All inclusion price range:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 to 1000 USA
+                      500 to 1000 USD
                     </p>
                   </div>
                   <div className="d-flex" style={{ color: "#07A6A9" }}>
@@ -398,7 +398,7 @@ export const InquiryBusinessProfile = () => {
                       Istant booking fixed price for procedure only:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 USA
+                      500 USD
                     </p>
                   </div>
                   <div className="d-flex" style={{ color: "#07A6A9" }}>
@@ -412,7 +412,7 @@ export const InquiryBusinessProfile = () => {
                       Istant booking fixed price for All-inclusive:
                     </p>
                     <p className="my-auto mx-3" style={{ color: "black" }}>
-                      500 USA
+                      500 USD
                     </p>
                   </div>
                 </div>

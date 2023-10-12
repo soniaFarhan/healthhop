@@ -267,7 +267,7 @@ async function fetchData(){
       </Modal.Body>
       <Modal.Footer>
         <button type="submit" class="btn btn_green text-white">Order Complete </button>
-        <button type="submit" class="btn btn_green text-white">Pay Remaining Amount </button>
+        <button type="submit" class="btn btn_green text-white">Cancel </button>
       </Modal.Footer>
       </form>
     </Modal>

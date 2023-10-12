@@ -507,6 +507,10 @@ select.bg-select option {
   background-image: linear-gradient(to right, rgb(205,88,204), rgb(12,165,168));
   color: #ffffff !important;
 }
+.btn-pink{
+  background-color: rgb(205,88,204);
+  color: #ffffff;
+}
 
 
 

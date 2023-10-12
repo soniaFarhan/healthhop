@@ -516,7 +516,7 @@ const  Orthopedics= [
         </div>
         <div className="">
           <div className="">
-            <div className="p-3 bg">
+            <div className="p-3  clr-grdn">
               <div
                 className=" px-md-5 mx-md-5 d-md-flex py-4  shrink"
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}

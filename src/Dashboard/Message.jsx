@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react'
 import { PiPaperPlaneRightBold } from 'react-icons/pi'
 import { IoMdAttach } from 'react-icons/io'
@@ -11,8 +10,15 @@ import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import {BiSearch} from 'react-icons/bi'
+import Modal from 'react-bootstrap/Modal';
+import { Button } from "react-bootstrap";
+import { TextField } from "@mui/material";
+import { BiPackage } from 'react-icons/bi';
+
+
 
 export const Message = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   const StyledBadge = styled(Badge)(({ theme, colr }) => ({
     '& .MuiBadge-badge': {
       backgroundColor: colr,
@@ -161,7 +167,7 @@ export const Message = () => {
   return (
     <>
 
-      <div className="container shadows " style={{ borderRadius: "10px", height: "85vh", backgroundColor:"rgb(253,253,253)" }}>
+      <div className="container shadows pb-4 " style={{ borderRadius: "10px", backgroundColor:"rgb(253,253,253)" }}>
         <h4 className='p-3'>MESSAGE THREADS</h4>
 
         <div className="row ">
@@ -290,14 +296,15 @@ export const Message = () => {
 
                 <input type="text" class="form-control text_dark" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent", fontSize: "12px", padding: "16px" }} ewwe />
                 <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-30px", top:"50%"}}>
-                <div className='d-flex  ' >
+              
+                <div className='d-flex  test' >
                   <div className='rounded-circle bg-success justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px"}}>
                     <button className='btn  text-white fs-4 m-auto p-0'><PiPaperPlaneRightBold /></button>
                   </div>
                   <div className='rounded-circle bg-secondary    text-center ms-2' style={{height:"40px", width:"40px"}}>
                   <PopupCalender/>
                   </div>
-                  <div className='rounded-circle bg-success justify-content-center d-flex align-items-center ms-2' style={{height:"40px", width:"40px"}}>
+                  <div className=' rounded-circle bg-success justify-content-center d-flex align-items-center ms-2' style={{height:"40px", width:"40px"}}>
                     <button  onClick={handleButtonClick} className='btn  text-white fs-4 m-auto p-0'><IoMdAttach /> </button>
                     <input
                       type="file"
@@ -306,7 +313,24 @@ export const Message = () => {
                       onChange={handleFileInputChange}
                     />
                   </div>
+
+                  <div className="dropdown ms-1">
+                    <Button className=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: "#07A6A9", border: "none" }}>
+                    <BiPackage/>
+                    </Button>
+                    <ul style={{ backgroundColor: "#07A6A9", border: "none" }} className="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1">
+                      <li><button onClick={() => setModalShow(true)} className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Create Custom Order</button></li>
+                      <li><button  className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Already Existing Package</button></li>
+                    </ul>
+                    </div>
+
+                    {modalShow && <CustomPakage
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                    />}
+
                 </div>
+
                 </div>
               </div>
 
@@ -326,4 +350,68 @@ export const Message = () => {
 
     </>
   )
+}
+
+function CustomPakage(props) {
+  return (
+    <Modal style={{borderRadius:"50px",zIndex:99999}}  
+      {...props}
+      size="sm"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+      
+    >
+      <Modal.Header closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
+         <h4>Custom Packages</h4>
+        
+        <Modal.Title id="contained-modal-title-vcenter">
+         
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+      <div className="mb-2">
+        
+        <TextField className="my-2"
+          id="outlined-basic"
+          label=" Name"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+  
+  <textarea
+              style={{ height:"120px" }}
+              class="form-control"
+              placeholder="Description "
+              id="exampleFormControlTextarea1"
+              rows="4"
+            ></textarea>
+
+        <TextField className="my-2"
+          id="outlined-basic"
+          label=" Price"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+  
+
+
+      </div>
+      <div className="pt-2">
+          <Button
+           onClick={()=>props.onHide()}
+            style={{
+              backgroundColor: "#07A6A9",
+              color: "white",
+              padding: "16px 80px",
+              fontSize: "10px",
+              width: "100%",
+            }}
+          >
+           Done
+          </Button>
+        </div>
+      </Modal.Body>
+      
+    </Modal>
+  );
 }

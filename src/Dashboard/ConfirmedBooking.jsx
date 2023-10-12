@@ -52,7 +52,7 @@ export const ConfirmedBooking = () => {
 
   return (
     <>
-      <div className="container my-2  p-3 bg-white" style={{ borderRadius: "12px", height:"80vh" }}>
+      <div className="container my-2  p-3 bg-white" style={{ borderRadius: "12px",  }}>
         <div className=" row m-1" >
           <div className="col p-0">
             {
@@ -88,7 +88,7 @@ export const ConfirmedBooking = () => {
 
 
                         </div>
-                        <div className="d-flex">
+                        <div className="d-md-flex">
 
                           <div className="m-2">
                             <Button onClick={()=>setModalShow(true)} variant="text" style={{ color: '#07A6A9' }} >Details</Button>
@@ -267,7 +267,7 @@ async function fetchData(){
       </Modal.Body>
       <Modal.Footer>
         <button type="submit" class="btn btn_green text-white">Order Complete </button>
-        <button type="submit" class="btn btn_green text-white">Pay Remaining Amount </button>
+        <button type="submit" class="btn btn_green text-white">Cancel </button>
       </Modal.Footer>
       </form>
     </Modal>

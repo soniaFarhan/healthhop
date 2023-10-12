@@ -28,10 +28,10 @@ function Refund({ onHide, show }) {
           <Modal.Body>
             <>
               <h4 className="text-center">
-                Tell us why you are requesting to refund?
+                Tell us why you are requesting a refund?
               </h4>
               <div class="mb-3">
-                <label htmlFor="">Refund Message</label>
+                <label htmlFor="">Message</label>
                 <textarea
                   style={{ fontSize: "9px" }}
                   class="form-control"
@@ -43,7 +43,7 @@ function Refund({ onHide, show }) {
           </Modal.Body>
           <Modal.Footer>
             <button type="submit" class="btn btn_green text-white">
-              Save{" "}
+              Send Request
             </button>
           </Modal.Footer>
         </form>
@@ -93,13 +93,23 @@ export const MyBooking = () => {
               <div className="col-sm-2 text-sm-end">
                 <p className="fs_14px fw-bold">Deposit (30%):</p>
               </div>
-              <div className="col-10 d-flex flex-column ">
+
+              <div className="col-10 d-flex  gap-2 align-items-center  ">
                 <div className="my-auto">
-                  <p className="rounded rounded-pill w-fit px-2 fs_14px">
+                  <p className="rounded rounded-pill w-fit px-2 fs_14px mb-0 py-1">
                     30,000 USD
                   </p>
                 </div>
+                <div>
+                    <button
+                      onClick={() => setRefund(true)}
+                      className="btn btn_green rounded-pill my-auto py-1"
+                    >
+                      Refund
+                    </button>
+                </div>
               </div>
+              
               <div className="col-sm-2 text-sm-end">
                 <p className="fs_14px fw-bold">
                   Remaining Balance Due On Day of procedure to Clinic:
@@ -169,18 +179,13 @@ export const MyBooking = () => {
               <div className="col-sm-2 text-sm-end">
                 <p className="fs_14px fw-bold">Reciept:</p>
               </div>
-              <div className="col-10 d-flex align-items-center ">
+              <div className="col-10 d-sm-flex align-items-center ">
                 <div className="my-auto">
                   <p className="rounded rounded-pill w-fit px-2 fs_14px">
                     google.com.sdicinidnccm
                   </p>
                 </div>
-                <button
-                  onClick={() => setRefund(true)}
-                  className="btn btn-primary rounded-pill my-auto ms-3"
-                >
-                  Refund
-                </button>
+                
               </div>
               <div className="col-sm-2 text-sm-end">
                 <p className="fs_14px fw-bold">Address:</p>

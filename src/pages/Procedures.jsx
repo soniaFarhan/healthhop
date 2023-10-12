@@ -10,8 +10,17 @@ export const Procedures = () => {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
+    const valueLabelFormat = (value) => {
+        if (value === 20000) {
+          return 'No max'; // Custom text for 20000
+        }
+        return value; // Default behavior for other values
+      };
     const marks = [
+        {
+          value: 0,
+         
+        },
         {
           value: 1000,
          
@@ -32,6 +41,11 @@ export const Procedures = () => {
           value: 15000,
          
         },
+        {
+          value: 20000,
+         
+        },
+       
       ];
     const data = [
         {
@@ -140,14 +154,14 @@ export const Procedures = () => {
                                                 </h5>
 
                                                 <Link>
-                                                    <button className='btn_blue btn rounded-pill py-0 fs_10px'>
+                                                    <button className='btn-pink btn rounded-pill py-0 fs_10px'>
                                                         {data.procedure}
                                                     </button>
                                                 </Link>
                                             </div>
 
-                                            <p className='fs_10px cu-color'>
-                                                {data.description}
+                                            <p className='fs_10px cu-color' style={{fontWeight:"bold"}}>
+                                                {data.description }
                                             </p>
                                         </div>
 
@@ -171,7 +185,7 @@ export const Procedures = () => {
                                                 <div className='mb-3'>
                                                     <Link>
                                                         <button className='btn btn_light rounded-pill border border-dark fs_10px'>
-                                                            Instant Quote and booking
+                                                            Instant Quote and Booking
                                                         </button>
                                                     </Link>
                                                 </div>
@@ -289,15 +303,16 @@ export const Procedures = () => {
                                     <Box className="" >
 
                                     <Slider
-      sx={{ color: "#07A6A9",height:"10px" }}
-      aria-label="Temperature"
-      defaultValue={3000} // Set your initial value here
-      valueLabelDisplay="auto"
-      step={null}
-      marks={marks}
-      min={1000}
-      max={15000}
-    />
+                    sx={{ color: "#07A6A9",height:"10px" }}
+                    aria-label="Temperature"
+                    defaultValue={3000} // Set your initial value here
+                    valueLabelDisplay={12}
+                    step={null}
+                    valueLabelFormat={valueLabelFormat}
+                    marks={marks}
+                    min={0}
+                    max={20000}
+                  />
 
                                     </Box>
                                     <div className='my-3'>

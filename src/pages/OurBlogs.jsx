@@ -74,7 +74,7 @@ export const OurBlogs = () => {
     <div className='container pt-5'>
         <div className='blog_background_img d-flex justify-content-center align-items-end'>
             <h2 className='text-white mb-5'>
-               Our Blogs
+            Articles
             </h2>
         </div>
 

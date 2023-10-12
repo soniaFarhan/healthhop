@@ -1,4 +1,4 @@
-import { Box, FormControl, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
+import { Box, FormControl, Grid, InputLabel, MenuItem, Rating, Select, TextField } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { Button} from 'react-bootstrap'
 import {Modal} from 'react-bootstrap';
@@ -47,8 +47,9 @@ const handleChange = (event) => {
   return (
     <>
     <h4 className="my-3">Order Receipts</h4>
-<div className="mt-4 ms-auto" style={{width:"10rem"}}>
-<Box sx={{ minWidth: 120,bgcolor:"white" }}>
+    <Grid container className="">
+<Grid item xs={3} className="mt-4 ms-auto" >
+<Box sx={{minWidth:120,bgcolor:"white" }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Sort</InputLabel>
         <Select
@@ -58,15 +59,17 @@ const handleChange = (event) => {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={10}>Sort By Date</MenuItem>
-          <MenuItem value={20}>Sort Alphabetically</MenuItem>
-          <MenuItem value={30}>Sort By Price </MenuItem>
+          <MenuItem value={10}>Sort By Date(Most Recent)</MenuItem>
+          <MenuItem value={11}>Sort By Date(Oldest First)</MenuItem>
+          <MenuItem value={20}>Patient Name (Alphabetical)</MenuItem>
+          <MenuItem value={30}>Price (highest-lowest) </MenuItem>
+          <MenuItem value={30}>Price (lowest-highest) </MenuItem>
         </Select>
       </FormControl>
     </Box>
 
-</div>
-
+</Grid>
+</Grid>
 <div className=" my-5 p-3 container shadows2 " style={{borderRadius:"14px", backgroundColor:"#ffff"}}>
 
 
@@ -103,7 +106,7 @@ data.map((e)=>{
 </div>
 
 
-<div className="d-flex aling-items-center justify-content-between">
+<div className="d-sm-flex aling-items-center justify-content-between">
 
 <div>
  {e.amount}
@@ -197,7 +200,7 @@ function handleImageChange(event) {
     >
       <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
         <Modal.Title id="contained-modal-title-vcenter">
-         Booking
+         Add a Review
         </Modal.Title>
       </Modal.Header>
       <form onSubmit={handleSubmit}>
@@ -207,16 +210,21 @@ function handleImageChange(event) {
         <h5>This procedure is for <span style={{color:"#07A6A9"}}>Hair Transplant</span></h5>
         <div className=" w-50  mb-2"><input type="text" className='py-2 form-control' placeholder='Name' /></div>
         
-        <div className=" w-50 mb-2">
-        <div className='form-floating'>
-        <select name="" className='form-control form-select' id="packageSelect">
-          <option value="0">$10,000</option>
-          <option value="1">$20,000</option>
-          <option value="2">$30,000</option>
-        </select>
-        <label htmlFor="packageSelect">Country</label>
-        </div>
-        </div>
+        <div className='w-50 mb-3'>
+                  <select
+                    class="form-select bg-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Any Location</option>
+                    <option value="1">-Istanbul</option>
+                    <option value="2">-Izmir</option>
+                    <option value="3">-Antalya</option>
+                    <option value="4">-Bursa</option>
+                    <option value="5">-Mugla (Fethiye, Marmaris, Bodrum)</option>
+                  </select>
+                </div>
+
+
         <div className=""></div>
         <div className=" w-50  mb-2">
         <Rating

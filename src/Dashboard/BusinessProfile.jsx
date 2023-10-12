@@ -46,7 +46,7 @@ export const BusinessProfile = () => {
         <div className='bp-img d-flex justify-content-center mt-3 align-items-center '>
 
           <div className='d-flex justify-content-between align-items-center'>
-            <h2 className='text-white'>Medical Business name</h2><BorderColorOutlined onClick={()=>setBusinessName(true)} className="ms-2" sx={{color:"#07A6A9",cursor:"pointer"}}/>
+            <h2 className='text-white'>Medical Business Name</h2><BorderColorOutlined onClick={()=>setBusinessName(true)} className="ms-2" sx={{color:"#07A6A9",cursor:"pointer"}}/>
           </div>
 
 
@@ -74,7 +74,7 @@ export const BusinessProfile = () => {
 
             <div className=" mx-5 " style={{ marginTop: "15px" }}>
               <Link to={"/Updateprofile"}>
-                <Button className='text_color fw-bold' variant="outlined" sx={{ color: "red", border: "1px solid #39B7BA", borderRadius: "25px", fontSize: "9px" }}> <MedicalServicesOutlined style={{ fontSize: "19px", marginRight: "6px" }} /> Upload profile</Button>
+                <Button className='text_color fw-bold' variant="outlined" sx={{ color: "red", border: "1px solid #39B7BA", borderRadius: "25px", fontSize: "9px" }}> <MedicalServicesOutlined style={{ fontSize: "19px", marginRight: "6px" }} /> Publish Profile</Button>
               </Link>
 
             </div>

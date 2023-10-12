@@ -7,10 +7,13 @@ import HelpIcon from '@mui/icons-material/Help';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Popupimg from '../components/Popupimg';
+import MyVerticallyCenteredModal from '../components/Popupimg';
+import { object } from 'yup';
 
 export const LearnMore = () => {
     const [activeTab, setActiveTab] = useState('Overview');
-
+const [modal,setModal]=useState(false)
+const [image,setImage]=useState()
     const handleTabClick = (tab) => {
         setActiveTab(tab);
       };
@@ -89,25 +92,24 @@ export const LearnMore = () => {
 
 
       const gallery=[
-
           {
-              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/video-1.jpg")} alt="" />
+              img:   require("../assets/md-5.jpg") 
           },
           {
-              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/video-2.jpg")} alt="" />
+              img:   require("../assets/blog-card-2.png") 
           },
           {
-              img: <img className='w-100 h-100 rounded-5' style={{ objectFit: "fill" }} src={require("../assets/md-5.jpg")} alt="" />
+              img:  require( "../assets/contact-us.png") 
           },
           {
-              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/blog-card-2.png")} alt="" />
-          },
+            img:  require( "../assets/video 3.jpeg") 
+         },
           {
-              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/contact-us.png")} alt="" />
+            img:  require("../assets/video-1.jpg") 
           },
-          {
-              img: <img className='w-100 h-100 ' style={{ objectFit: "fill" }} src={require("../assets/altumcode-dC6Pb2JdAqs-unsplash.png")} alt="" />
-          },
+            {
+            img: require("../assets/video-2.jpg")  
+            },
 
 
 
@@ -266,7 +268,10 @@ export const LearnMore = () => {
                      {activeTab === 'Videos' && <GalleryComponent />} */}
 
 <div id='overview'>
-          <p className='fs_14px cu-color mt-5'>
+<h3 className='fw-bold'>
+                    Procedure Overview
+                    </h3>
+          <p className='fs_14px cu-color my-4'>
             <p className='cu-color'> 
              Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
             </p>
@@ -409,17 +414,15 @@ export const LearnMore = () => {
                     Gallery
                     </h3></a>
 
-                         <div className='row'>
+                            <div className='row'>
                             {
                               gallery.map((pic) => (
                                 <>
-                               
-                                    <div className="col-4 p-2">{pic.img  }
-                                    
-                                    
-                                  <Popupimg  img={pic.img}/>
+                                    <div onClick={()=>{
+                                        setImage(pic.img)
+                                        setModal(true)}} className="col-4 p-2"><img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={pic.img}  alt="" />
+                                  {/* <Popupimg  img={pic.img}/> */}
                                     </div>
-                                
 
                                   </>
                                 ))}
@@ -427,20 +430,26 @@ export const LearnMore = () => {
                         
 
                     </div>
-                    <HashLink smooth to="/#navigate" className='btn btn_green border fs_14px'>
-                    Message Clinic
+                    <div className=' d-flex justify-content-center'>
+                         <HashLink smooth to="/#navigate" className='btn btn_green border py-3 '>
+                                 Message Clinic
                             </HashLink>
+                    </div>
 
-
+                            <MyVerticallyCenteredModal
+                            image={image}
+        show={modal}
+        onHide={() => setModal(false)}
+        />
             </div>
 
 
                   <div className="col-md-4 ">
-                      <div className=" ">
-                          <div className='' style={{width:"25rem"}}>
-                              <img className='rounded-4 img-fluid' src={require("../assets/contact-us.jpg")} alt=""/>
+                      <div className="rounded-4 "  style={{border: "1px solid #07A6A9"}}>
+                          <div className='m-2'>
+                              <img className='rounded-4 img-fluid w-100 object-fit-cover' src={require("../assets/contact-us.jpg")} alt=""/>
                           </div>
-                          <h5 className='text-center py-3 fw-bold '>
+                          <h5 className=' text-center py-3 fw-bold '>
                               Book My Free Consultation
                           </h5>
                           {/* <hr /> */}
@@ -511,7 +520,7 @@ export const LearnMore = () => {
                               <div class="form-check">
                                   <input class="form-check-input" type="checkbox" value="" id="1month" />
                                   <label class="form-check-label fs_14px" for="1month">
-                                      0 -1 month
+                                      0-1 month
                                   </label>
                               </div>
 
@@ -584,63 +593,7 @@ export const LearnMore = () => {
 }
 
 
-const OverviewComponent = () => {
-  return (
-    <div>
-          <p className='fs_14px cu-color'>
-            <p className='cu-color'> 
-             Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
-            </p>
-    
-              To better serve the wide-ranging needs of the community, the modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
-             </p>
-    </div>
-  )
-};
-const AboutusComponent = () => {
-    return (
-      <div>
-            <p className='fs_14px cu-color'>
-              <p className='cu-color'> 
-              To better serve the wide-ranging need of the community. The modern hospital has often developed outpatient facilities, as well as emergency, psychiatric, and rehabilitation services. In addition, "bedless hospitals" provide strictly ambulatory (outpatient) care and day surgery. Patients arrive at the facility for short appointments. They may also stay for treatment in surgical or medical units for part of a day or for a full day, after which they are discharged for follow-up by a primary care health provider.
-              </p>
-      
-               
-               </p>
-      </div>
-    )
-  };
 
-const PriceComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-
-const LocationComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-const ReviewsComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-const MedicalComponent = () => {
-  return (
-    <div></div>
-  )
-};
-
-const GalleryComponent = () => {
-  return (
-    <div></div>
-  )
-};
 
 
 

@@ -35,11 +35,11 @@ return (
   <Box sx={{ display: "flex",backgroundColor:"#EFF3F4",height:"100vh" }}>
   <CssBaseline />
   <Header />
-  <Box style={{backgroundColor:"#EFF3F4"}}
+  <Box className='px-1 px-md-3 pt-5 pb-2' style={{backgroundColor:"#EFF3F4"}}
     component="main"
     sx={{
       flexGrow: 1,
-      p: 3,
+    
       width: { md: `calc(100% - ${240}px)`, overflow: "auto" },
     }}
   >

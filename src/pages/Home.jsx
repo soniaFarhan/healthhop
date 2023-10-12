@@ -392,7 +392,7 @@ const  Orthopedics= [
 
                 <div className="pt-5">
                   <Link to={"/heath-journey"}>
-                    <button className="btn btn_green w-100 py-3 rounded-pill">
+                    <button className="btn clr-grdn w-100 py-3 rounded-pill">
                       Start Your Health Journey
                     </button>
                   </Link>
@@ -478,7 +478,7 @@ const  Orthopedics= [
                         </CardContent>
                       </Card>
                       <div
-                        className="d-flex justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
+                        className="d-flex clr-grdn justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
                         style={{
                           width: "45px",
                           height: "45px",
@@ -489,6 +489,7 @@ const  Orthopedics= [
                           zIndex: "2000",
                           left: "50%",
                           fontSize: "11px",
+
                         }}
                       >
                         Step {card.step}
@@ -516,21 +517,21 @@ const  Orthopedics= [
         </div>
         <div className="">
           <div className="">
-            <div className="p-3 bg">
+            <div className="p-3  clr-grdn">
               <div
-                className=" px-md-5 mx-md-5 d-md-flex py-4  shrink"
+                className=" row px-md-5 mx-md-5  py-4  shrink"
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}
               >
-                <div className="me-5 ms-md-5" style={{ width: "30%" }}>
+                <div className=" col-md-4" >
                   <h3 className="" style={{ color: "white",fontSize:"45px" }}>
                     Get the 
                     Best 
                     Medical 
-                    Care <br /> for
+                    Care  for
                     Your Needs
                   </h3>
                 </div>
-                <div className="my-auto" style={{ width: "70%" }}>
+                <div className="my-auto col-md-8">
                   <p className="" style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
                    HealthHop is a centralized, all-in-one medical tourism application that allows you to book your medical procedures, transportation, and accommodation logistics in another city, country or overseas. Our app is easy to use and provides a personalized experience to make your medical journey as stress-free as possible. Download the app today and start exploring your options.
                   </p>
@@ -564,7 +565,7 @@ const  Orthopedics= [
               justifyContent={"center"}
             >
               {cardketData.map((e, index) => (
-                <Grid className="" item key={index}>
+                <Grid className="p-2" item key={index}>
                   <div
                     className="ket mx-auto"
                     style={{
@@ -1052,7 +1053,7 @@ const  Orthopedics= [
 
                   <div className="pt-5">
                   {/* <Link to={"/learn-more"}> */}
-                  <ReCAPTCHA
+                  <ReCAPTCHA className="q"
                   // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
                   sitekey={process.env.REACT_APP_SITE_KEY}
                   // ref={captchaRef}

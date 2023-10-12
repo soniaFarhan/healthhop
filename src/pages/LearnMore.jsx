@@ -92,13 +92,6 @@ const [image,setImage]=useState()
 
 
       const gallery=[
-
-          {
-              img:  require("../assets/video-1.jpg") 
-          },
-          {
-           img: require("../assets/video-2.jpg")  
-          },
           {
               img:   require("../assets/md-5.jpg") 
           },
@@ -109,8 +102,14 @@ const [image,setImage]=useState()
               img:  require( "../assets/contact-us.png") 
           },
           {
-              img:  require( "../assets/altumcode-dC6Pb2JdAqs-unsplash.png") 
+            img:  require( "../assets/video 3.jpeg") 
+         },
+          {
+            img:  require("../assets/video-1.jpg") 
           },
+            {
+            img: require("../assets/video-2.jpg")  
+            },
 
 
 
@@ -412,19 +411,15 @@ const [image,setImage]=useState()
                     Gallery
                     </h3></a>
 
-                         <div className='row'>
+                            <div className='row'>
                             {
                               gallery.map((pic) => (
                                 <>
-                               
                                     <div onClick={()=>{
                                         setImage(pic.img)
                                         setModal(true)}} className="col-4 p-2"><img className='w-100 h-100 rounded-5' style={{objectFit:"fill"}} src={pic.img}  alt="" />
-                                    
-                                    
                                   {/* <Popupimg  img={pic.img}/> */}
                                     </div>
-                                
 
                                   </>
                                 ))}
@@ -432,9 +427,11 @@ const [image,setImage]=useState()
                         
 
                     </div>
-                    <HashLink smooth to="/#navigate" className='btn btn_green border fs_14px'>
-                    Message Clinic
+                    <div className=' d-flex justify-content-center'>
+                         <HashLink smooth to="/#navigate" className='btn btn_green border py-3 '>
+                                 Message Clinic
                             </HashLink>
+                    </div>
 
                             <MyVerticallyCenteredModal
                             image={image}
@@ -445,11 +442,11 @@ const [image,setImage]=useState()
 
 
                   <div className="col-md-4 ">
-                      <div className=" ">
-                          <div className='' style={{width:"25rem"}}>
+                      <div className="border rounded-4 ">
+                          <div className='' >
                               <img className='rounded-4 img-fluid' src={require("../assets/contact-us.jpg")} alt=""/>
                           </div>
-                          <h5 className='text-center py-3 fw-bold '>
+                          <h5 className=' text-center py-3 fw-bold '>
                               Book My Free Consultation
                           </h5>
                           {/* <hr /> */}
@@ -520,7 +517,7 @@ const [image,setImage]=useState()
                               <div class="form-check">
                                   <input class="form-check-input" type="checkbox" value="" id="1month" />
                                   <label class="form-check-label fs_14px" for="1month">
-                                      0 -1 month
+                                      0-1 month
                                   </label>
                               </div>
 

@@ -392,7 +392,7 @@ const  Orthopedics= [
 
                 <div className="pt-5">
                   <Link to={"/heath-journey"}>
-                    <button className="btn btn_green w-100 py-3 rounded-pill">
+                    <button className="btn clr-grdn w-100 py-3 rounded-pill">
                       Start Your Health Journey
                     </button>
                   </Link>
@@ -516,7 +516,7 @@ const  Orthopedics= [
         </div>
         <div className="">
           <div className="">
-            <div className="p-3 bg">
+            <div className="p-3  clr-grdn">
               <div
                 className=" px-md-5 mx-md-5 d-md-flex py-4  shrink"
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}

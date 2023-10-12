@@ -442,9 +442,9 @@ const [image,setImage]=useState()
 
 
                   <div className="col-md-4 ">
-                      <div className="border rounded-4 ">
-                          <div className='' >
-                              <img className='rounded-4 img-fluid' src={require("../assets/contact-us.jpg")} alt=""/>
+                      <div className="rounded-4 "  style={{border: "1px solid #07A6A9"}}>
+                          <div className='m-2'>
+                              <img className='rounded-4 img-fluid w-100 object-fit-cover' src={require("../assets/contact-us.jpg")} alt=""/>
                           </div>
                           <h5 className=' text-center py-3 fw-bold '>
                               Book My Free Consultation

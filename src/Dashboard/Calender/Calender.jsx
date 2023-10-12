@@ -71,9 +71,9 @@ const Calender = ({month,patient}) => {
       
       // titleFormat={customTitleFormat} // Apply custom title format
       eventTimeFormat={{
-        hour: '2-digit',
-        minute: '2-digit',
-        meridiem: 'short', // Use 'short' for 'AM' and 'PM' display
+        // hour: '2-digit',
+        // minute: '2-digit',
+        // meridiem: 'short', // Use 'short' for 'AM' and 'PM' display
       }}
     />
    {patient? modalShow&& <MohModal1
@@ -109,8 +109,24 @@ function renderEventContent(eventInfo) {
 }
 
   function MohModal({onHide, show,data:dataa,events,setEvents,}) {
-    console.log(dataa.startStr,"kl");
     const{end,start}=dataa
+    console.log(end,"kl");
+    const options = { timeZone: "America/New_York" };
+    const targetDate = start.toLocaleString("en-US", options);
+    const dateObject = new Date(targetDate);
+    const year = dateObject.getFullYear();
+    const month = dateObject.getMonth() + 1; // Note that months are zero-based (0 for January).
+    const day = dateObject.getDate();
+    
+    // Extract time components
+    const hours = dateObject.getUTCHours();
+    const minutes = dateObject.getUTCMinutes();
+    const seconds = dateObject.getUTCSeconds();
+    
+    // Extract the GMT offset (standard time)
+    const gmtOffsetMinutes = dateObject.getTimezoneOffset();
+    const gmtOffsetHours = gmtOffsetMinutes / 60;
+    const gmtOffsetSign = gmtOffsetMinutes > 0 ? '-' : '+';
     let initialState={
       startDate:start,
       endDate:end,
@@ -197,45 +213,25 @@ async function fetchData(){
         </Modal.Header>
         <form onSubmit={handleSubmit}>
         <Modal.Body>
-        {/* <div className="row">
-      
         
-          <div class=" d-flex align-items-center gap-1 py-2 equal-width">
-            <label for="exampleInputEmail1" class="form-label white_space"> Select: </label>
-            <select class="form-select mb-0" 
-            value={appointment.visit} onChange={(e)=>handleChange("visit",e.target.value)} aria-label="Default select example">
-              
-              <option value="" disabled selected>None</option>
-              {users.map((item)=>
-             <option value={item.id}>{item.treatment}</option>
-              )}
-            </select>
-          </div>
-  
-          
-
-          <div class="d-flex align-items-center gap-1 equal-width py-2">
-            <label class="white_space mb-0" for="">Booking</label>
-            <input className="form-control w-100" type="text" value={appointment.reason} onChange={(e)=>handleChange("reason",e.target.value)} name="" id="" />
-          </div>
-
-          <div class="d-flex align-items-center equal-width py-2">
-            <label class="white_space mb-0" for="">Description</label>
-            <textarea class="form-control" id="" value={appointment.description} onChange={(e)=>handleChange("description",e.target.value)}  rows="3"></textarea>
-          </div>
-
-        </div> */}
         <div className='row'>
-        <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Name' /></div>
-        <div className=" mx-auto mb-2"><textarea name="" className='form-control' placeholder='Description' id="" cols="30" rows="10"></textarea></div>
+        <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Add Title' /></div>
+        <div>
+       <p className='mb-0'>{`Date/Time: ${day}/${month}/${year}`}</p>
+       <p className='mb-0'>{`Time-Zone: ${hours}:${minutes}:${seconds}`}:{`GMT${gmtOffsetSign}${3}`} </p>
+       </div>
+       <div>
+       <div className=" mx-auto mb-2"><textarea name="" className='form-control' placeholder='Detail of Meeting' id="" cols="30" rows="10"></textarea></div>
+        </div>
+
         <div className=" mx-auto mb-2">
         <div className='form-floating'>
         <select name="" className='form-control form-select' id="packageSelect">
-          <option value="0">$10,000</option>
-          <option value="1">$20,000</option>
-          <option value="2">$30,000</option>
+          <option value="0">Hair Transparent</option>
+          <option value="1">Beard Transparent</option>
+        
         </select>
-        <label htmlFor="packageSelect">Package</label>
+        <label htmlFor="packageSelect">Procedure</label>
         </div>
         </div>
 
@@ -252,7 +248,7 @@ async function fetchData(){
     );
   }
   function MohModal1({onHide, show,data:dataa,events,setEvents,}) {
-    console.log(dataa.startStr,"kl");
+    console.log(events,"kl");
     const{end,start}=dataa
     let initialState={
       startDate:start,

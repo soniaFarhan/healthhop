@@ -219,21 +219,42 @@ nav ul li .active {
   color: white !important ;
 }
 
+
 /* Style the dropdown container */
 .dropdown-content {
   display: none;
   position: absolute;
   top: 40px;
- 
   z-index: 9;
 
   border-radius: 29px;
 }
-/* .main ul{
-  width: 160px;
- 
-} */
 
+.drop-btn{
+  font-size: 25px;
+}
+
+@media screen and (min-width:992px) {
+  .drop-align{
+    top: -1px;
+    right: -451px;
+  }
+  .dropdown-content{
+    left: -200px;
+  }
+  .accordion-item{
+    position: relative;
+  }
+  .accordion-collapse{
+    position: absolute;
+  }
+  .drop-align{
+    width: 450px;
+  }
+  .drop-btn{
+    transform: rotate(270deg);
+  }
+}
 .custom-list-style {
   list-style-type: disc !important;
   font-size: 12px;
@@ -426,6 +447,9 @@ ul li {
 }
 .links ul li {
   color: #39b7ba;
+}
+.accordion-body ul li a{
+  font-size: 12px;
 }
 
 .linke ul li a {

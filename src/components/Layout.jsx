@@ -102,7 +102,7 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn rotate-90"/>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse  drop-align " style={{backgroundColor:"red"}} data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse  drop-align accordion-body"  data-bs-parent="#accordionExample">
     
       <ul>
       <li><Link>-Hair Transplants/ Hair Plugs</Link></li>
@@ -121,7 +121,7 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse  drop-align" style={{backgroundColor:"red"}} data-bs-parent="#accordionExample">
+    <div id="collapseTwo" class="accordion-collapse collapse  drop-align accordion-body"  data-bs-parent="#accordionExample">
       
       <ul className="">
       <li><Link>-Cosmetic Dentistry “Hollywood Smile”</Link></li>
@@ -147,8 +147,8 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseThree" class="accordion-collapse collapse  drop-align accordion-body" data-bs-parent="#accordionExample">
+      
       <ul className="">
       <li><Link>-Liposuction</Link></li>
       <li><Link>-Breast Lift and Augmentation</Link></li>
@@ -163,7 +163,6 @@ export const Layout = () => {
       <li><Link>-Otoplasty (Ear Pinning)</Link></li>
       <li><Link>-Reconstructive (other surgery)</Link></li>
     </ul>
-         </div>
     </div>
   </div>
   <div class="accordion-item">
@@ -173,8 +172,8 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseFour" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseFour" class="accordion-collapse collapse  drop-align accordion-body" data-bs-parent="#accordionExample">
+     
       <ul className="">
       <li><Link>-Botox and Fillers</Link></li>
       <li><Link>-Chemical Peel</Link></li>
@@ -183,7 +182,6 @@ export const Layout = () => {
       <li><Link>-Intense Pulsed Light (IPL) Treatment</Link></li>
       <li><Link>-Cellulite Laser and Cream Treatments</Link></li>
     </ul>
-         </div>
     </div>
   </div>
   <div class="accordion-item">
@@ -193,15 +191,14 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseFive" class="accordion-collapse collapse  drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseFive" class="accordion-collapse collapse  drop-align accordion-body" data-bs-parent="#accordionExample">
+     
       <ul className="">
       <li><Link>-Gastric Bypass</Link></li>
       <li><Link>-Gastric Sleeve</Link></li>
       <li><Link>-Stomach Balloon</Link></li>
       <li><Link>-Stomach Band</Link></li>
     </ul>
-         </div>
     </div>
   </div>
   <div class="accordion-item">
@@ -211,12 +208,11 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseSix" class="accordion-collapse collapse drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseSix" class="accordion-collapse collapse drop-align accordion-body" data-bs-parent="#accordionExample">
+      
       <ul className="">
       <li><Link>-Eye Procedures and Surgeries</Link></li>
     </ul>
-         </div>
     </div>
   </div>
   <div class="accordion-item">
@@ -226,15 +222,14 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseSeven" class="accordion-collapse collapse drop-align accordion-body" data-bs-parent="#accordionExample">
+     
       <ul className="">
       <li><Link>-Invitro Fertilization IVF/ICSI</Link></li>
       <li><Link>-Egg (embryo) & Sperm Freezing</Link></li>
       <li><Link>-Intrauterine Insemination (IUI)</Link></li>
       <li><Link>-Other Fertility Procedures and Diagnosis</Link></li>
     </ul>
-         </div>
     </div>
   </div>
   <div class="accordion-item">
@@ -244,8 +239,8 @@ export const Layout = () => {
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
-    <div id="collapseEight" class="accordion-collapse collapse drop-align" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseEight" class="accordion-collapse collapse drop-align accordion-body" data-bs-parent="#accordionExample">
+      
       <ul className="">
       <li><Link>-Spine Surgeries</Link></li>
       <li><Link>-Sports Injuries</Link></li>
@@ -253,7 +248,6 @@ export const Layout = () => {
       <li><Link>-Carpal Tunnel</Link></li>
       <li><Link>-And more</Link></li>
     </ul>
-         </div>
     </div>
   </div>
 </div>

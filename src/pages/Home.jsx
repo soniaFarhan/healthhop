@@ -392,7 +392,7 @@ const  Orthopedics= [
 
                 <div className="pt-5">
                   <Link to={"/heath-journey"}>
-                    <button className="btn btn_green w-100 py-3 rounded-pill">
+                    <button className="btn clr-grdn w-100 py-3 rounded-pill">
                       Start Your Health Journey
                     </button>
                   </Link>

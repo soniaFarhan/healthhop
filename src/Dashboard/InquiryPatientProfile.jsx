@@ -25,7 +25,7 @@ const InquiryPatientProfile = (props) => {
       >
         <div className="px-4" style={{ backgroundColor: "#91D7D8" }}>
           <h2 className="py-3 text-darks" style={{ color: "white" }}>
-            {data.name} Profile Detail
+            {data.name}'s Profile Details
           </h2>
         </div>
         <div className="col d-flex justify-content-start px-4">
@@ -122,15 +122,17 @@ const InquiryPatientProfile = (props) => {
           </div>
         </div>
         <div className="d-flex mt-2 gap-4 py-2 px-3">
+          
           <div className="dropdown">
           <Button className=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: "#07A6A9", border: "none" }}>
             Send Offer To This Patient
           </Button>
           <ul style={{ backgroundColor: "#07A6A9", border: "none" }} className="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1">
-    <li><button onClick={() => setModalShow(true)} className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Create Custom Order</button></li>
-    <li><button  className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Already Existing Package</button></li>
-  </ul>
+            <li><button onClick={() => setModalShow(true)} className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Create Custom Order</button></li>
+            <li><button  className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Already Existing Package</button></li>
+          </ul>
           </div>
+
           <Button onClick={()=>navigate("/message")} style={{ backgroundColor: "#07A6A9", border: "none" }}>
            Open Chat
           </Button>

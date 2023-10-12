@@ -197,7 +197,7 @@ function handleImageChange(event) {
     >
       <Modal.Header className="" closeButton style={{backgroundColor:"#07A6A9",color:"white"}}>
         <Modal.Title id="contained-modal-title-vcenter">
-         Booking
+         Add a Review
         </Modal.Title>
       </Modal.Header>
       <form onSubmit={handleSubmit}>
@@ -207,16 +207,21 @@ function handleImageChange(event) {
         <h5>This procedure is for <span style={{color:"#07A6A9"}}>Hair Transplant</span></h5>
         <div className=" w-50  mb-2"><input type="text" className='py-2 form-control' placeholder='Name' /></div>
         
-        <div className=" w-50 mb-2">
-        <div className='form-floating'>
-        <select name="" className='form-control form-select' id="packageSelect">
-          <option value="0">$10,000</option>
-          <option value="1">$20,000</option>
-          <option value="2">$30,000</option>
-        </select>
-        <label htmlFor="packageSelect">Country</label>
-        </div>
-        </div>
+        <div className='w-50 mb-3'>
+                  <select
+                    class="form-select bg-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Any Location</option>
+                    <option value="1">-Istanbul</option>
+                    <option value="2">-Izmir</option>
+                    <option value="3">-Antalya</option>
+                    <option value="4">-Bursa</option>
+                    <option value="5">-Mugla (Fethiye, Marmaris, Bodrum)</option>
+                  </select>
+                </div>
+
+
         <div className=""></div>
         <div className=" w-50  mb-2">
         <Rating

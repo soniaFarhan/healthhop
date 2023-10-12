@@ -167,7 +167,7 @@ export const Message = () => {
   return (
     <>
 
-      <div className="container shadows " style={{ borderRadius: "10px", height: "85vh", backgroundColor:"rgb(253,253,253)" }}>
+      <div className="container shadows pb-4 " style={{ borderRadius: "10px", backgroundColor:"rgb(253,253,253)" }}>
         <h4 className='p-3'>MESSAGE THREADS</h4>
 
         <div className="row ">

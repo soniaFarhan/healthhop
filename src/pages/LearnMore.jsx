@@ -268,7 +268,10 @@ const [image,setImage]=useState()
                      {activeTab === 'Videos' && <GalleryComponent />} */}
 
 <div id='overview'>
-          <p className='fs_14px cu-color mt-5'>
+<h3 className='fw-bold'>
+                    Procedure Overview
+                    </h3>
+          <p className='fs_14px cu-color my-4'>
             <p className='cu-color'> 
              Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment. both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.
             </p>

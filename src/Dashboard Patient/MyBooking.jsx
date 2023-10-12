@@ -179,7 +179,7 @@ export const MyBooking = () => {
               <div className="col-sm-2 text-sm-end">
                 <p className="fs_14px fw-bold">Reciept:</p>
               </div>
-              <div className="col-10 d-flex align-items-center ">
+              <div className="col-10 d-sm-flex align-items-center ">
                 <div className="my-auto">
                   <p className="rounded rounded-pill w-fit px-2 fs_14px">
                     google.com.sdicinidnccm

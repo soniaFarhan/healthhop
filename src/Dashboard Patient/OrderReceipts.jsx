@@ -47,7 +47,7 @@ const handleChange = (event) => {
   return (
     <>
     <h4 className="my-3">Order Receipts</h4>
-    <Grid container className="d-flex justify-content-end">
+    <Grid container className="">
 <Grid item xs={3} className="mt-4 ms-auto" >
 <Box sx={{minWidth:120,bgcolor:"white" }}>
       <FormControl fullWidth>
@@ -106,7 +106,7 @@ data.map((e)=>{
 </div>
 
 
-<div className="d-flex aling-items-center justify-content-between">
+<div className="d-sm-flex aling-items-center justify-content-between">
 
 <div>
  {e.amount}

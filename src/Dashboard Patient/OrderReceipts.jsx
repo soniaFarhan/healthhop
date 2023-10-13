@@ -46,10 +46,13 @@ const handleChange = (event) => {
 
   return (
     <>
+    <div className="">
+
+
     <h4 className="my-3">Order Receipts</h4>
     <Grid container className="">
-<Grid item xs={3} className="mt-4 ms-auto" >
-<Box sx={{minWidth:120,bgcolor:"white" }}>
+<Grid item xs={3} className="mt-4 ms-auto me-2" >
+<Box sx={{bgcolor:"white" }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Sort</InputLabel>
         <Select
@@ -151,7 +154,7 @@ data.map((e)=>{
 
 </div>
 
-
+</div>
 
     </>
   )

@@ -405,6 +405,13 @@ ul li {
 
 /* celeder css  */
 
+.fc .fc-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start;
+  gap: 14rem !important;
+}
+
 .fc-toolbar-chunk {
   display: flex;
   flex-direction: row; /* Arrange buttons in a row */

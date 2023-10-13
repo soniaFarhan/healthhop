@@ -358,9 +358,10 @@ export const Layout = () => {
 
       <footer
         class=" text-dark p-md-4 p-2"
-        style={{ backgroundColor: "#E3E2E2" }}
+       
+        style={{ background: "linear-gradient(90deg, #A45EB6, #0CA5A8)" }}
       >
-        <div class=" container py-3">
+        <div class=" container py-3 ">
           <div class="row d-flex justify-content-around py-3">
         
             <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-between gap-3">
@@ -371,15 +372,15 @@ export const Layout = () => {
                 />
               </div>
               <div>
-              <h4 class="mb-2 text-dark" title="Services">
+              <h4 class="mb-2 text-white" title="Services">
                 Medical tourisum
               </h4>
-              <p p class="text-upper_case mt-2 text-dark fs_14px opacity_custom" >
+              <p p class="text-upper_case mt-2 text-white fs_14px opacity_custom" >
               Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
               </p>
               </div>
               {/* <div>
-                <div className="text-dark text-upper_case mt-3 fs_14px">
+                <div className="text-white text-upper_case mt-3 fs_14px">
                   © 2022 all rights reserved developed and maintain by{" "}
                   <a href="https://www.fabtechsol.com/" target="_blank">
                     Fabtechsol
@@ -392,43 +393,43 @@ export const Layout = () => {
               <div className="row d-flex justify-content-end">
                 
                 <div className="col-6 col-sm-3 style-none">
-                  <h4 class="mb-2 text-dark " title="Services">
+                  <h4 class="mb-2 text-white " title="Services">
                     Helpful Links
                   </h4>
                   <Link to={"/jobs"} className="decoration-none ">
-                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Job Search">
+                    <p className="mb-1 text-white fs_14px opacity_custom" title="Job Search">
                     Reviews
                     </p>
                   </Link>
                   <Link className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Travel">
+                    <p className="mb-1 text-white fs_14px opacity_custom" title="Travel">
                       Bookmarks
                     </p>
                   </Link>
                   <Link className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Per Diem">
+                    <p className="mb-1 text-white fs_14px opacity_custom" title="Per Diem">
                       Bookings
                     </p>
                   </Link>
                   <Link className="decoration-none">
-                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Placement">
+                    <p className="mb-1 text-white fs_14px opacity_custom" title="Placement">
                      Contact
                     </p>
                   </Link>
                 </div>
 
                 <div className="col-6 col-sm-3 style-none">
-                  <h4 class="mb-2 text-dark " title="Resources">
+                  <h4 class="mb-2 text-white " title="Resources">
                     Contact Us
                   </h4>
-                  <Link to={"/jobs"} className="decoration-none text-dark">
-                    <p className="mb-1  text-dark fs_14px opacity_custom" title="Job Search">
+                  <Link to={"/jobs"} className="decoration-none text-white">
+                    <p className="mb-1  text-white fs_14px opacity_custom" title="Job Search">
                     12345 Little Lonsdale St, Melbourne 
                     
                     </p>
                   </Link>
-                  <Link  className="decoration-none text-dark" >
-                    <p className="mb-1 text-dark fs_14px opacity_custom" title="Clients">
+                  <Link  className="decoration-none text-white" >
+                    <p className="mb-1 text-white fs_14px opacity_custom" title="Clients">
                      Phone: (123) 123-456
                     </p>
                   </Link>

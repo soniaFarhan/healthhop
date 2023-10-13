@@ -297,7 +297,7 @@ export const Message = () => {
                 <input type="text" class="form-control text_dark" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent", fontSize: "12px", padding: "16px" }} ewwe />
                 <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-30px", top:"50%"}}>
               
-                <div className='d-flex  test' >
+                <div className='d-flex  ' >
                   <div className='rounded-circle bg-success justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px"}}>
                     <button className='btn  text-white fs-4 m-auto p-0'><PiPaperPlaneRightBold /></button>
                   </div>

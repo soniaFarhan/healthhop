@@ -43,7 +43,7 @@ const InquiryPatientProfile = (props) => {
         <div className="row mt-2 py-2 px-3">
           <div className="col-md-6 mt-3">
             <label htmlFor="" className="fw-bold">
-              Full |Name
+              Full Name
             </label>
             {/* <input
               type="text"

@@ -411,7 +411,7 @@ const Step5 = () => {
     <div className="scroll-container">
       <div className="content px-2">
         <h6 className="text-center">
-          Choose the Language, you want to <br /> provide your services in
+        Which Languages Does Your Clinic Support? <br /> (select all that apply)
         </h6>
         <div class="form-check my-4 ">
           <input

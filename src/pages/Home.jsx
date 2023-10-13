@@ -679,7 +679,7 @@ const  Orthopedics= [
                        <div className="text-center fw-bold pt-5 pb-2" style={{fontSize:"15px"}}>
                         <div>
 
-                        <p className="mb-0">This patiend was treated for 
+                        <p className="mb-0">This Patient was treated for 
                         </p>
                       <p className="color">  Hair Transplant  </p> 
                         </div>

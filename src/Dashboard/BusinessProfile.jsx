@@ -223,7 +223,7 @@ export const BusinessProfile = () => {
                 </div>
                 <div className="d-flex" style={{ color: "#07A6A9" }}>
                   <div className="me-2">
-                    <i class="bi bi-1-circle " style={{ fontSize: "20px" }}></i>
+                    <i class="bi bi-4-circle " style={{ fontSize: "20px" }}></i>
                   </div>
                   <p className='my-auto me-auto fw-semibold' >
                     Instant booking  fixed price for All-inclusive:
@@ -272,7 +272,7 @@ export const BusinessProfile = () => {
                     Average price range for the procedure:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USD</p>
 
 
                 </div>
@@ -284,7 +284,7 @@ export const BusinessProfile = () => {
                     All inclusion price range:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USD</p>
 
 
                 </div>
@@ -296,19 +296,19 @@ export const BusinessProfile = () => {
                     Istant booking  fixed price for procedure only:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500  USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500  USD</p>
 
 
                 </div>
                 <div className="d-flex" style={{ color: "#07A6A9" }}>
                   <div className="me-2">
-                    <i class="bi bi-1-circle " style={{ fontSize: "20px" }}></i>
+                    <i class="bi bi-4-circle " style={{ fontSize: "20px" }}></i>
                   </div>
                   <p className='my-auto me-auto fw-semibold' >
                     Istant booking  fixed price for All-inclusive:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 USD</p>
 
                 </div>
 

@@ -46,6 +46,9 @@ const handleChange = (event) => {
 
   return (
     <>
+    <div className="">
+
+
     <h4 className="my-3">Order Receipts</h4>
     <Grid container className="">
 <Grid item xs={3} className="mt-4 ms-auto" >
@@ -151,7 +154,7 @@ data.map((e)=>{
 
 </div>
 
-
+</div>
 
     </>
   )

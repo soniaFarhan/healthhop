@@ -216,12 +216,32 @@ async function fetchData(){
         
         <div className='row'>
         <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Add Title' /></div>
-        <div>
-       <p className='mb-0'>{`Date/Time: ${day}/${month}/${year}`}</p>
-       <p className='mb-0'>{`Time-Zone: ${hours}:${minutes}:${seconds}`}:{`GMT${gmtOffsetSign}${3}`} </p>
+        
+        <div className=''>
+          <div className='d-flex gap-5'>
+            <p className='mb-0'> Date/Time:  </p>  <p>{` ${day}/${month}/${year}`}</p>
+          </div>
+
+          <div className='d-flex gap-5'>
+         <p className='mb-0'>Time-Zone:   </p> <p> {`  ${hours}:${minutes}:${seconds}`}: {`GMT${gmtOffsetSign}${3}`}</p>
+          </div>
        </div>
+
+
+       <div className=" mx-auto mb-2 d-flex align-items-center ">
+
+        <div className=' col-md-5 fs_14px'>
+        Invite Participant
+        </div>
+
+        <div className='col-md-7 '>
+        <input type="text" className='form-control' placeholder='Email' />
+        </div>
+      
+        </div>
+
        <div>
-       <div className=" mx-auto mb-2"><textarea name="" className='form-control' placeholder='Detail of Meeting' id="" cols="30" rows="10"></textarea></div>
+       <div className=" mx-auto mb-2"><textarea name="" className='form-control' placeholder='Details of Meeting' id="" cols="30" rows="10"></textarea></div>
         </div>
 
         <div className=" mx-auto mb-2">
@@ -235,7 +255,7 @@ async function fetchData(){
         </div>
         </div>
 
-        <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Paste Metting link' /></div>
+        <div className=" mx-auto mb-2"><input type="text" className='form-control' placeholder='Paste Link to Google Meet or Zoom Meeting' /></div>
         {/* <div className="col-md-10 mx-auto mb-2"><button type='submit' className='btn btn-primary w-100'>Done</button></div> */}
       </div>
         </Modal.Body>

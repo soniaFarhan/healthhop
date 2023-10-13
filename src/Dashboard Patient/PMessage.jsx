@@ -57,7 +57,7 @@ export const PMessage = () => {
           </span>
         </span>
       ),
-      inquire: <span style={{ color: "rgb(249,9,9)" }}>New Inquiry</span>,
+      inquire: <span style={{ color: "rgb(249,9,9)" }}>New Message</span>,
       chat: "Me: what does This Dimmy",
       date: (
         <AiFillMinusCircle

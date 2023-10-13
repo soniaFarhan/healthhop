@@ -87,7 +87,7 @@ export const MyInquiries = () => {
                         </Link>
 
                         <Link>
-                          <button className="btn_blue btn rounded-pill py-1 fs_10px">
+                          <button className="btn_purpel  btn rounded-pill py-1 fs_10px">
                             {data.procedure}
                           </button>
                         </Link>

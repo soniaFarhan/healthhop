@@ -211,10 +211,10 @@ export const PMessage = () => {
   return (
     <>
       <div
-        className="container shadows "
+        className="container shadows pb-3 "
         style={{
           borderRadius: "10px",
-          height: "85vh",
+         
           backgroundColor: "rgb(253,253,253)",
         }}
       >

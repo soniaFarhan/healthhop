@@ -77,12 +77,12 @@ const Meet = () => {
 
         </div>
 
-        <div className="d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-center">
-          <div className="mt-auto ms-4">
+        <div className="d-flex flex-sm-row flex-column justify-content-sm-between justify-content-center">
+          <div className="mt-auto ms-md -4 ms-5">
 
             <h4 className="m-0">History:</h4>
           </div>
-          <div className="d-flex align-items-center" >
+          <div className="d-flex align-items-center ms-5" >
             <div className='' >
               <select class="form-select" aria-label="Default select example" style={{ backgroundColor: "#07A6A9", color: "white" }}>
                 <option selected> Send Package</option>

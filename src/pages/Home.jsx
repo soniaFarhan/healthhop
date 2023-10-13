@@ -13,7 +13,6 @@ import { Link, useLocation } from "react-router-dom";
 import { FaQuoteLeft } from 'react-icons/fa';
 import ReCAPTCHA from "react-google-recaptcha";
 
-
 export const Home = () => {
   const captchaRef = useRef(null)
   const [value, setValue] = useState([20, 37]);
@@ -1053,12 +1052,10 @@ const  Orthopedics= [
 
                   <div className="pt-5">
                   {/* <Link to={"/learn-more"}> */}
-                  <ReCAPTCHA className="q"
-                  // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
-                  sitekey={process.env.REACT_APP_SITE_KEY}
-                  // ref={captchaRef}
-                  // color="blue"
-                  />
+                  <ReCAPTCHA
+    sitekey={process.env.REACT_APP_SITE_KEY}
+    
+  />,
                       <Button
                       className="my-2"
                       style={{

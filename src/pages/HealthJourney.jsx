@@ -14,6 +14,10 @@ export const HealthJourney = () => {
 
   const marks = [
     {
+      value: 0,
+     
+    },
+    {
       value: 1000,
      
     },
@@ -33,6 +37,11 @@ export const HealthJourney = () => {
       value: 15000,
      
     },
+    {
+      value: 20000,
+     
+    },
+   
   ];
     const data = [
         {
@@ -68,7 +77,14 @@ export const HealthJourney = () => {
             defaultValue: 4
           }
 ]
-    const defaultValue = 4;
+    const defaultValue = 5;
+    const valueLabelFormat = (value) => {
+        if (value === 20000) {
+          return 'No max'; // Custom text for 20000
+        }
+        return value; // Default behavior for other values
+      };
+
   return (
     <div>
         <div  className='container py-5'>
@@ -279,18 +295,20 @@ export const HealthJourney = () => {
                             Select min and max price range
                         </p>
 
-                        <Box >
-                        <Slider
-      sx={{ color: "#07A6A9",height:"10px" }}
-      aria-label="Temperature"
-      defaultValue={3000} // Set your initial value here
-      valueLabelDisplay="auto"
-      step={null}
-      marks={marks}
-      min={1000}
-      max={15000}
-    />
-                 </Box>
+                        <Box>
+                <Slider
+                    sx={{ color: "#07A6A9",height:"10px" }}
+                    aria-label="Temperature"
+                    defaultValue={3000} // Set your initial value here
+                    valueLabelDisplay={12}
+                    step={null}
+                    valueLabelFormat={valueLabelFormat}
+                    marks={marks}
+                    min={0}
+                    max={20000}
+                  />
+                </Box>
+
                  <div className='my-3'>
                                         <button className='btn btn_green rounded-pill px-4'>
                                             Search

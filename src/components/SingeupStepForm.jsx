@@ -1011,7 +1011,7 @@ const Step8 = () => {
             id="1"
           />
              <label class="form-check-label" for="medical">
-             “Do you want to add medical staff to your business profile?
+             Do you want to add medical staff to your business profile?
           </label>
         </div>
       
@@ -1050,7 +1050,7 @@ const Step8 = () => {
           disabled={!isChecked1}
         />
        <select class="form-select" aria-label="Default select example">
-        <option disabled selected>Choose one</option>
+        <option disabled selected>Choose Medical Specialty</option>
         <option value="1">Orthopedics</option>
         <option value="2">Gynecology</option>
         <option value="3">Orthopedics</option>

@@ -739,14 +739,14 @@ const  Orthopedics= [
 
                    
                   <div
-                    className=""
+                    className="clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 text-center " style={{ color: "white" }}>
                       01
                     </h4>
                   </div>
@@ -772,14 +772,14 @@ const  Orthopedics= [
 
               <div className="col-md-7 p-0 ">
                   <div
-                    className=""
+                    className="clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 text-center " style={{ color: "white" }}>
                       02
                     </h4>
                   </div>
@@ -804,14 +804,14 @@ const  Orthopedics= [
               <div className=" d-md-flex p-md-5 mx-md-5">
                 <div className="col-md-7 mt-5 pt-5">
                   <div
-                    className=""
+                    className="clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 text-center " style={{ color: "white" }}>
                       03
                     </h4>
                   </div>
@@ -837,14 +837,14 @@ const  Orthopedics= [
 
                 <div className="col-md-7 my-5 ">
                   <div
-                    className=" d-flex justify-content-center"
+                    className=" d-flex justify-content-center clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 " style={{ color: "white" }}>
+                    <h4 className="p-2 text-center  " style={{ color: "white" }}>
                       04
                     </h4>
                   </div>

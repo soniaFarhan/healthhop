@@ -16,7 +16,9 @@ body {
 .shrink2 {
   transform: scale(0.9); 
 }
-
+.shrinkx {
+  transform: scaleX(0.8); 
+}
 
 /* body {
   transform: scaleY(0.8); 

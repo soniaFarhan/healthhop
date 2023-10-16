@@ -17,8 +17,8 @@ export const ContactUs = () => {
             </p>
             <div className='row'>
                 <div className="col-md-6">
-                    <h1 className='fw-bold me-4'>
-                    Contact our Health
+                    <h1 className='fw-bold me-4 clr-grdn-text'>
+                    Contact Our Health
                     Tourism Experts.
                     </h1>
                     <p className='text-muted fs_14px cu-color'>

@@ -124,7 +124,7 @@ data.map((e)=>{
 
   </div>
 <div className="m-2">
-<Link to={"/patient-details"}>
+<Link to={"/patient-inovice/patient-details"}>
 
 
 <Button variant="contained" style={{backgroundColor:"#07A6A9",padding:"6px 27px",fontSize:"10px",color:"white"}}>See details</Button>
@@ -191,6 +191,9 @@ function handleImageChange(event) {
     };
   }
 }
+
+
+
   return (
     <form>
     <Modal className=''

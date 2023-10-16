@@ -76,7 +76,7 @@ data.map(()=>{
                 <h6 className='fw-bold'>  Date: <span className='fw-normal'>  9-1-2023</span> </h6>
               </div>
               <div className="m-sm-2">
-                <Link to={"/Invoice-details"}>
+                <Link to={"/inovice/Invoice-details"}>
 
 
                   <Button variant="contained" style={{ backgroundColor: "#07A6A9", padding: "6px 27px", fontSize: "10px" }}>see details</Button>

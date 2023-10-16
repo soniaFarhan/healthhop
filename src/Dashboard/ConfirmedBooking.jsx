@@ -266,8 +266,13 @@ async function fetchData(){
        </div>
       </Modal.Body>
       <Modal.Footer>
-        <button type="submit" class="btn btn_green text-white">Order Complete </button>
-        <button type="submit" class="btn btn_green text-white">Cancel </button>
+    
+
+
+        <button type="submit" class="btn btn_green text-white me-auto">BACK </button>
+        <button type="submit" class="btn btn_green text-white">Procedure Complete </button>
+        <button type="submit" class="btn btn_green text-white">Cancel Booking </button>
+      
       </Modal.Footer>
       </form>
     </Modal>

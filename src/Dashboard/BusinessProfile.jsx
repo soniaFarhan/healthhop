@@ -73,7 +73,7 @@ export const BusinessProfile = () => {
 
 
             <div className=" mx-5 " style={{ marginTop: "15px" }}>
-              <Link to={"/Updateprofile"}>
+              <Link to={"/business-profile/updateprofile"}>
                 <Button className='text_color fw-bold' variant="outlined" sx={{ color: "red", border: "1px solid #39B7BA", borderRadius: "25px", fontSize: "9px" }}> <MedicalServicesOutlined style={{ fontSize: "19px", marginRight: "6px" }} /> Publish Profile</Button>
               </Link>
 
@@ -252,7 +252,7 @@ export const BusinessProfile = () => {
           <hr />
           <div className="d-flex justify-content-between aling-items-center">
 
-            <h6 className='fw-bold'>Hair Transplant</h6>
+            <h6 className='fw-bold'>Hair Transplant</h6>  <BorderColorOutlined onClick={()=>setModalShow4(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
 
             {/* <BorderColorOutlined sx={{ color: "#07A6A9" }} /> */}
           </div>

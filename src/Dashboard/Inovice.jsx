@@ -1,4 +1,4 @@
-import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material'
+import { Box, Button, FormControl, Grid, InputLabel, MenuItem, Select, TextField } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BiSearch } from 'react-icons/bi'
@@ -35,7 +35,7 @@ data.map(()=>{
               <button className='position-absolute translate-middle border-0 bg-transparent' style={{top:"50%", right:"0"}}><BiSearch style={{fontSize:"20px"}} /></button>
             </div>
             <div className='col-lg-4 col-sm-6 col-12'></div>
-            <div className="col-lg-4 col-sm-6 col-12 text-end">
+            {/* <div className="test col-lg-4 col-sm-6 col-12 text-end">
               <button className='btn'>
                 <FaSortAlphaDown /> A-Z
               </button>
@@ -45,7 +45,32 @@ data.map(()=>{
               <button className='btn'>
                 <FaDollarSign /> Paid
               </button>
-            </div>
+            </div> */}
+            
+            <Grid container className="">
+<Grid item xs={3} className="mt-4 ms-auto me-2" >
+<Box sx={{bgcolor:"white" }}>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Sort</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          // value={age}
+          label="Age"
+          // onChange={handleChange}
+        >
+          <MenuItem value={10}>Sort By Date(Most Recent)</MenuItem>
+          <MenuItem value={11}>Sort By Date(Oldest First)</MenuItem>
+          <MenuItem value={20}>Patient Name (Alphabetical)</MenuItem>
+          <MenuItem value={30}>Price (highest-lowest) </MenuItem>
+          <MenuItem value={30}>Price (lowest-highest) </MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
+
+</Grid>
+</Grid>
+
 </div>
       <div className=" my-3 p-3 container shadows2 " style={{ minHeight: "70vh", borderRadius: "14px", backgroundColor: "#ffff" }}>
         <div className=" m-2 p-2 pe-4" style={{ backgroundColor: "#F5F5F5", borderRadius: "14px" }}>

@@ -706,7 +706,7 @@ const  Orthopedics= [
       <section className="">
         <div className=" ">
           <div className="bg1 ">
-            <div className="shrink">
+            <div className="shrinkx">
 
            
 
@@ -872,7 +872,7 @@ const  Orthopedics= [
         </div>
       </section>
 
-      <section className="py-2 shrink mb-5" >
+      <section className="py-2 shrinkx mb-5 " >
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -935,7 +935,7 @@ const  Orthopedics= [
       <section className="">
         <div className="">
             <div className="p-3 bg">
-          <div className="shrink">
+          <div className="shrinkx">
               <div className="d-flex justify-content-center  pt-5 mt-2">
                 <h2 className="heading"
                   style={{
@@ -989,7 +989,7 @@ const  Orthopedics= [
         <div className="container">
           <div className="mx-md-5 ">
             <div className="p-3 ">
-              <div className="d-flex justify-content-center  pt-5 pb-4 ">
+              <div className="d-flex justify-content-center  pb-4 ">
                 <h1 className="heading"
                   style={{
                     borderBottom: "2px solid #07A6A9",

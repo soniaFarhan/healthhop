@@ -24,6 +24,7 @@ const SingeupStepForm = () => {
   const location=useLocation()
   const {from} = location?.state||{}; 
 
+
   console.log(from)
   return (
     <>
@@ -410,8 +411,8 @@ const Step5 = () => {
   return (
     <div className="scroll-container">
       <div className="content px-2">
-        <h6 className="text-center">
-        Which Languages Does Your Clinic Support? <br /> (select all that apply)
+        <h6 className="text-center px-md-2">
+        “Which Languages Does Your Clinic Support? (select all that apply)”
         </h6>
         <div class="form-check my-4 ">
           <input
@@ -646,7 +647,108 @@ const Step6 = () => {
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
+const [selectedCategory, setSelectedCategory] = useState(''); 
+  const [subCategories, setSubCategories] = useState([]);
 
+  const categorySubcategoryMap = {
+    'Aesthetic Procedures (Non-Surgical)': [
+      'Botox and Fillers',
+      'Chemical Peel',
+      'Laser Hair Removal',
+      'Microdermabrasion',
+      'Intense Pulsed Light (IPL) Treatment',
+      'Cellulite Laser and Cream Treatments',
+    ],
+    'Bariatric Surgery (Obesity Surgery)': [
+      'Gastric Bypass',
+      'Gastric Sleeve',
+      'Stomach Balloon',
+      'Stomach Band',
+    ],
+    Dentistry: [
+      'Cosmetic Dentistry “Hollywood Smile”',
+      'Dental Implants',
+      'Crowns',
+      'Veneers',
+      'Teeth Whitening',
+      'Orthodontics - Braces/Invisalign, Corrective Jaw Surgery',
+      'Endodontics - Root Treatments',
+      'Oral Surgery',
+      'Prosthodontics - Full Mouth Reconstruction, Dental Crowns & Bridges, Dentures',
+      'Periodontal - Gum Surgeries, Gum Cleaning, Gum Depigmentation',
+      'General dentistry - Fillings, Cleanings',
+      'Implantology - Dental Implants',
+    ],
+    'Fertility & IVF': [
+      'Invitro Fertilization IVF/ICSI',
+      'Egg (embryo) & Sperm Freezing',
+      'Intrauterine Insemination (IUI)',
+      'Other Fertility Procedures and Diagnosis',
+    ],
+    HairTransplants: ["Beard Transplant", "Hair Transplant for Men","Hair Transplant for Women"],
+
+    'Plastic Surgery and Aesthetic Surgeries': [
+      'Liposuction',
+      'Breast Lift and Augmentation',
+      'Abdominoplasty (Tummy Tuck)',
+      'Rhinoplasty (Nose Job)',
+      'Facelift',
+      'Lips Aesthetic - Lip Operations',
+      'Mommy Makeover (Labiaplasty, Vaginoplasty)',
+      'Eye Lift',
+      'Neck Lift',
+      'Brow/Forehead Lift',
+      'Otoplasty (Ear Pinning)',
+      'Reconstructive (Other Surgery)',],
+
+
+
+
+
+
+     " Ophthalmology (Eye Procedures and Surgeries)":[
+
+     ],
+
+
+    Orthopedics: [
+      'All',
+      'Spine Surgeries',
+      'Sports Injuries',
+      'Knee Surgeries',
+      'Hip Surgeries',
+      'Shoulder Surgeries',
+      'Carpal Tunnel',
+      'And More...',
+    ],
+  };
+ 
+
+  
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    setSelectedCategory(selectedCategory);
+
+    const subCategories = categorySubcategoryMap[selectedCategory] || [];
+    // console.log(subCategories,"unsort")
+subCategories.sort()
+// console.log(sort,"sort")
+
+    setSubCategories(subCategories.sort());
+  };
+
+
+
+const  Orthopedics= [
+  'All',
+  'Spine Surgeries',
+  'Sports Injuries',
+  'Knee Surgeries',
+  'Hip Surgeries',
+  'Shoulder Surgeries',
+  'Carpal Tunnel',
+  'And More...',
+]
   return (
     <div className="scroll-container">
       <div class="mb-3 d-grid gap-3 pe-4 px-2 content">
@@ -655,18 +757,38 @@ const Step6 = () => {
           Let's set up the procedures your clinic provides! We will add these
           one at a time so let's add the first <br /> procedure here{" "}
         </h6>{" "}
-        <TextField
-          id="outlined-basic"
-          label="Choose category"
-          variant="outlined"
-          className="form-control"
-        />
-        <TextField
-          id="outlined-basic"
-          label=" Choose Sub-category"
-          variant="outlined"
-          className="form-control"
-        />
+        <div className="mb-3">
+                  <select id="category" onChange={handleCategoryChange} value={selectedCategory}
+                    class="form-select bg-select "
+                    aria-label="Default select example"
+                  >
+                    <option selected>Choose Category</option>
+                    <option value="Aesthetic Procedures (Non-Surgical)">Aesthetic Procedures (Non-Surgical)     </option>
+                    <option value="Bariatric Surgery (Obesity Surgery)"> Bariatric Surgery (Obesity Surgery) </option>
+                    <option value="Dentistry">Dentistry   </option>
+                    <option value="Fertility & IVF">Fertility & IVF </option>
+                    <option value="Hair Transplants/ Hair Plugs">Hair Transplants/ Hair Plugs </option>
+                    <option value="Ophthalmology (Eye Procedures and Surgeries)">Ophthalmology (Eye Procedures and Surgeries)</option>
+                    <option value="Orthopedics"> Orthopedics </option>
+                    <option value="Plastic Surgery and Aesthetic Surgeries">Plastic Surgery and Aesthetic Surgeries </option>
+
+                   
+                  </select>
+                </div>
+
+                <div className="mb-3">
+                  <select id="subCategory" disabled={subCategories.length === 0}
+                    class="form-select  bg-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Choose Sub Category</option>
+                    {subCategories.map((subCategory) => (
+          <option key={subCategory} value={subCategory}>
+            {subCategory}
+          </option>
+        ))}
+                  </select>
+                </div>
         <textarea
           style={{ fontSize: "12px", height: "150px" }}
           class="form-control"
@@ -830,7 +952,7 @@ const Step6 = () => {
               border: "1px solid #07A6A9",
             }}
           >
-            + Add
+            Save and Add+ Another Procedure
           </Button>
         </div>
         <div className="pt-2 mb-2">

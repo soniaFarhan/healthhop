@@ -180,7 +180,7 @@ export const HealthJourney = () => {
                             <div className='mb-3'>
                                 <Link to={'/instatnt-booking'}>
                                     <button className='btn btn_light rounded-pill border border-dark fs_10px'>
-                                        Instant Quote and booking
+                                        Instant Quote and Booking
                                     </button>
                                 </Link>
                             </div>

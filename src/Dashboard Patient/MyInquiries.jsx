@@ -79,7 +79,7 @@ export const MyInquiries = () => {
                     <div>
                       <div className="d-flex align-items-center gap-2 flex-column flex-md-row">
                         <Link
-                          to={"/inquirybusiness"}
+                          to={"/patient-inquiries/inquirybusiness"}
                           state={{ data }}
                           style={{ textDecoration: "none" }}
                         >

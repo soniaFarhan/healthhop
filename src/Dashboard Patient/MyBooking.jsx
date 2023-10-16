@@ -16,12 +16,14 @@ function Refund({ onHide, show }) {
         style={{ zIndex: "10000" }}
       >
         <Modal.Header
-          className=""
+          className=" text-center d-flex justify-content-center"
           closeButton
           style={{ backgroundColor: "#07A6A9", color: "white" }}
         >
-          <Modal.Title id="contained-modal-title-vcenter">
-            Message Refund
+          <Modal.Title id="contained-modal-title-vcenter ">
+           
+            Request a Refund of Your Deposit 
+        
           </Modal.Title>
         </Modal.Header>
         <form>
@@ -101,12 +103,12 @@ export const MyBooking = () => {
                   </p>
                 </div>
                 <div>
-                    <button
+                    <Link
                       onClick={() => setRefund(true)}
-                      className="btn btn_green rounded-pill my-auto py-1"
+                      className=" my-auto py-1"
                     >
-                      Refund
-                    </button>
+                      Refund Request
+                    </Link>
                 </div>
               </div>
               

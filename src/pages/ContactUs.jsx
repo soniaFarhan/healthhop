@@ -17,8 +17,8 @@ export const ContactUs = () => {
             </p>
             <div className='row'>
                 <div className="col-md-6">
-                    <h1 className='fw-bold me-4'>
-                    Contact our Health
+                    <h1 className='fw-bold me-4 clr-grdn-text'>
+                    Contact Our Health
                     Tourism Experts.
                     </h1>
                     <p className='text-muted fs_14px cu-color'>
@@ -74,7 +74,7 @@ export const ContactUs = () => {
                            <input className='form-control' type="number" name="" id="" placeholder='Phone' />
                         </div>
                         <div className='col-md-6 mt-md-0 mt-3'>
-                             <input className='form-control' type="text" name="" id="" placeholder='subject' />
+                             <input className='form-control' type="text" name="" id="" placeholder='Subject' />
                         </div>
                     </div>
 

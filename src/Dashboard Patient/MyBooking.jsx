@@ -16,13 +16,15 @@ function Refund({ onHide, show }) {
         style={{ zIndex: "10000" }}
       >
         <Modal.Header
-          className=" text-center d-flex justify-content-center"
+          className=" text-center d-flex "
           closeButton
           style={{ backgroundColor: "#07A6A9", color: "white" }}
         >
-          <Modal.Title id="contained-modal-title-vcenter ">
-           
+          <Modal.Title id="contained-modal-title-vcenter " className="ms-auto" style={{}}>
+           <u>
+
             Request a Refund of Your Deposit 
+           </u>
         
           </Modal.Title>
         </Modal.Header>

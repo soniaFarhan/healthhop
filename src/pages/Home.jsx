@@ -187,9 +187,8 @@ const  Orthopedics= [
   const card = [
     {
       icon: (
-        <StarBorderIcon
+        <StarBorderIcon className="clr-grdn1"
           style={{
-            backgroundColor: "#07A6A9",
             width: "90px",
             height: "90px",
             color: "white",
@@ -206,9 +205,8 @@ const  Orthopedics= [
     },
     {
       icon: (
-        <Person
+        <Person className="clr-grdn1"
           style={{
-            backgroundColor: "#07A6A9",
             width: "90px",
             height: "90px",
             color: "white",
@@ -224,9 +222,8 @@ const  Orthopedics= [
     },
     {
       icon: (
-        <Lock
+        <Lock className="clr-grdn1"
           style={{
-            backgroundColor: "#07A6A9",
             width: "90px",
             height: "90px",
             color: "white",
@@ -477,7 +474,7 @@ const  Orthopedics= [
                         </CardContent>
                       </Card>
                       <div
-                        className="d-flex clr-grdn justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
+                        className="d-flex btn-green justify-content-center align-items-center text-white px-2 py-2 white_space translate-middle"
                         style={{
                           width: "45px",
                           height: "45px",
@@ -511,12 +508,12 @@ const  Orthopedics= [
               paddingBottom: "7px",
             }}
           >
-            Access to World Class medical providers
+            Access to World Class Medical Providers
           </h3>
         </div>
         <div className="">
           <div className="">
-            <div className="p-3  clr-grdn">
+            <div className="p-3  clr-grden">
               <div
                 className=" row px-md-5 mx-md-5  py-4  shrink"
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}
@@ -679,7 +676,7 @@ const  Orthopedics= [
                        <div className="text-center fw-bold pt-5 pb-2" style={{fontSize:"15px"}}>
                         <div>
 
-                        <p className="mb-0">This patiend was treated for 
+                        <p className="mb-0">This patient was treated for 
                         </p>
                       <p className="color">  Hair Transplant  </p> 
                         </div>
@@ -742,14 +739,14 @@ const  Orthopedics= [
 
                    
                   <div
-                    className=""
+                    className="clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 text-center " style={{ color: "white" }}>
                       01
                     </h4>
                   </div>
@@ -775,14 +772,14 @@ const  Orthopedics= [
 
               <div className="col-md-7 p-0 ">
                   <div
-                    className=""
+                    className="clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 text-center " style={{ color: "white" }}>
                       02
                     </h4>
                   </div>
@@ -807,14 +804,14 @@ const  Orthopedics= [
               <div className=" d-md-flex p-md-5 mx-md-5">
                 <div className="col-md-7 mt-5 pt-5">
                   <div
-                    className=""
+                    className="clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 text-center" style={{ color: "white" }}>
+                    <h4 className="p-2 text-center " style={{ color: "white" }}>
                       03
                     </h4>
                   </div>
@@ -840,14 +837,14 @@ const  Orthopedics= [
 
                 <div className="col-md-7 my-5 ">
                   <div
-                    className=" d-flex justify-content-center"
+                    className=" d-flex justify-content-center clr-grdn"
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
                       borderRadius: "13px",
                     }}
                   >
-                    <h4 className="p-2 " style={{ color: "white" }}>
+                    <h4 className="p-2 text-center  " style={{ color: "white" }}>
                       04
                     </h4>
                   </div>
@@ -875,7 +872,7 @@ const  Orthopedics= [
         </div>
       </section>
 
-      <section className="py-5 shrink" style={{marginBottom:"100px"}}>
+      <section className="py-2 shrink mb-5" >
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -889,7 +886,7 @@ const  Orthopedics= [
         </div>
 
         <Box>
-          <div className="">
+          <div className="mb-2">
             <Grid 
               className=" "
               container
@@ -899,12 +896,12 @@ const  Orthopedics= [
               {card.map((e, index) => (
                 <Grid 
                   component={Paper}  elevation={5}
-                  className=" rounded-4 my-5 p-0 d-flex mx-2 justify-content-center "
+                  className=" rounded-4 my-2 p-0 d-flex mx-2 justify-content-center "
                   item
                   key={index}
                 >
                   <div
-                    className=" my-4 "
+                    className=" my-2 "
                     style={{
                       borderRadius: "10px",
                       color: "#939393",
@@ -913,15 +910,15 @@ const  Orthopedics= [
                     }}
                   >
                     <div className="    ">
-                      <div className=" px-4 mb-3 ">{e.icon}</div>
+                      <div className=" px-4 mb-2 ">{e.icon}</div>
                       <h6
-                        className="mb-0  px-4 pt-3 "
+                        className="mb-0  px-4 pt-2 "
                         style={{ color: "black" }}
                       >
                        {e.name}
                       </h6>
                       <p
-                        className="mb-0  card-content px-4 pb-5  "
+                        className="mb-0  card-content px-4 pb-2  "
                         style={{ fontSize: "14px" }}
                       >
                         {e.title}
@@ -939,7 +936,7 @@ const  Orthopedics= [
         <div className="">
             <div className="p-3 bg">
           <div className="shrink">
-              <div className="d-flex justify-content-center  pt-5 mt-5">
+              <div className="d-flex justify-content-center  pt-5 mt-2">
                 <h2 className="heading"
                   style={{
                     borderBottom: "2px solid #07A6A9",
@@ -962,13 +959,13 @@ const  Orthopedics= [
 
 
                  
-                  <h2 className="px-3" style={{ color: "white", }}>
+                  <h2 className="px-3 text-white">
                     Our Mission
                   </h2>
-                  <p className="px-3" style={{ color: "white",fontSize:"14px" }}>
+                  <p className="px-3 text-white fs-5">
                   At HealthHop, we believe that everyone should have access to affordable and quality medical care. Our mission is to make safe and affordable medical care accessible to anyone by providing a centralized, all-in-one application that streamlines the booking process.
                   </p>
-                  <p className="px-3 mb-5" style={{ color: "white",fontSize:"14px" }}>
+                  <p className="px-3 mb-5 text-white fs-5">
                   At HealthHop, we believe that everyone should have access to affordable and quality medical care. Our mission is to make safe and affordable medical care accessible to anyone by providing a centralized, all-in-one application that streamlines the booking process.
                   </p>
                   

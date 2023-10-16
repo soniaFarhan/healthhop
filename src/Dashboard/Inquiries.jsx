@@ -95,7 +95,7 @@ export const Inquiries = () => {
                       //   pathname: "/inquiryPatient",
                       //   state: ele,
                       // }}
-                      to={"/inquiryPatient"}
+                      to={"/inquiries/inquiryPatient"}
                       state={{ ele }}
                       style={{ textDecoration: "none" }}
                     >
@@ -104,7 +104,7 @@ export const Inquiries = () => {
                       </h6>
                     </Link>
 
-                    <Link style={{ textDecoration: "none" }} to={"/meet"}>
+                    <Link style={{ textDecoration: "none" }} to={"/inquiries/meet"}>
                       <p style={{ fontSize: "10px", color: "#07A6A9" }}>
                         Quote offered
                       </p>

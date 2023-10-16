@@ -43,7 +43,7 @@ const InquiryPatientProfile = (props) => {
         <div className="row mt-2 py-2 px-3">
           <div className="col-md-6 mt-3">
             <label htmlFor="" className="fw-bold">
-              Full |Name
+              Full Name
             </label>
             {/* <input
               type="text"
@@ -123,7 +123,7 @@ const InquiryPatientProfile = (props) => {
         </div>
         <div className="d-flex mt-2 gap-4 py-2 px-3">
           
-          <div className="dropdown">
+          <div className="dropdown" style={{width:"300px"}}>
           <Button className=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: "#07A6A9", border: "none" }}>
             Send Offer To This Patient
           </Button>

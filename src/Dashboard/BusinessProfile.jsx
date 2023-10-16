@@ -1,8 +1,9 @@
 import { BorderColorOutlined, Chat, LocationOnOutlined, MedicalServicesOutlined } from '@mui/icons-material'
-import { Avatar, Button, TextField } from '@mui/material'
+import { Avatar, Box, Button, Radio, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Modal from 'react-bootstrap/Modal';
+import Popupprocedure from '../components/Popupprocedures';
 export const BusinessProfile = () => {
   const [repNameModal, setRepNameModal] = useState(false);
   const [businessName, setBusinessName] = useState(false);
@@ -73,7 +74,7 @@ export const BusinessProfile = () => {
 
 
             <div className=" mx-5 " style={{ marginTop: "15px" }}>
-              <Link to={"/Updateprofile"}>
+              <Link to={"/business-profile/updateprofile"}>
                 <Button className='text_color fw-bold' variant="outlined" sx={{ color: "red", border: "1px solid #39B7BA", borderRadius: "25px", fontSize: "9px" }}> <MedicalServicesOutlined style={{ fontSize: "19px", marginRight: "6px" }} /> Publish Profile</Button>
               </Link>
 
@@ -223,7 +224,7 @@ export const BusinessProfile = () => {
                 </div>
                 <div className="d-flex" style={{ color: "#07A6A9" }}>
                   <div className="me-2">
-                    <i class="bi bi-1-circle " style={{ fontSize: "20px" }}></i>
+                    <i class="bi bi-4-circle " style={{ fontSize: "20px" }}></i>
                   </div>
                   <p className='my-auto me-auto fw-semibold' >
                     Instant booking  fixed price for All-inclusive:
@@ -252,7 +253,7 @@ export const BusinessProfile = () => {
           <hr />
           <div className="d-flex justify-content-between aling-items-center">
 
-            <h6 className='fw-bold'>Hair Transplant</h6>
+            <h6 className='fw-bold'>Hair Transplant</h6>  <BorderColorOutlined onClick={()=>setModalShow4(true)} sx={{color:"#07A6A9",cursor:"pointer"}}/>
 
             {/* <BorderColorOutlined sx={{ color: "#07A6A9" }} /> */}
           </div>
@@ -272,7 +273,7 @@ export const BusinessProfile = () => {
                     Average price range for the procedure:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USD</p>
 
 
                 </div>
@@ -284,7 +285,7 @@ export const BusinessProfile = () => {
                     All inclusion price range:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USD</p>
 
 
                 </div>
@@ -296,19 +297,19 @@ export const BusinessProfile = () => {
                     Istant booking  fixed price for procedure only:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500  USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500  USD</p>
 
 
                 </div>
                 <div className="d-flex" style={{ color: "#07A6A9" }}>
                   <div className="me-2">
-                    <i class="bi bi-1-circle " style={{ fontSize: "20px" }}></i>
+                    <i class="bi bi-4-circle " style={{ fontSize: "20px" }}></i>
                   </div>
                   <p className='my-auto me-auto fw-semibold' >
                     Istant booking  fixed price for All-inclusive:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 USD</p>
 
                 </div>
 
@@ -941,12 +942,119 @@ function MohModal4({onHide, show,}) {
       };
     }
   }
+  const [selectedValue, setSelectedValue] = React.useState('a');
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+const [selectedCategory, setSelectedCategory] = useState(''); 
+  const [subCategories, setSubCategories] = useState([]);
+
+  const categorySubcategoryMap = {
+    'Aesthetic Procedures (Non-Surgical)': [
+      'Botox and Fillers',
+      'Chemical Peel',
+      'Laser Hair Removal',
+      'Microdermabrasion',
+      'Intense Pulsed Light (IPL) Treatment',
+      'Cellulite Laser and Cream Treatments',
+    ],
+    'Bariatric Surgery (Obesity Surgery)': [
+      'Gastric Bypass',
+      'Gastric Sleeve',
+      'Stomach Balloon',
+      'Stomach Band',
+    ],
+    Dentistry: [
+      'Cosmetic Dentistry “Hollywood Smile”',
+      'Dental Implants',
+      'Crowns',
+      'Veneers',
+      'Teeth Whitening',
+      'Orthodontics - Braces/Invisalign, Corrective Jaw Surgery',
+      'Endodontics - Root Treatments',
+      'Oral Surgery',
+      'Prosthodontics - Full Mouth Reconstruction, Dental Crowns & Bridges, Dentures',
+      'Periodontal - Gum Surgeries, Gum Cleaning, Gum Depigmentation',
+      'General dentistry - Fillings, Cleanings',
+      'Implantology - Dental Implants',
+    ],
+    'Fertility & IVF': [
+      'Invitro Fertilization IVF/ICSI',
+      'Egg (embryo) & Sperm Freezing',
+      'Intrauterine Insemination (IUI)',
+      'Other Fertility Procedures and Diagnosis',
+    ],
+    HairTransplants: ["Beard Transplant", "Hair Transplant for Men","Hair Transplant for Women"],
+
+    'Plastic Surgery and Aesthetic Surgeries': [
+      'Liposuction',
+      'Breast Lift and Augmentation',
+      'Abdominoplasty (Tummy Tuck)',
+      'Rhinoplasty (Nose Job)',
+      'Facelift',
+      'Lips Aesthetic - Lip Operations',
+      'Mommy Makeover (Labiaplasty, Vaginoplasty)',
+      'Eye Lift',
+      'Neck Lift',
+      'Brow/Forehead Lift',
+      'Otoplasty (Ear Pinning)',
+      'Reconstructive (Other Surgery)',],
+
+
+
+
+
+
+     " Ophthalmology (Eye Procedures and Surgeries)":[
+
+     ],
+
+
+    Orthopedics: [
+      'All',
+      'Spine Surgeries',
+      'Sports Injuries',
+      'Knee Surgeries',
+      'Hip Surgeries',
+      'Shoulder Surgeries',
+      'Carpal Tunnel',
+      'And More...',
+    ],
+  };
+ 
+
+  
+  const handleCategoryChange = (event) => {
+    const selectedCategory = event.target.value;
+    setSelectedCategory(selectedCategory);
+
+    const subCategories = categorySubcategoryMap[selectedCategory] || [];
+    // console.log(subCategories,"unsort")
+subCategories.sort()
+// console.log(sort,"sort")
+
+    setSubCategories(subCategories.sort());
+  };
+
+
+
+const  Orthopedics= [
+  'All',
+  'Spine Surgeries',
+  'Sports Injuries',
+  'Knee Surgeries',
+  'Hip Surgeries',
+  'Shoulder Surgeries',
+  'Carpal Tunnel',
+  'And More...',
+]
   return (
     <form>
     <Modal
      show={show}
      onHide={onHide}
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       style={{zIndex:'10000'}}
@@ -959,28 +1067,48 @@ function MohModal4({onHide, show,}) {
       <form >
       <Modal.Body>
       <div className="scroll-container">
-      <div class="mb-3 d-grid gap-3 p-0 content">
+      <div class="mb-3 d-grid gap-3 pe-4 px-2 content">
         <h6 className="text-center">
           {" "}
-          Let's set up the Procedures your clinic provides! We will add these
-          one at a time. so let's add the first procedure here.
+          Let's set up the procedures your clinic provides! We will add these
+          one at a time so let's add the first <br /> procedure here{" "}
         </h6>{" "}
-        <TextField
-          id="outlined-basic"
-          label="Choose category"
-          variant="outlined"
-          style={{ width: "100%" }}
-        />
-        <TextField
-          id="outlined-basic"
-          label=" Choose Sub-category"
-          variant="outlined"
-          style={{ width: "100%" }}
-        />
+        <div className="mb-3">
+                  <select id="category" onChange={handleCategoryChange} value={selectedCategory}
+                    class="form-select bg-select "
+                    aria-label="Default select example"
+                  >
+                    <option selected>Choose Category</option>
+                    <option value="Aesthetic Procedures (Non-Surgical)">Aesthetic Procedures (Non-Surgical)     </option>
+                    <option value="Bariatric Surgery (Obesity Surgery)"> Bariatric Surgery (Obesity Surgery) </option>
+                    <option value="Dentistry">Dentistry   </option>
+                    <option value="Fertility & IVF">Fertility & IVF </option>
+                    <option value="Hair Transplants/ Hair Plugs">Hair Transplants/ Hair Plugs </option>
+                    <option value="Ophthalmology (Eye Procedures and Surgeries)">Ophthalmology (Eye Procedures and Surgeries)</option>
+                    <option value="Orthopedics"> Orthopedics </option>
+                    <option value="Plastic Surgery and Aesthetic Surgeries">Plastic Surgery and Aesthetic Surgeries </option>
+
+                   
+                  </select>
+                </div>
+
+                <div className="mb-3">
+                  <select id="subCategory" disabled={subCategories.length === 0}
+                    class="form-select  bg-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Choose Sub Category</option>
+                    {subCategories.map((subCategory) => (
+          <option key={subCategory} value={subCategory}>
+            {subCategory}
+          </option>
+        ))}
+                  </select>
+                </div>
         <textarea
           style={{ fontSize: "12px", height: "150px" }}
           class="form-control"
-          placeholder="Discription "
+          placeholder="Add a detailed description of the procedure and why people should choose your clinic over other providers. The more details the better."
           id="exampleFormControlTextarea1"
           rows="29"
         ></textarea>
@@ -1012,36 +1140,152 @@ function MohModal4({onHide, show,}) {
                 hidden
                 multiple
               />
-              <label
-                style={{ fontSize: "60px" }}
-                className="text-center "
-                htmlFor="img"
-              >
-                <i class="bi bi-plus"></i>
-              </label>
+               <label  style={{fontSize:"20px", border:"3px dashed #9E9E9E",width:"120px",height:"120px"}} className="text-center px-4 rounded d-flex " htmlFor="img">
+
+                <div className="d-flex alig-items-center justify-content-center m-auto">
+                <p style={{fontSize:"9px"}}>Add photos/Video</p>  <i class="bi bi-plus "></i>
+                </div>
+                
+           </label>
             </div>
           </div>
         </div>
-        <div className="d-flex gap-3 justify-content-center ">
+        <h6 className="mb-0">Procedure Only:</h6>
+        <div className="d-flex justify-content-between">
           <div className="">
             <TextField
               id="outlined-basic"
-              label=" Min"
+              label=" Min Price in USD"
               variant="outlined"
-              style={{ width: "100%" }}
+              className="form-control"
             />
           </div>
           <div className="">
-            {" "}
+
             <TextField
               id="outlined-basic"
-              label="Max"
+              label="Max Price in USD              "
               variant="outlined"
-              style={{ width: "100%" }}
+              className="form-control"
             />
           </div>
         </div>
+        <h6 className="mb-0">All Inclusive Price in USD:</h6>
+        <div className="d-flex justify-content-between">
+          <div className="">
+            <TextField
+              id="outlined-basic"
+              label=" Min Price in USD"
+              variant="outlined"
+              className="form-control"
+            />
+          </div>
+          <div className="">
+
+            <TextField
+              id="outlined-basic"
+              label="Max Price in USD"
+              variant="outlined"
+              className="form-control"
+            />
+          </div>
+        </div>
+
         
+      
+        <div className=" d-flex align-items-center">
+        <span className="fs_14px me-4">Do you want to include an instant booking fixed price for this procedure?</span>
+        <div className="form-check my-auto d-flex">
+      <p className="my-auto">Yes</p>
+      <Radio
+  checked={selectedValue === 'b'}
+  onChange={handleChange}
+  value="b"
+  name="radio-buttons"
+  inputProps={{ 'aria-label': 'B' }}
+/>  
+
+<p className="my-auto">No</p>
+<Radio
+  checked={selectedValue === 'a'}
+  onChange={handleChange}
+  value="a"
+  name="radio-buttons"
+  inputProps={{ 'aria-label': 'A' }}
+/>
+        </div>
+        </div>
+        <div className="row">
+          <div className="col-6">
+            <span className="fs_14px">Instant Booking Fixed Price for Procedure Only:</span>
+          </div>
+          <div className="col-6">
+            <TextField
+              id="outlined-basic"
+              label="Price in USD"
+              variant="outlined"
+
+
+              className={`form-control ${selectedValue ==="a" ? '' : 'disabled'}`}
+              disabled={selectedValue==="a"}
+            />
+          </div>
+        </div>
+      
+
+        <div className="row">
+          <div className="col-6">
+            <span className="fs_14px">Instant Booking Fixed Price for All Inclusive Package:</span>
+          </div>
+          <div className="col-6">
+            <TextField
+              id="outlined-basic"
+              label="Price in USD"
+              variant="outlined"
+
+
+              className="form-control"
+              disabled={selectedValue==="a"}
+            />
+          </div>
+        </div>
+    
+
+       
+
+        <Box  >
+         
+        </Box>
+
+        <div className="pt-2  ">
+          <Button className='fw-bold'
+            style={{
+              backgroundColor: " transparent",
+              color: "#07A6A9",
+              padding: "16px 80px",
+              fontSize: "12px",
+              width: "100%",
+              border: "1px solid #07A6A9",
+            }}
+          >
+            Save and Add+ Another Procedure
+          </Button>
+        </div>
+        <div className="pt-2 mb-2">
+          {/* <Button
+            style={{
+              backgroundColor: " transparent",
+              color: "#07A6A9",
+              padding: "16px 80px",
+              fontSize: "15px",
+              width: "100%",
+              border: "1px solid #07A6A9",
+            }}
+          >
+            Add
+          </Button> */}
+          <Popupprocedure/>
+        </div>
       </div>
     </div>
       

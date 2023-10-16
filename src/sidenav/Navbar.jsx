@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
     <Box class="" sx={{ flexGrow: 1 }}>
        
               
-           <AppBar className='' position="fixed" sx={{ background: "linear-gradient(-90deg,#7868A2, #15A0A8)" }}>
+           <AppBar className='' position="fixed" sx={{ background: "black" }}>
             <Toolbar variant="dense" style={{display:'flex',
               justifyContent:'flex-end',minHeight:'65px'}} >
                

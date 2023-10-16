@@ -84,7 +84,7 @@ const Profile = () => {
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='Country'/>
             </div>
             <div className="col-md-12 mt-3">
-              <label htmlFor="" className='fw-bold'>“Are you allergic to any medications. If so, please list them here</label>
+              <label htmlFor="" className='fw-bold'>Are you allergic to any medications. If so, please list them here</label>
               <input type="text" className='form-control rounded-4 mt-1 border border-1 border-dark fs_14px p-3' placeholder='List here'/>
             </div>
             </div>

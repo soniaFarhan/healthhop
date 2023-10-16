@@ -55,26 +55,26 @@ function App() {
 
       <Route element={<DashboardLayout/>}>
         <Route path='/inquiries' element={<Inquiries/>}/>
-        <Route path='/inquiryPatient' element={<InquiryPatientProfile/>}/>
+        <Route path='/inquiries/inquiryPatient' element={<InquiryPatientProfile/>}/>
         <Route path='/confirmed-booking' element={<ConfirmedBooking/>}/>
         <Route path='/packages' element={<Packges/>}/>
         <Route path='/calendar' element={<Calender month={"month"} />}/>
         <Route path='/message' element={<Message/>}/>
         <Route path='/inovice' element={<Inovice/>}/>
-        <Route path='/Invoice-details' element={<Invoicedetails/>}/>
+        <Route path='/inovice/Invoice-details' element={<Invoicedetails/>}/>
         <Route path='/business-profile' element={<BusinessProfile/>}/>
-        <Route path='/meet' element={<Meet/>}/>
-        <Route path='/updateprofile' element={<Updateprofile/>}/>
+        <Route path='/inquiries/meet' element={<Meet/>}/>
+        <Route path='/business-profile/updateprofile' element={<Updateprofile/>}/>
       </Route>
 
       <Route element={<DashboardLayoutPatient/>}>
        <Route path='/patient-inquiries' element={<MyInquiries/>}/>
-       <Route path='/inquirybusiness' element={<InquiryBusinessProfile/>}/>
+       <Route path='/patient-inquiries/inquirybusiness' element={<InquiryBusinessProfile/>}/>
         <Route path='/patient-booking' element={<MyBooking/>}/>
         <Route path='/patient-calendar' element={<Calender month={"month"} patient={"patient"} />}/>
         <Route path='/patient-message' element={<PMessage/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
-        <Route path='/patient-details' element={<PInvoicedetails/>} />  
+        <Route path='/patient-inovice/patient-details' element={<PInvoicedetails/>} />  
         <Route path='/patient-profile' element={<Profile/>}/>
         <Route path='/meet' element={<Meet/>}/>
         <Route path='/my-profile' element={<Myprofile/>}/>

@@ -16,6 +16,10 @@ body {
 .shrink2 {
   transform: scale(0.9); 
 }
+.shrinkx {
+  transform: scaleX(0.8); 
+}
+
 /* body {
   transform: scaleY(0.8); 
   transform-origin: top center; 
@@ -156,8 +160,8 @@ body {
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(200, 58, 236, 0.6),
-      rgba(15, 220, 238, 0.6)
+      rgb(122,121,188, 0.5),
+      rgb(13,165,168, 0.5)
     ),
     url(./assets/homeimg.png);
   background-size: cover;
@@ -474,7 +478,7 @@ ul li {
   color: #39b7ba;
 }
 .accordion-body ul li a{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .linke ul li a {
@@ -555,6 +559,21 @@ select.bg-select option {
 .clr-grdn{
   background-image: linear-gradient(to right, rgb(205,88,204), rgb(12,165,168));
   color: #ffffff !important;
+}
+.clr-grdn1{
+  background-image: linear-gradient(to right, rgb(154,108,195), rgb(117,124,188));
+}
+.clr-grden{
+  background-image: linear-gradient(to right, rgb(205, 88, 204) 5%, rgb(12, 165, 168) 95%);
+  background-size: 100%;
+  color: #ffffff !important;
+  
+
+}
+.clr-grdn-text{
+  background: linear-gradient(to right, rgb(205,88,204), rgb(12,165,168));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .btn-pink{
   background-color: rgb(205,88,204) !important;

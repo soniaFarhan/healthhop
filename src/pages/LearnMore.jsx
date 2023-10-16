@@ -295,9 +295,9 @@ const [image,setImage]=useState()
 
 
                     <div id='pricing' className='py-md-5 py-2'>
-                        <h3 className='fw-bold'>
-                            Pricing
-                        </h3>
+                    <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
+                     Pricing
+                    </h3></a>
 
                         <div className='d-flex justify-content-between p-3 rounded my-4' style={{backgroundColor:"#D8F1F2"}}>
                             <p className='mb-0'>
@@ -349,7 +349,7 @@ const [image,setImage]=useState()
 
                       
                         <a href="#back" style={{textDecoration:"none",color:"black"}}>  <h3 className='fw-bold'>
-                        Review 
+                        Reviews 
                     </h3></a>
 
                         <div className='shadow p-3 rounded'>

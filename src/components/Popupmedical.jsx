@@ -32,7 +32,7 @@ function MyVerticallyCenteredModal(props) {
 
 
 <select class="form-select" aria-label="Default select example">
-  <option disabled selected>Choose one</option>
+  <option disabled selected>Choose Medical Specialty</option>
   <option value="1">Orthopedics</option>
   <option value="2">Gynecology</option>
   <option value="3">Orthopedics</option>
@@ -89,7 +89,7 @@ function Popupmedical () {
             border: "1px solid #07A6A9",
           }}
         >
-          Add
+        Save and  Add Another
         </Button>
 
       <MyVerticallyCenteredModal

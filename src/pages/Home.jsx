@@ -513,19 +513,19 @@ const  Orthopedics= [
         </div>
         <div className="">
           <div className="">
-            <div className="p-3  clr-grden">
+            <div className="p-3" style={{background: "linear-gradient(90deg, #757BBB, #0CA5A8)"}}>
               <div
                 className=" row px-md-5 mx-md-5  py-4  shrink"
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}
               >
-                <div className=" col-md-4" >
-                  <h3 className="" style={{ color: "white",fontSize:"45px" }}>
+                <div className=" col-md-4 my-auto" >
+                  <h2 className="" style={{ color: "white"}}>
                     Get the 
                     Best 
-                    Medical 
+                    Medical <br />
                     Care  for
                     Your Needs
-                  </h3>
+                  </h2>
                 </div>
                 <div className="my-auto col-md-8">
                   <p className="" style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
@@ -706,7 +706,7 @@ const  Orthopedics= [
       <section className="">
         <div className=" ">
           <div className="bg1 ">
-            <div className="shrinkx">
+            <div className="mx-auto" style={{width:"85%"}}>
 
            
 
@@ -732,14 +732,14 @@ const  Orthopedics= [
               <p></p>
             </div>
 
-            <div className=" my-5 ms-md-5 me-md-0 ps-md-5">
+            <div className=" my-5  me-md-0 ">
               <div className=" d-md-flex p-lg-5 mx-lg-5 ">
                 <div className="col-md-7  p-0 mt-5 pt-5 ">
                    <div className="mt-1">
 
                    
                   <div
-                    className="clr-grdn"
+                    className=""
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
@@ -772,7 +772,7 @@ const  Orthopedics= [
 
               <div className="col-md-7 p-0 ">
                   <div
-                    className="clr-grdn"
+                    className=""
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
@@ -788,8 +788,8 @@ const  Orthopedics= [
                   Once you have booked your procedure, our providers can even help you take care of your transportation and accommodation logistics. Need to be picked up from the airport? No problem. Transportation from your hotel and clinic can be arranged with ease.
                   </p>
                 </div>
-                <div className="col-md-5 pe-md-5">
-                  <div className="mx-auto d-flex justify-content-center m-md-0 p-md-0 m-sm-5 p-sm-5">
+                <div className="col-md-5 pe-md-5 d-flex align-items-center">
+                  <div className="m-auto">
                     <img
                       className="mx-auto"
                       src={require("../../src/assets/Image 5.png")}
@@ -804,7 +804,7 @@ const  Orthopedics= [
               <div className=" d-md-flex p-md-5 mx-md-5">
                 <div className="col-md-7 mt-5 pt-5">
                   <div
-                    className="clr-grdn"
+                    className=""
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
@@ -837,7 +837,7 @@ const  Orthopedics= [
 
                 <div className="col-md-7 my-5 ">
                   <div
-                    className=" d-flex justify-content-center clr-grdn"
+                    className=""
                     style={{
                       backgroundColor: "#07A6A9",
                       width: "50px",
@@ -854,10 +854,10 @@ const  Orthopedics= [
                   </p>
                 </div>
 
-                <div className="col-md-5 pe-md-5 ">
-                  <div className="mx-auto d-flex justify-content-center  m-md-0 p-md-0 m-sm-5 p-sm-5">
+                <div className="col-md-5 pe-md-5 d-flex align-items-center">
+                  <div className="m-auto">
                     <img
-                      className="mx-auto"
+                      className="m-auto"
                       src={require("../../src/assets/Image 5.png")}
                       alt="Card image"
                       style={{ width: "100%" }}

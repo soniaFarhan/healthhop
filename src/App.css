@@ -17,7 +17,10 @@ body {
   transform: scale(0.9); 
 }
 .shrinkx {
-  transform: scaleX(0.8); 
+  transform: scale(0.8); 
+}
+.shrinky {
+  transform: scale(0.8); 
 }
 
 /* body {
@@ -412,13 +415,16 @@ ul li {
 .fc .fc-toolbar {
   display: flex !important;
   align-items: center !important;
-  justify-content: start;
-  gap: 14rem !important;
+  justify-content: space-between;
 }
 
 .fc-toolbar-chunk {
   display: flex;
   flex-direction: row; /* Arrange buttons in a row */
+}
+.fc-toolbar-chunk {
+  min-width: 28.33% !important;
+  max-width: 33.33% !important;
 }
 
 .fc .fc-button-primary:not(:disabled).fc-button-active,
@@ -457,11 +463,14 @@ ul li {
 /* Media query for mobile view */
 @media (max-width: 768px) {
   .fc .fc-toolbar {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
   }
+  .fc-toolbar-chunk {
+    min-width: fit-content !important;
+  }
+  
 }
 
 .y {
@@ -478,7 +487,7 @@ ul li {
   color: #39b7ba;
 }
 .accordion-body ul li a{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .linke ul li a {
@@ -543,7 +552,7 @@ select.bg-select option {
   text-wrap: nowrap;
 }
 .dropdown-content{
-  width: 450px ;
+  width: 470px ;
   text-wrap: wrap;
  
 }
@@ -593,3 +602,6 @@ select.bg-select option {
   background-color: #07a6a9; /* Change this color to your desired active step color */
 }
 
+.ho:hover {
+  background-color:#39b7ba !important;
+}

@@ -318,9 +318,9 @@ export const Message = () => {
                     <Button className=" dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: "#604A7B", border: "none" }}>
                     <BiPackage/>
                     </Button>
-                    <ul style={{ backgroundColor: "#604A7B", border: "none" }} className="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1">
-                      <li><button onClick={() => setModalShow(true)} className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Create Custom Order</button></li>
-                      <li><button  className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Already Existing Package</button></li>
+                    <ul style={{ backgroundColor: "#604A7B", border: "none",width:"240px" }} className="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1">
+                      <li><button onClick={() => setModalShow(true)} className="mb-0 " style={{cursor:"pointer",backgroundColor: "#604A7B", border: "none" ,color:"white"}} >Create Custom Order</button></li>
+                      <li><button  className="mb-0 " style={{cursor:"pointer",backgroundColor: "#604A7B", border: "none" ,color:"white"}} >Already Existing Package</button></li>
                     </ul>
                     </div>
 

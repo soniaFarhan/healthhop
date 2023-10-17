@@ -170,6 +170,8 @@ data.map((e)=>{
 function MohModal({onHide, show,}) {
 
   const [selected, setSelected] = useState("");
+
+  // const showOptionLabel = boolean("Show Option Label", true);
   
   
 
@@ -597,6 +599,7 @@ function MohModal({onHide, show,}) {
     { code: 'ZM', label: 'Zambia', phone: '260' },
     { code: 'ZW', label: 'Zimbabwe', phone: '263' },
   ];
+
 const handleSubmit=async(e)=>{
 e.preventDefault()
 onHide(); 
@@ -703,6 +706,7 @@ function handleImageChange(event) {
               
             <ReactFlagsSelect
               selected={selected}
+              // showSelectedLabel={showSelectedLabel}
               onSelect={(code) => setSelected(code)}
             />
  
@@ -733,7 +737,7 @@ function handleImageChange(event) {
               border: "2px dashed #8B8B8B",
             }}
           >
-            Upload image    <i style={{}} class="bi bi-plus"></i>
+            Upload images    <i style={{}} class="bi bi-plus"></i>
           
           </label>
           <div className="my-4">

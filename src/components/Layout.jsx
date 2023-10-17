@@ -97,7 +97,7 @@ export const Layout = () => {
           <div class=" accordion mt-lg-4 mt-1" id="accordionExample" style={{backgroundColor:"white"}}>
   <div class="accordion-item ">
     <h2 class="accordion-header" >
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
       Hair Transplants/ Hair Plugs
       <IoIosArrowDown className="drop-btn rotate-90"/>
       </button>
@@ -116,7 +116,7 @@ export const Layout = () => {
   </div>
   <div class="accordion-item ">
     <h2 class="accordion-header" >
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
       Dentistry
       <IoIosArrowDown className="drop-btn"/>
       </button>
@@ -142,7 +142,7 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
       Plastic Surgery and Aesthetic Surgeries
       <IoIosArrowDown className="drop-btn"/>
       </button>
@@ -167,8 +167,8 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-      Aesthetic Procedures (Non-Surgical)
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      Aesthetic Procedures <small>(Non-Surgical) </small> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
@@ -186,8 +186,8 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-      Bariatric Surgery (Obesity Surgery)
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      Bariatric Surgery <small>(Obesity Surgery) </small> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
@@ -203,8 +203,8 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-      Ophthalmology (Eye Procedures and Surgeries)
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      Ophthalmology <small>(Eye Procedures and Surgeries) </small> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
@@ -217,7 +217,7 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
       Fertility & IVF
       <IoIosArrowDown className="drop-btn"/>
       </button>
@@ -234,8 +234,8 @@ export const Layout = () => {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-      Orthopedics (All)
+      <button class="fs-5 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      Orthopedics <small>(All) </small> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
@@ -353,7 +353,7 @@ export const Layout = () => {
       <footer
         class=" text-dark p-md-4 p-2"
        
-        style={{ background: "linear-gradient(90deg, #A45EB6, #0CA5A8)" }}
+        style={{ background: "linear-gradient(90deg, #757BBB, #0CA5A8)" }}
       >
         <div class=" container py-3 ">
           <div class="row d-flex justify-content-around py-3">

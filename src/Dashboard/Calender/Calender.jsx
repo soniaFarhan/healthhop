@@ -247,8 +247,8 @@ async function fetchData(){
         <div className=" mx-auto mb-2">
         <div className='form-floating'>
         <select name="" className='form-control form-select' id="packageSelect">
-          <option value="0">Hair Transparent</option>
-          <option value="1">Beard Transparent</option>
+          <option value="0">Hair Transplant</option>
+          <option value="1">Beard Transplant</option>
         
         </select>
         <label htmlFor="packageSelect">Procedure</label>

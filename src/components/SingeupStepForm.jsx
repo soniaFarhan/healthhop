@@ -412,7 +412,7 @@ const Step5 = () => {
     <div className="scroll-container">
       <div className="content px-2">
         <h6 className="text-center px-md-2">
-        “Which Languages Does Your Clinic Support? (select all that apply)”
+        Which Languages Does Your Clinic Support? (select all that apply)
         </h6>
         <div class="form-check my-4 ">
           <input

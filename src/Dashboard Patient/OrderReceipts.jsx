@@ -708,7 +708,9 @@ function handleImageChange(event) {
               selected={selected}
               // showSelectedLabel={showSelectedLabel}
               onSelect={(code) => setSelected(code)}
-            />
+              placeholder="Select Your Nationality"  
+              searchable={true}        
+                />
  
               </div>
   

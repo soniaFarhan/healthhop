@@ -484,7 +484,7 @@ ul li {
   color: #39b7ba;
 }
 .accordion-body ul li a{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .linke ul li a {
@@ -549,7 +549,7 @@ select.bg-select option {
   text-wrap: nowrap;
 }
 .dropdown-content{
-  width: 450px ;
+  width: 470px ;
   text-wrap: wrap;
  
 }

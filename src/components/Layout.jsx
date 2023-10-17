@@ -312,7 +312,7 @@ export const Layout = () => {
         <Link to="/login" state={{from:"dr"}}>
           
         <button 
-        className="btn btn_light rounded-pill fs_11px white_space"
+        className="btn btn_light rounded-pill fs_14px  white_space"
        
       >
         <MedicalServicesOutlined
@@ -328,7 +328,7 @@ export const Layout = () => {
       <Link to="/login">
 
       <button    
-       className="btn btn_light rounded-pill fs_11px white_space "
+       className="btn btn_light fs_14px rounded-pill white_space "
      >
        <Login fontSize="small"  style={{marginRight:"7px"}}/>
        Patient

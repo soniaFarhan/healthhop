@@ -513,7 +513,7 @@ const  Orthopedics= [
         </div>
         <div className="">
           <div className="">
-            <div className="p-3  clr-grden">
+            <div className="p-3" style={{background: "linear-gradient(90deg, #757BBB, #0CA5A8)"}}>
               <div
                 className=" row px-md-5 mx-md-5  py-4  shrink"
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}

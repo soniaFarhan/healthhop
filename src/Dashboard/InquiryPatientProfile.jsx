@@ -13,6 +13,7 @@ const InquiryPatientProfile = (props) => {
     setData(state.ele);
   }, [state]);
   const [data, setData] = useState([]);
+  
   return (
     <>
       <div
@@ -127,9 +128,9 @@ const InquiryPatientProfile = (props) => {
           <Button className=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: "#07A6A9", border: "none" }}>
             Send Offer To This Patient
           </Button>
-          <ul style={{ backgroundColor: "#07A6A9", border: "none" }} className="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1">
-            <li><button onClick={() => setModalShow(true)} className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Create Custom Order</button></li>
-            <li><button  className="mb-0 " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Already Existing Package</button></li>
+          <ul style={{ backgroundColor: "#07A6A9", border: "none"}} className="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1" >
+            <li><button onClick={() => setModalShow(true)} className="mb-0 ho " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Create Custom Order</button></li>
+            <li><button  className="mb-0 ho " style={{cursor:"pointer",backgroundColor: "#07A6A9", border: "none" ,color:"white"}} >Already Existing Package</button></li>
           </ul>
           </div>
 

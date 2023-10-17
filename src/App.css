@@ -420,7 +420,7 @@ ul li {
   flex-direction: row; /* Arrange buttons in a row */
 }
 .fc-toolbar-chunk {
-  min-width: 33.33% !important;
+  min-width: 28.33% !important;
   max-width: 33.33% !important;
 }
 
@@ -599,3 +599,6 @@ select.bg-select option {
   background-color: #07a6a9; /* Change this color to your desired active step color */
 }
 
+.ho:hover {
+  background-color:#39b7ba !important;
+}

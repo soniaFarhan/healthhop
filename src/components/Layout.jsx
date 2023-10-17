@@ -353,7 +353,7 @@ export const Layout = () => {
       <footer
         class=" text-dark p-md-4 p-2"
        
-        style={{ background: "linear-gradient(90deg, #A45EB6, #0CA5A8)" }}
+        style={{ background: "linear-gradient(90deg, #757BBB, #0CA5A8)" }}
       >
         <div class=" container py-3 ">
           <div class="row d-flex justify-content-around py-3">

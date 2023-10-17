@@ -194,7 +194,7 @@ export const BusinessProfile = () => {
                     Average price range for the procedure:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USD</p>
 
 
                 </div>
@@ -206,7 +206,7 @@ export const BusinessProfile = () => {
                     All inclusive price range:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 to 1000 USD</p>
 
 
                 </div>
@@ -218,7 +218,7 @@ export const BusinessProfile = () => {
                     Instant booking  fixed price for procedure only:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500  USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500  USD</p>
 
 
                 </div>
@@ -230,7 +230,7 @@ export const BusinessProfile = () => {
                     Instant booking  fixed price for All-inclusive:
 
                   </p>
-                  <p className='my-auto mx-3' style={{ color: "black" }}>500 USA</p>
+                  <p className='my-auto mx-3' style={{ color: "black" }}>500 USD</p>
 
                 </div>
 

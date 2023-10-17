@@ -16,7 +16,9 @@ body {
 .shrink2 {
   transform: scale(0.9); 
 }
-
+.shrinkx {
+  transform: scaleX(0.8); 
+}
 
 /* body {
   transform: scaleY(0.8); 
@@ -410,13 +412,16 @@ ul li {
 .fc .fc-toolbar {
   display: flex !important;
   align-items: center !important;
-  justify-content: start;
-  gap: 14rem !important;
+  justify-content: space-between;
 }
 
 .fc-toolbar-chunk {
   display: flex;
   flex-direction: row; /* Arrange buttons in a row */
+}
+.fc-toolbar-chunk {
+  min-width: 33.33% !important;
+  max-width: 33.33% !important;
 }
 
 .fc .fc-button-primary:not(:disabled).fc-button-active,
@@ -455,11 +460,14 @@ ul li {
 /* Media query for mobile view */
 @media (max-width: 768px) {
   .fc .fc-toolbar {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
   }
+  .fc-toolbar-chunk {
+    min-width: fit-content !important;
+  }
+  
 }
 
 .y {

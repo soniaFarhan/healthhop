@@ -96,9 +96,16 @@ const Login = ({ role, Content }) => {
           </Grid>
 
         <Box className='d-flex justify-content-center w-100'>
+        {
+          from?
           <Link className='text-center text_color my-3 fs_25px' to="/singeupstepform"  state={{from}} style={{textDecoration:'none'}}>
            Register
+          </Link>:
+          <Link className='text-center text_color my-3 fs_25px' to="/patientlogin"  state={{from}} style={{textDecoration:'none'}}>
+           Register
           </Link>
+
+        }  
         </Box>
 
         </Grid>

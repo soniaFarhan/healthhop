@@ -33,6 +33,7 @@ import Profile from './Dashboard Patient/Profile';
 import Blog from './pages/Blog';
 import InquiryPatientProfile from './Dashboard/InquiryPatientProfile';
 import { InquiryBusinessProfile } from './Dashboard Patient/InquiryBusinessProfile';
+import Patientdash from './components/Patientdash';
 
 
 
@@ -41,6 +42,7 @@ function App() {
     <Routes>
     <Route path='/singeupstepform' element={<SingeupStepForm/>} /> 
         <Route path='/login' element={<Login />} />
+        <Route path='/patientlogin' element={<Patientdash/>}/>
       <Route element={<Layout/>}>
         <Route path='/' element={<Home/>}/>
         <Route path='/heath-journey'  element={<HealthJourney/>} />
@@ -51,6 +53,7 @@ function App() {
         <Route path='/instatnt-booking' element={<InstantBooking/>}/>  
         <Route path='/payment-method' element={<PaymentMethod/>} /> 
         <Route path='/Blog' element={<Blog/>}/>
+       
       </Route>
 
       <Route element={<DashboardLayout/>}>
@@ -71,7 +74,7 @@ function App() {
        <Route path='/patient-inquiries' element={<MyInquiries/>}/>
        <Route path='/patient-inquiries/inquirybusiness' element={<InquiryBusinessProfile/>}/>
         <Route path='/patient-booking' element={<MyBooking/>}/>
-        <Route path='/patient-calendar' element={<Calender month={"month"} patient={"patient"} />}/>
+        <Route path='/patient-calendar' element={<Calender month={"month"} />}/>
         <Route path='/patient-message' element={<PMessage/>}/>
         <Route path='/patient-inovice' element={<OrderReceipts/>}/>
         <Route path='/patient-inovice/patient-details' element={<PInvoicedetails/>} />  

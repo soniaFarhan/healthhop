@@ -128,12 +128,12 @@ const SingeupStepForm = () => {
                         backgroundColor: "#07A6A9",
                         color: "white",
                         padding: "16px 80px",
-                        fontSize: "12px",
+                        fontSize: "15px",
                         width: "100%",
                         border: "none"
                       }}
                     >
-                      {step == 1 ? "Start Setup" : "continue"}
+                      {step == 1 ? "Start Setup" : "Continue"}
                     </Button>
                   </Link>:
                       <Link to="/patient-inquiries">
@@ -143,12 +143,12 @@ const SingeupStepForm = () => {
                           backgroundColor: "#07A6A9",
                           color: "white",
                           padding: "16px 80px",
-                          fontSize: "12px",
+                          fontSize: "15px",
                           width: "100%",
                           border: "none"
                         }}
                       >
-                        {step == 1 ? "Start Setup" : "continue"}
+                        {step == 1 ? "Start Setup" : "Continue"}
                       </Button>
                     </Link>
 

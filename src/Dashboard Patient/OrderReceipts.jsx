@@ -739,7 +739,7 @@ function handleImageChange(event) {
               border: "2px dashed #8B8B8B",
             }}
           >
-            Upload images    <i style={{}} class="bi bi-plus"></i>
+            Upload Images    <i style={{}} class="bi bi-plus"></i>
           
           </label>
           <div className="my-4">

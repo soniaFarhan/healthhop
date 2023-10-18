@@ -711,7 +711,7 @@ const  Orthopedics= [
            
 
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
-              <h2 className="heading"
+              <h2 className="heading shrink"
                 style={{
                   borderBottom: "2px solid #07A6A9",
                   display: "inline-block",
@@ -751,7 +751,7 @@ const  Orthopedics= [
                     </h4>
                   </div>
                   <h2>Book Your Procedure</h2>
-                  <p className="" style={{ fontSize: "16px", }}>
+                  <p className="" style={{ fontSize: "12px", }}>
                   Simply browse our selection of medical providers and services and book a consultation with the one that best meets your needs. Our app provides detailed information on each procedure to help you make an informed decision.
                   </p>
                   </div>

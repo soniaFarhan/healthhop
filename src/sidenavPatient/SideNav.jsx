@@ -77,7 +77,7 @@ function SideNav(props) {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const drawer = (
-    <div className="" style={{background: "linear-gradient(0deg, #15A0A8,#7868A2)",height:"100vh"}}>
+    <div className="" style={{background: "linear-gradient(to bottom, #000000 40%,#15A0A8 100%)",height:"100vh"}}>
       <div className="" style={{backgroundColor:"black"}}>
 
       <div className="p-3" style={{width:"8rem"}}>

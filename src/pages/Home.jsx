@@ -372,7 +372,7 @@ const  Orthopedics= [
                 <h5 className="py-4">Your Budget</h5>
                 <p>Select min and max price range</p>
 
-                <Box>
+                <Box className="zoom_not">
                 <Slider
                     sx={{ color: "#07A6A9",height:"10px" }}
                     aria-label="Temperature"

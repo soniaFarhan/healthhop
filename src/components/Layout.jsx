@@ -434,6 +434,9 @@ export const Layout = () => {
 
           </div>
         </div>
+        <div className="w-100 text-center text-white">
+          <p>All rights reserved Maintained & Developed by <Link to="https://fabtechsol.com/">Fabtechsol</Link></p>
+        </div>
       </footer>
         
     </div>

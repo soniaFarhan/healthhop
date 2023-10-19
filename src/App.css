@@ -608,3 +608,7 @@ select.bg-select option {
 .zoom{
   zoom: 0.8;
 }
+.captcha iframe{
+  width: 377px;
+  height: 95px;
+}

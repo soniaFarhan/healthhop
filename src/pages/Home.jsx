@@ -618,7 +618,7 @@ const  Orthopedics= [
         <Box>
           <Container>
             <Grid
-              className=" mx-auto "
+              className=" mx-auto w-100"
               container
               spacing={3}
               alignItems={"center"}
@@ -1047,14 +1047,14 @@ const  Orthopedics= [
                     </div>
                   </div>
 
-                  <div className="pt-5">
+                  <div className="pt-5 captcha">
                   {/* <Link to={"/learn-more"}> */}
                   <ReCAPTCHA
     sitekey={process.env.REACT_APP_SITE_KEY}
     
-  />,
+  />
                       <Button
-                      className="my-2"
+                      className="my-2 mt-4"
                       style={{
                         backgroundColor: "#07A6A9",
                         color: "white",

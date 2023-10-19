@@ -83,14 +83,16 @@ export const ContactUs = () => {
                     <textarea placeholder='Message'  class="form-control" id="" rows="3"></textarea>
                     </div>
 
+                    <div className='captcha'>
                     <ReCAPTCHA
                     // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
                     sitekey={process.env.REACT_APP_SITE_KEY}
                     // ref={captchaRef}
                     // color="blue"
                     />
+                    </div>
 
-                    <button className='btn btn_green my-2'>
+                    <button className='btn btn_green my-2 mt-4'>
                         Send Message <SendIcon/>
                     </button>
 

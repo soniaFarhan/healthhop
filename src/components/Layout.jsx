@@ -33,7 +33,7 @@ export const Layout = () => {
   };
 
   return (
-    <div className="layout">
+    <div className="layout zoom">
      
   <nav className="navbar navbar-expand-lg navbar-light navbg  "  style={{backgroundColor:"#012837",color:"white",zIndex:"999"}}>
   <div className="container-fluid  shrink2">

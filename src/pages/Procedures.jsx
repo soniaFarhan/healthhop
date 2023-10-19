@@ -16,7 +16,7 @@ export const Procedures = () => {
         }
         return value; // Default behavior for other values
       };
-    const marks = [
+     const marks = [
         {
           value: 0,
          
@@ -300,20 +300,18 @@ export const Procedures = () => {
                                         Select min and max price range
                                     </p>
 
-                                    <Box className="" >
-
+                                    <Box className="zoom_not">
                                     <Slider
-                    sx={{ color: "#07A6A9",height:"10px" }}
-                    aria-label="Temperature"
-                    defaultValue={3000} // Set your initial value here
-                    valueLabelDisplay={12}
-                    step={null}
-                    valueLabelFormat={valueLabelFormat}
-                    marks={marks}
-                    min={0}
-                    max={20000}
-                  />
-
+                                        sx={{ color: "#07A6A9",height:"10px" }}
+                                        aria-label="Temperature"
+                                        defaultValue={3000} // Set your initial value here
+                                        valueLabelDisplay={12}
+                                        step={null}
+                                        valueLabelFormat={valueLabelFormat}
+                                        marks={marks}
+                                        min={0}
+                                        max={20000}
+                                    />
                                     </Box>
                                     <div className='my-3'>
                                         <button className='btn btn_green rounded-pill px-4'>

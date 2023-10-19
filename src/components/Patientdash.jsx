@@ -8,10 +8,8 @@ const Patientdash = () => {
   return (
     <div className="d-flex justify-content-center align-items-center layout mx-auto"  style={{ background: "white",width:"400px" }}>
         <div className=" my-5 rounded-4 shadows p-3">
-       <h3 className="text-center mb-2">About You </h3>
-      <p className="text-center" style={{ fontSize: "10px" }}>
-        Tell us more about yourself
-      </p>
+       <h3 className="text-center mb-2">Sign-Up </h3>
+    
 
       <div className="mb-5">
         <TextField
@@ -19,6 +17,14 @@ const Patientdash = () => {
           id="outlined-basic"
           label=" User Name"
           name="Business Name"
+          variant="outlined"
+          style={{ width: "100%" }}
+        />
+            <TextField
+          className="my-2"
+          id="outlined-basic"
+          label=" Email Address"
+          name=" Business  email address"
           variant="outlined"
           style={{ width: "100%" }}
         />
@@ -32,14 +38,7 @@ const Patientdash = () => {
           style={{ width: "100%" }}
         />
 
-        <TextField
-          className="my-2"
-          id="outlined-basic"
-          label=" Email Address"
-          name=" Business  email address"
-          variant="outlined"
-          style={{ width: "100%" }}
-        />
+    
 
       </div>
 

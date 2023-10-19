@@ -308,7 +308,7 @@ const  Orthopedics= [
    
   ];
   return (
-    <div>
+    <div className="">
       <div className="home_background_img">
         <div className="h-100 shrink">
           <div className="row gx-0 ">

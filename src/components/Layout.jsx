@@ -168,7 +168,7 @@ export const Layout = () => {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-      Aesthetic Procedures <small>(Non-Surgical) </small> 
+      <span>Aesthetic Procedures <small>(Non-Surgical) </small></span> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
@@ -187,8 +187,9 @@ export const Layout = () => {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-      Bariatric Surgery <small>(Obesity Surgery) </small> 
-      <IoIosArrowDown className="drop-btn"/>
+<span>      Bariatric Surgery <small>(Obesity Surgery) </small> 
+</span>     
+ <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
     <div id="collapseFive" class="accordion-collapse collapse  drop-align accordion-body" data-bs-parent="#accordionExample">
@@ -204,7 +205,7 @@ export const Layout = () => {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-      Ophthalmology <small>(Eye Procedures and Surgeries) </small> 
+      <span>Ophthalmology <small>(Eye Procedures and Surgeries) </small></span> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>
@@ -235,7 +236,7 @@ export const Layout = () => {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="fs-6 p-3 collapsed border-0 w-100 bg-white d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-      Orthopedics <small>(All) </small> 
+      <span>Orthopedics <small>(All) </small></span> 
       <IoIosArrowDown className="drop-btn"/>
       </button>
     </h2>

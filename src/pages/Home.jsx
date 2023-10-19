@@ -310,7 +310,7 @@ const  Orthopedics= [
   return (
     <div className="">
       <div className="home_background_img">
-        <div className="h-100 shrink">
+        <div className="h-100  ">
           <div className="row gx-0 ">
             <div
               className="col-lg-4 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
@@ -415,7 +415,7 @@ const  Orthopedics= [
 
       {/* simple section  */}
 
-      <section className="py-5 shrink">
+      <section className="py-5  ">
         <div className="d-flex justify-content-center  py-5  mb-3">
           <h3 className="heading mb-3 mt-1 "
             style={{
@@ -500,7 +500,7 @@ const  Orthopedics= [
       </section>
 
       <section className="">
-        <div className=" d-flex justify-content-center my-5 shrink">
+        <div className=" d-flex justify-content-center my-5  ">
           <h3 className="text-center heading "
             style={{
               borderBottom: "2px solid #07A6A9",
@@ -515,7 +515,7 @@ const  Orthopedics= [
           <div className="">
             <div className="p-3" style={{background: "linear-gradient(90deg, #757BBB, #0CA5A8)"}}>
               <div
-                className=" row px-md-5 mx-md-5  py-4  shrink"
+                className=" row px-md-5 mx-md-5  py-4   "
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}
               >
                 <div className=" col-md-4 my-auto" >
@@ -538,7 +538,7 @@ const  Orthopedics= [
         </div>
       </section>
 
-      <section className="py-5  shrink">
+      <section className="py-5   ">
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading  pt-5"
             style={{
@@ -593,7 +593,7 @@ const  Orthopedics= [
         </p>
       </section>
 
-      <section className=" shrink ">
+      <section className="   ">
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -711,7 +711,7 @@ const  Orthopedics= [
            
 
             <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
-              <h2 className="heading shrink"
+              <h2 className="heading  "
                 style={{
                   borderBottom: "2px solid #07A6A9",
                   display: "inline-block",
@@ -872,7 +872,7 @@ const  Orthopedics= [
         </div>
       </section>
 
-      <section className="py-2 shrinkx mb-5 " >
+      <section className="py-2  x mb-5 " >
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading"
             style={{
@@ -935,7 +935,7 @@ const  Orthopedics= [
       <section className="">
         <div className="">
             <div className="p-3 bg">
-          <div className="shrinkx">
+          <div className=" x">
               <div className="d-flex justify-content-center  pt-5 mt-2">
                 <h2 className="heading"
                   style={{
@@ -985,7 +985,7 @@ const  Orthopedics= [
           </div>
         </div>
       </section>
-      <section className="shrink" id="navigate">
+      <section className=" " id="navigate">
         <div className="container">
           <div className="mx-md-5 ">
             <div className="p-3 ">

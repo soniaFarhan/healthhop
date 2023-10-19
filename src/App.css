@@ -605,3 +605,6 @@ select.bg-select option {
 .ho:hover {
   background-color:#39b7ba !important;
 }
+.zoom{
+  zoom: 0.8;
+}

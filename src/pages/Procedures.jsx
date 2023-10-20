@@ -85,7 +85,7 @@ export const Procedures = () => {
     const defaultValue = 4;
     return (
         <div>
-            <div className='container pt-3'>
+            <div className='container-lg pt-3'>
                 <div className='procedure_background_img d-flex justify-content-center align-items-end'>
                     <h2 className='text-white mb-5'>
                         Procedures

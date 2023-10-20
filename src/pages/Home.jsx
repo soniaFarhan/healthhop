@@ -308,7 +308,7 @@ const  Orthopedics= [
    
   ];
   return (
-    <div className="">
+    <div className="zoom-6">
       <div className="home_background_img">
         <div className="h-100  ">
           <div className="row gx-0 ">
@@ -610,21 +610,20 @@ const  Orthopedics= [
           style={{ color: "#939393", fontSize: "11px" }}
         >
           <p className="mb-5 fw-bold" style={{fontSize:"15px"}} >
-          We collect reviews from our users so you can get an honest opinion of what  <br />an experience with our website are really like!
+          We collect reviews from our users so you can get an honest opinion of <br /> what an experience with our website are really like!
           </p>
-          <p></p>
         </div>
 
         <Box>
           <Container>
             <Grid
-              className=" mx-auto w-100"
+              className=" mx-auto d-flex justify-content-center"
               container
               spacing={3}
               alignItems={"center"}
             >
               {cardchatData.map((e, index) => (
-                <Grid className="mx-auto p-0" item key={index}>
+                <Grid className="mx-1 p-0" item key={index}>
                   <div
                     className="chat my-4"
                     style={{

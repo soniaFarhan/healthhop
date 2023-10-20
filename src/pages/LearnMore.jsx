@@ -445,7 +445,7 @@ const [image,setImage]=useState()
 
 
                   <div className="col-md-4 ">
-                      <div className="rounded-4 "  style={{border: "1px solid #07A6A9"}}>
+                      <div className="rounded-4 mt-4 mt-md-0"  style={{border: "1px solid #07A6A9"}}>
                           <div className='m-2'>
                               <img className='rounded-4 img-fluid w-100 object-fit-cover' src={require("../assets/contact-us.jpg")} alt=""/>
                           </div>

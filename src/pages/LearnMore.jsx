@@ -122,7 +122,7 @@ const [image,setImage]=useState()
     const defaultValue = 4;
   return (
     <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-        <div className='container py-5'>
+        <div className='container-lg py-5'>
         <div className='row'>
             <div className="col-md-8 ">
                 <div className='d-flex gap-2'>

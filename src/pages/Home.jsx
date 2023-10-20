@@ -313,7 +313,7 @@ const  Orthopedics= [
         <div className="h-100  ">
           <div className="row gx-0 ">
             <div
-              className="col-lg-4 d-flex justify-content-lg-end justify-content-center mt-5 mb-5 pe-lg-3"
+              className="col-md-4 d-flex justify-content-md-end justify-content-center mt-5 mb-5 pe-md-3"
              
             >
               <div className="col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"79%" }}>
@@ -617,7 +617,7 @@ const  Orthopedics= [
         <Box>
           <Container>
             <Grid
-              className=" mx-auto d-flex justify-content-center"
+              className=" mx-auto w-100 d-flex justify-content-center"
               container
               spacing={3}
               alignItems={"center"}
@@ -985,7 +985,7 @@ const  Orthopedics= [
         </div>
       </section>
       <section className=" " id="navigate">
-        <div className="container">
+        <div className="container-lg px-lg-0 px-sm-5">
           <div className="mx-md-5 ">
             <div className="p-3 ">
               <div className="d-flex justify-content-center  pb-4 ">
@@ -1004,12 +1004,12 @@ const  Orthopedics= [
 
               <Box
                 component={Paper} elevation={5}
-                className=" px-md-5 mb-5 "
+                className=" px-sm-5 mb-5 "
                 style={{ paddingBottom: "20px", paddingTop: "50px" }}
               >
                 <div className=" mx-3">
-                  <div className=" d-md-flex">
-                    <div className="my-2 me-md-1" style={{ width: "100%" }}>
+                  <div className=" d-sm-flex">
+                    <div className="my-2 me-sm-1" style={{ width: "100%" }}>
                       <TextField
                         id="outlined-basic"
                         label="Frist Name"
@@ -1017,7 +1017,7 @@ const  Orthopedics= [
                         style={{ width: "100%" }}
                       />
                     </div>
-                    <div className="my-2 ms-md-1" style={{ width: "100%" }}>
+                    <div className="my-2 ms-sm-1" style={{ width: "100%" }}>
                       <TextField
                         id="outlined-basic"
                         label="Last Name"

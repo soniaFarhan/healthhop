@@ -71,20 +71,20 @@ export const OurBlogs = () => {
   return (
     <div>
 
-    <div className='container pt-5'>
+    <div className='container-lg pt-5'>
         <div className='blog_background_img d-flex justify-content-center align-items-end'>
             <h2 className='text-white mb-5'>
             Articles
             </h2>
         </div>
 
-        <div className="container">
+        <div className="container-lg">
             <div className="row my-5">
               <div className='col-md-7 '>
                 <div className='d-flex flex-wrap justify-content-center  px-0'>
 
                 {cardData.map((card, index) => (
-                  <div key={index} className="col-11  col-sm-6 col-md-8 col-lg-6" >
+                  <div key={index} className="col-11  col-sm-6" >
                     <div className="card border-0 h-100 p-2" style={{minHeight:"260px"}}>
                         <img width={"100%"} height={"100%"} className="card-img position-relative rounded-4" src={card.imageSrc} alt={`card image ${index}`} />
                         <div className='position-absolute rounded-4  bg-dark' style={{ opacity: "0.7", top: "7px", right: "7px", left: "7px", bottom: "7px" }}></div>

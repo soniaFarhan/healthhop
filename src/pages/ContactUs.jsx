@@ -83,8 +83,8 @@ export const ContactUs = () => {
                     <textarea placeholder='Message'  class="form-control" id="" rows="3"></textarea>
                     </div>
 
-                    <div className='captcha'>
-                    <ReCAPTCHA
+                    <div className='zoom_not2'>
+                    <ReCAPTCHA class="zoom_not4"
                     // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
                     sitekey={process.env.REACT_APP_SITE_KEY}
                     // ref={captchaRef}
@@ -92,7 +92,7 @@ export const ContactUs = () => {
                     />
                     </div>
 
-                    <button className='btn btn_green my-2 mt-4'>
+                    <button className='btn btn_green my-2 mt-2'>
                         Send Message <SendIcon/>
                     </button>
 

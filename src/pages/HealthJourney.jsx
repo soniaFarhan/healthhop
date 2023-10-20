@@ -295,8 +295,8 @@ export const HealthJourney = () => {
                             Select min and max price range
                         </p>
 
-                        <Box>
-                <Slider
+                        <Box className="zoom_not2">
+                <Slider className='zoom_not4'
                     sx={{ color: "#07A6A9",height:"10px" }}
                     aria-label="Temperature"
                     defaultValue={3000} // Set your initial value here

@@ -268,7 +268,7 @@ const  Orthopedics= [
 
   const str = 'usman'
 
-  const defaultValue =5;
+  const defaultValue =0;
   const valueLabelFormat = (value) => {
     if (value === 20000) {
       return 'No max'; // Custom text for 20000
@@ -313,7 +313,7 @@ const  Orthopedics= [
         <div className="h-100  ">
           <div className="row gx-0 ">
             <div
-              className="col-md-4 d-flex justify-content-md-end justify-content-center mt-5 mb-5 pe-md-3"
+              className=" col-md-4 d-flex justify-content-md-end justify-content-center mt-5 mb-5 pe-md-3"
              
             >
               <div className="col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"79%" }}>
@@ -372,8 +372,8 @@ const  Orthopedics= [
                 <h5 className="py-4">Your Budget</h5>
                 <p>Select min and max price range</p>
 
-                <Box className="zoom_not">
-                <Slider
+                <Box className="zoom_not1">
+                <Slider className="zoom_not1"
                     sx={{ color: "#07A6A9",height:"10px" }}
                     aria-label="Temperature"
                     defaultValue={3000} // Set your initial value here
@@ -1046,14 +1046,14 @@ const  Orthopedics= [
                     </div>
                   </div>
 
-                  <div className="pt-5 captcha">
+                  <div className="pt-5 zoom_not1">
                   {/* <Link to={"/learn-more"}> */}
-                  <ReCAPTCHA
+                  <ReCAPTCHA className="zoom_not5"
     sitekey={process.env.REACT_APP_SITE_KEY}
     
   />
                       <Button
-                      className="my-2 mt-4"
+                      className="my-2 mt-2"
                       style={{
                         backgroundColor: "#07A6A9",
                         color: "white",

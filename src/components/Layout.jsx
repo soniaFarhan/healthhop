@@ -384,7 +384,7 @@ export const Layout = () => {
               </div> */}
             </div>
             
-            <div class=" col-12 col-lg-8  mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0">
+            <div class=" col-12 col-lg-8  mt-4 mt-sm-4 mt-md-0 mt-lg-0 mt-xl-0 ">
               <div className="row d-flex justify-content-end">
                 
                 <div className="col-6 col-sm-3 style-none">

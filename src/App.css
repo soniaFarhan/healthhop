@@ -608,10 +608,19 @@ select.bg-select option {
 .zoom{
   zoom: 0.8;
 }
-.zoom_not{
+.zoom-6{
+  zoom: 0.7;
+}
+.zoom_not1{
+  zoom: 1.3 !important;
+}
+.zoom_not5{
+  zoom: 1.4 !important;
+}
+.zoom_not2{
   zoom: 1.2 !important;
 }
-.captcha iframe{
-  width: 377px;
-  height: 95px;
+.zoom_not4{
+  zoom: 1.05 !important;
 }
+

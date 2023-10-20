@@ -85,7 +85,7 @@ export const Procedures = () => {
     const defaultValue = 4;
     return (
         <div>
-            <div className='container pt-3'>
+            <div className='container-lg pt-3'>
                 <div className='procedure_background_img d-flex justify-content-center align-items-end'>
                     <h2 className='text-white mb-5'>
                         Procedures
@@ -292,7 +292,7 @@ export const Procedures = () => {
                                     </select>
                                 </div>
 
-                                <div className='py-3'>
+                                <div className='py-3 '>
                                     <h5>
                                         Your Budget
                                     </h5>
@@ -300,8 +300,9 @@ export const Procedures = () => {
                                         Select min and max price range
                                     </p>
 
-                                    <Box className="zoom_not">
-                                    <Slider
+                                    <div className='zoom_not2'>
+                                    <Box className=" zoom_not4">
+                                    <Slider className=""
                                         sx={{ color: "#07A6A9",height:"10px" }}
                                         aria-label="Temperature"
                                         defaultValue={3000} // Set your initial value here
@@ -313,6 +314,7 @@ export const Procedures = () => {
                                         max={20000}
                                     />
                                     </Box>
+                                    </div>
                                     <div className='my-3'>
                                         <button className='btn btn_green rounded-pill px-4'>
                                             Search

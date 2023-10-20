@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
             <Toolbar variant="dense" style={{display:'flex',
               justifyContent:'flex-end',minHeight:'65px'}} >
                
-    <Box className=''>
+    <Box className='zoom'>
       <div className='d-flex align-items-center'>
         <div className='me-5'>
            {/* <Button

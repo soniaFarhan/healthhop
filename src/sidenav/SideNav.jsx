@@ -78,6 +78,9 @@ function SideNav(props) {
   const dispatch = useDispatch()
   const drawer = (
     <div className="" style={{ background: "linear-gradient(to bottom, #000000 40%,#15A0A8 100%)",height:"100vh"}}>
+      <div className="zoom">
+        
+   
       <div className="" style={{backgroundColor:"black"}}>
 
       <div className="p-3 " style={{width:"8rem"}}>
@@ -109,6 +112,7 @@ function SideNav(props) {
           </ListItemButton>
         </ListItem>
       </List>
+    </div>
     </div>
   );
 

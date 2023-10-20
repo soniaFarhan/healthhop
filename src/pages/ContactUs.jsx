@@ -4,7 +4,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 export const ContactUs = () => {
   return (
     <div>
-        <div className='container pt-5'>
+        <div className='container-lg pt-5'>
         <div className='contact_background_img d-flex justify-content-center align-items-end'>
             <h2 className='text-white mb-5'>
                 Contact Us

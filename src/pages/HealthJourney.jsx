@@ -87,7 +87,7 @@ export const HealthJourney = () => {
 
   return (
     <div>
-        <div  className='container py-5'>
+        <div  className='container-lg py-5'>
         <h3>
             Medical Providers Picked for you
         </h3>

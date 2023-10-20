@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const InstantBooking = () => {
   return (
     <div>
-        <div className='container py-5'>
+        <div className='container-lg py-5'>
         <h3 className='text-center fw-bold'>
             Book Your Procedure Instantly
         </h3>
@@ -14,8 +14,8 @@ const InstantBooking = () => {
             </p>
         </div>
 
-        <div className=' d-flex justify-content-center gap-3 flex-column flex-md-row mt-2'>
-        <div class="card col-md-3 p-3 border-0 shadow" style={{ minHeight: '400px' }}>
+        <div className=' d-flex justify-content-center gap-3 flex-column flex-sm-row mt-2'>
+        <div class="card col-md-3 col-sm-6 p-3 border-0 shadow" style={{ minHeight: '400px' }}>
             <div className='text-white p-3 rounded' style={{backgroundColor:"#07A6A9"}}>
                 <p className='text-center'>
                     Procedure Only
@@ -41,7 +41,7 @@ const InstantBooking = () => {
             </div>
             </div>
 
-        <div class="card col-md-3 p-3 border-0 shadow" style={{ minHeight: '400px' }}>
+        <div class="card col-md-3 col-sm-6 p-3 border-0 shadow" style={{ minHeight: '400px' }}>
             <div className='text-white p-3 rounded' style={{backgroundColor:"#07A6A9"}}>
                 <p className='text-center'>
                     Custom Package

@@ -222,9 +222,9 @@ export const Message = () => {
 
 
           </div>
-          <div className="col-md-8  ps-0" >
+          <div className="col-md-8  ps-md-0" >
 
-            <div className="shadows me-2 py-4 px-3" style={{ height: "73vh", borderRadius: "12px", backgroundColor:"white" }}>
+            <div className="shadows me-md-2 py-4 px-3" style={{ height: "73vh", borderRadius: "12px", backgroundColor:"white" }}>
               <div className="scroll-container1">
                 <div className="content1">
                   <div className="d-flex justify-content-end ">
@@ -295,7 +295,7 @@ export const Message = () => {
               <div className="mt-2  position-relative text_dark">
 
                 <input type="text" class="form-control text_dark" placeholder="Enter your message here" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{ borderRadius: "20px", backgroundColor: "transparent", fontSize: "12px", padding: "16px" }} ewwe />
-                <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-30px", top:"50%"}}>
+                <div className='position-absolute translate-middle'  style={{maxWidth:"fit-content",  right:"-80px", top:"50%"}}>
               
                 <div className='d-flex  ' >
                   <div className='rounded-circle bg-success justify-content-center d-flex align-items-center' style={{height:"40px", width:"40px"}}>

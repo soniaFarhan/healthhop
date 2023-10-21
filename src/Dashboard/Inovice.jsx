@@ -29,7 +29,7 @@ data.map(()=>{
 } */}
 
 
-<div className="row mt-md-3">
+<div className="row mt-md-3 me-0">
 <div className="col-lg-4 col-sm-6 col-12 mt-md-0 mt-3 mx-lg-0 mx-auto position-relative" >
               <input type="text" class="form-control rounded-pill border-1 border-dark bg-transparent" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2" style={{  backgroundColor: "rgb(251,253,251)" }} />
               <button className='position-absolute translate-middle border-0 bg-transparent' style={{top:"50%", right:"0"}}><BiSearch style={{fontSize:"20px"}} /></button>

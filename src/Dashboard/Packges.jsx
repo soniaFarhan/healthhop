@@ -44,9 +44,9 @@ export const Packges = () => {
 
 
             </div>
-            <div className=" d-md-flex justify-content-center">
-              <div className="col-md-6  my-2 d-flex justify-content-md-end">
-                <div class="card mx-auto mx-md-0 ms-md-auto me-md-1 border-0 shadows4 rounded-3" style={{ maxWidth: 355, minWidth:290, }}>
+            <div className="row d-sm-flex justify-content-center">
+              <div className="col-sm-6  my-2 d-flex justify-content-sm-end">
+                <div class="card  c-wid mx-auto mx-sm-0 ms-sm-auto me-sm-1 border-0 shadows4 rounded-3"  style={{minWidth:290,  minHeight: 450 }}>
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div className="text-center p-3 rounded-4" style={{ backgroundColor: "#07A6A9", color: "white"}}>
                       <p>HAIR TRANSPLANT</p>
@@ -89,8 +89,8 @@ export const Packges = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6  my-2 d-flex justify-content-md-start ">
-                <div class="card mx-auto mx-md-0  ms-md-1 border-0 shadows4 rounded-3" style={{ maxWidth: 355, minWidth:290, minHeight: 450 }}>
+              <div className="col-sm-6  my-2 d-flex justify-content-sm-start ">
+                <div class="card c-wid mx-auto mx-sm-0  ms-sm-1 border-0 shadows4 rounded-3" style={{ minWidth:290, minHeight: 450 }}>
                   <div class="card-body d-flex flex-column justify-content-between">
                     <div className="text-center p-3 rounded-4" style={{ backgroundColor: "#07A6A9", color: "white" }}>
                       <p>LASIK SURGERY</p>

@@ -53,7 +53,7 @@ export const InquiryBusinessProfile = () => {
 
   return (
     <>
-      <div className="">
+      <div className=""> 
         <div className="bp-img d-flex justify-content-center mt-3 align-items-center ">
           <h2 className="text-white">{businessdata.procedure}</h2>
         </div>
@@ -89,8 +89,8 @@ export const InquiryBusinessProfile = () => {
           </div>
         </div>
 
-        <div className="row mt-md-0 my-3">
-          <div className="col-lg-6 mb-3 ">
+        <div className="row mt-md-0 my-3 mx-0">
+          <div className="col-lg-6 mb-3 px-0">
             <div
               className="me-md-2 h-100 shadows4 bg-white pt-3 ps-3 pe-5"
               style={{ borderRadius: "20px", paddingBottom: "100px" }}
@@ -102,7 +102,7 @@ export const InquiryBusinessProfile = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-6  mb-3 ">
+          <div className="col-lg-6  mb-3 px-0">
             <div className=" my-3 pb-3 ms-md-2 h-100">
               <p>Address of medical provider here</p>
 
@@ -148,8 +148,8 @@ export const InquiryBusinessProfile = () => {
           </p>
         </div>
 
-        <div className="row mb-3">
-          <div className="col-md-6">
+        <div className="row mb-3 mx-0">
+          <div className="col-md-6 px-0">
             <div
               className="d-flex flex-column h-100 my-3 me-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-5 mb-0"
               style={{ borderRadius: "20px" }}
@@ -188,7 +188,7 @@ export const InquiryBusinessProfile = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 pt-md-0 pt-4">
+          <div className="col-md-6 pt-md-0 pt-4 px-0">
             <div
               className="d-flex flex-column h-100 my-3 ms-md-2 shadows4 bg-white pt-3 ps-3 pb-5 pe-md-5 mb-0"
               style={{ borderRadius: "20px" }}
@@ -465,10 +465,10 @@ export const InquiryBusinessProfile = () => {
         </div>
 
         <div
-          className=" my-3 row   pt-2 "
+          className=" my-3 row   pt-2 mx-0"
           style={{ borderRadius: "12px", paddingBottom: "90px" }}
         >
-          <div className="col-md-9 " style={{ height: "auto" }}>
+          <div className="col-md-9 px-0" style={{ height: "auto" }}>
             <h4 className="ms-1 fw-bold"> Medical Staff </h4>
 
             {data.map((e) => {

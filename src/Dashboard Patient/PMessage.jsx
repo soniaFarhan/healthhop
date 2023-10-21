@@ -291,9 +291,9 @@ export const PMessage = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-8  ps-0">
+          <div className="col-md-8  ps-md-0">
             <div
-              className="shadows me-2 py-4 px-3"
+              className="shadows me-md-2 py-4 px-3"
               style={{
                 height: "73vh",
                 borderRadius: "12px",

@@ -887,7 +887,7 @@ const  Orthopedics= [
         <Box>
           <div className="mb-2">
             <Grid 
-              className=" "
+              className=" d-flex flex-sm-row flex-column"
               container
               alignItems={"center"}
               justifyContent={"center"}

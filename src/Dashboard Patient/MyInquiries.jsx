@@ -57,7 +57,7 @@ export const MyInquiries = () => {
         className="container my-2  pt-2 shadows"
         style={{ borderRadius: "12px", paddingBottom: "90px" }}
       >
-        <div className=" row   m-2 p-2 ">
+        <div className=" row   m-lg-2 p-lg-2 ">
           {
             <div className="col-md-12 " style={{ height: "auto" }}>
               {data.map((data, index) => (

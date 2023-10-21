@@ -69,7 +69,7 @@ export const ContactUs = () => {
 
                     </div>
 
-                    <div className="row mt-3">
+                    <div className="row mt-md-3">
                         <div className='col-md-6 mt-md-0 mt-3'>
                            <input className='form-control' type="number" name="" id="" placeholder='Phone' />
                         </div>

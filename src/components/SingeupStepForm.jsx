@@ -34,8 +34,8 @@ const SingeupStepForm = () => {
           style={{ background: "white" }}
         >
           <div
-            className=" my-5 rounded-4 shadows "
-            style={{ backgroundColor: "shadows", width: "550px" }}
+            className=" my-5 rounded-4 shadows stepform"
+            style={{ backgroundColor: "shadows"}}
           >
             <div className="head d-flex  justify-content-between aling-items-ceneter">
               {step === 1 && (
@@ -836,7 +836,7 @@ const  Orthopedics= [
         </div>
         <h6 className="mb-0">Procedure Only:</h6>
         <div className="d-flex justify-content-between">
-          <div className="">
+          <div className=" me-1">
             <TextField
               id="outlined-basic"
               label=" Min Price in USD"
@@ -856,7 +856,7 @@ const  Orthopedics= [
         </div>
         <h6 className="mb-0">All Inclusive Price in USD:</h6>
         <div className="d-flex justify-content-between">
-          <div className="">
+          <div className="me-1">
             <TextField
               id="outlined-basic"
               label=" Min Price in USD"
@@ -1101,7 +1101,7 @@ const Step9 = () => {
         }}
       >
 
-        <div class="input-group mb-3 " >
+        <div class="row mb-3 " >
 
           <input className="py-2 form-control" style={{ backgroundColor: "black ", borderRadius: "9px", border: "1px solid #07A6A9", color: "white", opacity: "0.5" }} type="text" class="form-control" placeholder="Enter your address" aria-label="Enter your address" aria-describedby="basic-addon1" />
         </div>

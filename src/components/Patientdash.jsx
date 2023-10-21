@@ -6,7 +6,7 @@ const Patientdash = () => {
 
     
   return (
-    <div className="d-flex justify-content-center align-items-center layout mx-auto"  style={{ background: "white",width:"400px" }}>
+    <div className="d-flex justify-content-center align-items-center layout mx-auto stepform"  style={{ background: "white",width:"400px" }}>
         <div className=" my-5 rounded-4 shadows p-3">
        <h3 className="text-center mb-2">Sign-Up </h3>
     

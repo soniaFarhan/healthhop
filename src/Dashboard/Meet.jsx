@@ -116,7 +116,7 @@ const Meet = () => {
 
 
 
-                    <div className="col-md-2 col-sm-4 col-6 px-0">
+                    <div className="col-lg-2 col-4 px-0 mx-xl-0 mx-auto">
 
 
                     <div id={`carouselExampleControls-${index}`} class="carousel slide " data-bs-ride="carousel">
@@ -161,7 +161,7 @@ const Meet = () => {
                     </div>
                     <div className="col-xl-7 col-md-12 ">
 
-                      <div className="d-flex justify-content-between aling-items-center">
+                      <div className="d-flex justify-content-between aling-items-center mt-2 mt-xl-0">
                         <h6>  {e.name} </h6>
 
 

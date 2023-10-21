@@ -61,7 +61,7 @@ export const ConfirmedBooking = () => {
 
                   <div className="d-md-flex  bg-white shadows4 mb-2 p-1" style={{ borderRadius: "12px" }}>
                     <div className='p-1 me-2'>
-                      <div style={{ width: "8rem", height: "100%" }}>
+                      <div className='mx-md-0 mx-auto' style={{ width: "8rem", height: "100%" }}>
                         <img className='img-fluid w-100 h-100' src={require("../assets/h-card.png")} alt="" />
                       </div>
                     </div>
@@ -88,19 +88,19 @@ export const ConfirmedBooking = () => {
 
 
                         </div>
-                        <div className="d-md-flex">
+                        <div className="d-sm-flex justify-content-between ">
 
-                          <div className="m-2">
+                          <div className="">
                             <Button onClick={()=>setModalShow(true)} variant="text" style={{ color: '#07A6A9' }} >Details</Button>
                           </div>
 
 
-                          <div className="m-2">
+                          <div className="">
 
                             <Button variant="text" style={{ color: '#07A6A9' }} ><Chat /></Button>
                           </div>
 
-                          <div className="m-2">
+                          <div className="">
 
                             <Button variant="contained" style={{ backgroundColor: "#07A6A9", padding: "6px 27px", fontSize: "10px" }}>Meet</Button>
                           </div>

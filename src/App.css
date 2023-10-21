@@ -120,7 +120,7 @@ body {
 /* utility classes end  */
 
 .home_background_img {
-  height: 100%;
+  height: 1000px;
   width: 100%;
   background: linear-gradient(rgba(39, 39, 39, 0.4), rgba(39, 39, 39, 0.4)),
     url(../src/assets/homeimg.png);
@@ -623,4 +623,15 @@ select.bg-select option {
 .zoom_not4{
   zoom: 1.05 !important;
 }
+.stepform{
+  width: 550px;
+}
 
+@media screen and (max-width:576px) {
+  .stepform{
+    max-width: 100% !important;
+  }
+  .c-wid{
+    width: 100% !important;
+  }
+}

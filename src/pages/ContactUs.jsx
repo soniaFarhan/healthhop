@@ -84,7 +84,7 @@ export const ContactUs = () => {
                     </div>
 
                     <div className='zoom_not2'>
-                    <ReCAPTCHA class="zoom_not4"
+                    <ReCAPTCHA class="zoom_not4"  style={{overflow:"hidden"}}
                     // sitekey="6Lf34HAoAAAAAJlzuaDxmj-zEeqMrxwoyRMgbcfh"
                     sitekey={process.env.REACT_APP_SITE_KEY}
                     // ref={captchaRef}

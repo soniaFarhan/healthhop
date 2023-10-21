@@ -1048,7 +1048,7 @@ const  Orthopedics= [
 
                   <div className="pt-5 zoom_not1">
                   {/* <Link to={"/learn-more"}> */}
-                  <ReCAPTCHA className="zoom_not5"
+                  <ReCAPTCHA className="zoom_not5" style={{overflow:"hidden"}}
     sitekey={process.env.REACT_APP_SITE_KEY}
     
   />

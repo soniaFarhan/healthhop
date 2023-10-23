@@ -311,7 +311,7 @@ const  Orthopedics= [
     <div className="zoom-6">
       <div className="home_background_img">
         <div className="h-100  ">
-          <div className="row gx-0 ">
+          <div className="row gx-0 zoom_not5">
             <div
               className=" col-md-4 d-flex justify-content-md-end justify-content-center mt-5 mb-5 pe-md-3"
              
@@ -372,7 +372,7 @@ const  Orthopedics= [
                 <h5 className="py-4">Your Budget</h5>
                 <p>Select min and max price range</p>
 
-                <Box className="zoom_not1">
+                <Box className="">
                 <Slider className="zoom_not1"
                     sx={{ color: "#07A6A9",height:"10px" }}
                     aria-label="Temperature"

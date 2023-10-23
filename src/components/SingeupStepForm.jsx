@@ -28,7 +28,7 @@ const SingeupStepForm = () => {
   console.log(from)
   return (
     <>
-      <div className="zoom" style={{}}>
+      <div className="zoom-6" style={{}}>
         <div
           className="d-flex justify-content-center align-items-center layout"
           style={{ background: "white" }}

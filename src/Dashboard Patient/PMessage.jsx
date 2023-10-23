@@ -211,7 +211,7 @@ export const PMessage = () => {
   return (
     <>
       <div
-        className="container shadows pb-3 "
+        className="container shadows pb-3 my-auto"
         style={{
           borderRadius: "10px",
          

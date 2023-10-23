@@ -28,7 +28,7 @@ import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 
-const drawerWidth = 240;
+const drawerWidth = 210;
 const listItemData = [
 //   { label: "Classes & Students", icon: <svg id="Group_16" data-name="Group 16" xmlns="http://www.w3.org/2000/svg" width="29.35" height="29.35" viewBox="0 0 67.35 67.35">
 //   <path id="Shape" d="M51.564,67.35H15.785A15.8,15.8,0,0,1,0,51.565V15.786A15.8,15.8,0,0,1,15.785,0H51.564A15.8,15.8,0,0,1,67.35,15.786V51.565A15.8,15.8,0,0,1,51.564,67.35ZM15.785,5.261A10.537,10.537,0,0,0,5.261,15.786V51.565A10.537,10.537,0,0,0,15.785,62.089H51.564A10.537,10.537,0,0,0,62.089,51.565V15.786A10.537,10.537,0,0,0,51.564,5.261ZM52.748,56.825H46.961a2.63,2.63,0,1,1,0-5.261h5.787a2.63,2.63,0,1,1,0,5.261ZM49.2,46.569H27.229a2.632,2.632,0,0,1,0-5.264H49.2a2.632,2.632,0,0,1,0,5.264ZM25.123,15.916H14.075a2.63,2.63,0,1,1,0-5.261H25.123a2.63,2.63,0,1,1,0,5.261Z" transform="translate(0 0)" fill="#cf242a"/>
@@ -92,7 +92,7 @@ function SideNav(props) {
       <List className="">
         {listItemData.map((value, i) => (
            <>
-           <div className=" my-1 mx-3 " style={{backgroundColor:"#3B8AA5" ,borderRadius:"10px"}}>
+           <div className=" my-3 mx-3 " style={{backgroundColor:"#3B8AA5" ,borderRadius:"10px"}}>
           <RenderItem value={value} i={i} />
           </div>
           </>

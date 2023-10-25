@@ -313,10 +313,10 @@ const  Orthopedics= [
         <div className="h-100  ">
           <div className="row gx-0 zoom_not5">
             <div
-              className=" col-md-4 d-flex justify-content-md-end justify-content-center mt-5 mb-5 pe-md-3"
+              className="col-sm-12 col-md-4 d-flex justify-content-md-end justify-content-center mt-md-5 mb-md-5  mt-0"
              
             >
-              <div className="col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"79%" }}>
+              <div className="col-sm-12 col-md-7 bg-light rounded px-4 py-4 "  style={{  minHeight: "300px",width:"100%" }}>
                 <h5 className="text-dark text-center fw-bold">
                 Book Your Medical Procedure
                 </h5>
@@ -414,8 +414,10 @@ const  Orthopedics= [
       </div>
 
       {/* simple section  */}
+      <div className="container ">
+        <div className="row d-flex flex-column">
 
-      <section className="py-5  ">
+      <section className="py-5 order-2 order-md-1 ">
         <div className="d-flex justify-content-center  py-5  mb-3">
           <h3 className="heading mb-3 mt-1 "
             style={{
@@ -499,7 +501,7 @@ const  Orthopedics= [
         </Box>
       </section>
 
-      <section className="">
+      <section className="order-3 order-md-2">
         <div className=" d-flex justify-content-center my-5  ">
           <h3 className="text-center heading "
             style={{
@@ -520,7 +522,7 @@ const  Orthopedics= [
               >
                 <div className=" col-md-4 my-auto" >
                   <div className="d-flex justify-content-end ">  <h2 className="pe-md-5 me-md-5 " style={{ color: "white"}}>
-                    Get the 
+                    Get the
                     Best 
                     Medical <br />
                     Care  for
@@ -539,7 +541,7 @@ const  Orthopedics= [
         </div>
       </section>
 
-      <section className="py-5   ">
+      <section className="py-5  order-1 order-md-3">
         <div className="d-flex justify-content-center  py-3">
           <h2 className="heading  pt-5"
             style={{
@@ -593,6 +595,8 @@ const  Orthopedics= [
           </Link>
         </p>
       </section>
+      </div>
+      </div>
 
       <section className="   ">
         <div className="d-flex justify-content-center  py-3">

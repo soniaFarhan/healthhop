@@ -106,12 +106,12 @@ export const Procedures = () => {
                             {data.map((data, index) => (
                                 <div className='d-flex align-items-center gap-1 justify-content-between flex-column flex-md-row shadow rounded-4 p-2 mb-3'>
                                     <div className='p-2'>
-                                        <div style={{ width: "8rem" }}>
+                                        <div style={{ width: "14rem" }}>
                                             <div id={`carouselExampleControls-${index}`} class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active" >
                                                         <div className='d-flex align-items-center gap-1'>
-                                                            <div style={{ width: "10rem" }}>
+                                                            <div style={{ width: "14rem" }}>
                                                                 <img className='img-fluid' src={require("../assets/h-card.png")} class="d-block w-100" alt="..." />
                                                             </div>
 
@@ -119,7 +119,7 @@ export const Procedures = () => {
                                                     </div>
                                                     <div class="carousel-item">
                                                         <div className='d-flex align-items-center gap-1'>
-                                                            <div style={{ width: "10rem" }}>
+                                                            <div style={{ width: "14rem" }}>
                                                                 <img className='img-fluid' src={require("../assets/h-card.png")} class="d-block w-100" alt="..." />
                                                             </div>
 
@@ -127,7 +127,7 @@ export const Procedures = () => {
                                                     </div>
                                                     <div class="carousel-item">
                                                         <div className='d-flex align-items-center gap-1'>
-                                                            <div style={{ width: "10rem" }}>
+                                                            <div style={{ width: "14rem" }}>
                                                                 <img className='img-fluid' src={require("../assets/h-card.png")} class="d-block w-100" alt="..." />
                                                             </div>
 

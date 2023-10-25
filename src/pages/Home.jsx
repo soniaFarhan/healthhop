@@ -462,13 +462,13 @@ const  Orthopedics= [
                         <CardContent>
                           <Typography
                             gutterBottom
-                            variant="h6"
+                            variant="h5"
                             component="div"
                             sx={{ color: "#07A6A9" }}
                           >
                             {card.title}
                           </Typography>
-                          <Typography variant="body" color="text.secondary">
+                          <Typography   color="text.secondary" style={{fontSize:"17px"}}>
                             {card.description}
                           </Typography>
                         </CardContent>
@@ -519,13 +519,14 @@ const  Orthopedics= [
                 // style={{ paddingBottom: "10px", paddingTop: "100px" }}
               >
                 <div className=" col-md-4 my-auto" >
-                  <h2 className="" style={{ color: "white"}}>
+                  <div className="d-flex justify-content-end ">  <h2 className="pe-md-5 me-md-5 " style={{ color: "white"}}>
                     Get the 
                     Best 
                     Medical <br />
                     Care  for
                     Your Needs
-                  </h2>
+                  </h2></div>
+                
                 </div>
                 <div className="my-auto col-md-8">
                   <p className="" style={{ color: "#FFFFFF",fontSize:"20px", opacity:'1' }}>
@@ -575,7 +576,7 @@ const  Orthopedics= [
                     <div className="text-center  pt-4">
                       <div className="pb-5">{e.icon}</div>
 
-                      <p className="mb-0 pb-4" style={{ fontSize: "12px" }}>
+                      <p className="mb-0 pb-4" style={{ fontSize: "15px" }}>
                         {e.title}
                       </p>
                     </div>
@@ -647,7 +648,7 @@ const  Orthopedics= [
                       </div>
                        <div className="">
                         <div className="d-flex aling-items-center  card-content justify-content-between mb-1">
-                       <h6 className="my-auto" style={{color:"black"}}>{e.name}</h6>
+                       <h5 className="my-auto" style={{color:"black"}}>{e.name}</h5>
                         <div className="" style={{width:"3rem"}}>
                           <img src={require("../assets/Flag_of_Turkey.png")} width={"100%"} alt="" />
                         </div>
@@ -656,7 +657,7 @@ const  Orthopedics= [
 
                       <p
                         className="mb-0  card-content p-3 py-3   ps-0 pt-0 pb-0"
-                        style={{ fontSize: "15px" }}
+                        style={{ fontSize: "18px" }}
                       >
 
 
@@ -707,9 +708,16 @@ const  Orthopedics= [
           <div className="bg1 ">
             <div className="mx-auto" style={{width:"85%"}}>
 
-           
+            <div className="pt-5 mx-auto d-flex justify-content-center  " >
+                  <Link to={""} className="mx-auto">
+                    <button className="btn clr-grdn  py-3 mx-auto fs-4">
+                    Search Medical Providers
+                    </button>
+                  </Link>
+                </div>
 
-            <div className="d-flex justify-content-center mt-lg-5  pt-lg-5 ">
+            <div className="d-flex justify-content-center mt-lg-3  pt-lg-3 ">
+          
               <h2 className="heading  "
                 style={{
                   borderBottom: "2px solid #07A6A9",
@@ -722,7 +730,7 @@ const  Orthopedics= [
             </div>
             <div
               className="text-center fw-bold"
-              style={{ color: "#939393", fontSize: "15px" }}
+              style={{ color: "#939393", fontSize: "18px" }}
             >
               <p>
               HealthHop is a centralized medical tourism hub that allows you to book safe, secure medical treatment and travel 
@@ -750,7 +758,7 @@ const  Orthopedics= [
                     </h4>
                   </div>
                   <h2>Book Your Procedure</h2>
-                  <p className="" style={{ fontSize: "12px", }}>
+                  <p className="" style={{ fontSize: "18px", }}>
                   Simply browse our selection of medical providers and services and book a consultation with the one that best meets your needs. Our app provides detailed information on each procedure to help you make an informed decision.
                   </p>
                   </div>
@@ -783,7 +791,7 @@ const  Orthopedics= [
                     </h4>
                   </div>
                   <h2>Transportation & Accommodation</h2>
-                  <p className="" style={{ fontSize: "12px" }}>
+                  <p className="" style={{ fontSize: "18px" }}>
                   Once you have booked your procedure, our providers can even help you take care of your transportation and accommodation logistics. Need to be picked up from the airport? No problem. Transportation from your hotel and clinic can be arranged with ease.
                   </p>
                 </div>
@@ -815,7 +823,7 @@ const  Orthopedics= [
                     </h4>
                   </div>
                   <h2>Travel!</h2>
-                  <p className="" style={{ fontSize: "12px" }}>
+                  <p className="" style={{ fontSize: "18px" }}>
                   Once you have selected your procedure and provider, a package will be offered to you. This could include procedure, accomodation, pickup logistics and more. Once you accept and pay through our secure online portal, you are ready to travel!
                   </p>
                 </div>
@@ -848,7 +856,7 @@ const  Orthopedics= [
                     </h4>
                   </div>
                   <h2> Sightsee!</h2>
-                  <p className="" style={{ fontSize: "12px" }}>
+                  <p className="" style={{ fontSize: "18px" }}>
                   Have extra time before or after your medical procedure and want to sightsee? Our team can help you plan activities or give you recommendations on places to see, the local cuisine, and more!
                   </p>
                 </div>
@@ -872,7 +880,16 @@ const  Orthopedics= [
       </section>
 
       <section className="py-2  x mb-5 " >
+      <div className="pt-5 mx-auto d-flex justify-content-center  " >
+                  <Link to={""} className="mx-auto">
+                    <button className="btn clr-grdn  py-3 mx-auto fs-4">
+                    Search Medical Providers
+                    </button>
+                  </Link>
+                </div>
         <div className="d-flex justify-content-center  py-3">
+          
+
           <h2 className="heading"
             style={{
               borderBottom: "2px solid #07A6A9",
@@ -905,7 +922,7 @@ const  Orthopedics= [
                       borderRadius: "10px",
                       color: "#939393",
                       maxWidth: "300px",
-                      height: "270px",
+                      height: "290px",
                     }}
                   >
                     <div className="    ">
@@ -918,7 +935,7 @@ const  Orthopedics= [
                       </h6>
                       <p
                         className="mb-0  card-content px-4 pb-2  "
-                        style={{ fontSize: "14px" }}
+                        style={{ fontSize: "16px" }}
                       >
                         {e.title}
                       </p>
